@@ -854,6 +854,11 @@ func _focus_first() -> void:
 	_focus_deferred.call_deferred()
 
 func _focus_deferred() -> void:
+	if screen == "battle" and action_buttons.size() > 1:
+		for index in range(1, action_buttons.size()):
+			if is_instance_valid(action_buttons[index]) and not action_buttons[index].disabled:
+				action_buttons[index].grab_focus()
+				return
 	var candidates: Array[Node] = page.find_children("*", "Button", true, false)
 	var header: Node = page.get_child(0)
 	for node in candidates:
