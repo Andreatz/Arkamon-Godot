@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/Andreatz/Arkamon-Beta",
+  "source_commit": "7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7",
+  "pillow_version": "12.3.0",
+  "files": [
+    {
+      "source_path": "src/data/pokemon.json",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/src/data/pokemon.json",
+      "source_sha256": "3f6d8d376f73178168b648ae15800d33ee8ff7e701fdab2b6fcca26e2e9c8816",
+      "source_bytes": 26135,
+      "output_path": "data/pokemon.json",
+      "transform": "Byte-for-byte copy of complete original JSON.",
+      "output_sha256": "3f6d8d376f73178168b648ae15800d33ee8ff7e701fdab2b6fcca26e2e9c8816",
+      "output_bytes": 26135
+    },
+    {
+      "source_path": "src/data/mosse.json",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/src/data/mosse.json",
+      "source_sha256": "3c3706ba6fc5b63f0f1b559bd12948082c4a0666ab0d4c3619219eb4bbfc3f07",
+      "source_bytes": 678731,
+      "output_path": "data/mosse.json",
+      "transform": "Byte-for-byte copy of complete original JSON.",
+      "output_sha256": "3c3706ba6fc5b63f0f1b559bd12948082c4a0666ab0d4c3619219eb4bbfc3f07",
+      "output_bytes": 678731
+    },
+    {
+      "source_path": "src/data/tipi.json",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/src/data/tipi.json",
+      "source_sha256": "cbef3d1cc3c41fb33bab75ac4e429d40029d611dd0b5fa83d54e8a7a03fc4686",
+      "source_bytes": 1559,
+      "output_path": "data/tipi.json",
+      "transform": "Byte-for-byte copy of complete original JSON.",
+      "output_sha256": "cbef3d1cc3c41fb33bab75ac4e429d40029d611dd0b5fa83d54e8a7a03fc4686",
+      "output_bytes": 1559
+    },
+    {
+      "source_path": "src/data/crescita_hp.json",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/src/data/crescita_hp.json",
+      "source_sha256": "f14a02681bcc4a91a8c484e6577c84a2f81d373f17124fd2cc0e8461ac790750",
+      "source_bytes": 70,
+      "output_path": "data/crescita_hp.json",
+      "transform": "Byte-for-byte copy of complete original JSON.",
+      "output_sha256": "f14a02681bcc4a91a8c484e6577c84a2f81d373f17124fd2cc0e8461ac790750",
+      "output_bytes": 70
+    },
+    {
+      "source_path": "public/sprites/front_sprites/1.png",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/front_sprites/1.png",
+      "source_sha256": "2c9ed5fa0693021e9460e41b3bd40b63c8edab5067a8a13c360248ecd5a31641",
+      "source_bytes": 1564261,
+      "output_path": "assets/creatures/1.png",
+      "transform": "Crop full nonzero-alpha bounds; resize to fit 464x464 with Lanczos; center on transparent 512x512 canvas, bottom at y=488.",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "source_alpha_bounds": [
+        438,
+        85,
+        1737,
+        1954
+      ],
+      "output_sha256": "137881e688efa8139856e39e323b9d3b82dcaa1926fddf12e9f71dbc904a3cf2",
+      "output_bytes": 170783
+    },
+    {
+      "source_path": "public/sprites/front_sprites/5.png",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/front_sprites/5.png",
+      "source_sha256": "1d1656f41cc67c5e4d0663926ebff7eee6cdfd5a2b29091010fd1cdef49cdf40",
+      "source_bytes": 1680402,
+      "output_path": "assets/creatures/5.png",
+      "transform": "Crop full nonzero-alpha bounds; resize to fit 464x464 with Lanczos; center on transparent 512x512 canvas, bottom at y=488.",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "source_alpha_bounds": [
+        294,
+        82,
+        1767,
+        1956
+      ],
+      "output_sha256": "e0a233a07d95b30be1e8192c528603c45427f6c08f07ff5f884a0aa4827522c3",
+      "output_bytes": 177997
+    },
+    {
+      "source_path": "public/sprites/front_sprites/9.png",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/front_sprites/9.png",
+      "source_sha256": "0288580e64a8c494f0d7de72681cbc92de66761aa2cc1a0f7f89750d73a8b4c1",
+      "source_bytes": 1803086,
+      "output_path": "assets/creatures/9.png",
+      "transform": "Crop full nonzero-alpha bounds; resize to fit 464x464 with Lanczos; center on transparent 512x512 canvas, bottom at y=488.",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "source_alpha_bounds": [
+        194,
+        216,
+        1860,
+        1833
+      ],
+      "output_sha256": "e9b8f87dd392ccabc5e0891d79ad37c71f8fa5ef336399ef4101daf4026dc038",
+      "output_bytes": 218028
+    },
+    {
+      "source_path": "public/sprites/front_sprites/28.png",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/front_sprites/28.png",
+      "source_sha256": "9aabf012e6bd7df467b9291edbc7fd9c1ecb5bb8ac8a4e4c379e5e85b17efab7",
+      "source_bytes": 2425074,
+      "output_path": "assets/creatures/28.png",
+      "transform": "Crop full nonzero-alpha bounds; resize to fit 464x464 with Lanczos; center on transparent 512x512 canvas, bottom at y=488.",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "source_alpha_bounds": [
+        218,
+        53,
+        1830,
+        2015
+      ],
+      "output_sha256": "a2802e8e4a42eb884e1f2cb322707966aacdc11817558643ba6de2181ccdc33b",
+      "output_bytes": 239846
+    },
+    {
+      "source_path": "public/sprites/front_sprites/32.png",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/front_sprites/32.png",
+      "source_sha256": "2dd151edda0b8e298fbdba66acbde366f9b115355d14b8148f05329130ea5bde",
+      "source_bytes": 2164598,
+      "output_path": "assets/creatures/32.png",
+      "transform": "Crop full nonzero-alpha bounds; resize to fit 464x464 with Lanczos; center on transparent 512x512 canvas, bottom at y=488.",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "source_alpha_bounds": [
+        169,
+        136,
+        1891,
+        1880
+      ],
+      "output_sha256": "ca34a2dc1ac8e5d83907a352bccb27dc8783820cbdfd438f43421f83231a4f54",
+      "output_bytes": 250777
+    },
+    {
+      "source_path": "public/sprites/front_sprites/42.png",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/front_sprites/42.png",
+      "source_sha256": "99b02067e4ec84bfd846771b976a280ff6e8cb9cc88bdfab1ba1da915e4d1e7f",
+      "source_bytes": 1726236,
+      "output_path": "assets/creatures/42.png",
+      "transform": "Crop full nonzero-alpha bounds; resize to fit 464x464 with Lanczos; center on transparent 512x512 canvas, bottom at y=488.",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "source_alpha_bounds": [
+        192,
+        182,
+        1878,
+        1923
+      ],
+      "output_sha256": "3daddc34ac6a8303a1c29e465029f98082b970456f6d8b3539f6a03753938fd0",
+      "output_bytes": 200286
+    },
+    {
+      "source_path": "public/sprites/front_sprites/56.png",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/front_sprites/56.png",
+      "source_sha256": "01d84761a2a45c93c690a60a44648b41a858c5030b1bfdd47eabafcdb7e35508",
+      "source_bytes": 1882380,
+      "output_path": "assets/creatures/56.png",
+      "transform": "Crop full nonzero-alpha bounds; resize to fit 464x464 with Lanczos; center on transparent 512x512 canvas, bottom at y=488.",
+      "source_size": [
+        2048,
+        2048
+      ],
+      "source_alpha_bounds": [
+        399,
+        91,
+        1903,
+        1921
+      ],
+      "output_sha256": "7faf27ce80e9c396768e0067eba3ad3bc3aa7c89b6b830443e21a9e5e2129f3b",
+      "output_bytes": 203842
+    },
+    {
+      "source_path": "public/backgrounds/battle_forest.jpg",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/backgrounds/battle_forest.jpg",
+      "source_sha256": "c6aeab4e1ab64f0f22711a94b5a8805355b49d446d0ce2cdb74d1eea5e097037",
+      "source_bytes": 224064,
+      "output_path": "assets/backgrounds/battle_forest.webp",
+      "transform": "Apply EXIF orientation; convert RGB; fit inside 1600x1600 without enlarging; encode WebP quality=85 method=6.",
+      "source_size": [
+        1283,
+        733
+      ],
+      "output_size": [
+        1283,
+        733
+      ],
+      "output_sha256": "e0b4dea625649522606c6dc9ee18e8b8266d9ef477f1a26ca41e892df352d4cc",
+      "output_bytes": 115040
+    },
+    {
+      "source_path": "public/backgrounds/laboratory.png",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/backgrounds/laboratory.png",
+      "source_sha256": "fa49ced4bd6967ea95cd5f8bf523ad33549216e334e2cc76346b484783705b4f",
+      "source_bytes": 5031914,
+      "output_path": "assets/backgrounds/laboratory.webp",
+      "transform": "Apply EXIF orientation; convert RGB; fit inside 1600x1600 without enlarging; encode WebP quality=85 method=6.",
+      "source_size": [
+        2006,
+        1125
+      ],
+      "output_size": [
+        1600,
+        897
+      ],
+      "output_sha256": "e8b36e8de9d71e1b4ffe8fbdaae7ac1eb74a9edc1e631755f44977753e486b78",
+      "output_bytes": 121046
+    },
+    {
+      "source_path": "public/backgrounds/route_1.jpg",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/backgrounds/route_1.jpg",
+      "source_sha256": "48f5e60bc8189591277298a65240ca42ec6d49318c3c455c38e35be6838390fb",
+      "source_bytes": 1814496,
+      "output_path": "assets/backgrounds/route_1.webp",
+      "transform": "Apply EXIF orientation; convert RGB; fit inside 1600x1600 without enlarging; encode WebP quality=85 method=6.",
+      "source_size": [
+        1408,
+        768
+      ],
+      "output_size": [
+        1408,
+        768
+      ],
+      "output_sha256": "8156d752316a625d9d70886c746df143b5b5a538a7c6e9331cb51023ec5a95ce",
+      "output_bytes": 187538
+    },
+    {
+      "source_path": "public/audio/selected/0bc89c2057a39f9b.ogg",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/audio/selected/0bc89c2057a39f9b.ogg",
+      "source_sha256": "e6f383479c695909623d72f734cd40dd2e1861da0cedc0c49d41923688571e2a",
+      "source_bytes": 7727,
+      "output_path": "assets/audio/hit.ogg",
+      "transform": "Byte-for-byte copy of selected Ogg audio.",
+      "sound_id": "969eb930bc2777f8",
+      "sound_name": "Hit",
+      "original_source_path": "public/sounds/Part 1/Ichigo Mashimoro SFX rips/Hit.mp3",
+      "output_sha256": "e6f383479c695909623d72f734cd40dd2e1861da0cedc0c49d41923688571e2a",
+      "output_bytes": 7727
+    },
+    {
+      "source_path": "public/audio/selected/f464aee60d4bf089.ogg",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/audio/selected/f464aee60d4bf089.ogg",
+      "source_sha256": "5e2f653ee51cf0627856e650e3c028c8f979b6840e26ada1cc88781c351a15ed",
+      "source_bytes": 4982,
+      "output_path": "assets/audio/confirm.ogg",
+      "transform": "Byte-for-byte copy of selected Ogg audio.",
+      "sound_id": "a922a86b565b3fe6",
+      "sound_name": "Click",
+      "original_source_path": "public/sounds/Part 2/Click.mp3",
+      "output_sha256": "5e2f653ee51cf0627856e650e3c028c8f979b6840e26ada1cc88781c351a15ed",
+      "output_bytes": 4982
+    },
+    {
+      "source_path": "public/audio/selected/f5fbd97277b532ee.ogg",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/audio/selected/f5fbd97277b532ee.ogg",
+      "source_sha256": "a4b102e4bde6a567a9319d2c0018aad2b3f9750bbf6078e670d9d5ebdc746553",
+      "source_bytes": 14140,
+      "output_path": "assets/audio/capture.ogg",
+      "transform": "Byte-for-byte copy of selected Ogg audio.",
+      "sound_id": "fd5acdeb3f122066",
+      "sound_name": "Magic Poof",
+      "original_source_path": "public/sounds/Part 1/SP_SFX_magic/Magic Poof.wav",
+      "output_sha256": "a4b102e4bde6a567a9319d2c0018aad2b3f9750bbf6078e670d9d5ebdc746553",
+      "output_bytes": 14140
+    },
+    {
+      "source_path": "public/audio/selected/7190caeeb27e407e.ogg",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/audio/selected/7190caeeb27e407e.ogg",
+      "source_sha256": "db907a3f85b57f433ecc09e263bba7ddcf58afdefff732260cc02fe325c1279a",
+      "source_bytes": 21739,
+      "output_path": "assets/audio/heal.ogg",
+      "transform": "Byte-for-byte copy of selected Ogg audio.",
+      "sound_id": "48262802520e9d8a",
+      "sound_name": "M_H_AreaHeal_CE",
+      "original_source_path": "public/sounds/Part 1/Fairy magic/M_H_AreaHeal_CE.wav",
+      "output_sha256": "db907a3f85b57f433ecc09e263bba7ddcf58afdefff732260cc02fe325c1279a",
+      "output_bytes": 21739
+    },
+    {
+      "source_path": "src/data/audio-selections.json",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/src/data/audio-selections.json",
+      "source_sha256": "fc40c549dc10bb4734b46aa870d47af974e674f83e6f471aac00e086a932cb93",
+      "source_bytes": 51638,
+      "output_path": null,
+      "transform": "Read Beta sound selection and original-source mappings; table not copied."
+    },
+    {
+      "source_path": "public/sounds/Part 1/Fairy magic/CreditToZachry.txt",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sounds/Part%201/Fairy%20magic/CreditToZachry.txt",
+      "source_sha256": "a11f28461129f693658ceae953727175d3ea73a2656805f608f3a8e5d91b52ca",
+      "source_bytes": 148,
+      "output_path": "assets/audio/CreditToZachry.txt",
+      "transform": "Byte-for-byte copy of credit notice found alongside the original heal sound.",
+      "output_sha256": "a11f28461129f693658ceae953727175d3ea73a2656805f608f3a8e5d91b52ca",
+      "output_bytes": 148
+    },
+    {
+      "source_path": "public/sprites/arkamon/1/front/idle.metadata.json",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/arkamon/1/front/idle.metadata.json",
+      "source_sha256": "4546d8e707de7f3d4b0817ab59b63d151370a5967db877798a6cd430ca51fd84",
+      "source_bytes": 23314,
+      "output_path": null,
+      "transform": "Read original atlas geometry, timing and checksum. Original metadata not copied; compact runtime metadata is in data/animations.json."
+    },
+    {
+      "source_path": "public/sprites/arkamon/1/front/idle.webp",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/arkamon/1/front/idle.webp",
+      "source_sha256": "ec66caa5df939d2b060cce347b95c4cee84a553f8f6641e1649790cd5c4fe914",
+      "source_bytes": 6010714,
+      "output_path": "assets/animations/1_idle.webp",
+      "transform": "Find one shared alpha-bounds union over every frame; crop each frame to that same rectangle; scale uniformly to fit 224x224; pack transparent 256x256 cells with bottom at y=240. Preserve all original frames in original order and original FPS. Encode lossless WebP.",
+      "source_size": [
+        7040,
+        7040
+      ],
+      "source_cell": [
+        704,
+        704
+      ],
+      "shared_alpha_bounds": [
+        244,
+        182,
+        556,
+        532
+      ],
+      "source_frame_count": 96,
+      "source_fps": 24.0,
+      "output_sha256": "928f2fba5ed5074a2280d52efc89c00cc4c2ca6cbb1c06bfcfecc3131c91434f",
+      "output_bytes": 3098998
+    },
+    {
+      "source_path": "public/sprites/arkamon/5/front/idle.metadata.json",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/arkamon/5/front/idle.metadata.json",
+      "source_sha256": "4f9d9a29fde3b89badd6556cdb93a75642888fe9bf87a69455164e93732b2836",
+      "source_bytes": 22967,
+      "output_path": null,
+      "transform": "Read original atlas geometry, timing and checksum. Original metadata not copied; compact runtime metadata is in data/animations.json."
+    },
+    {
+      "source_path": "public/sprites/arkamon/5/front/idle.webp",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/arkamon/5/front/idle.webp",
+      "source_sha256": "e0e5b66a4f8631ed2343ea1f456ab04fd23c944b122e2a0f2e6bac63cbd491a8",
+      "source_bytes": 7727872,
+      "output_path": "assets/animations/5_idle.webp",
+      "transform": "Find one shared alpha-bounds union over every frame; crop each frame to that same rectangle; scale uniformly to fit 224x224; pack transparent 256x256 cells with bottom at y=240. Preserve all original frames in original order and original FPS. Encode lossless WebP.",
+      "source_size": [
+        6400,
+        6400
+      ],
+      "source_cell": [
+        640,
+        640
+      ],
+      "shared_alpha_bounds": [
+        190,
+        160,
+        572,
+        509
+      ],
+      "source_frame_count": 96,
+      "source_fps": 24.0,
+      "output_sha256": "7b68271b689b86220c0ccd8f02ee68bcad9787194ed8ce50558de7bf281f4239",
+      "output_bytes": 3451424
+    },
+    {
+      "source_path": "public/sprites/arkamon/9/front/idle.metadata.json",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/arkamon/9/front/idle.metadata.json",
+      "source_sha256": "9a5c94e7e3e4f60738bedd2c4bc1cc30230ae55e12cd359d2456aba93a6e4c6c",
+      "source_bytes": 23173,
+      "output_path": null,
+      "transform": "Read original atlas geometry, timing and checksum. Original metadata not copied; compact runtime metadata is in data/animations.json."
+    },
+    {
+      "source_path": "public/sprites/arkamon/9/front/idle.webp",
+      "source_url": "https://raw.githubusercontent.com/Andreatz/Arkamon-Beta/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7/public/sprites/arkamon/9/front/idle.webp",
+      "source_sha256": "8f151cbc50c4c9caf7b3f9601c2d6645772caad7eb837d75cb128b9eda75a4a5",
+      "source_bytes": 5695044,
+      "output_path": "assets/animations/9_idle.webp",
+      "transform": "Find one shared alpha-bounds union over every frame; crop each frame to that same rectangle; scale uniformly to fit 224x224; pack transparent 256x256 cells with bottom at y=240. Preserve all original frames in original order and original FPS. Encode lossless WebP.",
+      "source_size": [
+        5120,
+        5120
+      ],
+      "source_cell": [
+        512,
+        512
+      ],
+      "shared_alpha_bounds": [
+        122,
+        111,
+        407,
+        414
+      ],
+      "source_frame_count": 96,
+      "source_fps": 24.0,
+      "output_sha256": "5f179ec84e374fae0f1cbf0abf79ae165838ca11666a8947f431812f8bed63a9",
+      "output_bytes": 3715596
+    }
+  ]
+}

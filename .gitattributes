@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.png binary
+*.webp binary
+*.ogg binary
+data/*.json -text linguist-generated=true
+*.import linguist-generated=true
+assets/audio/CreditToZachry.txt -text whitespace=-blank-at-eol,-blank-at-eof

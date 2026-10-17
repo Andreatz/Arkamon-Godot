@@ -1,0 +1,94 @@
+{
+  "tipi": [
+    "Normale",
+    "Elettro",
+    "Fuoco",
+    "Terra",
+    "Acqua",
+    "Erba",
+    "Oscurità",
+    "Psico"
+  ],
+  "efficacia": {
+    "Normale": {
+      "Normale": 1,
+      "Elettro": 1,
+      "Fuoco": 1,
+      "Terra": 1,
+      "Acqua": 1,
+      "Erba": 1,
+      "Oscurità": 1,
+      "Psico": 1
+    },
+    "Elettro": {
+      "Normale": 1,
+      "Elettro": 1,
+      "Fuoco": 1,
+      "Terra": 0.5,
+      "Acqua": 1.5,
+      "Erba": 1,
+      "Oscurità": 1,
+      "Psico": 1
+    },
+    "Fuoco": {
+      "Normale": 1,
+      "Elettro": 1,
+      "Fuoco": 1,
+      "Terra": 1,
+      "Acqua": 0.5,
+      "Erba": 1.5,
+      "Oscurità": 1,
+      "Psico": 1
+    },
+    "Terra": {
+      "Normale": 1,
+      "Elettro": 1.5,
+      "Fuoco": 1,
+      "Terra": 1,
+      "Acqua": 1,
+      "Erba": 0.5,
+      "Oscurità": 1,
+      "Psico": 1
+    },
+    "Acqua": {
+      "Normale": 1,
+      "Elettro": 0.5,
+      "Fuoco": 1.5,
+      "Terra": 1.5,
+      "Acqua": 1,
+      "Erba": 1,
+      "Oscurità": 1,
+      "Psico": 1
+    },
+    "Erba": {
+      "Normale": 1,
+      "Elettro": 1,
+      "Fuoco": 0.5,
+      "Terra": 1,
+      "Acqua": 1.5,
+      "Erba": 1,
+      "Oscurità": 1,
+      "Psico": 1
+    },
+    "Oscurità": {
+      "Normale": 1,
+      "Elettro": 1,
+      "Fuoco": 1,
+      "Terra": 1,
+      "Acqua": 1,
+      "Erba": 1,
+      "Oscurità": 1,
+      "Psico": 1.5
+    },
+    "Psico": {
+      "Normale": 1,
+      "Elettro": 1,
+      "Fuoco": 1,
+      "Terra": 1,
+      "Acqua": 1,
+      "Erba": 1,
+      "Oscurità": 1.5,
+      "Psico": 1
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "source_repository": "https://github.com/Andreatz/Arkamon-Beta",
+  "source_commit": "7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7",
+  "starters": [
+    1,
+    5,
+    9
+  ],
+  "encounters": [
+    28,
+    32,
+    42,
+    56
+  ],
+  "starting_level": 5,
+  "sprites": {
+    "1": "res://assets/creatures/1.png",
+    "5": "res://assets/creatures/5.png",
+    "9": "res://assets/creatures/9.png",
+    "28": "res://assets/creatures/28.png",
+    "32": "res://assets/creatures/32.png",
+    "42": "res://assets/creatures/42.png",
+    "56": "res://assets/creatures/56.png"
+  },
+  "backgrounds": {
+    "battle_forest": "res://assets/backgrounds/battle_forest.webp",
+    "laboratory": "res://assets/backgrounds/laboratory.webp",
+    "route_1": "res://assets/backgrounds/route_1.webp"
+  },
+  "audio": {
+    "hit": "res://assets/audio/hit.ogg",
+    "confirm": "res://assets/audio/confirm.ogg",
+    "capture": "res://assets/audio/capture.ogg",
+    "heal": "res://assets/audio/heal.ogg"
+  },
+  "animations": "res://data/animations.json",
+  "notes": [
+    "Original names, types, move IDs and complete data tables are unchanged.",
+    "Only the seven listed species have imported static sprites. No evolution is included in this first slice.",
+    "All 96 idle frames of each starter are imported at their original 24 FPS; no new animation frames are generated."
+  ]
+}

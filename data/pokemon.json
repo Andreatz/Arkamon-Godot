@@ -1,0 +1,1652 @@
+[
+  {
+    "id": 1,
+    "nome": "Vyrath",
+    "categoria": "Media",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      1,
+      111,
+      0
+    ],
+    "livelloEvoluzione": 15,
+    "evoluzioneId": 2,
+    "tassoCattura": 5
+  },
+  {
+    "id": 2,
+    "nome": "Vyrath",
+    "categoria": "Media",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      2,
+      112,
+      0
+    ],
+    "livelloEvoluzione": 35,
+    "evoluzioneId": 3,
+    "tassoCattura": 4
+  },
+  {
+    "id": 3,
+    "nome": "Vyrath",
+    "categoria": "Media",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      3,
+      113,
+      0
+    ],
+    "livelloEvoluzione": 55,
+    "evoluzioneId": 4,
+    "tassoCattura": 3
+  },
+  {
+    "id": 4,
+    "nome": "Vyrath",
+    "categoria": "Media",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      4,
+      114,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 5,
+    "nome": "Darklaw",
+    "categoria": "Media",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      28,
+      138,
+      0
+    ],
+    "livelloEvoluzione": 15,
+    "evoluzioneId": 6,
+    "tassoCattura": 5
+  },
+  {
+    "id": 6,
+    "nome": "Darklaw",
+    "categoria": "Media",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      29,
+      139,
+      0
+    ],
+    "livelloEvoluzione": 35,
+    "evoluzioneId": 7,
+    "tassoCattura": 4
+  },
+  {
+    "id": 7,
+    "nome": "Darklaw",
+    "categoria": "Media",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      30,
+      140,
+      0
+    ],
+    "livelloEvoluzione": 55,
+    "evoluzioneId": 8,
+    "tassoCattura": 3
+  },
+  {
+    "id": 8,
+    "nome": "Darklaw",
+    "categoria": "Media",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      31,
+      141,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 9,
+    "nome": "Felyss",
+    "categoria": "Media",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      55,
+      165,
+      0
+    ],
+    "livelloEvoluzione": 15,
+    "evoluzioneId": 10,
+    "tassoCattura": 5
+  },
+  {
+    "id": 10,
+    "nome": "Felyss",
+    "categoria": "Media",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      56,
+      166,
+      0
+    ],
+    "livelloEvoluzione": 35,
+    "evoluzioneId": 11,
+    "tassoCattura": 4
+  },
+  {
+    "id": 11,
+    "nome": "Felyss",
+    "categoria": "Media",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      57,
+      167,
+      0
+    ],
+    "livelloEvoluzione": 55,
+    "evoluzioneId": 12,
+    "tassoCattura": 3
+  },
+  {
+    "id": 12,
+    "nome": "Felyss",
+    "categoria": "Media",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      58,
+      168,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 13,
+    "nome": "Wormaren",
+    "categoria": "Media",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      82,
+      192,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 14,
+    "tassoCattura": 5
+  },
+  {
+    "id": 14,
+    "nome": "Wormaren",
+    "categoria": "Media",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      83,
+      193,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 15,
+    "tassoCattura": 4
+  },
+  {
+    "id": 15,
+    "nome": "Wormaren",
+    "categoria": "Media",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      84,
+      194,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 16,
+    "nome": "Clastoom",
+    "categoria": "Veloce",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      11,
+      121,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 17,
+    "tassoCattura": 5
+  },
+  {
+    "id": 17,
+    "nome": "Clastoom",
+    "categoria": "Veloce",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      12,
+      122,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 18,
+    "tassoCattura": 4
+  },
+  {
+    "id": 18,
+    "nome": "Clastoom",
+    "categoria": "Veloce",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      13,
+      123,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 19,
+    "nome": "Colussand",
+    "categoria": "Media",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      102,
+      212,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 20,
+    "nome": "Handipus",
+    "categoria": "Veloce",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      80,
+      190,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 5
+  },
+  {
+    "id": 21,
+    "nome": "Shrody",
+    "categoria": "Media",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      24,
+      134,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 5
+  },
+  {
+    "id": 22,
+    "nome": "Voltrake",
+    "categoria": "Media",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      51,
+      161,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 23,
+    "nome": "Sparkly",
+    "categoria": "Lenta",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      52,
+      162,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 24,
+    "nome": "Grimbolt",
+    "categoria": "Lenta",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      18,
+      128,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 25,
+    "tassoCattura": 5
+  },
+  {
+    "id": 25,
+    "nome": "Grimbolt",
+    "categoria": "Lenta",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      19,
+      129,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 26,
+    "nome": "Ampereel",
+    "categoria": "Media",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      14,
+      124,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 27,
+    "tassoCattura": 5
+  },
+  {
+    "id": 27,
+    "nome": "Ampereel",
+    "categoria": "Media",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      15,
+      125,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 28,
+    "nome": "Silvard",
+    "categoria": "Media",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      41,
+      151,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 29,
+    "tassoCattura": 5
+  },
+  {
+    "id": 29,
+    "nome": "Silvard",
+    "categoria": "Media",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      42,
+      152,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 30,
+    "nome": "Eclyps",
+    "categoria": "Media",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      68,
+      178,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 31,
+    "tassoCattura": 5
+  },
+  {
+    "id": 31,
+    "nome": "Eclyps",
+    "categoria": "Media",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      69,
+      179,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 32,
+    "nome": "Blazion",
+    "categoria": "Veloce",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      74,
+      184,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 33,
+    "tassoCattura": 5
+  },
+  {
+    "id": 33,
+    "nome": "Blazion",
+    "categoria": "Veloce",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      75,
+      185,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 34,
+    "nome": "Crawgoyle",
+    "categoria": "Media",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      94,
+      204,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 35,
+    "tassoCattura": 5
+  },
+  {
+    "id": 35,
+    "nome": "Crawgoyle",
+    "categoria": "Media",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      95,
+      205,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 36,
+    "nome": "Chimzap",
+    "categoria": "Veloce",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      38,
+      148,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 37,
+    "tassoCattura": 5
+  },
+  {
+    "id": 37,
+    "nome": "Chimzap",
+    "categoria": "Veloce",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      39,
+      149,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 38,
+    "tassoCattura": 4
+  },
+  {
+    "id": 38,
+    "nome": "Chimzap",
+    "categoria": "Veloce",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      40,
+      150,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 39,
+    "nome": "RS-219",
+    "categoria": "Lenta",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      85,
+      195,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 40,
+    "tassoCattura": 5
+  },
+  {
+    "id": 40,
+    "nome": "RS-219",
+    "categoria": "Lenta",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      86,
+      196,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 41,
+    "tassoCattura": 4
+  },
+  {
+    "id": 41,
+    "nome": "RS-219",
+    "categoria": "Lenta",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      87,
+      197,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 42,
+    "nome": "Felvex",
+    "categoria": "Media",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      16,
+      126,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 43,
+    "tassoCattura": 5
+  },
+  {
+    "id": 43,
+    "nome": "Felvex",
+    "categoria": "Media",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      17,
+      127,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 44,
+    "nome": "Felvex",
+    "categoria": "Media",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      78,
+      188,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 45,
+    "nome": "Spectron",
+    "categoria": "Lenta",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      45,
+      155,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 46,
+    "tassoCattura": 4
+  },
+  {
+    "id": 46,
+    "nome": "Spectron",
+    "categoria": "Lenta",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      46,
+      156,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 47,
+    "nome": "Weedrug",
+    "categoria": "Lenta",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      72,
+      182,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 48,
+    "tassoCattura": 5
+  },
+  {
+    "id": 48,
+    "nome": "Weedrug",
+    "categoria": "Lenta",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      73,
+      183,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 49,
+    "nome": "Constrix",
+    "categoria": "Lenta",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      98,
+      208,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 50,
+    "tassoCattura": 5
+  },
+  {
+    "id": 50,
+    "nome": "Constrix",
+    "categoria": "Lenta",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      99,
+      209,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 51,
+    "nome": "Goliash",
+    "categoria": "Media",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      103,
+      213,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 52,
+    "nome": "Leafrex",
+    "categoria": "Veloce",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      65,
+      175,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 53,
+    "tassoCattura": 5
+  },
+  {
+    "id": 53,
+    "nome": "Leafrex",
+    "categoria": "Veloce",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      66,
+      176,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 54,
+    "tassoCattura": 4
+  },
+  {
+    "id": 54,
+    "nome": "Leafrex",
+    "categoria": "Veloce",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      67,
+      177,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 55,
+    "nome": "Peek-a-buu",
+    "categoria": "Veloce",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      105,
+      215,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 56,
+    "nome": "Deephion",
+    "categoria": "Lenta",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      20,
+      130,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 57,
+    "tassoCattura": 4
+  },
+  {
+    "id": 57,
+    "nome": "Deephion",
+    "categoria": "Lenta",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      21,
+      131,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 58,
+    "nome": "Shabyss",
+    "categoria": "Veloce",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      91,
+      201,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 59,
+    "tassoCattura": 4
+  },
+  {
+    "id": 59,
+    "nome": "Shabyss",
+    "categoria": "Veloce",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      92,
+      202,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 60,
+    "tassoCattura": 3
+  },
+  {
+    "id": 60,
+    "nome": "Shabyss",
+    "categoria": "Veloce",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      93,
+      203,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 61,
+    "nome": "Wailoom",
+    "categoria": "Veloce",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      27,
+      137,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 62,
+    "nome": "Fluffet",
+    "categoria": "Veloce",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      100,
+      210,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 63,
+    "tassoCattura": 5
+  },
+  {
+    "id": 63,
+    "nome": "Fluffet",
+    "categoria": "Veloce",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      101,
+      211,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 64,
+    "nome": "Hopz",
+    "categoria": "Lenta",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      79,
+      189,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 5
+  },
+  {
+    "id": 65,
+    "nome": "Piox",
+    "categoria": "Veloce",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      54,
+      164,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 5
+  },
+  {
+    "id": 66,
+    "nome": "Hoppiox",
+    "categoria": "Media",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      25,
+      135,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 67,
+    "nome": "Fearstraw",
+    "categoria": "Veloce",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      22,
+      132,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 68,
+    "tassoCattura": 5
+  },
+  {
+    "id": 68,
+    "nome": "Fearstraw",
+    "categoria": "Veloce",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      23,
+      133,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 69,
+    "nome": "Lickard",
+    "categoria": "Veloce",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      49,
+      159,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 70,
+    "tassoCattura": 5
+  },
+  {
+    "id": 70,
+    "nome": "Lickard",
+    "categoria": "Veloce",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      50,
+      160,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 71,
+    "nome": "Blizzaquil",
+    "categoria": "Lenta",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      8,
+      118,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 72,
+    "tassoCattura": 5
+  },
+  {
+    "id": 72,
+    "nome": "Blizzaquil",
+    "categoria": "Lenta",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      9,
+      119,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 73,
+    "tassoCattura": 3
+  },
+  {
+    "id": 73,
+    "nome": "Blizzaquil",
+    "categoria": "Lenta",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      10,
+      120,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 74,
+    "nome": "Impise",
+    "categoria": "Lenta",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      35,
+      145,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 75,
+    "tassoCattura": 5
+  },
+  {
+    "id": 75,
+    "nome": "Impise",
+    "categoria": "Lenta",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      36,
+      146,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 76,
+    "tassoCattura": 3
+  },
+  {
+    "id": 76,
+    "nome": "Impise",
+    "categoria": "Lenta",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      37,
+      147,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 77,
+    "nome": "Ignitor",
+    "categoria": "Veloce",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      81,
+      191,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 78,
+    "nome": "Trippix",
+    "categoria": "Lenta",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      104,
+      214,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 79,
+    "nome": "Cellgon",
+    "categoria": "Lenta",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      62,
+      172,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 80,
+    "tassoCattura": 5
+  },
+  {
+    "id": 80,
+    "nome": "Cellgon",
+    "categoria": "Lenta",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      63,
+      173,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 81,
+    "tassoCattura": 4
+  },
+  {
+    "id": 81,
+    "nome": "Cellgon",
+    "categoria": "Lenta",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      64,
+      174,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 82,
+    "nome": "Reliskull",
+    "categoria": "Lenta",
+    "tipo": "Acqua",
+    "hpBase": 12,
+    "mosse": [
+      26,
+      136,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 83,
+    "nome": "Cerebron",
+    "categoria": "Lenta",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      53,
+      163,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 84,
+    "nome": "Psycroak",
+    "categoria": "Media",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      43,
+      153,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 85,
+    "tassoCattura": 3
+  },
+  {
+    "id": 85,
+    "nome": "Psycroak",
+    "categoria": "Media",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      44,
+      154,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 86,
+    "nome": "Teslat",
+    "categoria": "Media",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      5,
+      115,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 87,
+    "tassoCattura": 3
+  },
+  {
+    "id": 87,
+    "nome": "Teslat",
+    "categoria": "Media",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      6,
+      116,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 88,
+    "tassoCattura": 5
+  },
+  {
+    "id": 88,
+    "nome": "Teslat",
+    "categoria": "Media",
+    "tipo": "Elettro",
+    "hpBase": 12,
+    "mosse": [
+      7,
+      117,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 89,
+    "nome": "Espeiry",
+    "categoria": "Lenta",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      88,
+      198,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 90,
+    "tassoCattura": 5
+  },
+  {
+    "id": 90,
+    "nome": "Espeiry",
+    "categoria": "Lenta",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      89,
+      199,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 91,
+    "tassoCattura": 4
+  },
+  {
+    "id": 91,
+    "nome": "Espeiry",
+    "categoria": "Lenta",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      90,
+      200,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 92,
+    "nome": "Pyrodil",
+    "categoria": "Media",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      32,
+      142,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 93,
+    "tassoCattura": 4
+  },
+  {
+    "id": 93,
+    "nome": "Pyrodil",
+    "categoria": "Media",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      33,
+      143,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 94,
+    "tassoCattura": 3
+  },
+  {
+    "id": 94,
+    "nome": "Pyrodil",
+    "categoria": "Media",
+    "tipo": "Fuoco",
+    "hpBase": 12,
+    "mosse": [
+      34,
+      144,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 95,
+    "nome": "Beestrix",
+    "categoria": "Media",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      59,
+      169,
+      0
+    ],
+    "livelloEvoluzione": 19,
+    "evoluzioneId": 96,
+    "tassoCattura": 5
+  },
+  {
+    "id": 96,
+    "nome": "Beestrix",
+    "categoria": "Media",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      60,
+      170,
+      0
+    ],
+    "livelloEvoluzione": 40,
+    "evoluzioneId": 97,
+    "tassoCattura": 4
+  },
+  {
+    "id": 97,
+    "nome": "Beestrix",
+    "categoria": "Media",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      61,
+      171,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 2
+  },
+  {
+    "id": 98,
+    "nome": "Grooty",
+    "categoria": "Veloce",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      106,
+      216,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 99,
+    "nome": "Ervys",
+    "categoria": "Media",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      96,
+      206,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 100,
+    "tassoCattura": 5
+  },
+  {
+    "id": 100,
+    "nome": "Ervys",
+    "categoria": "Media",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      97,
+      207,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 101,
+    "nome": "Xesar",
+    "categoria": "Lenta",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      47,
+      157,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 102,
+    "tassoCattura": 4
+  },
+  {
+    "id": 102,
+    "nome": "Xesar",
+    "categoria": "Lenta",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      48,
+      158,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 3
+  },
+  {
+    "id": 103,
+    "nome": "Boomrock",
+    "categoria": "Veloce",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      76,
+      186,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 104,
+    "tassoCattura": 5
+  },
+  {
+    "id": 104,
+    "nome": "Boomrock",
+    "categoria": "Veloce",
+    "tipo": "Terra",
+    "hpBase": 12,
+    "mosse": [
+      77,
+      187,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 105,
+    "nome": "Zoorian",
+    "categoria": "Media",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      70,
+      180,
+      0
+    ],
+    "livelloEvoluzione": 26,
+    "evoluzioneId": 106,
+    "tassoCattura": 5
+  },
+  {
+    "id": 106,
+    "nome": "Zoorian",
+    "categoria": "Media",
+    "tipo": "Erba",
+    "hpBase": 12,
+    "mosse": [
+      71,
+      181,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 4
+  },
+  {
+    "id": 107,
+    "nome": "Ao-shin",
+    "categoria": "Leggendaria",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      107,
+      217,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 1
+  },
+  {
+    "id": 108,
+    "nome": "Aka-shin",
+    "categoria": "Leggendaria",
+    "tipo": "Normale",
+    "hpBase": 12,
+    "mosse": [
+      108,
+      218,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 1
+  },
+  {
+    "id": 109,
+    "nome": "Oniros",
+    "categoria": "Leggendaria",
+    "tipo": "Psico",
+    "hpBase": 12,
+    "mosse": [
+      109,
+      219,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 1
+  },
+  {
+    "id": 110,
+    "nome": "Voider",
+    "categoria": "Leggendaria",
+    "tipo": "Oscurità",
+    "hpBase": 12,
+    "mosse": [
+      110,
+      220,
+      0
+    ],
+    "livelloEvoluzione": 0,
+    "evoluzioneId": 0,
+    "tassoCattura": 1
+  }
+]
