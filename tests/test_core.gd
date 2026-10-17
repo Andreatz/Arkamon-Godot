@@ -18,6 +18,7 @@ func _init() -> void:
 		return
 	_test_battle(rules)
 	_test_capture(rules)
+	_test_status(rules)
 	_test_saves(rules)
 	finish()
 
@@ -116,6 +117,89 @@ func _test_saves(rules: Rules) -> void:
 	_expect(Saves.load_game(TEST_PATH).is_empty(), "Versioni future e backup invalidi vengono rifiutati")
 	_cleanup()
 	_expect(not Saves.has_save(TEST_PATH), "I test rimuovono soltanto i propri file isolati")
+
+
+func _test_status(rules: Rules) -> void:
+	var rng: RandomNumberGenerator = RandomNumberGenerator.new()
+	var fighter: Dictionary = rules.creature(1, 5)
+	_expect(rules.moves.size() == 229, "Il runtime comprende anche le nove mosse paralisi del catalogo")
+	var shrody: Dictionary = rules.creature(21, 5)
+	_expect(not rules.move_info(shrody, 230).is_empty(), "La paralisi originale entra soltanto nel terzo slot del proprietario")
+	_expect(rules.move_info(fighter, 230).is_empty(), "La mossa di status non viene assegnata ad altre specie")
+	var pure: Dictionary = rules.attack(shrody, fighter, 230, rng)
+	_expect(pure.dice.is_empty() and int(pure.damage) == 0, "La paralisi pura non tira dadi offensivi e non infligge danni")
+	_expect(rules.status_name(fighter) == "Paralizzato", "La mossa applica paralisi permanente")
+	var extra: Dictionary = rules.apply_status(fighter, "Avvelenato")
+	_expect(not bool(extra.applied) and rules.status_name(fighter) == "Paralizzato", "Un solo stato può essere presente alla volta")
+	for face: int in range(1, 7):
+		rng.seed = _seed_for_die(face)
+		var paralysis: Dictionary = rules.process_status(fighter, rng, true)
+		_expect(int(paralysis.dice[0]) == face and bool(paralysis.can_act) == (face >= 3), "Paralisi: la faccia %d rispetta la soglia tre-sei" % face)
+		_expect(rules.status_name(fighter) == "Paralizzato" and int(fighter.status.turns) == -1, "La paralisi resta dopo il tiro %d" % face)
+	var state_before: int = rng.state
+	var non_offensive: Dictionary = rules.process_status(fighter, rng, false)
+	_expect(non_offensive.dice.is_empty() and bool(non_offensive.can_act) and rng.state == state_before, "La paralisi non tira per un'azione non offensiva")
+	rules.heal(fighter)
+	_expect(rules.status_name(fighter).is_empty(), "Il riposo rimuove lo stato alterato")
+	rules.apply_status(fighter, "Addormentato")
+	state_before = rng.state
+	var sleep_first: Dictionary = rules.process_status(fighter, rng)
+	_expect(not bool(sleep_first.can_act) and sleep_first.dice.is_empty() and rng.state == state_before, "Il primo turno di sonno è obbligatorio senza RNG")
+	rng.seed = _seed_for_die(1)
+	var sleep_second: Dictionary = rules.process_status(fighter, rng)
+	_expect(not bool(sleep_second.can_act) and int(fighter.status.turns) == 1, "Un tiro basso mantiene il sonno al secondo turno")
+	rng.seed = _seed_for_die(1)
+	var sleep_third: Dictionary = rules.process_status(fighter, rng)
+	_expect(not bool(sleep_third.can_act) and rules.status_name(fighter).is_empty(), "Dopo tre turni persi il sonno termina senza azione immediata")
+	rules.apply_status(fighter, "Addormentato")
+	rules.process_status(fighter, rng)
+	rng.seed = _seed_for_die(4)
+	var awakened: Dictionary = rules.process_status(fighter, rng)
+	_expect(bool(awakened.can_act) and rules.status_name(fighter).is_empty(), "Un quattro sveglia e permette di agire dal secondo turno")
+	fighter = rules.creature(1, 25)
+	rules.apply_status(fighter, "Avvelenato")
+	var maximum: int = int(fighter.max_hp)
+	for tick: int in range(1, 4):
+		var poison: Dictionary = rules.process_status(fighter, rng)
+		_expect(int(poison.damage) == maxi(1, int(float(maximum) * float(tick) / 10.0)), "Il veleno scala al tick %d sugli HP massimi" % tick)
+	_expect(int(fighter.status.elapsed) == 3, "Il contatore veleno resta nella creatura fra i turni")
+	var healer: Dictionary = rules.creature(95, 5)
+	rules.apply_status(healer, "Paralizzato")
+	var cured: Dictionary = rules.attack(healer, rules.creature(1), 59, rng)
+	_expect(int(cured.heal) == 0 and rules.status_name(healer).is_empty(), "Una mossa di cura rimuove la paralisi anche a HP pieni")
+	rules.apply_status(healer, "Addormentato")
+	rules.attack(healer, rules.creature(1), 59, rng)
+	_expect(rules.status_name(healer) == "Addormentato", "Una mossa di cura HP non rimuove il sonno")
+	rules.heal(healer)
+	rules.apply_status(healer, "Confuso")
+	rng.seed = _seed_for_confusion(true)
+	var confused: Dictionary = rules.process_status(healer, rng)
+	_expect(not bool(confused.can_act) and int(confused.damage) >= 1 and int(confused.damage) <= 6, "La confusione può causare un D6 di danno e perdere il turno")
+	rng.seed = _seed_for_confusion(false)
+	var last_confused: Dictionary = rules.process_status(healer, rng)
+	_expect(bool(last_confused.can_act) and rules.status_name(healer).is_empty(), "La confusione termina dopo due verifiche")
+	var ai_healer: Dictionary = rules.creature(95)
+	rules.apply_status(ai_healer, "Paralizzato")
+	var ai: Dictionary = rules.choose_ai(ai_healer, rules.creature(1), rng)
+	_expect(int(ai.move_id) == 59, "L'IA privilegia una cura esplicita per la paralisi anche a HP pieni")
+
+
+func _seed_for_die(face: int) -> int:
+	var fixture: RandomNumberGenerator = RandomNumberGenerator.new()
+	for candidate: int in range(10000):
+		fixture.seed = candidate
+		if fixture.randi_range(1, 6) == face:
+			return candidate
+	return 0
+
+
+func _seed_for_confusion(self_hit: bool) -> int:
+	var fixture: RandomNumberGenerator = RandomNumberGenerator.new()
+	for candidate: int in range(10000):
+		fixture.seed = candidate
+		if (fixture.randf() < 0.5) == self_hit:
+			return candidate
+	return 0
 
 
 func _write_text(path: String, text: String) -> void:

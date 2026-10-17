@@ -2,6 +2,7 @@ name: Godot - verifica e build Windows
 
 on:
   push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
 
@@ -45,6 +46,9 @@ jobs:
           Copy-Item -LiteralPath docs/BUILD.md -Destination build/windows/SVILUPPO.md
           Copy-Item -LiteralPath docs/ASSET_PROVENANCE.md -Destination build/windows/CREDITI.md
           Copy-Item -LiteralPath assets/audio/CreditToZachry.txt -Destination build/windows/CreditToZachry.txt
+          New-Item -ItemType Directory -Force build/windows/docs/images | Out-Null
+          Copy-Item -Path docs/*.md -Destination build/windows/docs/
+          Copy-Item -Path docs/images/*.png -Destination build/windows/docs/images/
           Compress-Archive -Path build/windows/* -DestinationPath build/Arkamon-Godot-Windows.zip
 
       - name: Carica build Windows

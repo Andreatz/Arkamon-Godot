@@ -1,0 +1,307 @@
+{
+  "schema_version": 1,
+  "start_node": "Pordenone",
+  "connections": [
+    [
+      "Pordenone",
+      "Venezia"
+    ],
+    [
+      "Venezia",
+      "Percorso_1"
+    ],
+    [
+      "Percorso_1",
+      "Piacenza"
+    ],
+    [
+      "Percorso_1",
+      "Percorso_14"
+    ],
+    [
+      "Piacenza",
+      "Percorso_2"
+    ],
+    [
+      "Percorso_2",
+      "Milano"
+    ],
+    [
+      "Percorso_2",
+      "Percorso_4"
+    ],
+    [
+      "Milano",
+      "Percorso_3"
+    ],
+    [
+      "Percorso_4",
+      "Percorso_5"
+    ],
+    [
+      "Percorso_5",
+      "Percorso_6"
+    ],
+    [
+      "Percorso_5",
+      "Grosseto"
+    ],
+    [
+      "Percorso_6",
+      "Torino"
+    ],
+    [
+      "Grosseto",
+      "Civitavecchia"
+    ],
+    [
+      "Grosseto",
+      "Percorso_14"
+    ],
+    [
+      "Civitavecchia",
+      "Roma"
+    ],
+    [
+      "Civitavecchia",
+      "Percorso_7"
+    ],
+    [
+      "Percorso_7",
+      "Cagliari"
+    ],
+    [
+      "Cagliari",
+      "Percorso_8"
+    ],
+    [
+      "Percorso_8",
+      "Palermo"
+    ],
+    [
+      "Palermo",
+      "Percorso_9"
+    ],
+    [
+      "Percorso_9",
+      "ReggioCalabria"
+    ],
+    [
+      "ReggioCalabria",
+      "Percorso_10"
+    ],
+    [
+      "Percorso_10",
+      "Foggia"
+    ],
+    [
+      "Foggia",
+      "Percorso_11"
+    ],
+    [
+      "Foggia",
+      "Percorso_12"
+    ],
+    [
+      "Percorso_12",
+      "Napoli"
+    ],
+    [
+      "Percorso_12",
+      "Molisnt"
+    ],
+    [
+      "Molisnt",
+      "Percorso_13"
+    ],
+    [
+      "Percorso_13",
+      "Pescara"
+    ],
+    [
+      "Pescara",
+      "Percorso_14"
+    ],
+    [
+      "Percorso_14",
+      "Roma"
+    ]
+  ],
+  "nodes": [
+    {
+      "id": "Torino",
+      "x": 22,
+      "y": 26,
+      "tipo": "citta"
+    },
+    {
+      "id": "Percorso_6",
+      "x": 24,
+      "y": 28,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Percorso_5",
+      "x": 22,
+      "y": 32,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Percorso_4",
+      "x": 26,
+      "y": 30,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Percorso_3",
+      "x": 28,
+      "y": 24,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Milano",
+      "x": 32,
+      "y": 22,
+      "tipo": "citta"
+    },
+    {
+      "id": "Percorso_2",
+      "x": 36,
+      "y": 24,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Piacenza",
+      "x": 40,
+      "y": 28,
+      "tipo": "villaggio"
+    },
+    {
+      "id": "Percorso_1",
+      "x": 48,
+      "y": 26,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Venezia",
+      "x": 56,
+      "y": 24,
+      "tipo": "citta"
+    },
+    {
+      "id": "Pordenone",
+      "x": 64,
+      "y": 20,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Grosseto",
+      "x": 38,
+      "y": 44,
+      "tipo": "citta"
+    },
+    {
+      "id": "Civitavecchia",
+      "x": 42,
+      "y": 52,
+      "tipo": "villaggio"
+    },
+    {
+      "id": "Roma",
+      "x": 48,
+      "y": 56,
+      "tipo": "citta"
+    },
+    {
+      "id": "Percorso_14",
+      "x": 54,
+      "y": 54,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Pescara",
+      "x": 60,
+      "y": 52,
+      "tipo": "citta"
+    },
+    {
+      "id": "Percorso_13",
+      "x": 60,
+      "y": 56,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Molisnt",
+      "x": 62,
+      "y": 60,
+      "tipo": "villaggio"
+    },
+    {
+      "id": "Napoli",
+      "x": 56,
+      "y": 64,
+      "tipo": "citta"
+    },
+    {
+      "id": "Percorso_12",
+      "x": 62,
+      "y": 64,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Percorso_11",
+      "x": 66,
+      "y": 62,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Foggia",
+      "x": 72,
+      "y": 62,
+      "tipo": "citta"
+    },
+    {
+      "id": "Percorso_10",
+      "x": 64,
+      "y": 72,
+      "tipo": "percorso"
+    },
+    {
+      "id": "ReggioCalabria",
+      "x": 58,
+      "y": 82,
+      "tipo": "villaggio"
+    },
+    {
+      "id": "Percorso_9",
+      "x": 52,
+      "y": 88,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Palermo",
+      "x": 44,
+      "y": 90,
+      "tipo": "citta"
+    },
+    {
+      "id": "Percorso_7",
+      "x": 32,
+      "y": 64,
+      "tipo": "percorso"
+    },
+    {
+      "id": "Cagliari",
+      "x": 24,
+      "y": 78,
+      "tipo": "citta"
+    },
+    {
+      "id": "Percorso_8",
+      "x": 32,
+      "y": 86,
+      "tipo": "percorso"
+    }
+  ],
+  "texture": "res://assets/maps/Mappa-Finale.webp"
+}

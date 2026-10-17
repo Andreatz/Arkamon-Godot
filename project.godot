@@ -1,13 +1,13 @@
-; Arkamon: first playable native 2D slice.
+; Arkamon: native two-player campaign.
 config_version=5
 
 [application]
 config/name="Arkamon — Il primo viaggio"
-config/description="Una prima avventura 2D di Arkamon per PC."
+config/description="La campagna 2D di Arkamon per due allenatori."
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://assets/icon.svg"
-config/version="0.1.0"
+config/version="0.2.0"
 
 [display]
 window/size/viewport_width=1440

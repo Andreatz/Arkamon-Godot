@@ -1,7 +1,7 @@
 extends SceneTree
 ## Exercise the real scene and its asynchronous player actions with isolated saves.
 
-const MAIN_SCENE: String = "res://scenes/main.tscn"
+const MAIN_SCENE: String = "res://scenes/prototype.tscn"
 const TEST_SAVE: String = "user://test-flow/campaign.json"
 const TEST_PREFERENCES: String = "user://test-flow/preferences.cfg"
 

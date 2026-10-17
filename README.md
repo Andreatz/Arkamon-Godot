@@ -1,58 +1,78 @@
-# Arkamon — Il primo viaggio
+# Arkamon — Godot 0.2
 
-Prima versione giocabile **2D per PC in Godot 4.7.2**, costruita per provare il passaggio di Arkamon a un motore dedicato. È un'avventura breve e autonoma: un laboratorio, un sentiero, tre incontri e una conclusione.
+La campagna 2D di **Arkamon per due giocatori sullo stesso PC**, realizzata in Godot 4.7.2 Standard. Parti da Pordenone, esplora la regione, allena e cattura i tuoi compagni, conquista le otto medaglie e affronta la Lega a Roma.
 
-![La battaglia in Godot](docs/images/battle.png)
+La versione 0.2 estende la prima demo con la campagna regionale e i suoi sistemi locali. Dati e materiali di riferimento vengono da [Arkamon Beta](https://github.com/Andreatz/Arkamon-Beta), al commit fissato `7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7`. [PORTING.md](docs/PORTING.md) distingue le funzioni trasferite dalle parti della Beta che restano fuori da questa versione.
+
+![La regione di Arkamon nella campagna Godot](docs/images/world.png)
 
 ## Provarlo su Windows
 
-Scarica il pacchetto Windows, estrai tutto lo ZIP e avvia **Arkamon.exe**. Non occorre installare Godot, Node.js o un browser. Il pacchetto è portatile e non richiede privilegi di amministratore.
+Scarica **Arkamon-Godot-Windows.zip**, estrai tutti i file e apri **Arkamon.exe**. Il pacchetto è portatile: per giocare non servono Godot, Node.js, un browser o privilegi di amministratore.
 
-Le build automatiche sono disponibili come **Arkamon-Godot-Windows** negli **Artifacts** delle esecuzioni riuscite di [Godot - verifica e build Windows](https://github.com/Andreatz/Arkamon-Godot/actions). Per sviluppare, importa invece `project.godot` in Godot **4.7.2 Standard** e premi **F6/F5** per avviare la scena/progetto.
+Il workflow [Godot - verifica e build Windows](https://github.com/Andreatz/Arkamon-Godot/actions) prepara l'artefatto **Arkamon-Godot-Windows** nelle esecuzioni riuscite. L'esito di ogni build si trova nella sua pagina Actions.
 
-## Cosa puoi giocare
+## La campagna
 
-- Scelta fra **Vyrath, Darklaw e Felyss**, con le loro animazioni originali di attesa: 96 fotogrammi a 24 FPS per compagno.
-- Un percorso di cinque punti: laboratorio, prato, sorgente, bosco e radura finale. Gli incontri comprendono Silvard o Felvex, Blazion e Deephion.
-- Combattimenti con iniziativa D6, due mosse per creatura, dadi visibili, affinità tra tipi, reazione ai colpi e barre PV animate.
-- Pozioni, cattura con tre D6, squadra fino a sei compagni e scelta del compagno da schierare prima dello scontro.
-- Un livello e 15 monete per vittoria o cattura. Laboratorio e sorgente ripristinano gratuitamente tutta la squadra.
-- Salvataggio locale automatico dopo incontri e riposi, ripresa dal titolo e copia precedente di recupero.
-- Audio degli effetti, schermo intero e opzione per ridurre i movimenti.
+- **Due allenatori locali**, con nomi, starter diversi fra Vyrath, Darklaw e Felyss, posizione, squadra, inventario e progressi personali. Il rivale riceve lo starter rimasto.
+- **29 nodi della mappa regionale e 31 strade**, città e Percorsi 1–14, con **16 mappe locali originali**. Il Percorso 15 è il luogo segreto collegato a Roma e richiede tutte le otto medaglie; la sua mappa è inclusa nelle 16 mappe locali.
+- **110 forme**, incontri selvatici del catalogo originale e **31 allenatori**, compresi il rivale e gli **otto capipalestra**.
+- Battaglie a squadre, sostituzioni dopo un KO, iniziativa basata su livello e paralisi, mosse con D6, bonus, affinità, Suprema, stati alterati, cure e catture. È disponibile anche il **duello locale fra i due giocatori**.
+- Squadra fino a **sei compagni**, con differenza massima di **cinque livelli**; deposito di **30 box da 35 posti**. Le catture fuori fascia o a squadra piena vanno nel deposito. Le evoluzioni seguono i livelli del catalogo.
+- **ArkaStore e borsa** con Pozione, Superpozione, Rianimatore, Antidoto, Antiparalisi, Sveglia e Masterball. Un acquisto viene applicato interamente o rifiutato; un oggetto senza effetto non viene consumato.
+- **Arkadex personale**, diario, archivio degli ultimi **20 scontri**, backup esportabile e ripresa della campagna, compresi gli scontri dall'ultimo turno concluso.
+- **Lega configurabile**: quattro avversari consecutivi nello stesso turno e un eventuale Campione finale. Squadre, gestione della sconfitta e uso degli oggetti fra gli incontri si scelgono prima del tentativo. La vittoria finale richiede di vincere l'intera serie.
+- **Editor nativo delle interazioni**: dialoghi, ricompense, cure, incontri e attività sui punti delle mappe locali, con requisiti e completamento personale o condiviso. Le configurazioni fanno parte del salvataggio.
 
-**Comandi:** mouse oppure Tab/Invio; in battaglia **1–2** per le mosse, **3** per la pozione, **4** per la cattura. **F11** per lo schermo intero, **M** per l'audio.
+## Come iniziare
 
-Se il compagno viene sconfitto, torna al laboratorio o alla sorgente per curare la squadra. Puoi ritirarti da uno scontro conservando i PV e gli oggetti già usati.
+1. Scegli **Nuova campagna**, i nomi e due starter diversi. I giocatori si alternano sullo stesso computer; non serve una connessione di rete.
+2. Ogni turno ha **due azioni**: due movimenti oppure un movimento e un'interazione. Aprire la vista di un luogo è gratuito. Esplorare un cespuglio, sfidare un allenatore, curare la squadra o acquistare conclude le azioni disponibili. Premi **Passa il turno** quando hai finito.
+3. Visita città e percorsi collegati. Allena i compagni negli incontri e nelle sfide disponibili, senza lasciare indietro i membri di livello più basso: al limite della fascia, l'EXP viene scartata e non accumulata. Puoi spostare i compagni tra squadra e deposito per preparare la formazione.
+4. I **centri in città curano gratuitamente** tutta la squadra. Una sconfitta non termina la campagna: recupera le forze prima di ripartire. Il negozio usa le monete vinte contro gli allenatori.
+5. Dopo le **otto medaglie**, raggiungi Roma, apri **La Lega di Arkamon** e configura i quattro avversari. Scegli se ripartire dal primo incontro o da quello raggiunto dopo una sconfitta, se usare oggetti fra gli incontri e se aggiungere il Campione. I PV residui passano da uno scontro al successivo.
 
-## Confini di questa versione
+Gli incontri e gli allenatori già completati sono registrati per ciascun giocatore. Le interazioni sui singoli punti non configurate nel riferimento originale restano vuote finché non vengono assegnate dall'editor; la versione Godot non inventa dialoghi o incontri del Percorso 15.
 
-Questa è una prima porzione giocabile, **non il porting completo di Arkamon Beta**. Il percorso e le sue tappe sono costruiti per questa prova. Non comprende PvP, campagna completa, tutte le mappe, evoluzioni, negozio, deposito, stati alterati o salvataggi condivisi con la versione web. Le monete sono un premio registrato: in questa prova non c'è un negozio. Le pozioni e le sfere iniziali sono limitate, mentre la cura ai punti di riposo è gratuita.
+**Comandi:** mouse oppure **Tab/Invio**; in battaglia **1–3** per le mosse disponibili; **F11** per lo schermo intero, **M** per l'audio. Le impostazioni comprendono movimento ridotto e velocità delle animazioni normale, 2× o 3×. La modalità normale conserva i tempi originali.
 
-Il catalogo di 110 creature e i dati delle mosse sono importati integralmente; nella prova sono utilizzabili sette specie, con grafica dedicata. Le animazioni originali importate riguardano l'attesa dei tre starter. Gli attacchi e i colpi usano movimenti ed effetti creati in Godot; le altre creature usano ritratti statici.
+## Sfide a seed e Fanta-Team
 
-La logica è scritta in **GDScript**, con regole di battaglia e salvataggio indipendenti dall'interfaccia. I dati JSON e i materiali vengono dal commit fissato `7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7` di [Arkamon Beta](https://github.com/Andreatz/Arkamon-Beta). La formula del danno e la cattura riprendono il riferimento originale; progressione del percorso, premi, inventario iniziale e iniziativa sono semplificati per questa prova.
+Dal titolo apri **Sfide a seed e Fanta-Team** per una partita separata dalla campagna. Le squadre hanno sei forme al livello 20, un budget di 100 crediti e nessuna specie ripetuta. La modalità a seed genera entrambe le squadre; Fanta-Team permette di scegliere la propria formazione. Sono disponibili regole aggiornate v2 e prezzi classici v1, codici JSON da copiare/importare e una classifica locale degli ultimi 30 risultati.
+
+Seed, costi, squadre e identificatori sono compatibili con le regole della Beta. I tiri della battaglia usano il generatore di Godot: **i risultati dei combattimenti non sono confrontabili tra i due motori**. La classifica distingue seed, squadra, modalità e versione delle regole. I progressi della campagna non vengono usati o premiati dalla sfida separata.
+
+## Grafica, animazioni e audio
+
+Tutte le 110 forme hanno un ritratto. Le **37 forme animate presenti nella sorgente originale** dispongono di **185 clip** fra attesa, attacco, colpo, vittoria e KO: **17.754 fotogrammi originali a 24 FPS**, mantenuti in ordine. Le altre 73 forme usano ritratti statici con reazioni ed effetti Godot. Le trasformazioni dei materiali e i loro limiti sono descritti nella [provenienza](docs/ASSET_PROVENANCE.md).
+
+Sono inclusi quattro effetti audio e otto effetti grafici generici per tipo di azione/tipo. Il gioco non include la libreria web completa dei 276 effetti curati per le singole mosse, né tutte le personalizzazioni SVG e dell'interfaccia React.
+
+## Salvataggi e backup
+
+La campagna salva in `user://full_campaign.json`, con file temporaneo e copia precedente di recupero. Nei combattimenti il punto di ripresa comprende squadre, PV, status, turno e stato del generatore casuale; la ripresa parte dall'ultimo turno salvato. I backup del **Diario e strumenti** comprendono entrambi i giocatori e la configurazione delle interazioni e della Lega.
+
+Per compatibilità, la cartella Windows resta `%APPDATA%/Godot/app_userdata/Arkamon — Il primo viaggio/`. La prima demo Godot conserva `campaign.json`: dal titolo si può importarne squadra, pozioni e monete in una nuova campagna, previa conferma. Le sfere della prima demo non hanno un oggetto equivalente nel catalogo della campagna e non vengono convertite. La migrazione riparte da Pordenone e non assegna medaglie o una vittoria della Lega. **I salvataggi del browser non sono importati direttamente.**
+
+Le sfide scrivono il proprio registro in `user://challenges.json`. La campagna e la classifica non richiedono account o server.
 
 ## Sviluppo e verifiche
 
-Apri il progetto nella versione Standard di Godot, senza .NET o estensioni esterne. Il rendering **Compatibility** usa OpenGL per mantenere semplici i requisiti di questa versione 2D.
+Importa `project.godot` in **Godot 4.7.2 Standard**, senza .NET, poi premi **F5**. Il progetto usa il renderer **Compatibility**. Le schermate sono costruite da GDScript con nodi Control; non sono tutte scene indipendenti da impaginare nell'editor.
 
 ```powershell
-# Scarica l'editor ufficiale e controlla il checksum.
-./tools/fetch_godot.ps1
+$godot = & ./tools/fetch_godot.ps1
+./tools/check.ps1 -Godot $godot
 
-# Importa risorse ed esegue le verifiche.
-./tools/check.ps1
-
-# Esegue anche l'esportazione Windows e avvia il pacchetto esportato.
-./tools/check.ps1 -ExportWindows
+# Include esportazione Windows e avvio del pacchetto risultante.
+$godot = & ./tools/fetch_godot.ps1 -WithTemplates
+./tools/check.ps1 -Godot $godot -ExportWindows
 ```
 
-I dettagli su editor, export e artefatti CI sono in [BUILD.md](docs/BUILD.md). I test dei salvataggi usano percorsi dedicati e non sovrascrivono il viaggio del giocatore.
-
-Il gioco salva in `user://campaign.json`, con `.bak` e `.tmp` per recuperare una scrittura interrotta. Su Windows, nella configurazione standard di Godot, la cartella si trova sotto `%APPDATA%/Godot/app_userdata/Arkamon — Il primo viaggio/`. La cartella resta separata dai salvataggi di Arkamon Beta. Durante una battaglia il salvataggio automatico rappresenta l'ultimo incontro terminato: la ripresa non ricostruisce un turno interrotto.
+[BUILD.md](docs/BUILD.md) contiene i comandi completi. [VERIFICATION.md](docs/VERIFICATION.md) riporta la batteria locale e i limiti della verifica; il risultato della CI si consulta separatamente in Actions. Le verifiche usano salvataggi dedicati.
 
 ## Materiali e attribuzioni
 
-Vedi [provenienza dei materiali](docs/ASSET_PROVENANCE.md) per URL originali, trasformazioni e attribuzioni disponibili, e `data/import_manifest.json` per i checksum. La copia dei materiali del progetto originale non attribuisce nuove licenze ai contenuti. Il credito originale disponibile per il suono di cura è conservato in `assets/audio/CreditToZachry.txt` e nei pacchetti Windows.
+Vedi [ASSET_PROVENANCE.md](docs/ASSET_PROVENANCE.md) per fonti, trasformazioni e attribuzioni disponibili, e `data/import_manifest.json` per i checksum. Copiare i materiali del progetto originale non attribuisce nuove licenze ai contenuti. Il credito originale del suono di cura resta in `assets/audio/CreditToZachry.txt` e nel pacchetto Windows.
 
-Per riprodurre l'importazione: Python con Pillow e `python tools/import_beta_assets.py`. Non serve Python per giocare o modificare il progetto in Godot.
+Il porting include il gioco locale e i suoi strumenti nativi. Votazioni del pubblico con QR e backend, strumenti di regia React e personalizzazione visuale completa della UI web non sono trasferiti in questa versione.

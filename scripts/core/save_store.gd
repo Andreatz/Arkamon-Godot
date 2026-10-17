@@ -4,7 +4,7 @@ extends RefCounted
 
 const VERSION: int = 1
 const DEFAULT_PATH: String = "user://campaign.json"
-const MAX_BYTES: int = 2 * 1024 * 1024
+const MAX_BYTES: int = 32 * 1024 * 1024
 const MAX_DEPTH: int = 20
 
 
@@ -94,11 +94,11 @@ static func _valid_value(value: Variant, depth: int) -> bool:
 			return true
 		TYPE_FLOAT:
 			return is_finite(float(value))
-		TYPE_STRING:
+		TYPE_STRING, TYPE_STRING_NAME:
 			return str(value).length() <= 4096
 		TYPE_ARRAY:
 			var list: Array = value
-			if list.size() > 512:
+			if list.size() > 4096:
 				return false
 			for entry: Variant in list:
 				if not _valid_value(entry, depth + 1):
@@ -106,10 +106,12 @@ static func _valid_value(value: Variant, depth: int) -> bool:
 			return true
 		TYPE_DICTIONARY:
 			var record: Dictionary = value
-			if record.size() > 512 or not _valid_record(record):
+			if record.size() > 4096 or not _valid_record(record):
 				return false
 			for key: Variant in record:
-				if not key is String or str(key).length() > 256 or not _valid_value(record[key], depth + 1):
+				# Dictionary dot assignments create StringName keys in GDScript.
+				# JSON encodes them as ordinary strings, just like parsed save keys.
+				if typeof(key) not in [TYPE_STRING, TYPE_STRING_NAME] or str(key).length() > 256 or not _valid_value(record[key], depth + 1):
 					return false
 			return true
 	return false
@@ -132,10 +134,12 @@ static func _valid_record(record: Dictionary) -> bool:
 		if record.has(key) and (not record[key] is Array or record[key].size() > 6):
 			return false
 	for key: String in ["box", "storage", "deposito"]:
-		if record.has(key) and (not record[key] is Array or record[key].size() > 200):
-			return false
+		if record.has(key):
+			var slots: Variant = record[key]
+			if not (slots is Array or slots is Dictionary) or slots.size() > 1050:
+				return false
 	for key: String in ["money", "coins", "potions", "capture_balls", "orbs", "captures", "wins", "losses"]:
-		if record.has(key) and (not _whole_number(record[key]) or int(record[key]) < 0 or int(record[key]) > 100000000):
+		if record.has(key) and (not _whole_number(record[key]) or int(record[key]) < 0 or int(record[key]) > 999999999):
 			return false
 	return true
 
