@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 175" width="100%" height="100%">
+  <defs>
+    <filter id="a18-shadow" x="-8%" y="-10%" width="116%" height="125%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+    <filter id="a18-knob-shadow" x="-25%" y="-20%" width="145%" height="145%">
+      <feDropShadow dx="-3" dy="4" stdDeviation="3.5" flood-color="#001a16" flood-opacity="0.9" />
+    </filter>
+
+    <linearGradient id="a18-gold-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#996832" />
+      <stop offset="100%" stop-color="#543412" />
+    </linearGradient>
+
+    <linearGradient id="a18-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <!-- Canale Interno Turchese / Smeraldo Attivo -->
+    <radialGradient id="a18-teal-track" cx="40%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="45%" stop-color="#00bfa5" />
+      <stop offset="85%" stop-color="#00796b" />
+      <stop offset="100%" stop-color="#004d40" />
+    </radialGradient>
+
+    <linearGradient id="a18-teal-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#84ffff" />
+      <stop offset="50%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#64ffda" />
+    </linearGradient>
+
+    <radialGradient id="a18-pearl-knob" cx="38%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="48%" stop-color="#faf5ed" />
+      <stop offset="82%" stop-color="#e0d0bc" />
+      <stop offset="100%" stop-color="#b59b7d" />
+    </radialGradient>
+
+    <linearGradient id="a18-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a18-gem" filter="url(#a18-knob-shadow)">
+      <polygon points="0,-24 22,0 0,24 -22,0" fill="url(#a18-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-24 -22,0 -16,0 0,-18" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-15 14,0 0,15 -14,0" fill="#04152e" />
+      <polygon points="0,-13 12,0 0,13 -12,0" fill="url(#a18-cyan-gem)" />
+      <polygon points="0,-13 12,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,0 0,5 -4.5,0" fill="#e0faff" />
+    </g>
+  </defs>
+
+  <g filter="url(#a18-shadow)">
+    <!-- 1. Cornice Esterna a Pillola in Oro Champagne -->
+    <rect x="28" y="16" width="284" height="143" rx="71.5" fill="url(#a18-gold-frame)" stroke="#1c130a" stroke-width="2.2" />
+    <path d="M 42,55 A 68,68 0 0,1 99,20 H 241 A 68,68 0 0,1 298,55" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" stroke-linecap="round" />
+
+    <!-- 2. Scanalatura Scura Blu Notte -->
+    <rect x="39" y="27" width="262" height="121" rx="60.5" fill="#020b1f" stroke="#36220e" stroke-width="1.6" />
+
+    <!-- 3. Canale Interno Turchese / Smeraldo Luminescente -->
+    <rect x="48" y="36" width="244" height="103" rx="51.5" fill="url(#a18-teal-track)" stroke="url(#a18-teal-rim)" stroke-width="2.8" />
+    <!-- Ombra interna superiore nel canale turchese -->
+    <path d="M 65,50 A 45,45 0 0,1 100,40 H 215" fill="none" stroke="#003d33" stroke-width="3.5" opacity="0.55" stroke-linecap="round" />
+
+    <!-- 4. Cursore Sferico Perlato a DESTRA (Stato ON) -->
+    <g transform="translate(228, 87.5)" filter="url(#a18-knob-shadow)">
+      <circle cx="0" cy="0" r="52" fill="url(#a18-gem-gold)" stroke="#241304" stroke-width="1.8" />
+      <circle cx="0" cy="0" r="47.5" fill="url(#a18-pearl-knob)" stroke="#ffffff" stroke-width="1.2" />
+      <ellipse cx="-14" cy="-16" rx="18" ry="12" transform="rotate(-25 -14 -16)" fill="#ffffff" opacity="0.9" />
+    </g>
+
+    <!-- 5. Gemme Romboidali Laterali -->
+    <use href="#a18-gem" x="32" y="87.5" />
+    <use href="#a18-gem" x="308" y="87.5" />
+  </g>
+</svg>

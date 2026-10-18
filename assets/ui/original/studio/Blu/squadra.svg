@@ -1,0 +1,161 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 240" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow20" x="-5%" y="-10%" width="110%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Metallo Avorio-Oro Chiaro 3D -->
+    <linearGradient id="ivoryGold20" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fff6e0"/>
+      <stop offset="65%" stop-color="#e6b86a"/>
+      <stop offset="90%" stop-color="#b87b28"/>
+      <stop offset="100%" stop-color="#f5d799"/>
+    </linearGradient>
+
+    <!-- Oro Caldo per Castoni e Bordi Interni -->
+    <linearGradient id="warmGold20" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8dc"/>
+      <stop offset="35%" stop-color="#f7c35c"/>
+      <stop offset="75%" stop-color="#b87314"/>
+      <stop offset="100%" stop-color="#7a4606"/>
+    </linearGradient>
+
+    <!-- Blu Zaffiro Profondo Interno -->
+    <linearGradient id="sapphireBg20" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#041f4a"/>
+      <stop offset="25%" stop-color="#09387a"/>
+      <stop offset="50%" stop-color="#052659"/>
+      <stop offset="75%" stop-color="#09387a"/>
+      <stop offset="100%" stop-color="#031738"/>
+    </linearGradient>
+
+    <!-- Maschera per forare i 6 slot circolari rendendoli 100% trasparenti -->
+    <mask id="sixHolesMask20">
+      <rect x="0" y="0" width="1100" height="240" fill="#ffffff"/>
+      <circle cx="137.5" cy="120" r="64" fill="#000000"/>
+      <circle cx="302.5" cy="120" r="64" fill="#000000"/>
+      <circle cx="467.5" cy="120" r="64" fill="#000000"/>
+      <circle cx="632.5" cy="120" r="64" fill="#000000"/>
+      <circle cx="797.5" cy="120" r="64" fill="#000000"/>
+      <circle cx="962.5" cy="120" r="64" fill="#000000"/>
+    </mask>
+
+    <!-- Componente Gemma Romboidale Media (Top/Bottom) -->
+    <g id="gemMed20">
+      <polygon points="0,-23 23,0 0,23 -23,0" fill="url(#warmGold20)" stroke="#1a1206" stroke-width="2" stroke-linejoin="round"/>
+      <polygon points="0,-19 19,0 0,19 -19,0" fill="#fffbeb" opacity="0.7"/>
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#0891b2" stroke="#082f49" stroke-width="1"/>
+      <polygon points="0,-15 15,0 0,0" fill="#67e8f9"/>
+      <polygon points="0,-15 0,0 -15,0" fill="#22d3ee"/>
+      <polygon points="0,0 15,0 0,15" fill="#0369a1"/>
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- Componente Gemma Romboidale Grande (Estremità L/R) -->
+    <g id="gemLarge20">
+      <polygon points="0,-29 27,0 0,29 -27,0" fill="url(#warmGold20)" stroke="#1a1206" stroke-width="2.2" stroke-linejoin="round"/>
+      <polygon points="0,-24 22,0 0,24 -22,0" fill="#fffbeb" opacity="0.7"/>
+      <polygon points="0,-19 17,0 0,19 -17,0" fill="#0891b2" stroke="#082f49" stroke-width="1"/>
+      <polygon points="0,-19 17,0 0,0" fill="#67e8f9"/>
+      <polygon points="0,-19 0,0 -17,0" fill="#22d3ee"/>
+      <polygon points="0,0 17,0 0,19" fill="#0369a1"/>
+      <polygon points="0,-9 8,0 0,9 -8,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- Componente Gemma Romboidale Piccola (Giunzioni interne) -->
+    <g id="gemSmall20">
+      <polygon points="0,-15 13,0 0,15 -13,0" fill="url(#warmGold20)" stroke="#1a1206" stroke-width="1.6" stroke-linejoin="round"/>
+      <polygon points="0,-10 8.5,0 0,10 -8.5,0" fill="#0284c7" stroke="#082f49" stroke-width="0.8"/>
+      <polygon points="0,-10 8.5,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,-5 4,0 0,5 -4,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- Componente Anello Slot Singolo -->
+    <g id="slotRing20">
+      <!-- Ombra esterna dell'anello sul blu -->
+      <circle cx="0" cy="0" r="81" fill="none" stroke="#020d24" stroke-width="4" opacity="0.8"/>
+      <!-- Anello principale Avorio-Oro -->
+      <circle cx="0" cy="0" r="72" fill="none" stroke="url(#ivoryGold20)" stroke-width="16"/>
+      <!-- Bordo esterno oro caldo -->
+      <circle cx="0" cy="0" r="80" fill="none" stroke="url(#warmGold20)" stroke-width="2.5"/>
+      <!-- Bordo interno oro caldo sul foro -->
+      <circle cx="0" cy="0" r="64" fill="none" stroke="url(#warmGold20)" stroke-width="3"/>
+      <!-- Luce speculare superiore anello -->
+      <path d="M -55,-45 A 72,72 0 0,1 55,-45" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.85"/>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow20)">
+    <!-- 1. CORPO BARRA CON FORI TRASPARENTI -->
+    <g mask="url(#sixHolesMask20)">
+      <!-- Cornice Esterna Ottagonale Avorio-Oro -->
+      <polygon points="68,18 1032,18 1074,60 1074,180 1032,222 68,222 26,180 26,60" 
+               fill="url(#ivoryGold20)" stroke="#1e160a" stroke-width="2.5" stroke-linejoin="round"/>
+      
+      <!-- Smusso Oro Caldo Interno alla Cornice -->
+      <polygon points="73,27 1027,27 1065,65 1065,175 1027,213 73,213 35,175 35,65" 
+               fill="url(#warmGold20)" stroke="#422808" stroke-width="1.5" stroke-linejoin="round"/>
+
+      <!-- Fondo Blu Zaffiro Profondo -->
+      <polygon points="77,32 1023,32 1060,69 1060,171 1023,208 77,208 40,171 40,69" 
+               fill="url(#sapphireBg20)" stroke="#020d24" stroke-width="2"/>
+
+      <!-- Filetto Luminoso Blu Elettrico Interno -->
+      <polygon points="81,37 1019,37 1054,72 1054,168 1019,203 81,203 46,168 46,72" 
+               fill="none" stroke="#1d4ed8" stroke-width="2" opacity="0.8"/>
+
+      <!-- 6 Anelli Circolari 3D -->
+      <use href="#slotRing20" x="137.5" y="120"/>
+      <use href="#slotRing20" x="302.5" y="120"/>
+      <use href="#slotRing20" x="467.5" y="120"/>
+      <use href="#slotRing20" x="632.5" y="120"/>
+      <use href="#slotRing20" x="797.5" y="120"/>
+      <use href="#slotRing20" x="962.5" y="120"/>
+    </g>
+
+    <!-- 2. GEMME SUPERIORI E INFERIORI SUI 6 ANELLI -->
+    <!-- Slot 1 -->
+    <use href="#gemMed20" x="137.5" y="48"/>
+    <use href="#gemMed20" x="137.5" y="192"/>
+    <!-- Slot 2 -->
+    <use href="#gemMed20" x="302.5" y="48"/>
+    <use href="#gemMed20" x="302.5" y="192"/>
+    <!-- Slot 3 -->
+    <use href="#gemMed20" x="467.5" y="48"/>
+    <use href="#gemMed20" x="467.5" y="192"/>
+    <!-- Slot 4 -->
+    <use href="#gemMed20" x="632.5" y="48"/>
+    <use href="#gemMed20" x="632.5" y="192"/>
+    <!-- Slot 5 -->
+    <use href="#gemMed20" x="797.5" y="48"/>
+    <use href="#gemMed20" x="797.5" y="192"/>
+    <!-- Slot 6 -->
+    <use href="#gemMed20" x="962.5" y="48"/>
+    <use href="#gemMed20" x="962.5" y="192"/>
+
+    <!-- 3. COPPIE DI GEMME PICCOLE NELLE GIUNZIONI TRA GLI ANELLI -->
+    <!-- Giunzione 1-2 -->
+    <use href="#gemSmall20" x="210" y="120"/>
+    <use href="#gemSmall20" x="230" y="120"/>
+    <!-- Giunzione 2-3 -->
+    <use href="#gemSmall20" x="375" y="120"/>
+    <use href="#gemSmall20" x="395" y="120"/>
+    <!-- Giunzione 3-4 -->
+    <use href="#gemSmall20" x="540" y="120"/>
+    <use href="#gemSmall20" x="560" y="120"/>
+    <!-- Giunzione 4-5 -->
+    <use href="#gemSmall20" x="705" y="120"/>
+    <use href="#gemSmall20" x="725" y="120"/>
+    <!-- Giunzione 5-6 -->
+    <use href="#gemSmall20" x="870" y="120"/>
+    <use href="#gemSmall20" x="890" y="120"/>
+
+    <!-- 4. GEMME ESTERNE E INTERNE ALLE ESTREMITÀ SINISTRA E DESTRA -->
+    <use href="#gemSmall20" x="63" y="120"/>
+    <use href="#gemLarge20" x="33" y="120"/>
+
+    <use href="#gemSmall20" x="1037" y="120"/>
+    <use href="#gemLarge20" x="1067" y="120"/>
+  </g>
+</svg>

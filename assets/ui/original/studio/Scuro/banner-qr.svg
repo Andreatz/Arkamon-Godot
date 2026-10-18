@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 620" width="100%" height="100%">
+  <defs>
+    <filter id="shadowQR" x="-5%" y="-6%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="9" stdDeviation="7" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeMain3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <linearGradient id="trenchDark3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <!-- Vetro Blu Ardesia Scuro -->
+    <linearGradient id="slateBoard3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824" />
+      <stop offset="50%" stop-color="#1f2d40" />
+      <stop offset="100%" stop-color="#101722" />
+    </linearGradient>
+
+    <linearGradient id="steelBevel3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#607d96" />
+      <stop offset="50%" stop-color="#364b61" />
+      <stop offset="100%" stop-color="#4b657d" />
+    </linearGradient>
+
+    <!-- Superficie Chiara QR e Targa -->
+    <linearGradient id="lightPlate3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="65%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <!-- Nastri / Coccarde e Icone Corallo-Rame -->
+    <linearGradient id="coralRibbon3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fdba74" />
+      <stop offset="35%" stop-color="#ea580c" />
+      <stop offset="100%" stop-color="#9a3412" />
+    </linearGradient>
+
+    <!-- Lame Spade in Acciaio -->
+    <linearGradient id="bladeLight3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#cbd5e1" />
+      <stop offset="100%" stop-color="#64748b" />
+    </linearGradient>
+    <linearGradient id="bladeDark3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#94a3b8" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <radialGradient id="bronzeStud3" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="30%" stop-color="#eab68c" />
+      <stop offset="75%" stop-color="#8c5c3e" />
+      <stop offset="100%" stop-color="#3b2112" />
+    </radialGradient>
+
+    <!-- Gemma Romboidale Media -->
+    <g id="gemMed3">
+      <polygon points="0,-24 24,0 0,24 -24,0" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.7" stroke-linejoin="round" />
+      <polygon points="0,-19 19,0 0,19 -19,0" fill="none" stroke="#fff3e6" stroke-width="0.9" opacity="0.75" />
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#07101e" />
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#0ea5e9" />
+      <polygon points="0,-12 12,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 12,0 0,12" fill="#0284c7" />
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#e0f2fe" />
+    </g>
+
+    <!-- Gemma Romboidale Piccola -->
+    <g id="gemSmall3">
+      <polygon points="0,-19 19,0 0,19 -19,0" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.5" stroke-linejoin="round" />
+      <polygon points="0,-13 13,0 0,13 -13,0" fill="#07101e" />
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#0ea5e9" />
+      <polygon points="0,-10 10,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,-5 5,0 0,5 -5,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowQR)">
+    <!-- 1. CORNICE PRINCIPALE ESTERNA IN BRONZO -->
+    <polygon points="78,64 982,64 1028,110 1028,544 984,588 76,588 32,544 32,110" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="80,68 980,68 1024,112" fill="none" stroke="#fff3e6" stroke-width="1.5" opacity="0.8" />
+
+    <!-- Trincea Scura -->
+    <polygon points="84,76 976,76 1016,116 1016,538 978,576 82,576 44,538 44,116" fill="url(#trenchDark3)" stroke="#140c07" stroke-width="1.5" />
+
+    <!-- Lastra Principale Blu Ardesia -->
+    <polygon points="90,84 970,84 1008,122 1008,532 972,568 88,568 52,532 52,122" fill="url(#slateBoard3)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Filetto Interno in Acciaio-Blu e Riflessi Diagonali -->
+    <polygon points="98,94 962,94 996,128 996,524 964,556 96,556 64,524 64,128" fill="none" stroke="url(#steelBevel3)" stroke-width="2" opacity="0.8" />
+    <g stroke="#ffffff" stroke-width="1.2" opacity="0.05">
+      <line x1="160" y1="84" x2="380" y2="568" />
+      <line x1="210" y1="84" x2="430" y2="568" />
+      <line x1="900" y1="84" x2="680" y2="568" />
+    </g>
+
+    <!-- 2. MEDAGLIONE SPADE INCROCIATE CON COCCARDE (SINISTRA) -->
+    <g transform="translate(205, 290)">
+      <!-- Coccarda Sinistra -->
+      <polygon points="-98,75 -132,102 -114,124 -128,162 -98,154 -76,174 -42,118" fill="url(#coralRibbon3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <polyline points="-124,104 -108,122 -120,154 -96,148 -78,164" fill="none" stroke="#fed7aa" stroke-width="1.5" opacity="0.7" />
+
+      <!-- Coccarda Destra -->
+      <polygon points="98,75 132,102 114,124 128,162 98,154 76,174 42,118" fill="url(#coralRibbon3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <polyline points="124,104 108,122 120,154 96,148 78,164" fill="none" stroke="#fed7aa" stroke-width="1.5" opacity="0.7" />
+
+      <!-- Anello Esterno Medaglione in Bronzo -->
+      <circle cx="0" cy="0" r="126" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2.2" />
+      <circle cx="0" cy="0" r="110" fill="url(#trenchDark3)" stroke="#140c07" stroke-width="1.5" />
+      <!-- Disco Interno Blu Ardesia Notte -->
+      <circle cx="0" cy="0" r="105" fill="#090f18" stroke="#607d96" stroke-width="2" />
+
+      <!-- Spade Incrociate 3D in Acciaio e Bronzo -->
+      <!-- Spada 1 (Da Top-Left a Bottom-Right) -->
+      <g transform="rotate(-45)">
+        <polygon points="-14,-95 0,-115 0,25 -14,25" fill="url(#bladeLight3)" stroke="#0f172a" stroke-width="1.5" />
+        <polygon points="0,-115 14,-95 14,25 0,25" fill="url(#bladeDark3)" stroke="#0f172a" stroke-width="1.5" />
+        <rect x="-32" y="25" width="64" height="11" rx="4" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.8" />
+        <rect x="-7" y="36" width="14" height="32" fill="#8c5c3e" stroke="#24130a" stroke-width="1.8" />
+        <circle cx="0" cy="74" r="11" fill="url(#bronzeStud3)" stroke="#24130a" stroke-width="1.8" />
+      </g>
+      <!-- Spada 2 (Da Top-Right a Bottom-Left - In primo piano) -->
+      <g transform="rotate(45)">
+        <polygon points="-14,-95 0,-115 0,25 -14,25" fill="url(#bladeLight3)" stroke="#0f172a" stroke-width="1.5" />
+        <polygon points="0,-115 14,-95 14,25 0,25" fill="url(#bladeDark3)" stroke="#0f172a" stroke-width="1.5" />
+        <rect x="-32" y="25" width="64" height="11" rx="4" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.8" />
+        <rect x="-7" y="36" width="14" height="32" fill="#8c5c3e" stroke="#24130a" stroke-width="1.8" />
+        <circle cx="0" cy="74" r="11" fill="url(#bronzeStud3)" stroke="#24130a" stroke-width="1.8" />
+      </g>
+
+      <!-- 4 Gemme Cardinali sul Medaglione -->
+      <use href="#gemSmall3" x="0" y="-122" />
+      <use href="#gemSmall3" x="122" y="0" />
+      <use href="#gemSmall3" x="0" y="122" />
+      <use href="#gemSmall3" x="-122" y="0" />
+    </g>
+
+    <!-- 3. RIQUADRO CENTRALE PER QR CODE -->
+    <g transform="translate(366, 142)">
+      <!-- Ombra Riquadro -->
+      <rect x="0" y="6" width="312" height="296" rx="16" fill="#060a0f" opacity="0.65" />
+      <!-- Cornice in Bronzo -->
+      <rect x="0" y="0" width="312" height="296" rx="16" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2.2" />
+      <!-- Lastra Interna Chiara -->
+      <rect x="8" y="8" width="296" height="280" rx="10" fill="url(#lightPlate3)" stroke="#4b657d" stroke-width="1.5" />
+      <rect x="11" y="11" width="290" height="274" rx="8" fill="none" stroke="#ffffff" stroke-width="2" />
+
+      <!-- 4 Mirini Angolari a "L" per il QR Code -->
+      <g fill="#101824">
+        <!-- Top-Left -->
+        <path d="M 24,24 L 62,24 L 62,34 L 34,34 L 34,62 L 24,62 Z" />
+        <!-- Top-Right -->
+        <path d="M 288,24 L 250,24 L 250,34 L 278,34 L 278,62 L 288,62 Z" />
+        <!-- Bottom-Left -->
+        <path d="M 24,272 L 62,272 L 62,262 L 34,262 L 34,234 L 24,234 Z" />
+        <!-- Bottom-Right -->
+        <path d="M 288,272 L 250,272 L 250,262 L 278,262 L 278,234 L 288,234 Z" />
+      </g>
+    </g>
+
+    <!-- 4. RIQUADRO SCANNER / FOTOCAMERA A DESTRA -->
+    <g transform="translate(698, 142)">
+      <polygon points="24,0 264,0 288,24 288,276 0,276 0,24" transform="translate(0, 6)" fill="#060a0f" opacity="0.65" />
+      <!-- Cornice in Bronzo -->
+      <polygon points="24,0 264,0 288,24 288,276 0,276 0,24" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+      <!-- Trincea e Lastra Interna Blu Ardesia Notte -->
+      <polygon points="28,8 260,8 280,28 280,268 8,268 8,28" fill="#070d17" stroke="#607d96" stroke-width="1.8" stroke-linejoin="round" />
+      <!-- Anello Mirino Circolare Interno -->
+      <circle cx="144" cy="140" r="102" fill="none" stroke="#364b61" stroke-width="2.5" opacity="0.65" />
+      <!-- Gemme nei due angoli inferiori del riquadro -->
+      <use href="#gemSmall3" x="12" y="260" />
+      <use href="#gemSmall3" x="276" y="260" />
+    </g>
+
+    <!-- 5. BARRA GIOCATORI IN BASSO A DESTRA -->
+    <g transform="translate(580, 452)">
+      <polygon points="34,0 356,0 390,48 356,96 34,96 0,48" transform="translate(0, 5)" fill="#060a0f" opacity="0.65" />
+      <!-- Cornice in Bronzo -->
+      <polygon points="34,0 356,0 390,48 356,96 34,96 0,48" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <!-- Lastra Chiara di Fondo -->
+      <polygon points="39,8 351,8 379,48 351,88 39,88 11,48" fill="url(#lightPlate3)" stroke="#4b657d" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Sezione Sinistra Blu Ardesia Curva per l'Icona Gruppo -->
+      <path d="M 39,8 L 112,8 A 48,44 0 0,1 112,88 L 39,88 L 11,48 Z" fill="url(#slateBoard3)" stroke="#607d96" stroke-width="1.5" />
+
+      <!-- Icona 3 Persone (Gruppo) in Corallo/Bronzo -->
+      <g transform="translate(78, 52)" fill="url(#coralRibbon3)" stroke="#24130a" stroke-width="1.5" stroke-linejoin="round">
+        <!-- Persona Sinistra -->
+        <circle cx="-29" cy="-4" r="9" />
+        <path d="M -42,30 L -39,10 L -19,10 L -16,30 Z" />
+        <!-- Persona Destra -->
+        <circle cx="29" cy="-4" r="9" />
+        <path d="M 16,30 L 19,10 L 39,10 L 42,30 Z" />
+        <!-- Persona Centrale -->
+        <circle cx="0" cy="-14" r="12.5" />
+        <path d="M -18,32 L -14,2 L 14,2 L 18,32 Z" />
+      </g>
+
+      <!-- Gemme Laterali della Barra Giocatori -->
+      <use href="#gemSmall3" x="4" y="48" />
+      <use href="#gemSmall3" x="386" y="48" />
+    </g>
+
+    <!-- 6. TARGA SUPERIORE (HEADER) -->
+    <g>
+      <polygon points="265,30 795,30 825,62 790,108 270,108 235,62" fill="#060a0f" opacity="0.65" />
+      <!-- Alette Laterali -->
+      <polygon points="275,44 252,44 236,60 252,76 275,76" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="785,44 808,44 824,60 808,76 785,76" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+
+      <!-- Cornice Bronzo Targa -->
+      <polygon points="292,18 768,18 810,60 768,102 292,102 250,60" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+      <!-- Lastra Chiara Interna -->
+      <polygon points="298,26 762,26 798,60 762,94 298,94 262,60" fill="url(#lightPlate3)" stroke="#4b657d" stroke-width="1.5" stroke-linejoin="round" />
+
+      <!-- Rivetti Targa -->
+      <circle cx="296" cy="60" r="9" fill="url(#bronzeStud3)" stroke="#24130a" stroke-width="1.6" />
+      <circle cx="764" cy="60" r="9" fill="url(#bronzeStud3)" stroke="#24130a" stroke-width="1.6" />
+
+      <!-- Grande Gemma Centrale a Diamante Allungato -->
+      <g transform="translate(530, 60)">
+        <polygon points="0,-52 38,0 0,52 -38,0" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <polygon points="0,-44 31,0 0,44 -31,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+        <polygon points="0,-36 25,0 0,36 -25,0" fill="#07101e" />
+        <polygon points="0,-32 22,0 0,32 -22,0" fill="#0ea5e9" />
+        <polygon points="0,-32 22,0 0,0" fill="#7dd3fc" />
+        <polygon points="0,0 22,0 0,32" fill="#0284c7" />
+        <polygon points="0,-15 10,0 0,15 -10,0" fill="#e0f2fe" />
+      </g>
+    </g>
+
+    <!-- 7. QUATTRO GEMME ESTERNE SULLA CORNICE PRINCIPALE -->
+    <use href="#gemMed3" x="42" y="176" />
+    <use href="#gemMed3" x="42" y="496" />
+    <use href="#gemMed3" x="1018" y="176" />
+    <use href="#gemMed3" x="1018" y="496" />
+  </g>
+</svg>

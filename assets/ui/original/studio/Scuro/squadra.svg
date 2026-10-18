@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 240" width="100%" height="100%">
+  <defs>
+    <filter id="shadow20" x="-5%" y="-10%" width="110%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Gradiente Principale Bronzo / Oro Rosa (da percorso_2.svg) -->
+    <linearGradient id="bronzeMain20" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="22%" stop-color="#e5bfa0"/>
+      <stop offset="52%" stop-color="#8c5c3e"/>
+      <stop offset="82%" stop-color="#c99673"/>
+      <stop offset="100%" stop-color="#5e3a22"/>
+    </linearGradient>
+
+    <!-- Ombra Sfaccettata Bronzo -->
+    <linearGradient id="bronzeShade20" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9e6d4e"/>
+      <stop offset="50%" stop-color="#784d31"/>
+      <stop offset="100%" stop-color="#472a17"/>
+    </linearGradient>
+
+    <!-- Trincea Scura Incassata -->
+    <linearGradient id="trenchDark20" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a"/>
+      <stop offset="50%" stop-color="#2e1d13"/>
+      <stop offset="100%" stop-color="#140c07"/>
+    </linearGradient>
+
+    <!-- Lastra Interna Blu Ardesia Scuro (da percorso_2.svg) -->
+    <linearGradient id="slateBoard20" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824"/>
+      <stop offset="50%" stop-color="#1f2d40"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+
+    <!-- Maschera per mantenere i 6 slot circolari 100% trasparenti -->
+    <mask id="sixSlotsMask20">
+      <rect x="0" y="0" width="1100" height="240" fill="#ffffff"/>
+      <circle cx="137.5" cy="120" r="63" fill="#000000"/>
+      <circle cx="302.5" cy="120" r="63" fill="#000000"/>
+      <circle cx="467.5" cy="120" r="63" fill="#000000"/>
+      <circle cx="632.5" cy="120" r="63" fill="#000000"/>
+      <circle cx="797.5" cy="120" r="63" fill="#000000"/>
+      <circle cx="962.5" cy="120" r="63" fill="#000000"/>
+    </mask>
+
+    <!-- Gemma Romboidale Media (Top/Bottom degli Anelli - Stile percorso_2.svg) -->
+    <g id="gemMed20">
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="url(#bronzeMain20)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round"/>
+      <polygon points="0,-18 18,0 0,18 -18,0" fill="none" stroke="#fff3e6" stroke-width="0.9" opacity="0.75"/>
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#07101e" stroke="#1e130c" stroke-width="1"/>
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#0ea5e9"/>
+      <polygon points="0,-12 12,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,0 12,0 0,12" fill="#0284c7"/>
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- Gemma Romboidale Grande (Estremità Sinistra/Destra) -->
+    <g id="gemLarge20">
+      <polygon points="0,-29 27,0 0,29 -27,0" fill="url(#bronzeMain20)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="0,-24 22,0 0,24 -22,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75"/>
+      <polygon points="0,-20 18,0 0,20 -18,0" fill="#07101e" stroke="#1e130c" stroke-width="1"/>
+      <polygon points="0,-16 14,0 0,16 -14,0" fill="#0ea5e9"/>
+      <polygon points="0,-16 14,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,0 14,0 0,16" fill="#0284c7"/>
+      <polygon points="0,-8 7,0 0,8 -7,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- Gemma Romboidale Piccola (Giunzioni tra gli Anelli) -->
+    <g id="gemSmall20">
+      <polygon points="0,-14 12.5,0 0,14 -12.5,0" fill="url(#bronzeMain20)" stroke="#24130a" stroke-width="1.4" stroke-linejoin="round"/>
+      <polygon points="0,-9.5 8.5,0 0,9.5 -8.5,0" fill="#07101e" stroke="#1e130c" stroke-width="0.8"/>
+      <polygon points="0,-7.5 6.5,0 0,7.5 -6.5,0" fill="#0ea5e9"/>
+      <polygon points="0,-7.5 6.5,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,-3.5 3,0 0,3.5 -3,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- Anello Singolo Sfaccettato in Bronzo (Stile percorso_2.svg) -->
+    <g id="slotRing20">
+      <!-- Bordo scuro esterno anello -->
+      <circle cx="0" cy="0" r="80" fill="none" stroke="#140c07" stroke-width="3"/>
+      <!-- Corpo principale anello in Bronzo -->
+      <circle cx="0" cy="0" r="71.5" fill="none" stroke="url(#bronzeMain20)" stroke-width="15"/>
+      <!-- Trincea scura incassata sull'anello -->
+      <circle cx="0" cy="0" r="66" fill="none" stroke="#1c110a" stroke-width="3.5"/>
+      <!-- Filetto chiaro interno sul bordo del foro -->
+      <circle cx="0" cy="0" r="63.5" fill="none" stroke="#f5d5b8" stroke-width="2"/>
+      <!-- Filetto di luce superiore -->
+      <path d="M -56,-48 A 74,74 0 0,1 56,-48" fill="none" stroke="#fff3e6" stroke-width="1.5" opacity="0.8"/>
+    </g>
+  </defs>
+
+  <g filter="url(#shadow20)">
+    <!-- 1. STRUTTURA BARRA FORATA TRAMITE MASCHERA -->
+    <g mask="url(#sixSlotsMask20)">
+      <!-- Cornice Ottagonale Esterna Bronzo -->
+      <polygon points="68,18 1032,18 1074,60 1074,180 1032,222 68,222 26,180 26,60" 
+               fill="url(#bronzeMain20)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+      
+      <!-- Trincea Scura Incassata -->
+      <polygon points="73,26 1027,26 1066,65 1066,175 1027,214 73,214 34,175 34,65" 
+               fill="url(#trenchDark20)" stroke="#140c07" stroke-width="1.2" stroke-linejoin="round"/>
+
+      <!-- Lastra Interna Blu Ardesia con Filetto Luminoso -->
+      <polygon points="78,32 1022,32 1060,70 1060,170 1022,208 78,208 40,170 40,70" 
+               fill="url(#slateBoard20)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round"/>
+
+      <!-- Linee Diagonali di Riflesso sul Vetro Ardesia (Stile percorso_2.svg) -->
+      <g stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+        <line x1="120" y1="32" x2="220" y2="208"/>
+        <line x1="155" y1="32" x2="255" y2="208"/>
+        <line x1="480" y1="32" x2="580" y2="208"/>
+        <line x1="980" y1="32" x2="880" y2="208"/>
+        <line x1="945" y1="32" x2="845" y2="208"/>
+      </g>
+
+      <!-- 6 Anelli Circolari -->
+      <use href="#slotRing20" x="137.5" y="120"/>
+      <use href="#slotRing20" x="302.5" y="120"/>
+      <use href="#slotRing20" x="467.5" y="120"/>
+      <use href="#slotRing20" x="632.5" y="120"/>
+      <use href="#slotRing20" x="797.5" y="120"/>
+      <use href="#slotRing20" x="962.5" y="120"/>
+    </g>
+
+    <!-- 2. GEMME SUPERIORI E INFERIORI SUI 6 ANELLI -->
+    <use href="#gemMed20" x="137.5" y="48"/>
+    <use href="#gemMed20" x="137.5" y="192"/>
+    <use href="#gemMed20" x="302.5" y="48"/>
+    <use href="#gemMed20" x="302.5" y="192"/>
+    <use href="#gemMed20" x="467.5" y="48"/>
+    <use href="#gemMed20" x="467.5" y="192"/>
+    <use href="#gemMed20" x="632.5" y="48"/>
+    <use href="#gemMed20" x="632.5" y="192"/>
+    <use href="#gemMed20" x="797.5" y="48"/>
+    <use href="#gemMed20" x="797.5" y="192"/>
+    <use href="#gemMed20" x="962.5" y="48"/>
+    <use href="#gemMed20" x="962.5" y="192"/>
+
+    <!-- 3. COPPIE DI GEMME PICCOLE NELLE GIUNZIONI TRA GLI ANELLI -->
+    <use href="#gemSmall20" x="210" y="120"/>
+    <use href="#gemSmall20" x="230" y="120"/>
+    <use href="#gemSmall20" x="375" y="120"/>
+    <use href="#gemSmall20" x="395" y="120"/>
+    <use href="#gemSmall20" x="540" y="120"/>
+    <use href="#gemSmall20" x="560" y="120"/>
+    <use href="#gemSmall20" x="705" y="120"/>
+    <use href="#gemSmall20" x="725" y="120"/>
+    <use href="#gemSmall20" x="870" y="120"/>
+    <use href="#gemSmall20" x="890" y="120"/>
+
+    <!-- 4. GEMME ALLE ESTREMITÀ LATERALI -->
+    <use href="#gemSmall20" x="63" y="120"/>
+    <use href="#gemLarge20" x="33" y="120"/>
+    <use href="#gemSmall20" x="1037" y="120"/>
+    <use href="#gemLarge20" x="1067" y="120"/>
+  </g>
+</svg>

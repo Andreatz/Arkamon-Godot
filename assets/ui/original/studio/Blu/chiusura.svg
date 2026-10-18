@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow24" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <!-- Cornice Avorio-Oro 3D -->
+    <linearGradient id="ivoryGold24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fff4db"/>
+      <stop offset="65%" stop-color="#e3a84b"/>
+      <stop offset="100%" stop-color="#965b10"/>
+    </linearGradient>
+
+    <linearGradient id="goldBevel24" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b87314"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fde047"/>
+    </linearGradient>
+
+    <!-- Fondo Blu Notte Profondo -->
+    <radialGradient id="navyPlate24" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#062c5e"/>
+      <stop offset="70%" stop-color="#031d40"/>
+      <stop offset="100%" stop-color="#021026"/>
+    </radialGradient>
+
+    <!-- Gradiente Icona "X" Corallo / Arancio-Rosso 3D -->
+    <linearGradient id="coralX24" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="20%" stop-color="#fb923c"/>
+      <stop offset="65%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#9a3412"/>
+    </linearGradient>
+
+    <linearGradient id="coralBevel24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fed7aa"/>
+      <stop offset="50%" stop-color="#f97316"/>
+      <stop offset="100%" stop-color="#7c2d12"/>
+    </linearGradient>
+
+    <!-- Gemma Cardinale Romboidale -->
+    <g id="cardinalGem24">
+      <polygon points="0,-32 32,0 0,32 -32,0" fill="url(#ivoryGold24)" stroke="#1a1005" stroke-width="2.2" stroke-linejoin="round"/>
+      <polygon points="0,-25 25,0 0,25 -25,0" fill="#d99026"/>
+      <polygon points="0,-19 19,0 0,19 -19,0" fill="#0284c7" stroke="#082f49" stroke-width="1"/>
+      <polygon points="0,-19 19,0 0,0" fill="#67e8f9"/>
+      <polygon points="0,-19 0,0 -19,0" fill="#22d3ee"/>
+      <polygon points="0,0 19,0 0,19" fill="#0369a1"/>
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="#e0f2fe"/>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow24)">
+    <!-- 1. CORNICE OTTAGONALE AVORIO-ORO -->
+    <polygon points="95,40 225,40 280,95 280,225 225,280 95,280 40,225 40,95" 
+             fill="url(#ivoryGold24)" stroke="#1a1005" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- Smusso Interno Oro Caldo -->
+    <polygon points="101,51 219,51 269,101 269,219 219,269 101,269 51,219 51,101" 
+             fill="url(#goldBevel24)" stroke="#422405" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- 2. LASTRA OTTAGONALE BLU NOTTE -->
+    <polygon points="106,58 214,58 262,106 262,214 214,262 106,262 58,214 58,106" 
+             fill="url(#navyPlate24)" stroke="#010917" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- 3. ICONA "X" CENTRALE IN CORALLO 3D SMUSSATO -->
+    <g transform="translate(160, 160)">
+      <!-- Ombra Portata della X sul fondo blu -->
+      <polygon points="0,-19 36,-55 55,-36 19,0 55,36 36,55 0,19 -36,55 -55,36 -19,0 -55,-36 -36,-55" 
+               transform="translate(0, 6)" fill="#010814" opacity="0.85"/>
+      
+      <!-- Base Smussata 3D della X -->
+      <polygon points="0,-19 36,-55 55,-36 19,0 55,36 36,55 0,19 -36,55 -55,36 -19,0 -55,-36 -36,-55" 
+               fill="url(#coralBevel24)" stroke="#2b0902" stroke-width="2.5" stroke-linejoin="round"/>
+
+      <!-- Piano Superiore Illuminato della X -->
+      <polygon points="0,-12 36,-48 48,-36 12,0 48,36 36,48 0,12 -36,48 -48,36 -12,0 -48,-36 -36,-48" 
+               fill="url(#coralX24)"/>
+
+      <!-- Riflessi Speculari Bianchi sui Bordi Superiori della X -->
+      <polyline points="-48,-36 -36,-48 0,-12 36,-48 48,-36" fill="none" stroke="#ffedd5" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- 4. QUATTRO GEMME SUI LATI (NORD, EST, SUD, OVEST) -->
+    <use href="#cardinalGem24" x="160" y="45"/>
+    <use href="#cardinalGem24" x="275" y="160"/>
+    <use href="#cardinalGem24" x="160" y="275"/>
+    <use href="#cardinalGem24" x="45" y="160"/>
+  </g>
+</svg>

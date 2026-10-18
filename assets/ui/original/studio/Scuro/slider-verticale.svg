@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 560" width="100%" height="100%">
+  <defs>
+    <filter id="shadowVertSlider" x="-15%" y="-6%" width="130%" height="115%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+    <filter id="crystalShadow1" x="-25%" y="-10%" width="150%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="4" flood-color="#040811" flood-opacity="0.85" />
+    </filter>
+
+    <!-- Lato Sinistro Illuminato della Cornice in Bronzo/Champagne (Stile percorso.svg) -->
+    <linearGradient id="bronzeLeftLight1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff9f2" />
+      <stop offset="25%" stop-color="#f5dec9" />
+      <stop offset="55%" stop-color="#d4a381" />
+      <stop offset="85%" stop-color="#f0d2b8" />
+      <stop offset="100%" stop-color="#9e6d4e" />
+    </linearGradient>
+
+    <!-- Lato Destro Ombreggiato della Cornice in Bronzo -->
+    <linearGradient id="bronzeRightShade1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c99673" />
+      <stop offset="25%" stop-color="#8c5c3e" />
+      <stop offset="60%" stop-color="#5e3a22" />
+      <stop offset="85%" stop-color="#784d31" />
+      <stop offset="100%" stop-color="#3b2112" />
+    </linearGradient>
+
+    <!-- Castone Gemme in Bronzo -->
+    <linearGradient id="bronzeBezel1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="25%" stop-color="#e5bfa0" />
+      <stop offset="55%" stop-color="#8c5c3e" />
+      <stop offset="85%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#472a17" />
+    </linearGradient>
+
+    <!-- Lastra Interna Blu Ardesia Scuro (da percorso.svg) -->
+    <linearGradient id="slateTrack1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d141f" />
+      <stop offset="50%" stop-color="#1c293b" />
+      <stop offset="100%" stop-color="#0b111a" />
+    </linearGradient>
+
+    <!-- Gradienti Sfaccettature Prisma Cristallo Turchese/Smeraldo 3D -->
+    <linearGradient id="prismCenter1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0fdfa" />
+      <stop offset="30%" stop-color="#99f6e4" />
+      <stop offset="70%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#0d9488" />
+    </linearGradient>
+
+    <linearGradient id="prismLeft1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5eead4" />
+      <stop offset="50%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+
+    <linearGradient id="prismRight1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="50%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+
+    <clipPath id="trackClip1">
+      <polygon points="110,58 148,96 148,464 110,502 72,464 72,96" />
+    </clipPath>
+
+    <!-- Gemma Romboidale Superiore/Inferiore (Stile percorso.svg) -->
+    <g id="vertexGem1">
+      <polygon points="0,-32 32,0 0,32 -32,0" fill="url(#bronzeBezel1)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-26 26,0 0,26 -26,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-21 21,0 0,21 -21,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-17 17,0 0,17 -17,0" fill="#0ea5e9" />
+      <polygon points="0,-17 17,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 17,0 0,17" fill="#0284c7" />
+      <polygon points="0,-8 8,0 0,8 -8,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowVertSlider)">
+    <!-- 1. CORNICE ESTERNA VERTICALE SFACCETTATA IN BRONZO (DIVISA IN LUCE/OMBRA) -->
+    <!-- Metà Sinistra Illuminata -->
+    <polygon points="110,20 110,540 50,480 50,80" fill="url(#bronzeLeftLight1)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+    <!-- Metà Destra Ombreggiata -->
+    <polygon points="110,20 170,80 170,480 110,540" fill="url(#bronzeRightShade1)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+    <!-- Contorno Esterno Unificato e Filetto Speculare -->
+    <polygon points="110,20 170,80 170,480 110,540 50,480 50,80" fill="none" stroke="#24130a" stroke-width="2.5" stroke-linejoin="round" />
+    <polyline points="54,476 54,82 110,26 164,80" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" opacity="0.85" />
+
+    <!-- 2. TRINCEA SCURA E LASTRA INTERNA BLU ARDESIA -->
+    <polygon points="110,42 156,88 156,472 110,518 64,472 64,88" fill="#120a05" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+    <polygon points="110,50 150,90 150,470 110,510 70,470 70,90" fill="url(#slateTrack1)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- Riflessi Diagonali Interni (Stile percorso.svg) -->
+    <g clip-path="url(#trackClip1)" stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+      <line x1="60" y1="140" x2="160" y2="220" />
+      <line x1="60" y1="170" x2="160" y2="250" />
+      <line x1="60" y1="340" x2="160" y2="420" />
+      <line x1="60" y1="370" x2="160" y2="450" />
+    </g>
+
+    <!-- Filetto Interno Luminoso Ciano/Acciaio -->
+    <polygon points="110,60 143,93 143,467 110,500 77,467 77,93" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.7" stroke-linejoin="round" />
+
+    <!-- 3. PRISMA CENTRALE ESAGONALE SFACCETTATO IN CRISTALLO TURCHESE 3D -->
+    <g filter="url(#crystalShadow1)">
+      <!-- Faccia Superiore Sinistra (Luce Massima) -->
+      <polygon points="110,186 84,208 97,216 110,216" fill="#ffffff" />
+      <!-- Faccia Superiore Destra -->
+      <polygon points="110,186 136,208 123,216 110,216" fill="#ccfbf1" />
+
+      <!-- Colonna Verticale Sinistra -->
+      <polygon points="84,208 97,216 97,364 84,372" fill="url(#prismLeft1)" />
+      <!-- Colonna Verticale Centrale -->
+      <polygon points="97,216 123,216 123,364 97,364" fill="url(#prismCenter1)" />
+      <!-- Colonna Verticale Destra -->
+      <polygon points="123,216 136,208 136,372 123,364" fill="url(#prismRight1)" />
+
+      <!-- Faccia Inferiore Sinistra -->
+      <polygon points="84,372 97,364 110,364 110,394" fill="#0f766e" />
+      <!-- Faccia Inferiore Destra (Ombra Profonda) -->
+      <polygon points="110,364 123,364 136,372 110,394" fill="#115e59" />
+
+      <!-- Riflesso Ovale Bianco Brillante sulla Punta Superiore -->
+      <ellipse cx="104" cy="204" rx="8" ry="11" transform="rotate(-15 104 204)" fill="#ffffff" opacity="0.95" />
+
+      <!-- Spigoli Interni ed Esterni del Cristallo -->
+      <polyline points="84,208 97,216 123,216 136,208" fill="none" stroke="#ffffff" stroke-width="1.2" opacity="0.8" />
+      <polyline points="84,372 97,364 123,364 136,372" fill="none" stroke="#042f2e" stroke-width="1" opacity="0.5" />
+      <polygon points="110,186 136,208 136,372 110,394 84,372 84,208" fill="none" stroke="#042f2e" stroke-width="2" stroke-linejoin="round" />
+    </g>
+
+    <!-- 4. DUE GEMME ROMBOIDALI SUI VERTICI (SUPERIORE E INFERIORE) -->
+    <use href="#vertexGem1" x="110" y="76" />
+    <use href="#vertexGem1" x="110" y="484" />
+  </g>
+</svg>

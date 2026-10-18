@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="100%" height="100%">
+  <defs>
+    <filter id="shadowPiccola" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeMain3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <!-- Fascia Blu Ardesia Scuro -->
+    <linearGradient id="slateBand3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824" />
+      <stop offset="50%" stop-color="#1f2d40" />
+      <stop offset="100%" stop-color="#0c121c" />
+    </linearGradient>
+
+    <!-- Maschera per forare la finestra ottagonale centrale (100% trasparente) -->
+    <mask id="octaHoleMask3">
+      <rect x="0" y="0" width="260" height="260" fill="#ffffff" />
+      <polygon points="88,72 172,72 188,88 188,172 172,188 88,188 72,172 72,88" fill="#000000" />
+    </mask>
+
+    <!-- Gemma Cardinale a Diamante -->
+    <g id="cardinalGem3">
+      <polygon points="0,-28 28,0 0,28 -28,0" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-23 23,0 0,23 -23,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-18 18,0 0,18 -18,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#0ea5e9" />
+      <polygon points="0,-15 15,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 15,0 0,15" fill="#0284c7" />
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowPiccola)">
+    <!-- 1. CORPO CORNICE CON FINESTRA CENTRALE FORATA TRASPARENTE -->
+    <g mask="url(#octaHoleMask3)">
+      <!-- Cornice Ottagonale Esterna in Bronzo -->
+      <polygon points="70,34 190,34 226,70 226,190 190,226 70,226 34,190 34,70" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polyline points="72,38 188,38 222,72" fill="none" stroke="#fff3e6" stroke-width="1.5" opacity="0.85" />
+
+      <!-- Fascia Intermedia Blu Ardesia Scuro -->
+      <polygon points="76,46 184,46 214,76 214,184 184,214 76,214 46,184 46,76" fill="url(#slateBand3)" stroke="#140c07" stroke-width="2" stroke-linejoin="round" />
+
+      <!-- Filetto Geometrico in Acciaio-Blu / Ciano -->
+      <polygon points="80,52 180,52 208,80 208,180 180,208 80,208 52,180 52,80" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.65" stroke-linejoin="round" />
+
+      <!-- Bordo Interno in Bronzo Scuro Attorno al Foro -->
+      <polygon points="86,68 174,68 192,86 192,174 174,192 86,192 68,174 68,86" fill="none" stroke="#8c5c3e" stroke-width="4" stroke-linejoin="round" />
+      <polygon points="88,72 172,72 188,88 188,172 172,188 88,188 72,172 72,88" fill="none" stroke="#140c07" stroke-width="3" stroke-linejoin="round" />
+    </g>
+
+    <!-- 2. QUATTRO GEMME CARDINALI (N, E, S, W) -->
+    <use href="#cardinalGem3" x="130" y="38" />
+    <use href="#cardinalGem3" x="222" y="130" />
+    <use href="#cardinalGem3" x="130" y="222" />
+    <use href="#cardinalGem3" x="38" y="130" />
+  </g>
+</svg>

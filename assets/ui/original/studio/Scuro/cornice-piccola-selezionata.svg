@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="100%" height="100%">
+  <defs>
+    <!-- Doppio Filtro: Bagliore Ciano + Ombra Portata -->
+    <filter id="glowSelected4" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#06b6d4" flood-opacity="0.75" result="cyanGlow" />
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000000" flood-opacity="0.65" result="darkShadow" />
+      <feMerge>
+        <feMergeNode in="darkShadow" />
+        <feMergeNode in="cyanGlow" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Cornice Esterna Ciano-Ghiaccio Illuminata -->
+    <linearGradient id="cyanIceFrame4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#a5f3fc" />
+      <stop offset="60%" stop-color="#06b6d4" />
+      <stop offset="85%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#0e7490" />
+    </linearGradient>
+
+    <!-- Fascia Intermedia Turchese-Ardesia Scuro -->
+    <linearGradient id="tealSlateBand4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#083344" />
+      <stop offset="50%" stop-color="#155e75" />
+      <stop offset="100%" stop-color="#042f2e" />
+    </linearGradient>
+
+    <!-- Castone in Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeBezel4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <!-- Maschera per forare la finestra ottagonale centrale (100% trasparente) -->
+    <mask id="octaHoleMask4">
+      <rect x="0" y="0" width="260" height="260" fill="#ffffff" />
+      <polygon points="88,72 172,72 188,88 188,172 172,188 88,188 72,172 72,88" fill="#000000" />
+    </mask>
+
+    <!-- Gemma Cardinale a Diamante in Bronzo -->
+    <g id="cardinalGem4">
+      <polygon points="0,-28 28,0 0,28 -28,0" fill="url(#bronzeBezel4)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-23 23,0 0,23 -23,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-18 18,0 0,18 -18,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#0ea5e9" />
+      <polygon points="0,-15 15,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 15,0 0,15" fill="#0284c7" />
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#glowSelected4)">
+    <!-- 1. CORPO CORNICE ILLUMINATA CON FORO CENTRALE TRASPARENTE -->
+    <g mask="url(#octaHoleMask4)">
+      <!-- Cornice Ottagonale Esterna Ciano-Ghiaccio -->
+      <polygon points="70,34 190,34 226,70 226,190 190,226 70,226 34,190 34,70" fill="url(#cyanIceFrame4)" stroke="#042f2e" stroke-width="2.2" stroke-linejoin="round" />
+      <polyline points="72,38 188,38 222,72" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.95" />
+
+      <!-- Fascia Intermedia Turchese-Ardesia Scuro -->
+      <polygon points="76,46 184,46 214,76 214,184 184,214 76,214 46,184 46,76" fill="url(#tealSlateBand4)" stroke="#022c22" stroke-width="2" stroke-linejoin="round" />
+
+      <!-- Filetto Luminoso Ciano Brillante -->
+      <polygon points="80,52 180,52 208,80 208,180 180,208 80,208 52,180 52,80" fill="none" stroke="#67e8f9" stroke-width="2" opacity="0.85" stroke-linejoin="round" />
+
+      <!-- Alone Ciano Interno e Bordo Attorno al Foro -->
+      <polygon points="88,72 172,72 188,88 188,172 172,188 88,188 72,172 72,88" fill="none" stroke="#22d3ee" stroke-width="8" opacity="0.45" filter="blur(3px)" />
+      <polygon points="88,72 172,72 188,88 188,172 172,188 88,188 72,172 72,88" fill="none" stroke="#042f2e" stroke-width="3.5" stroke-linejoin="round" />
+    </g>
+
+    <!-- 2. QUATTRO GEMME CARDINALI (N, E, S, W) -->
+    <use href="#cardinalGem4" x="130" y="38" />
+    <use href="#cardinalGem4" x="222" y="130" />
+    <use href="#cardinalGem4" x="130" y="222" />
+    <use href="#cardinalGem4" x="38" y="130" />
+  </g>
+</svg>

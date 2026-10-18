@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 190" width="100%" height="100%">
+  <defs>
+    <filter id="a27-shadow" x="-8%" y="-10%" width="116%" height="125%">
+      <feDropShadow dx="0" dy="5" stdDeviation="3.5" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+    <filter id="a27-sym-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#000000" flood-opacity="0.85" />
+    </filter>
+
+    <!-- Cornice Oro Champagne Comune -->
+    <linearGradient id="a27-gold-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#996832" />
+      <stop offset="100%" stop-color="#543412" />
+    </linearGradient>
+    <linearGradient id="a27-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+    <linearGradient id="a27-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <!-- 1. Gradienti NATURA (Verde) -->
+    <radialGradient id="a27-bg-green" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#00c853" />
+      <stop offset="60%" stop-color="#00701a" />
+      <stop offset="100%" stop-color="#003308" />
+    </radialGradient>
+    <linearGradient id="a27-sym-leaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8f5e9" />
+      <stop offset="40%" stop-color="#69f0ae" />
+      <stop offset="85%" stop-color="#00e676" />
+      <stop offset="100%" stop-color="#00701a" />
+    </linearGradient>
+
+    <!-- 2. Gradienti FUOCO (Rosso) -->
+    <radialGradient id="a27-bg-red" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#e53935" />
+      <stop offset="60%" stop-color="#8e0000" />
+      <stop offset="100%" stop-color="#3b0000" />
+    </radialGradient>
+    <linearGradient id="a27-sym-fire" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#ffcc80" />
+      <stop offset="70%" stop-color="#ff6e40" />
+      <stop offset="100%" stop-color="#bf360c" />
+    </linearGradient>
+
+    <!-- 3. Gradienti ACQUA (Blu) -->
+    <radialGradient id="a27-bg-blue" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#0288d1" />
+      <stop offset="60%" stop-color="#014380" />
+      <stop offset="100%" stop-color="#001938" />
+    </radialGradient>
+    <linearGradient id="a27-sym-water" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e1f5fe" />
+      <stop offset="35%" stop-color="#40c4ff" />
+      <stop offset="80%" stop-color="#0091ea" />
+      <stop offset="100%" stop-color="#01579b" />
+    </linearGradient>
+
+    <!-- 4. Gradienti ARIA (Turchese / Piuma) -->
+    <radialGradient id="a27-bg-air" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#00acc1" />
+      <stop offset="60%" stop-color="#005662" />
+      <stop offset="100%" stop-color="#00252b" />
+    </radialGradient>
+    <linearGradient id="a27-sym-feather" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e0f7fa" />
+      <stop offset="88%" stop-color="#80deea" />
+      <stop offset="100%" stop-color="#00838f" />
+    </linearGradient>
+
+    <!-- 5. Gradienti TERRA (Ambra / Marrone) -->
+    <radialGradient id="a27-bg-earth" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#b87c28" />
+      <stop offset="60%" stop-color="#6e430c" />
+      <stop offset="100%" stop-color="#331c02" />
+    </radialGradient>
+    <linearGradient id="a27-sym-rock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#f5e6d3" />
+      <stop offset="85%" stop-color="#c7a987" />
+      <stop offset="100%" stop-color="#856542" />
+    </linearGradient>
+
+    <!-- 6. Gradienti LUNA / OSCURITÀ (Viola) -->
+    <radialGradient id="a27-bg-purple" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#8e24aa" />
+      <stop offset="60%" stop-color="#4a0072" />
+      <stop offset="100%" stop-color="#1f0033" />
+    </radialGradient>
+    <linearGradient id="a27-sym-moon" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#f3e5f5" />
+      <stop offset="85%" stop-color="#ce93d8" />
+      <stop offset="100%" stop-color="#8e24aa" />
+    </linearGradient>
+
+    <!-- 7. Gradienti LUCE / NEUTRO (Perla) -->
+    <radialGradient id="a27-bg-white" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="65%" stop-color="#e6e1da" />
+      <stop offset="100%" stop-color="#b5aba0" />
+    </radialGradient>
+    <linearGradient id="a27-sym-ring" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f2e8dc" />
+      <stop offset="100%" stop-color="#b8a693" />
+    </linearGradient>
+
+    <!-- Gemma Cardinale Comune -->
+    <g id="a27-gem" filter="url(#a27-sym-shadow)">
+      <polygon points="0,-19 17,0 0,19 -17,0" fill="url(#a27-gem-gold)" stroke="#241406" stroke-width="1.5" stroke-linejoin="round" />
+      <polygon points="0,-19 -17,0 -12,0 0,-14" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-11 10,0 0,11 -10,0" fill="#04152e" />
+      <polygon points="0,-9.5 8.5,0 0,9.5 -8.5,0" fill="url(#a27-cyan-gem)" />
+      <polygon points="0,-9.5 8.5,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-4 3.5,0 0,4 -3.5,0" fill="#e0faff" />
+    </g>
+
+    <!-- Struttura Base Anello Medaglione -->
+    <g id="a27-base-ring">
+      <circle cx="0" cy="0" r="68" fill="url(#a27-gold-rim)" stroke="#1c130a" stroke-width="2" />
+      <path d="M -56,-30 A 64,64 0 0,1 56,-30" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85" stroke-linecap="round" />
+      <circle cx="0" cy="0" r="56" fill="#080d14" stroke="#36220e" stroke-width="1.5" />
+    </g>
+    <g id="a27-4gems">
+      <use href="#a27-gem" x="0" y="-65" />
+      <use href="#a27-gem" x="0" y="65" />
+      <use href="#a27-gem" x="-65" y="0" />
+      <use href="#a27-gem" x="65" y="0" />
+    </g>
+  </defs>
+
+  <g filter="url(#a27-shadow)">
+    <!-- 1. MEDAGLIONE NATURA (FOGLIA) -->
+    <g transform="translate(90, 95)">
+      <use href="#a27-base-ring" />
+      <circle cx="0" cy="0" r="51" fill="url(#a27-bg-green)" stroke="#69f0ae" stroke-width="2" />
+      <g filter="url(#a27-sym-shadow)">
+        <path d="M -22,30 C -26,2 -12,-22 24,-30 C 26,4 12,24 -16,24 Z" fill="url(#a27-sym-leaf)" stroke="#003308" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M -22,30 C -10,12 4,-6 18,-22" fill="none" stroke="#004d1a" stroke-width="2.5" stroke-linecap="round" />
+      </g>
+      <use href="#a27-4gems" />
+    </g>
+
+    <!-- 2. MEDAGLIONE FUOCO (FIAMMA) -->
+    <g transform="translate(260, 95)">
+      <use href="#a27-base-ring" />
+      <circle cx="0" cy="0" r="51" fill="url(#a27-bg-red)" stroke="#ff8a80" stroke-width="2" />
+      <g filter="url(#a27-sym-shadow)">
+        <path d="M 2,-32 C 14,-16 28,0 24,18 C 21,29 11,35 0,35 C -14,35 -25,25 -25,11 C -25,-1 -17,-12 -12,-18 C -12,-9 -7,-5 -5,-8 C -2,-14 -5,-24 2,-32 Z" fill="url(#a27-sym-fire)" stroke="#3b0000" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M 2,-8 C 10,2 12,14 7,24 C 4,29 -2,31 -6,28 C -12,24 -12,15 -7,8 C -3,2 0,-2 2,-8 Z" fill="#fff8e1" opacity="0.75" />
+      </g>
+      <use href="#a27-4gems" />
+    </g>
+
+    <!-- 3. MEDAGLIONE ACQUA (GOCCIA) -->
+    <g transform="translate(430, 95)">
+      <use href="#a27-base-ring" />
+      <circle cx="0" cy="0" r="51" fill="url(#a27-bg-blue)" stroke="#40c4ff" stroke-width="2" />
+      <g filter="url(#a27-sym-shadow)">
+        <path d="M 0,-32 C 15,-8 24,5 24,16 A 24,24 0 1,1 -24,16 C -24,5 -15,-8 0,-32 Z" fill="url(#a27-sym-water)" stroke="#00224d" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M -13,14 C -15,4 -9,-8 -2,-19" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.85" />
+      </g>
+      <use href="#a27-4gems" />
+    </g>
+
+    <!-- 4. MEDAGLIONE ARIA (PIUMA) -->
+    <g transform="translate(600, 95)">
+      <use href="#a27-base-ring" />
+      <circle cx="0" cy="0" r="51" fill="url(#a27-bg-air)" stroke="#84ffff" stroke-width="2" />
+      <g filter="url(#a27-sym-shadow)">
+        <path d="M -22,32 L -16,20 C -24,6 -16,-14 26,-30 C 26,-12 18,0 8,6 L 16,6 C 10,16 0,20 -8,20 L 2,22 C -4,28 -12,28 -16,26 L -19,33 Z" fill="url(#a27-sym-feather)" stroke="#002b33" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M -18,26 C -6,8 8,-8 22,-25" fill="none" stroke="#006064" stroke-width="2" stroke-linecap="round" />
+      </g>
+      <use href="#a27-4gems" />
+    </g>
+
+    <!-- 5. MEDAGLIONE TERRA (MONTAGNA) -->
+    <g transform="translate(770, 95)">
+      <use href="#a27-base-ring" />
+      <circle cx="0" cy="0" r="51" fill="url(#a27-bg-earth)" stroke="#ffd54f" stroke-width="2" />
+      <g filter="url(#a27-sym-shadow)" stroke="#2b1700" stroke-width="1.8" stroke-linejoin="round">
+        <polygon points="-36,24 -18,-6 -8,8 2,-28 18,4 24,-4 36,24" fill="url(#a27-sym-rock)" />
+        <!-- Sfaccettature d'ombra della roccia -->
+        <polygon points="2,-28 18,4 36,24 6,24" fill="#a88b6a" opacity="0.7" />
+        <polygon points="-18,-6 -8,8 -12,24 -36,24" fill="#c7a987" opacity="0.5" />
+      </g>
+      <use href="#a27-4gems" />
+    </g>
+
+    <!-- 6. MEDAGLIONE LUNA (OSCURITÀ / ARCANO) -->
+    <g transform="translate(940, 95)">
+      <use href="#a27-base-ring" />
+      <circle cx="0" cy="0" r="51" fill="url(#a27-bg-purple)" stroke="#ea80fc" stroke-width="2" />
+      <g filter="url(#a27-sym-shadow)">
+        <path d="M 12,-26 A 30,30 0 1,0 26,16 A 23,23 0 1,1 12,-26 Z" fill="url(#a27-sym-moon)" stroke="#260040" stroke-width="1.8" stroke-linejoin="round" />
+      </g>
+      <use href="#a27-4gems" />
+    </g>
+
+    <!-- 7. MEDAGLIONE LUCE / NEUTRO (ANELLO PERLA) -->
+    <g transform="translate(1110, 95)">
+      <use href="#a27-base-ring" />
+      <circle cx="0" cy="0" r="51" fill="url(#a27-bg-white)" stroke="#ffffff" stroke-width="2" />
+      <!-- Anello / Torus Centrale Scolpito 3D -->
+      <g filter="url(#a27-sym-shadow)">
+        <path d="M 0,-28 A 28,28 0 1,0 0,28 A 28,28 0 1,0 0,-28 Z
+                 M 0,-14 A 14,14 0 1,1 0,14 A 14,14 0 1,1 0,-14 Z" fill="url(#a27-sym-ring)" fill-rule="evenodd" stroke="#3d3329" stroke-width="1.8" />
+        <circle cx="0" cy="0" r="14" fill="#8c7f70" opacity="0.65" />
+      </g>
+      <use href="#a27-4gems" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 235" width="100%" height="100%">
+  <defs>
+    <filter id="a25-shadow" x="-12%" y="-10%" width="124%" height="125%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+    <filter id="a25-elem-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#00040f" flood-opacity="0.9" />
+    </filter>
+
+    <linearGradient id="a25-gold-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#996832" />
+      <stop offset="100%" stop-color="#543412" />
+    </linearGradient>
+
+    <linearGradient id="a25-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <radialGradient id="a25-blue-disc" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#0d47a1" />
+      <stop offset="55%" stop-color="#062863" />
+      <stop offset="88%" stop-color="#031538" />
+      <stop offset="100%" stop-color="#010a1f" />
+    </radialGradient>
+
+    <linearGradient id="a25-blue-bevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#40c4ff" />
+      <stop offset="45%" stop-color="#1565c0" />
+      <stop offset="100%" stop-color="#0277bd" />
+    </linearGradient>
+
+    <!-- Gradienti Borsa in Avorio/Cuoio Chiaro 3D -->
+    <linearGradient id="a25-bag-front" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#f7efe4" />
+      <stop offset="85%" stop-color="#d9c8b4" />
+      <stop offset="100%" stop-color="#ab957c" />
+    </linearGradient>
+    <linearGradient id="a25-bag-side" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0d0bc" />
+      <stop offset="60%" stop-color="#b8a186" />
+      <stop offset="100%" stop-color="#856e54" />
+    </linearGradient>
+
+    <linearGradient id="a25-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a25-gem" filter="url(#a25-elem-shadow)">
+      <polygon points="0,-23 21,0 0,23 -21,0" fill="url(#a25-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-23 -21,0 -15,0 0,-17" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-14 13,0 0,14 -13,0" fill="#04152e" />
+      <polygon points="0,-12 11,0 0,12 -11,0" fill="url(#a25-cyan-gem)" />
+      <polygon points="0,-12 11,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,0 0,5 -4.5,0" fill="#e0faff" />
+    </g>
+  </defs>
+
+  <g filter="url(#a25-shadow)" transform="translate(110, 106)">
+    <!-- 1. Anello Esterno Oro Champagne -->
+    <circle cx="0" cy="0" r="82" fill="url(#a25-gold-rim)" stroke="#1c130a" stroke-width="2.2" />
+    <path d="M -68,-36 A 77,77 0 0,1 68,-36" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" stroke-linecap="round" />
+
+    <!-- 2. Scanalatura Scura e Disco Blu Reale -->
+    <circle cx="0" cy="0" r="68" fill="#020b1f" stroke="#36220e" stroke-width="1.8" />
+    <circle cx="0" cy="0" r="61" fill="url(#a25-blue-disc)" stroke="url(#a25-blue-bevel)" stroke-width="3" />
+    <path d="M -46,-28 A 54,54 0 0,1 46,-28" fill="none" stroke="#80d8ff" stroke-width="2.2" opacity="0.8" stroke-linecap="round" />
+
+    <!-- 3. Icona Borsa / Cartella Avorio 3D -->
+    <g filter="url(#a25-elem-shadow)" stroke="#170f06" stroke-width="2" stroke-linejoin="round">
+      <!-- Manico Superiore -->
+      <path d="M -18,-22 V -31 C -18,-38 -11,-42 0,-42 C 11,-42 18,-38 18,-31 V -22 H 9 V -29 C 9,-32 6,-34 0,-34 C -6,-34 -9,-32 -9,-29 V -22 Z" fill="url(#a25-bag-front)" />
+      <!-- Soffietto Laterale Destro (Profondità 3D) -->
+      <path d="M 30,-22 C 34,-22 38,12 37,26 C 36,34 31,38 24,38 L 22,38 L 28,-22 Z" fill="url(#a25-bag-side)" />
+      <!-- Corpo Principale della Borsa -->
+      <path d="M -32,-20 H 28 L 24,30 C 23,36 18,38 10,38 H -26 C -34,38 -38,34 -37,26 Z" fill="url(#a25-bag-front)" />
+      <!-- Patta Frontale Superiore (Flap) -->
+      <path d="M -33,-18 C -33,-22 -29,-24 -23,-24 H 23 C 29,-24 31,-21 30,-16 L 26,4 C 24,13 15,17 0,17 C -15,17 -28,13 -31,4 Z" fill="url(#a25-bag-front)" />
+      <!-- Fibbia Centrale Rettangolare 3D -->
+      <rect x="-8" y="6" width="16" height="20" rx="3" fill="url(#a25-bag-front)" />
+      <polyline points="-5,22 -5,9 5,9" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.9" />
+    </g>
+
+    <!-- 4. Gemme Cardinali (Nord, Ovest, Est + Sud con Puntale Allungato) -->
+    <use href="#a25-gem" x="0" y="-78" />
+    <use href="#a25-gem" x="-78" y="0" />
+    <use href="#a25-gem" x="78" y="0" />
+
+    <!-- Gemma Sud con Puntale a Chevron Allungato -->
+    <g transform="translate(0, 78)" filter="url(#a25-elem-shadow)">
+      <polygon points="0,-24 23,-2 0,40 -23,-2" fill="url(#a25-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-24 -23,-2 -16,-2 0,36" fill="#fff3db" opacity="0.65" />
+      <polygon points="0,40 23,-2 16,-2 0,20" fill="#693b08" opacity="0.8" />
+      <polygon points="0,-15 14,-1 0,13 -14,-1" fill="#04152e" />
+      <polygon points="0,-13 12,-1 0,11 -12,-1" fill="url(#a25-cyan-gem)" />
+      <polygon points="0,-13 12,-1 0,-1" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,-1 0,4 -4.5,-1" fill="#e0faff" />
+    </g>
+  </g>
+</svg>

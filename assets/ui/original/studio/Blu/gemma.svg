@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <filter id="a21-shadow" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000814" flood-opacity="0.8" />
+    </filter>
+    <filter id="a21-side-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#00050d" flood-opacity="0.85" />
+    </filter>
+
+    <!-- Gradienti Castone Oro Champagne 3D -->
+    <linearGradient id="a21-gold-tl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#f7e6cc" />
+      <stop offset="100%" stop-color="#c99659" />
+    </linearGradient>
+    <linearGradient id="a21-gold-tr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5dec0" />
+      <stop offset="50%" stop-color="#cf9b5c" />
+      <stop offset="100%" stop-color="#8c5a22" />
+    </linearGradient>
+    <linearGradient id="a21-gold-bl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d9a86c" />
+      <stop offset="60%" stop-color="#a67238" />
+      <stop offset="100%" stop-color="#613b12" />
+    </linearGradient>
+    <linearGradient id="a21-gold-br" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a67137" />
+      <stop offset="60%" stop-color="#704516" />
+      <stop offset="100%" stop-color="#3b2006" />
+    </linearGradient>
+
+    <!-- Gradienti Cristallo Centrale Ciano 4 Faccette -->
+    <linearGradient id="a21-cyan-tl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0ffff" />
+      <stop offset="40%" stop-color="#64f5ff" />
+      <stop offset="100%" stop-color="#00b4fc" />
+    </linearGradient>
+    <linearGradient id="a21-cyan-tr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7be8ff" />
+      <stop offset="55%" stop-color="#00b8f5" />
+      <stop offset="100%" stop-color="#0077b3" />
+    </linearGradient>
+    <linearGradient id="a21-cyan-bl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0099e6" />
+      <stop offset="65%" stop-color="#0066aa" />
+      <stop offset="100%" stop-color="#004477" />
+    </linearGradient>
+    <linearGradient id="a21-cyan-br" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0077be" />
+      <stop offset="60%" stop-color="#004d88" />
+      <stop offset="100%" stop-color="#00264d" />
+    </linearGradient>
+
+    <!-- Gemma Laterale Piccola -->
+    <g id="a21-small-gem" filter="url(#a21-side-shadow)">
+      <polygon points="0,-26 25,0 0,26 -25,0" fill="url(#a21-gold-tr)" stroke="#1f1105" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-26 -25,0 -18,0 0,-19" fill="#ffffff" opacity="0.8" />
+      <polygon points="0,26 25,0 18,0 0,19" fill="#4a2908" opacity="0.8" />
+      <polygon points="0,-16 15,0 0,16 -15,0" fill="#031329" stroke="#5e380d" stroke-width="1" />
+      <polygon points="0,-14 -13,0 0,0" fill="url(#a21-cyan-tl)" />
+      <polygon points="0,-14 13,0 0,0" fill="url(#a21-cyan-tr)" />
+      <polygon points="0,14 -13,0 0,0" fill="url(#a21-cyan-bl)" />
+      <polygon points="0,14 13,0 0,0" fill="url(#a21-cyan-br)" />
+      <polygon points="0,-6 5,0 0,6 -5,0" fill="#e0ffff" opacity="0.9" />
+    </g>
+  </defs>
+
+  <g filter="url(#a21-shadow)" transform="translate(120, 120)">
+    <!-- 1. Grande Castone Romboidale Scolpito in 4 Faccette d'Oro -->
+    <polygon points="0,-104 74,0 0,104 -74,0" fill="#1f1105" stroke="#1f1105" stroke-width="2.5" stroke-linejoin="round" />
+    <!-- Faccetta Oro Top-Left (Luce) -->
+    <polygon points="0,-102 -72,0 -52,0 0,-74" fill="url(#a21-gold-tl)" />
+    <!-- Faccetta Oro Top-Right -->
+    <polygon points="0,-102 72,0 52,0 0,-74" fill="url(#a21-gold-tr)" />
+    <!-- Faccetta Oro Bottom-Left -->
+    <polygon points="0,102 -72,0 -52,0 0,74" fill="url(#a21-gold-bl)" />
+    <!-- Faccetta Oro Bottom-Right (Ombra) -->
+    <polygon points="0,102 72,0 52,0 0,74" fill="url(#a21-gold-br)" />
+    <!-- Bisello luminoso interno attorno all'incasso -->
+    <polygon points="0,-78 55,0 0,78 -55,0" fill="none" stroke="#fff6e6" stroke-width="1.8" opacity="0.85" />
+
+    <!-- 2. Incasso Scuro e Grande Cristallo Ciano Sfaccettato -->
+    <polygon points="0,-74 52,0 0,74 -52,0" fill="#020e21" stroke="#241304" stroke-width="2" stroke-linejoin="round" />
+    <!-- 4 Faccette Principali del Cristallo -->
+    <polygon points="0,-69 -48,0 0,0" fill="url(#a21-cyan-tl)" />
+    <polygon points="0,-69 48,0 0,0" fill="url(#a21-cyan-tr)" />
+    <polygon points="0,69 -48,0 0,0" fill="url(#a21-cyan-bl)" />
+    <polygon points="0,69 48,0 0,0" fill="url(#a21-cyan-br)" />
+
+    <!-- Bordi luminosi interni (Turchese Acceso) -->
+    <polygon points="0,-65 44,0 0,65 -44,0" fill="none" stroke="#64ffff" stroke-width="2" opacity="0.6" />
+
+    <!-- Croce Speculare Brillante al Centro del Cristallo -->
+    <polygon points="0,-66 3.5,-5 46,0 3.5,5 0,66 -3.5,5 -46,0 -3.5,-5" fill="#d8ffff" opacity="0.85" />
+    <circle cx="0" cy="0" r="5" fill="#ffffff" />
+
+    <!-- 3. Gemme Romboidali Laterali (Sinistra e Destra) -->
+    <use href="#a21-small-gem" x="-72" y="0" />
+    <use href="#a21-small-gem" x="72" y="0" />
+  </g>
+</svg>

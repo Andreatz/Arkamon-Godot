@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="100%" height="100%">
+  <defs>
+    <filter id="a28-shadow" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000a14" flood-opacity="0.8" />
+    </filter>
+    <filter id="a28-gem-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3.5" stdDeviation="2.5" flood-color="#00060d" flood-opacity="0.9" />
+    </filter>
+
+    <!-- Anello Esterno Turchese / Smeraldo Metallico -->
+    <linearGradient id="a28-teal-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0ffff" />
+      <stop offset="25%" stop-color="#26e6c9" />
+      <stop offset="65%" stop-color="#00897b" />
+      <stop offset="100%" stop-color="#003d33" />
+    </linearGradient>
+
+    <!-- Anello Interno Blu Notte Scuro -->
+    <linearGradient id="a28-navy-ring" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#01162e" />
+      <stop offset="50%" stop-color="#042b59" />
+      <stop offset="100%" stop-color="#010c1a" />
+    </linearGradient>
+
+    <linearGradient id="a28-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="30%" stop-color="#f5ce87" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <linearGradient id="a28-cyan-tl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0ffff" />
+      <stop offset="55%" stop-color="#33d6ff" />
+      <stop offset="100%" stop-color="#0091ea" />
+    </linearGradient>
+    <linearGradient id="a28-cyan-br" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0080cc" />
+      <stop offset="100%" stop-color="#002b5e" />
+    </linearGradient>
+
+    <!-- Gemma Cardinale Verticale Allungata (Nord / Sud) -->
+    <g id="a28-v-gem" filter="url(#a28-gem-shadow)">
+      <polygon points="0,-38 26,0 0,38 -26,0" fill="url(#a28-gem-gold)" stroke="#1f1105" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="0,-38 -26,0 -19,0 0,-28" fill="#ffffff" opacity="0.8" />
+      <polygon points="0,38 26,0 19,0 0,28" fill="#593102" opacity="0.75" />
+      <polygon points="0,-25 16,0 0,25 -16,0" fill="#03122b" />
+      <polygon points="0,-23 -14,0 0,0" fill="url(#a28-cyan-tl)" />
+      <polygon points="0,-23 14,0 0,0" fill="#6ee2ff" />
+      <polygon points="0,23 -14,0 0,0" fill="#0088cc" />
+      <polygon points="0,23 14,0 0,0" fill="url(#a28-cyan-br)" />
+      <polygon points="0,-12 5,0 0,6 -6,0" fill="#ffffff" opacity="0.9" />
+    </g>
+
+    <!-- Gemma Cardinale Orizzontale Allungata (Ovest / Est) -->
+    <g id="a28-h-gem" filter="url(#a28-gem-shadow)">
+      <polygon points="-38,0 0,-26 38,0 0,26" fill="url(#a28-gem-gold)" stroke="#1f1105" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="-38,0 0,-26 0,-19 -28,0" fill="#ffffff" opacity="0.8" />
+      <polygon points="38,0 0,26 0,19 28,0" fill="#593102" opacity="0.75" />
+      <polygon points="-25,0 0,-16 25,0 0,16" fill="#03122b" />
+      <polygon points="-23,0 0,-14 0,0" fill="url(#a28-cyan-tl)" />
+      <polygon points="0,-14 23,0 0,0" fill="#6ee2ff" />
+      <polygon points="-23,0 0,14 0,0" fill="#0088cc" />
+      <polygon points="0,14 23,0 0,0" fill="url(#a28-cyan-br)" />
+      <polygon points="-6,0 0,-5 12,0 0,5" fill="#ffffff" opacity="0.9" />
+    </g>
+  </defs>
+
+  <g filter="url(#a28-shadow)" transform="translate(120, 120)">
+    <!-- 1. Anello Esterno Turchese con Foro Centrale Trasparente (r=70 -> r=48) -->
+    <path d="M 0,-70 A 70,70 0 1,0 0,70 A 70,70 0 1,0 0,-70 Z
+             M 0,-48 A 48,48 0 1,1 0,48 A 48,48 0 1,1 0,-48 Z" fill="url(#a28-teal-ring)" fill-rule="evenodd" stroke="#00241f" stroke-width="2.2" />
+
+    <!-- Riflessi speculari bianchi sull'anello turchese -->
+    <path d="M -58,-28 A 65,65 0 0,1 58,-28" fill="none" stroke="#ffffff" stroke-width="2.5" opacity="0.85" stroke-linecap="round" />
+
+    <!-- 2. Anello Interno Blu Notte Scuro (r=58 -> r=48 trasparente) -->
+    <path d="M 0,-58 A 58,58 0 1,0 0,58 A 58,58 0 1,0 0,-58 Z
+             M 0,-48 A 48,48 0 1,1 0,48 A 48,48 0 1,1 0,-48 Z" fill="url(#a28-navy-ring)" fill-rule="evenodd" stroke="#004d73" stroke-width="1.5" />
+
+    <!-- 3. Le 4 Gemme Romboidali Cardinali Allungate -->
+    <use href="#a28-v-gem" x="0" y="-66" />
+    <use href="#a28-v-gem" x="0" y="66" />
+    <use href="#a28-h-gem" x="-66" y="0" />
+    <use href="#a28-h-gem" x="66" y="0" />
+  </g>
+</svg>

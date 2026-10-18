@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow27" x="-6%" y="-12%" width="112%" height="130%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5.5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <!-- Cornice Metallica Avorio-Argento -->
+    <linearGradient id="silverIvory27" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#f1f5f9"/>
+      <stop offset="60%" stop-color="#94a3b8"/>
+      <stop offset="85%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <!-- Smusso Blu Elettrico Bombato 3D -->
+    <linearGradient id="sapphireBevel27" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="18%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#034078"/>
+      <stop offset="85%" stop-color="#001d3d"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+
+    <!-- Nucleo Blu Zaffiro Profondo -->
+    <linearGradient id="sapphireInner27" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00509d"/>
+      <stop offset="30%" stop-color="#00296b"/>
+      <stop offset="75%" stop-color="#001845"/>
+      <stop offset="100%" stop-color="#003566"/>
+    </linearGradient>
+
+    <!-- Castone Oro Caldo -->
+    <linearGradient id="goldBezel27" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="80%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+
+    <!-- Gemma Romboidale Laterale -->
+    <g id="sideGem27">
+      <polygon points="0,-42 42,0 0,42 -42,0" fill="url(#goldBezel27)" stroke="#140c04" stroke-width="2.5" stroke-linejoin="round"/>
+      <polygon points="0,-35 35,0 0,35 -35,0" fill="#fde68a" opacity="0.75"/>
+      <polygon points="0,-29 29,0 0,29 -29,0" fill="#b45309" stroke="#451a03" stroke-width="1"/>
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#06b6d4" stroke="#083344" stroke-width="1.5"/>
+      <polygon points="0,-22 22,0 0,0" fill="#a5f3fc"/>
+      <polygon points="0,-22 0,0 -22,0" fill="#22d3ee"/>
+      <polygon points="0,0 22,0 0,22" fill="#0284c7"/>
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#ecfeff"/>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow27)">
+    <!-- 1. CORNICE ESTERNA A CAPSULA SMUSSATA -->
+    <path d="M 118,22 L 762,22 Q 792,22 812,46 L 844,86 Q 858,105 844,124 L 812,164 Q 792,188 762,188 L 118,188 Q 88,188 68,164 L 36,124 Q 22,105 36,86 L 68,46 Q 88,22 118,22 Z" 
+          fill="url(#silverIvory27)" stroke="#0f172a" stroke-width="2.5"/>
+
+    <!-- Trincea Scura Incassata -->
+    <path d="M 124,33 L 756,33 Q 782,33 798,54 L 826,89 Q 838,105 826,121 L 798,156 Q 782,177 756,177 L 124,177 Q 98,177 82,156 L 54,121 Q 42,105 54,89 L 82,54 Q 98,33 124,33 Z" 
+          fill="#020814" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- 2. CORPO BLU ZAFFIRO 3D CON FORTE SMUSSO -->
+    <polygon points="130,42 750,42 796,88 796,122 750,168 130,168 84,122 84,88" 
+             fill="url(#sapphireBevel27)" stroke="#0284c7" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Piano Centrale Blu Profondo -->
+    <polygon points="138,54 742,54 780,92 780,118 742,156 138,156 100,118 100,92" 
+             fill="url(#sapphireInner27)"/>
+
+    <!-- Riflesso Speculare Orizzontale Superiore (Effetto Gemma/Vetro) -->
+    <polyline points="104,90 138,56 742,56 776,90" fill="none" stroke="#bae6fd" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+    <polyline points="104,120 138,154 742,154 776,120" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- Venatura fluida morbida a destra -->
+    <path d="M 755,65 C 710,95 660,145 580,155" fill="none" stroke="#38bdf8" stroke-width="6" opacity="0.18" filter="blur(3px)"/>
+
+    <!-- 3. GEMME LATERALI SINISTRA E DESTRA -->
+    <use href="#sideGem27" x="58" y="105"/>
+    <use href="#sideGem27" x="822" y="105"/>
+  </g>
+</svg>

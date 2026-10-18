@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <filter id="a8-shadow" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3.5" flood-color="#000614" flood-opacity="0.75" />
+    </filter>
+
+    <linearGradient id="a8-gold-outer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="20%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#996832" />
+      <stop offset="100%" stop-color="#543412" />
+    </linearGradient>
+
+    <linearGradient id="a8-gold-inner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="25%" stop-color="#f5e1c3" />
+      <stop offset="65%" stop-color="#c99559" />
+      <stop offset="100%" stop-color="#6e4417" />
+    </linearGradient>
+
+    <radialGradient id="a8-navy-channel" cx="50%" cy="50%" r="55%">
+      <stop offset="65%" stop-color="#051d47" />
+      <stop offset="90%" stop-color="#092d69" />
+      <stop offset="100%" stop-color="#020c21" />
+    </radialGradient>
+
+    <radialGradient id="a8-navy-well" cx="50%" cy="42%" r="60%">
+      <stop offset="0%" stop-color="#072559" />
+      <stop offset="70%" stop-color="#041638" />
+      <stop offset="100%" stop-color="#01091c" />
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#a8-shadow)" transform="translate(80, 80)">
+    <!-- 1. Anello Esterno in Oro Champagne 3D -->
+    <circle cx="0" cy="0" r="64" fill="url(#a8-gold-outer)" stroke="#1c130a" stroke-width="2.2" />
+    <path d="M -54,-28 A 60,60 0 0,1 54,-28" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" stroke-linecap="round" />
+
+    <!-- 2. Canale Concentrico Blu Notte -->
+    <circle cx="0" cy="0" r="53" fill="url(#a8-navy-channel)" stroke="#472c10" stroke-width="2" />
+    <path d="M -44,22 A 49,49 0 0,0 44,22" fill="none" stroke="#1554ad" stroke-width="1.5" opacity="0.6" />
+
+    <!-- 3. Anello Interno in Oro Champagne 3D -->
+    <circle cx="0" cy="0" r="40" fill="url(#a8-gold-inner)" stroke="#1c1105" stroke-width="1.8" />
+    <path d="M -33,-16 A 37,37 0 0,1 33,-16" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.8" stroke-linecap="round" />
+
+    <!-- 4. Incasso Centrale Blu Profondo -->
+    <circle cx="0" cy="0" r="31" fill="url(#a8-navy-well)" stroke="#42270c" stroke-width="1.8" />
+    <!-- Ombra interna superiore e riflesso inferiore -->
+    <path d="M -27,-10 A 29,29 0 0,1 27,-10" fill="none" stroke="#000512" stroke-width="3" opacity="0.7" />
+    <path d="M -20,20 A 28,28 0 0,0 20,20" fill="none" stroke="#195ec2" stroke-width="1.5" opacity="0.55" />
+  </g>
+</svg>

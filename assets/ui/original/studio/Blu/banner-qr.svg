@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 560" width="100%" height="100%">
+  <defs>
+    <filter id="a36-shadow" x="-4%" y="-5%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000614" flood-opacity="0.85" />
+    </filter>
+    <filter id="a36-elem-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#00040f" flood-opacity="0.88" />
+    </filter>
+
+    <!-- Cornice Oro Champagne / Avorio -->
+    <linearGradient id="a36-gold-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="16%" stop-color="#f7ebd9" />
+      <stop offset="52%" stop-color="#cfb08b" />
+      <stop offset="88%" stop-color="#946e42" />
+      <stop offset="100%" stop-color="#543818" />
+    </linearGradient>
+
+    <linearGradient id="a36-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f5c576" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <!-- Sfondo Principale Blu Reale -->
+    <radialGradient id="a36-royal-bg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#083685" />
+      <stop offset="65%" stop-color="#041e4f" />
+      <stop offset="100%" stop-color="#020f2b" />
+    </radialGradient>
+
+    <linearGradient id="a36-blue-bevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2979ff" />
+      <stop offset="50%" stop-color="#0d47a1" />
+      <stop offset="100%" stop-color="#1565c0" />
+    </linearGradient>
+
+    <!-- Piastra Bianca / Perla -->
+    <linearGradient id="a36-white-plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="70%" stop-color="#f2f5f9" />
+      <stop offset="100%" stop-color="#d5dde8" />
+    </linearGradient>
+
+    <!-- Nastri e Icona Gruppo in Rosso Corallo / Salmone -->
+    <linearGradient id="a36-coral" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffab91" />
+      <stop offset="40%" stop-color="#ff7043" />
+      <stop offset="85%" stop-color="#d84315" />
+      <stop offset="100%" stop-color="#872000" />
+    </linearGradient>
+
+    <!-- Acciaio Lame Spade -->
+    <linearGradient id="a36-blade-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#94a3b8" />
+    </linearGradient>
+    <linearGradient id="a36-blade-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1" />
+      <stop offset="50%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <radialGradient id="a36-gold-stud" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff9db" />
+      <stop offset="40%" stop-color="#f7b733" />
+      <stop offset="85%" stop-color="#b56207" />
+      <stop offset="100%" stop-color="#592c00" />
+    </radialGradient>
+
+    <linearGradient id="a36-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <!-- Gemma Romboidale Media -->
+    <g id="a36-gem" filter="url(#a36-elem-shadow)">
+      <polygon points="0,-24 22,0 0,24 -22,0" fill="url(#a36-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-24 -22,0 -16,0 0,-18" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-15 14,0 0,15 -14,0" fill="#04152e" />
+      <polygon points="0,-13 12,0 0,13 -12,0" fill="url(#a36-cyan-gem)" />
+      <polygon points="0,-13 12,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,0 0,5 -4.5,0" fill="#e0faff" />
+    </g>
+
+    <!-- Spada Singola 3D per l'Emblema -->
+    <g id="a36-sword">
+      <!-- Lama doppia sfaccettatura -->
+      <polygon points="0,-105 -16,-78 -12,26 0,26" fill="url(#a36-blade-light)" stroke="#1e293b" stroke-width="1.5" stroke-linejoin="round" />
+      <polygon points="0,-105 16,-78 12,26 0,26" fill="url(#a36-blade-dark)" stroke="#1e293b" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Guardia Dorata (Crossguard) -->
+      <rect x="-28" y="24" width="56" height="12" rx="4" fill="url(#a36-gem-gold)" stroke="#241304" stroke-width="1.8" />
+      <!-- Impugnatura e Pomolo -->
+      <rect x="-7" y="36" width="14" height="26" rx="3" fill="#b86b14" stroke="#241304" stroke-width="1.6" />
+      <circle cx="0" cy="68" r="9.5" fill="url(#a36-gold-stud)" stroke="#241304" stroke-width="1.8" />
+    </g>
+  </defs>
+
+  <g filter="url(#a36-shadow)">
+    <!-- ========================================================= -->
+    <!-- 1. CORNICE PRINCIPALE ESTERNA E SFONDO BLU REALE          -->
+    <!-- ========================================================= -->
+    <polygon points="72,58 888,58 928,98 928,504 888,544 72,544 32,504 32,98" fill="url(#a36-gold-frame)" stroke="#1c130a" stroke-width="2.4" stroke-linejoin="round" />
+    <polyline points="35,99 73,61 887,61 925,99" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" />
+
+    <polygon points="78,72 882,72 914,104 914,498 882,530 78,530 46,498 46,104" fill="url(#a36-royal-bg)" stroke="url(#a36-blue-bevel)" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- Filetto luminoso interno e venature blu -->
+    <polygon points="84,80 876,80 906,110 906,492 876,522 84,522 54,492 54,110" fill="none" stroke="#2979ff" stroke-width="1.5" opacity="0.55" />
+    <path d="M 160,518 C 280,460 390,505 510,518" fill="none" stroke="#42a5f5" stroke-width="3" opacity="0.22" />
+
+    <!-- 4 Gemme Romboidali sui Bordi Laterali della Finestra -->
+    <use href="#a36-gem" x="39" y="162" />
+    <use href="#a36-gem" x="39" y="458" />
+    <use href="#a36-gem" x="921" y="162" />
+    <use href="#a36-gem" x="921" y="458" />
+
+    <!-- ========================================================= -->
+    <!-- 2. EMBLEMA CIRCOLARE SINISTRO CON SPADE E NASTRI CORALLO  -->
+    <!-- ========================================================= -->
+    <g transform="translate(188, 268)" filter="url(#a36-elem-shadow)">
+      <!-- Nastri Corallo Inferiori (Ribbons) -->
+      <polygon points="-98,68 -124,90 -106,112 -120,152 -92,146 -68,164 -38,112" fill="url(#a36-coral)" stroke="#2b0c02" stroke-width="2" stroke-linejoin="round" />
+      <polyline points="-118,90 -101,111 -114,146 -91,141 -70,157" fill="none" stroke="#ffccbc" stroke-width="2" opacity="0.8" />
+
+      <polygon points="98,68 124,90 106,112 120,152 92,146 68,164 38,112" fill="url(#a36-coral)" stroke="#2b0c02" stroke-width="2" stroke-linejoin="round" />
+      <polyline points="118,90 101,111 114,146 91,141 70,157" fill="none" stroke="#ffccbc" stroke-width="2" opacity="0.8" />
+
+      <!-- Anello Circolare Oro/Argento e Sfondo Blu Notte -->
+      <circle cx="0" cy="0" r="118" fill="url(#a36-gold-frame)" stroke="#1c130a" stroke-width="2.2" />
+      <circle cx="0" cy="0" r="102" fill="#020c21" stroke="#1e88e5" stroke-width="2" />
+
+      <!-- Due Spade Incrociate 3D -->
+      <use href="#a36-sword" transform="rotate(-45)" />
+      <use href="#a36-sword" transform="rotate(45)" />
+
+      <!-- 4 Gemme Cardinali sull'Anello delle Spade -->
+      <use href="#a36-gem" x="0" y="-114" transform="scale(0.85)" style="transform-origin: 0px -114px;" />
+      <use href="#a36-gem" x="0" y="114" transform="scale(0.85)" style="transform-origin: 0px 114px;" />
+      <use href="#a36-gem" x="-114" y="0" transform="scale(0.85)" style="transform-origin: -114px 0px;" />
+      <use href="#a36-gem" x="114" y="0" transform="scale(0.85)" style="transform-origin: 114px 0px;" />
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- 3. RIQUADRO CENTRALE BIANCO CON MIRINI ANGOLARI BLU       -->
+    <!-- ========================================================= -->
+    <g transform="translate(330, 128)" filter="url(#a36-elem-shadow)">
+      <rect x="0" y="0" width="284" height="276" rx="14" fill="url(#a36-gem-gold)" stroke="#1c130a" stroke-width="2.2" />
+      <rect x="7" y="7" width="270" height="262" rx="9" fill="url(#a36-white-plate)" stroke="#94a3b8" stroke-width="1.5" />
+      <!-- 4 Squadrette Angolari Blu Scuro (L-Brackets) -->
+      <g fill="#052159">
+        <!-- Top-Left -->
+        <path d="M 22,22 H 56 V 31 H 31 V 56 H 22 Z" />
+        <!-- Top-Right -->
+        <path d="M 262,22 H 228 V 31 H 253 V 56 H 262 Z" />
+        <!-- Bottom-Left -->
+        <path d="M 22,254 H 56 V 245 H 31 V 220 H 22 Z" />
+        <!-- Bottom-Right -->
+        <path d="M 262,254 H 228 V 245 H 253 V 220 H 262 Z" />
+      </g>
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- 4. PANNELLO OTTAGONALE DESTRO BLU PROFONDO                -->
+    <!-- ========================================================= -->
+    <g transform="translate(632, 128)" filter="url(#a36-elem-shadow)">
+      <polygon points="24,0 236,0 260,24 260,232 236,256 24,256 0,232 0,24" fill="url(#a36-gold-frame)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polygon points="28,9 232,9 251,28 251,228 232,247 28,247 9,228 9,28" fill="#031740" stroke="#1e88e5" stroke-width="2" stroke-linejoin="round" />
+      <!-- Cerchio energetico sottile interno -->
+      <circle cx="130" cy="128" r="92" fill="none" stroke="#1565c0" stroke-width="2.5" opacity="0.35" />
+      <!-- 2 Gemme sugli Angoli Inferiori -->
+      <use href="#a36-gem" x="12" y="238" transform="scale(0.75)" style="transform-origin: 12px 238px;" />
+      <use href="#a36-gem" x="248" y="238" transform="scale(0.75)" style="transform-origin: 248px 238px;" />
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- 5. BANNER INFERIORE DESTRO CON ICONA GRUPPO CORALLO       -->
+    <!-- ========================================================= -->
+    <g transform="translate(520, 416)" filter="url(#a36-elem-shadow)">
+      <polygon points="34,0 330,0 364,46 330,92 34,92 0,46" fill="url(#a36-gold-frame)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+      <!-- Sezione Destra Bianca -->
+      <polygon points="38,8 326,8 352,46 326,84 38,84 12,46" fill="url(#a36-white-plate)" stroke="#64748b" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Sezione Sinistra Blu Scuro Curva per l'Icona Gruppo -->
+      <path d="M 38,8 H 104 A 48,48 0 0,1 104,84 H 38 L 12,46 Z" fill="#031538" stroke="#0d47a1" stroke-width="1.5" />
+
+      <!-- Icona 3 Persone (Gruppo) in Corallo 3D -->
+      <g fill="url(#a36-coral)" stroke="#2b0c02" stroke-width="1.6" transform="translate(76, 48)">
+        <!-- Sinistra -->
+        <circle cx="-26" cy="-6" r="8.5" />
+        <path d="M -38,24 L -36,10 C -35,5 -31,3 -26,3 C -21,3 -17,5 -16,10 L -14,24 Z" />
+        <!-- Destra -->
+        <circle cx="26" cy="-6" r="8.5" />
+        <path d="M 14,24 L 16,10 C 17,5 21,3 26,3 C 31,3 35,5 36,10 L 38,24 Z" />
+        <!-- Centro -->
+        <circle cx="0" cy="-14" r="11" />
+        <path d="M -18,26 L -15,6 C -14,-1 -8,-3 0,-3 C 8,-3 14,-1 15,6 L 18,26 Z" />
+      </g>
+
+      <!-- Gemme Laterali del Banner -->
+      <use href="#a36-gem" x="8" y="46" transform="scale(0.78)" style="transform-origin: 8px 46px;" />
+      <use href="#a36-gem" x="356" y="46" transform="scale(0.78)" style="transform-origin: 356px 46px;" />
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- 6. TARGHETTA SUPERIORE CENTRALE (HEADER BADGE)            -->
+    <!-- ========================================================= -->
+    <g filter="url(#a36-elem-shadow)">
+      <!-- Alette Laterali -->
+      <polygon points="212,58 228,44 246,44 246,72 228,72" fill="url(#a36-gold-frame)" stroke="#1c130a" stroke-width="1.8" />
+      <polygon points="748,58 732,44 714,44 714,72 732,72" fill="url(#a36-gold-frame)" stroke="#1c130a" stroke-width="1.8" />
+
+      <!-- Cornice Ottagonale Targhetta -->
+      <polygon points="262,18 698,18 734,56 698,94 262,94 226,56" fill="url(#a36-gold-frame)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polygon points="268,26 692,26 722,56 692,86 268,86 238,56" fill="url(#a36-white-plate)" stroke="#6e7e91" stroke-width="1.5" stroke-linejoin="round" />
+      <polyline points="242,56 269,29 691,29" fill="none" stroke="#ffffff" stroke-width="2" />
+
+      <!-- Rivetti Dorati -->
+      <circle cx="268" cy="56" r="8" fill="url(#a36-gold-stud)" stroke="#2b1400" stroke-width="1.4" />
+      <circle cx="692" cy="56" r="8" fill="url(#a36-gold-stud)" stroke="#2b1400" stroke-width="1.4" />
+
+      <!-- Grande Gemma Centrale della Targhetta -->
+      <g transform="translate(480, 56)">
+        <polygon points="0,-46 34,0 0,46 -34,0" fill="url(#a36-gem-gold)" stroke="#1f1105" stroke-width="2" stroke-linejoin="round" />
+        <polygon points="0,-30 22,0 0,30 -22,0" fill="#03122b" />
+        <polygon points="0,-27 19,0 0,27 -19,0" fill="url(#a36-cyan-gem)" />
+        <polygon points="0,-27 19,0 0,0" fill="#7be5ff" opacity="0.8" />
+        <polygon points="0,-11 8,0 0,11 -8,0" fill="#e8fbff" />
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" width="100%" height="100%">
+  <defs>
+    <filter id="shadow21" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso_2.svg) -->
+    <linearGradient id="bronzeMain21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="25%" stop-color="#e5bfa0"/>
+      <stop offset="55%" stop-color="#8c5c3e"/>
+      <stop offset="85%" stop-color="#c99673"/>
+      <stop offset="100%" stop-color="#5e3a22"/>
+    </linearGradient>
+
+    <!-- Trincea Scura -->
+    <linearGradient id="trenchDark21" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a"/>
+      <stop offset="50%" stop-color="#2e1d13"/>
+      <stop offset="100%" stop-color="#140c07"/>
+    </linearGradient>
+
+    <!-- Lastra Interna Blu Ardesia Scuro -->
+    <linearGradient id="slateBoard21" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824"/>
+      <stop offset="50%" stop-color="#1f2d40"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+
+    <!-- Lastra Interna Chiara Avorio/Acciaio (Stato 3) -->
+    <linearGradient id="lightPlate21" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Spunta Oro/Bronzo Brillante -->
+    <linearGradient id="checkGold21" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="35%" stop-color="#f59e0b"/>
+      <stop offset="75%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </linearGradient>
+
+    <!-- Gemma sui 4 Vertici (Stile percorso_2.svg) -->
+    <g id="vertexGem21">
+      <polygon points="0,-34 34,0 0,34 -34,0" fill="url(#bronzeMain21)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="0,-28 28,0 0,28 -28,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75"/>
+      <polygon points="0,-23 23,0 0,23 -23,0" fill="#07101e" stroke="#1e130c" stroke-width="1"/>
+      <polygon points="0,-19 19,0 0,19 -19,0" fill="#0ea5e9"/>
+      <polygon points="0,-19 19,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,0 19,0 0,19" fill="#0284c7"/>
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- Base Romboidale Comune -->
+    <g id="diamondBase21">
+      <!-- Cornice Esterna in Bronzo -->
+      <polygon points="0,-142 142,0 0,142 -142,0" fill="url(#bronzeMain21)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+      <polygon points="0,-135 135,0 0,135 -135,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.7"/>
+      
+      <!-- Trincea Scura Intermedia -->
+      <polygon points="0,-125 125,0 0,125 -125,0" fill="url(#trenchDark21)" stroke="#140c07" stroke-width="1.5"/>
+
+      <!-- Cornice Interna in Bronzo Smussata -->
+      <path d="M -8,-95 Q 0,-103 8,-95 L 95,-8 Q 103,0 95,8 L 8,95 Q 0,103 -8,95 L -95,8 Q -103,0 -95,-8 Z" 
+            fill="url(#bronzeMain21)" stroke="#24130a" stroke-width="1.8"/>
+      
+      <!-- Lastra Interna Blu Ardesia con Filetto Chiaro -->
+      <path d="M -6,-83 Q 0,-89 6,-83 L 83,-6 Q 89,0 83,6 L 6,83 Q 0,89 -6,83 L -83,6 Q -89,0 -83,-6 Z" 
+            fill="url(#slateBoard21)" stroke="#f5d5b8" stroke-width="2"/>
+
+      <!-- Linee Diagonali di Riflesso -->
+      <line x1="-45" y1="-45" x2="45" y2="45" stroke="#ffffff" stroke-width="1.2" opacity="0.06"/>
+      <line x1="-30" y1="-60" x2="60" y2="30" stroke="#ffffff" stroke-width="1.2" opacity="0.06"/>
+
+      <!-- 4 Gemme sui Vertici (N, E, S, W) -->
+      <use href="#vertexGem21" x="0" y="-110"/>
+      <use href="#vertexGem21" x="110" y="0"/>
+      <use href="#vertexGem21" x="0" y="110"/>
+      <use href="#vertexGem21" x="-110" y="0"/>
+    </g>
+  </defs>
+
+  <g filter="url(#shadow21)">
+    <!-- 1. STATO VUOTO (SINISTRA) -->
+    <g transform="translate(165, 170)">
+      <use href="#diamondBase21"/>
+      <!-- Piccolo rombo decorativo centrale nello stile di percorso_2.svg -->
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="none" stroke="#7c93ab" stroke-width="1.5" opacity="0.5"/>
+      <circle cx="0" cy="0" r="3" fill="#38bdf8" opacity="0.6"/>
+    </g>
+
+    <!-- 2. STATO GEMMA ATTIVA (CENTRO) -->
+    <g transform="translate(480, 170)">
+      <use href="#diamondBase21"/>
+      <!-- Grande Cristallo Centrale Ciano Sfaccettato -->
+      <g>
+        <polygon points="0,-72 72,0 0,72 -72,0" fill="#07101e" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+        <polygon points="0,-66 -66,0 0,0" fill="#7dd3fc"/>
+        <polygon points="0,-66 66,0 0,0" fill="#0ea5e9"/>
+        <polygon points="0,66 -66,0 0,0" fill="#0284c7"/>
+        <polygon points="0,66 66,0 0,0" fill="#0369a1"/>
+        <polygon points="0,-36 36,0 0,36 -36,0" fill="#e0f2fe" opacity="0.85"/>
+        <polygon points="0,-52 52,0 0,52 -52,0" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.7"/>
+      </g>
+    </g>
+
+    <!-- 3. STATO COMPLETATO CON SPUNTA (DESTRA) -->
+    <g transform="translate(795, 170)">
+      <use href="#diamondBase21"/>
+      <!-- Piastra Interna Chiara con Smusso Acciaio -->
+      <path d="M -6,-74 Q 0,-80 6,-74 L 74,-6 Q 80,0 74,6 L 6,74 Q 0,80 -6,74 L -74,6 Q -80,0 -74,-6 Z" 
+            fill="url(#lightPlate21)" stroke="#4b657d" stroke-width="2"/>
+      <path d="M -4,-66 Q 0,-71 4,-66 L 66,-4 Q 71,0 66,4 L 4,66 Q 0,71 -4,66 L -66,4 Q -71,0 -66,-4 Z" 
+            fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.9"/>
+
+      <!-- Spunta 3D Sfaccettata in Oro/Bronzo -->
+      <g>
+        <path d="M -42,4 L -26,-12 L -8,6 L 28,-30 L 44,-14 L -8,38 Z" transform="translate(0, 4)" fill="#101824" opacity="0.45"/>
+        <path d="M -42,4 L -26,-12 L -8,6 L 28,-30 L 44,-14 L -8,38 Z" 
+              fill="url(#checkGold21)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+        <polyline points="-38,4 -26,-8 -8,10 28,-26 40,-14" fill="none" stroke="#fff3e6" stroke-width="2" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+</svg>

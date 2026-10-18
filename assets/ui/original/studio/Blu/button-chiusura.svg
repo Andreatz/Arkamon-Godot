@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="100%" height="100%">
+  <defs>
+    <filter id="a15-shadow" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+    <filter id="a15-elem-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3.5" stdDeviation="2.5" flood-color="#00040f" flood-opacity="0.9" />
+    </filter>
+
+    <linearGradient id="a15-gold-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#996832" />
+      <stop offset="100%" stop-color="#543412" />
+    </linearGradient>
+
+    <linearGradient id="a15-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <radialGradient id="a15-blue-disc" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#0d47a1" />
+      <stop offset="55%" stop-color="#062863" />
+      <stop offset="88%" stop-color="#031538" />
+      <stop offset="100%" stop-color="#010a1f" />
+    </radialGradient>
+
+    <linearGradient id="a15-blue-bevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#40c4ff" />
+      <stop offset="45%" stop-color="#1565c0" />
+      <stop offset="100%" stop-color="#0277bd" />
+    </linearGradient>
+
+    <linearGradient id="a15-ivory-x" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f7efe4" />
+      <stop offset="85%" stop-color="#d6c4ae" />
+      <stop offset="100%" stop-color="#9e8870" />
+    </linearGradient>
+
+    <linearGradient id="a15-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a15-gem" filter="url(#a15-elem-shadow)">
+      <polygon points="0,-23 21,0 0,23 -21,0" fill="url(#a15-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-23 -21,0 -15,0 0,-17" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-14 13,0 0,14 -13,0" fill="#04152e" />
+      <polygon points="0,-12 11,0 0,12 -11,0" fill="url(#a15-cyan-gem)" />
+      <polygon points="0,-12 11,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,0 0,5 -4.5,0" fill="#e0faff" />
+    </g>
+  </defs>
+
+  <g filter="url(#a15-shadow)" transform="translate(110, 110)">
+    <!-- 1. Anello Esterno Oro Champagne -->
+    <circle cx="0" cy="0" r="82" fill="url(#a15-gold-rim)" stroke="#1c130a" stroke-width="2.2" />
+    <path d="M -68,-36 A 77,77 0 0,1 68,-36" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" stroke-linecap="round" />
+
+    <!-- 2. Scanalatura Scura Blu Notte -->
+    <circle cx="0" cy="0" r="68" fill="#020b1f" stroke="#36220e" stroke-width="1.8" />
+
+    <!-- 3. Disco Centrale Blu Reale Bombato -->
+    <circle cx="0" cy="0" r="61" fill="url(#a15-blue-disc)" stroke="url(#a15-blue-bevel)" stroke-width="3" />
+    <path d="M -46,-28 A 54,54 0 0,1 46,-28" fill="none" stroke="#80d8ff" stroke-width="2.2" opacity="0.8" stroke-linecap="round" />
+    <path d="M -42,32 A 54,54 0 0,0 42,32" fill="none" stroke="#29b6f6" stroke-width="1.8" opacity="0.55" stroke-linecap="round" />
+
+    <!-- 4. Icona Centrale "X" Scolpita in 3D -->
+    <g filter="url(#a15-elem-shadow)">
+      <path d="M -25,-37 L 0,-12 L 25,-37 C 27,-39 30,-39 32,-37 L 37,-32 C 39,-30 39,-27 37,-25 L 12,0 L 37,25 C 39,27 39,30 37,32 L 32,37 C 30,39 27,39 25,37 L 0,12 L -25,37 C -27,39 -30,39 -32,37 L -37,32 C -39,30 -39,27 -37,25 L -12,0 L -37,-25 C -39,-27 -39,-30 -37,-32 L -32,-37 C -30,-39 -27,-39 -25,-37 Z" fill="url(#a15-ivory-x)" stroke="#1c130a" stroke-width="1.8" stroke-linejoin="round" />
+      <path d="M -34,-29 L -28,-35 L 0,-7 L 28,-35 L 34,-29" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85" stroke-linecap="round" />
+    </g>
+
+    <!-- 5. Gemme Cardinali -->
+    <use href="#a15-gem" x="0" y="-78" />
+    <use href="#a15-gem" x="0" y="78" />
+    <use href="#a15-gem" x="-78" y="0" />
+    <use href="#a15-gem" x="78" y="0" />
+  </g>
+</svg>

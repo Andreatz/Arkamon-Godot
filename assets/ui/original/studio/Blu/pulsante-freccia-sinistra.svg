@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 190" width="100%" height="100%">
+  <defs>
+    <filter id="a4-shadow" x="-8%" y="-10%" width="116%" height="125%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000614" flood-opacity="0.75" />
+    </filter>
+    <filter id="a4-arrow-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#00040f" flood-opacity="0.9" />
+    </filter>
+
+    <linearGradient id="a4-gold-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ead7" />
+      <stop offset="55%" stop-color="#d4ad7d" />
+      <stop offset="88%" stop-color="#9e6f3c" />
+      <stop offset="100%" stop-color="#5e3c19" />
+    </linearGradient>
+
+    <linearGradient id="a4-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6e5" />
+      <stop offset="35%" stop-color="#f0be6e" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#693b08" />
+    </linearGradient>
+
+    <radialGradient id="a4-blue-panel" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#0a3d91" />
+      <stop offset="65%" stop-color="#052159" />
+      <stop offset="100%" stop-color="#021030" />
+    </radialGradient>
+
+    <linearGradient id="a4-blue-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2979ff" />
+      <stop offset="50%" stop-color="#0d47a1" />
+      <stop offset="100%" stop-color="#062863" />
+    </linearGradient>
+
+    <linearGradient id="a4-ivory-arrow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f5ece0" />
+      <stop offset="85%" stop-color="#cfbda6" />
+      <stop offset="100%" stop-color="#96826b" />
+    </linearGradient>
+
+    <linearGradient id="a4-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a4-gem" filter="url(#a4-arrow-shadow)">
+      <polygon points="0,-24 22,0 0,24 -22,0" fill="url(#a4-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-24 -22,0 -16,0 0,-18" fill="#ffffff" opacity="0.7" />
+      <polygon points="0,-15 14,0 0,15 -14,0" fill="#04152e" />
+      <polygon points="0,-13 12,0 0,13 -12,0" fill="url(#a4-cyan-gem)" />
+      <polygon points="0,-13 12,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 5,0 0,5 -5,0" fill="#e0faff" />
+    </g>
+
+    <g id="a4-btn-base">
+      <polygon points="55,14 155,14 188,47 188,143 155,176 55,176 22,143 22,47" fill="url(#a4-gold-frame)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polyline points="24,48 56,17 154,17 186,48" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" />
+      <polygon points="59,24 151,24 178,51 178,139 151,166 59,166 32,139 32,51" fill="#020b1f" stroke="#36220e" stroke-width="1.5" stroke-linejoin="round" />
+      <polygon points="63,31 147,31 171,55 171,135 147,159 63,159 39,135 39,55" fill="url(#a4-blue-panel)" stroke="url(#a4-blue-rim)" stroke-width="2.6" stroke-linejoin="round" />
+      <use href="#a4-gem" x="26" y="95" />
+      <use href="#a4-gem" x="184" y="95" />
+    </g>
+  </defs>
+
+  <g filter="url(#a4-shadow)">
+    <!-- 1. PULSANTE FRECCIA SINISTRA (<) -->
+    <g transform="translate(8, 0)">
+      <use href="#a4-btn-base" />
+      <g filter="url(#a4-arrow-shadow)">
+        <path d="M 76,95 L 124,52 C 127,49 131,51 131,56 V 134 C 131,139 127,141 124,138 Z" fill="url(#a4-ivory-arrow)" stroke="#24180b" stroke-width="2" stroke-linejoin="round" />
+        <!-- Sfaccettatura 3D inferiore e luce superiore -->
+        <polygon points="79,95 129,135 123,126 86,95" fill="#b09c84" opacity="0.7" />
+        <polyline points="80,95 127,54 127,132" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85" stroke-linejoin="round" />
+      </g>
+    </g>
+
+
+  </g>
+</svg>

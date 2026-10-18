@@ -1,0 +1,60 @@
+name: Godot - verifica e build Windows
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: godot-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Cache editor e template ufficiali
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4
+        with:
+          path: |
+            ~/AppData/Local/Arkamon/godot-4.7.2/*.exe
+            ~/AppData/Roaming/Godot/export_templates/4.7.2.stable
+          key: godot-4.7.2-official-windows-x86_64-v1
+
+      - name: Installa Godot 4.7.2 e verifica SHA512
+        run: |
+          $godot = & ./tools/fetch_godot.ps1 -WithTemplates
+          "GODOT_BIN=$godot" | Out-File -FilePath $env:GITHUB_ENV -Encoding utf8 -Append
+
+      - name: Importa, esegue test ed esporta
+        run: ./tools/check.ps1 -ExportWindows
+
+      - name: Crea pacchetto portatile
+        run: |
+          Copy-Item -LiteralPath README.md -Destination build/windows/LEGGIMI.md
+          Copy-Item -LiteralPath docs/BUILD.md -Destination build/windows/SVILUPPO.md
+          Copy-Item -LiteralPath docs/ASSET_PROVENANCE.md -Destination build/windows/CREDITI.md
+          Copy-Item -LiteralPath assets/audio/CreditToZachry.txt -Destination build/windows/CreditToZachry.txt
+          New-Item -ItemType Directory -Force build/windows/docs/images | Out-Null
+          Copy-Item -Path docs/*.md -Destination build/windows/docs/
+          Copy-Item -Path docs/images/*.png -Destination build/windows/docs/images/
+          Compress-Archive -Path build/windows/* -DestinationPath build/Arkamon-Godot-Windows.zip
+
+      - name: Carica build Windows
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: Arkamon-Godot-Windows
+          path: build/Arkamon-Godot-Windows.zip
+          if-no-files-found: error
+          retention-days: 14

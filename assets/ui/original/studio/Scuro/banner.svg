@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 380" width="100%" height="100%">
+  <defs>
+    <filter id="shadowBanner" x="-5%" y="-8%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+
+    <!-- Gradiente Principale Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeMain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <!-- Trincea Scura Incassata -->
+    <linearGradient id="trenchDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <!-- Lastra Interna Blu Ardesia Scuro (da percorso.svg) -->
+    <linearGradient id="slateBoard" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824" />
+      <stop offset="50%" stop-color="#1f2d40" />
+      <stop offset="100%" stop-color="#101722" />
+    </linearGradient>
+
+    <radialGradient id="slateGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2b4263" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#1a273b" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#101824" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Smusso Acciaio-Blu Interno -->
+    <linearGradient id="steelBevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#607d96" />
+      <stop offset="50%" stop-color="#364b61" />
+      <stop offset="100%" stop-color="#4b657d" />
+    </linearGradient>
+
+    <!-- Lastra Chiara Targa Superiore -->
+    <linearGradient id="headerPlate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="65%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <!-- Rivetto Sferico in Bronzo Dorato -->
+    <radialGradient id="bronzeStud" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="30%" stop-color="#eab68c" />
+      <stop offset="75%" stop-color="#8c5c3e" />
+      <stop offset="100%" stop-color="#3b2112" />
+    </radialGradient>
+
+    <clipPath id="innerClipBanner">
+      <polygon points="96,62 964,62 1006,104 1006,300 974,332 86,332 54,300 54,104" />
+    </clipPath>
+
+    <!-- Gemma Romboidale Grande (Stile percorso.svg) -->
+    <g id="gemLarge">
+      <polygon points="0,-32 32,0 0,32 -32,0" fill="url(#bronzeMain)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-27 27,0 0,27 -27,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-18 18,0 0,18 -18,0" fill="#0ea5e9" />
+      <polygon points="0,-18 18,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 18,0 0,18" fill="#0284c7" />
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="#e0f2fe" />
+    </g>
+
+    <!-- Gemma Romboidale Piccola (Spigolo Superiore Sinistro) -->
+    <g id="gemCorner">
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="url(#bronzeMain)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#07101e" />
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#0ea5e9" />
+      <polygon points="0,-12 12,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowBanner)">
+    <!-- 1. CORNICE OTTAGONALE ESTERNA IN BRONZO -->
+    <polygon points="86,38 974,38 1028,92 1028,312 984,356 76,356 32,312 32,92" fill="url(#bronzeMain)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="88,42 972,42 1024,94" fill="none" stroke="#fff3e6" stroke-width="1.5" opacity="0.8" />
+
+    <!-- 2. TRINCEA SCURA INCASSATA -->
+    <polygon points="91,50 969,50 1016,97 1016,306 979,343 81,343 44,306 44,97" fill="url(#trenchDark)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- 3. LASTRA INTERNA BLU ARDESIA CON FILETTO CHIARO -->
+    <polygon points="96,58 964,58 1008,102 1008,301 974,335 86,335 52,301 52,102" fill="url(#slateBoard)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Contenuto Decorativo Interno della Lastra (Stile percorso.svg) -->
+    <g clip-path="url(#innerClipBanner)">
+      <ellipse cx="530" cy="196" rx="380" ry="130" fill="url(#slateGlow)" />
+
+      <!-- Archi Simmetrici e Linee Diagonali di Riflesso -->
+      <path d="M 220,58 A 210,190 0 0,0 220,335 L 50,335 L 50,58 Z" fill="#0b111a" opacity="0.45" />
+      <path d="M 840,58 A 210,190 0 0,1 840,335 L 1010,335 L 1010,58 Z" fill="#0b111a" opacity="0.45" />
+
+      <g stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+        <line x1="150" y1="58" x2="290" y2="335" />
+        <line x1="190" y1="58" x2="330" y2="335" />
+        <line x1="910" y1="58" x2="770" y2="335" />
+        <line x1="870" y1="58" x2="730" y2="335" />
+      </g>
+
+      <!-- Curve decorative in stile banner.svg armonizzate in Acciaio-Blu -->
+      <path d="M 52,165 C 115,135 165,95 210,58" fill="none" stroke="#4b657d" stroke-width="2" opacity="0.45" />
+      <path d="M 52,235 C 135,255 215,295 290,335" fill="none" stroke="#4b657d" stroke-width="2" opacity="0.45" />
+      <path d="M 1008,165 C 945,135 895,95 850,58" fill="none" stroke="#4b657d" stroke-width="2" opacity="0.45" />
+      <path d="M 1008,235 C 925,255 845,295 770,335" fill="none" stroke="#4b657d" stroke-width="2" opacity="0.45" />
+
+      <!-- Cornice Interna in Acciaio-Blu -->
+      <polygon points="104,68 956,68 996,108 996,294 968,322 92,322 64,294 64,108" fill="none" stroke="url(#steelBevel)" stroke-width="2" opacity="0.8" />
+
+      <!-- Piccoli Rombi Decorativi Interni con Punto Ciano (da percorso.svg) -->
+      <g transform="translate(90, 200)">
+        <polygon points="0,-9 9,0 0,9 -9,0" fill="none" stroke="#7c93ab" stroke-width="1.5" />
+        <circle cx="0" cy="0" r="2.5" fill="#38bdf8" />
+      </g>
+      <g transform="translate(970, 200)">
+        <polygon points="0,-9 9,0 0,9 -9,0" fill="none" stroke="#7c93ab" stroke-width="1.5" />
+        <circle cx="0" cy="0" r="2.5" fill="#38bdf8" />
+      </g>
+    </g>
+
+    <!-- Rivetti Sferici negli Angoli Inferiori -->
+    <circle cx="72" cy="314" r="9" fill="url(#bronzeStud)" stroke="#24130a" stroke-width="1.6" />
+    <circle cx="988" cy="314" r="9" fill="url(#bronzeStud)" stroke="#24130a" stroke-width="1.6" />
+
+    <!-- 4. TARGA SUPERIORE (HEADER) -->
+    <g>
+      <!-- Ombra Portata Targa -->
+      <polygon points="348,22 712,22 738,48 708,80 352,80 322,48" fill="#060a0f" opacity="0.65" />
+
+      <!-- Alette Laterali Appuntite -->
+      <polygon points="355,28 330,28 316,40 330,52 355,52" fill="url(#bronzeMain)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <circle cx="333" cy="40" r="4.5" fill="#38bdf8" stroke="#07101e" stroke-width="1" />
+
+      <polygon points="705,28 730,28 744,40 730,52 705,52" fill="url(#bronzeMain)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <circle cx="727" cy="40" r="4.5" fill="#38bdf8" stroke="#07101e" stroke-width="1" />
+
+      <!-- Cornice Bronzo Targa -->
+      <polygon points="364,12 696,12 726,42 702,68 358,68 334,42" fill="url(#bronzeMain)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <!-- Lastra Chiara Interna -->
+      <polygon points="370,19 690,19 714,42 696,60 364,60 346,42" fill="url(#headerPlate)" stroke="#4b657d" stroke-width="1.5" stroke-linejoin="round" />
+
+      <!-- Rivetti Targa -->
+      <circle cx="372" cy="40" r="7.5" fill="url(#bronzeStud)" stroke="#24130a" stroke-width="1.5" />
+      <circle cx="688" cy="40" r="7.5" fill="url(#bronzeStud)" stroke="#24130a" stroke-width="1.5" />
+
+      <!-- Gemma Centrale della Targa (con allungamento verticale) -->
+      <g transform="translate(530, 40) scale(0.9, 1.15)">
+        <use href="#gemLarge" />
+      </g>
+    </g>
+
+    <!-- 5. GEMME SULLA CORNICE (Spigolo Top-Left, Fianco Sinistro, Fianco Destro) -->
+    <use href="#gemCorner" x="73" y="91" />
+    <use href="#gemLarge" x="38" y="200" />
+    <use href="#gemLarge" x="1022" y="200" />
+
+    <!-- 6. PULSANTE CIRCOLARE DI CHIUSURA ("X") IN ALTO A DESTRA -->
+    <g transform="translate(982, 68)">
+      <circle cx="-2" cy="4" r="42" fill="#060a0f" opacity="0.6" />
+      <!-- Anello Esterno in Bronzo -->
+      <circle cx="0" cy="0" r="40" fill="url(#bronzeMain)" stroke="#24130a" stroke-width="2" />
+      <path d="M -28,-22 A 35,35 0 0,1 28,-22" fill="none" stroke="#fff3e6" stroke-width="2" opacity="0.85" />
+      <!-- Trincea e Disco Interno Blu Ardesia -->
+      <circle cx="0" cy="0" r="30" fill="url(#trenchDark)" stroke="#140c07" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="27" fill="url(#slateBoard)" stroke="#607d96" stroke-width="1.8" />
+      <!-- Icona X -->
+      <path d="M -12,-12 L 12,12 M 12,-12 L -12,12" stroke="#07101e" stroke-width="7" stroke-linecap="round" />
+      <path d="M -12,-12 L 12,12 M 12,-12 L -12,12" stroke="#f1f5f9" stroke-width="4.5" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

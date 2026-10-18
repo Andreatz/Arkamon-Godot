@@ -1,0 +1,4 @@
+# Original UI sources are audited by byte hash, including their line endings.
+assets/ui/original/** -text
+data/site_theme.json -text
+data/portrait_metadata.json -text

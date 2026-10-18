@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 190" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow23" x="-5%" y="-12%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Cornice Avorio-Oro -->
+    <linearGradient id="ivoryGold23" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fff5de"/>
+      <stop offset="68%" stop-color="#dfa64b"/>
+      <stop offset="100%" stop-color="#965e13"/>
+    </linearGradient>
+
+    <linearGradient id="goldGroove23" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d99026"/>
+      <stop offset="50%" stop-color="#f7c35c"/>
+      <stop offset="100%" stop-color="#a6630cc"/>
+    </linearGradient>
+
+    <!-- Lastra Interna Bianco Perla 3D -->
+    <linearGradient id="pearlSurface23" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f8fafc"/>
+      <stop offset="88%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <linearGradient id="pearlBevelShade23" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#e2e8f0"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Rivetto Sferico Oro 3D -->
+    <radialGradient id="goldStud23" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fde047"/>
+      <stop offset="65%" stop-color="#d97706"/>
+      <stop offset="100%" stop-color="#78350f"/>
+    </radialGradient>
+
+    <!-- Gemma Laterale Romboidale -->
+    <g id="sideGem23">
+      <polygon points="0,-38 36,0 0,38 -36,0" fill="url(#ivoryGold23)" stroke="#1c1105" stroke-width="2.2" stroke-linejoin="round"/>
+      <polygon points="0,-31 29,0 0,31 -29,0" fill="#e0a343" stroke="#784408" stroke-width="1"/>
+      <polygon points="0,-22 20,0 0,22 -20,0" fill="#0284c7" stroke="#082f49" stroke-width="1.2"/>
+      <polygon points="0,-22 20,0 0,0" fill="#67e8f9"/>
+      <polygon points="0,-22 0,0 -20,0" fill="#22d3ee"/>
+      <polygon points="0,0 20,0 0,22" fill="#0369a1"/>
+      <polygon points="0,-10 9,0 0,10 -9,0" fill="#e0f2fe"/>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow23)">
+    <!-- 1. CORNICE ESTERNA AVORIO-ORO -->
+    <polygon points="88,22 832,22 882,72 882,118 832,168 88,168 38,118 38,72" 
+             fill="url(#ivoryGold23)" stroke="#1a1208" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- Bordo Oro Interno -->
+    <polygon points="93,31 827,31 871,75 871,115 827,159 93,159 49,115 49,75" 
+             fill="#eab308" stroke="#452304" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- 2. LASTRA INTERNA BIANCO PERLA SMUSSATA -->
+    <polygon points="98,38 822,38 862,78 862,112 822,152 98,152 58,112 58,78" 
+             fill="url(#pearlBevelShade23)" stroke="#1e293b" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <polygon points="105,46 815,46 850,81 850,109 815,144 105,144 70,109 70,81" 
+             fill="url(#pearlSurface23)" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- 3. RIVETTI SFERICI D'ORO INTERNI -->
+    <g transform="translate(96, 95)">
+      <circle cx="2" cy="3" r="16" fill="#94a3b8" opacity="0.6"/>
+      <circle cx="0" cy="0" r="16" fill="url(#goldStud23)" stroke="#291504" stroke-width="2"/>
+    </g>
+    <g transform="translate(824, 95)">
+      <circle cx="-2" cy="3" r="16" fill="#94a3b8" opacity="0.6"/>
+      <circle cx="0" cy="0" r="16" fill="url(#goldStud23)" stroke="#291504" stroke-width="2"/>
+    </g>
+
+    <!-- 4. GEMME LATERALI SINISTRA E DESTRA -->
+    <use href="#sideGem23" x="48" y="95"/>
+    <use href="#sideGem23" x="872" y="95"/>
+  </g>
+</svg>

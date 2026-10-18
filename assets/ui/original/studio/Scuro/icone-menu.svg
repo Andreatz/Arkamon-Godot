@@ -1,0 +1,401 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1140 1140" width="100%" height="100%">
+  <defs>
+    <filter id="shadowMenu3" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+    <filter id="objShadow3" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="6" stdDeviation="3.5" flood-color="#05080f" flood-opacity="0.85" />
+    </filter>
+    <filter id="cyanGlow3" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeMain3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <linearGradient id="goldAccent3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="40%" stop-color="#f59e0b" />
+      <stop offset="80%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+
+    <!-- Trincea Scura -->
+    <linearGradient id="trenchDark3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <!-- Lastra Interna Blu Ardesia Scuro (da percorso.svg) -->
+    <radialGradient id="slateBoard3" cx="50%" cy="45%" r="58%">
+      <stop offset="0%" stop-color="#22354f" />
+      <stop offset="62%" stop-color="#121c2b" />
+      <stop offset="100%" stop-color="#090e17" />
+    </radialGradient>
+
+    <!-- Avorio / Panna Scolpito per Oggetti e Targhette -->
+    <linearGradient id="ivorySurface3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f5ebe0" />
+      <stop offset="100%" stop-color="#d6c2a8" />
+    </linearGradient>
+
+    <linearGradient id="ivoryShade3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d6c2a8" />
+      <stop offset="100%" stop-color="#9e8264" />
+    </linearGradient>
+
+    <!-- Blu Reale / Ardesia Corazzato per Oggetti -->
+    <linearGradient id="blueArmor3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="55%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+
+    <!-- Ciano Brillante -->
+    <linearGradient id="cyanBright3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="35%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <clipPath id="octaBoardClip3">
+      <polygon points="-66,-120 66,-120 120,-66 120,56 66,110 -66,110 -120,56 -120,-66" />
+    </clipPath>
+
+    <!-- Gemma Piccola per le Targhette (Stile percorso.svg) -->
+    <g id="tagGem3">
+      <polygon points="0,-16 14,0 0,16 -14,0" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.5" stroke-linejoin="round" />
+      <polygon points="0,-11 9.5,0 0,11 -9.5,0" fill="#07101e" />
+      <polygon points="0,-9 8,0 0,9 -8,0" fill="#0ea5e9" />
+      <polygon points="0,-9 8,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,-4 3.5,0 0,4 -3.5,0" fill="#e0f2fe" />
+    </g>
+
+    <!-- Cornice Ottagonale Base nello Stile di percorso.svg -->
+    <g id="menuOctagonBase3">
+      <!-- Cornice Esterna in Bronzo -->
+      <polygon points="-76,-138 76,-138 138,-76 138,66 76,128 -76,128 -138,66 -138,-76" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polyline points="-74,-134 74,-134 134,-74" fill="none" stroke="#fff3e6" stroke-width="1.6" opacity="0.85" />
+
+      <!-- Trincea Scura Incassata -->
+      <polygon points="-70,-126 70,-126 126,-70 126,60 70,116 -70,116 -126,60 -126,-70" fill="url(#trenchDark3)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round" />
+
+      <!-- Lastra Interna Blu Ardesia -->
+      <polygon points="-66,-120 66,-120 120,-66 120,56 66,110 -66,110 -120,56 -120,-66" fill="url(#slateBoard3)" stroke="#0d131a" stroke-width="1.5" stroke-linejoin="round" />
+
+      <!-- Riflessi Diagonali Interni (Stile percorso.svg) -->
+      <g clip-path="url(#octaBoardClip3)" stroke="#ffffff" stroke-width="1.3" opacity="0.06">
+        <line x1="-85" y1="-120" x2="25" y2="110" />
+        <line x1="-50" y1="-120" x2="60" y2="110" />
+        <line x1="85" y1="-120" x2="-25" y2="110" />
+      </g>
+
+      <!-- Filetto Ottagonale Interno Ciano/Acciaio -->
+      <polygon points="-62,-113 62,-113 113,-62 113,52 62,103 -62,103 -113,52 -113,-62" fill="none" stroke="#38bdf8" stroke-width="1.8" opacity="0.7" stroke-linejoin="round" />
+    </g>
+
+    <!-- Targhetta Esagonale Inferiore Vuota (Stile percorso.svg) -->
+    <g id="emptyTagBanner3">
+      <!-- Ombra portata -->
+      <polygon points="-86,86 86,86 116,118 86,150 -86,150 -116,118" transform="translate(0, 5)" fill="#05080f" opacity="0.75" />
+      <!-- Cornice Esterna in Bronzo -->
+      <polygon points="-86,86 86,86 116,118 86,150 -86,150 -116,118" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <!-- Trincea Scura -->
+      <polygon points="-80,93 80,93 104,118 80,143 -80,143 -104,118" fill="url(#trenchDark3)" stroke="#140c07" stroke-width="1" stroke-linejoin="round" />
+      <!-- Lastra Interna Avorio Chiaro -->
+      <polygon points="-77,96 77,96 99,118 77,140 -77,140 -99,118" fill="url(#ivorySurface3)" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- 3 Gemme Romboidali Ciano -->
+      <g transform="translate(0, 86) scale(1.15)">
+        <use href="#tagGem3" />
+      </g>
+      <use href="#tagGem3" x="-98" y="118" />
+      <use href="#tagGem3" x="98" y="118" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowMenu3)">
+    <!-- ========================================== -->
+    <!-- 1. ARKADEX (LIBRO APERTO)                  -->
+    <!-- ========================================== -->
+    <g transform="translate(200, 195)">
+      <use href="#menuOctagonBase3" />
+      <g filter="url(#objShadow3)" transform="translate(0, -10) rotate(-5)">
+        <!-- Copertina Blu e Bronzo/Oro -->
+        <path d="M -94,-46 L -8,-54 L 0,-46 L 8,-54 L 94,-46 L 104,44 L 10,52 L 0,60 L -10,52 L -84,58 Z" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="4.5" stroke-linejoin="round" />
+        <!-- Blocco Pagine 3D -->
+        <polygon points="-88,-40 -4,-48 0,50 -78,52" fill="url(#ivoryShade3)" stroke="#24130a" stroke-width="1.5" />
+        <polygon points="88,-40 4,-48 0,50 96,38" fill="url(#ivoryShade3)" stroke="#24130a" stroke-width="1.5" />
+        <!-- Pagine Superiori Curve -->
+        <path d="M -84,-50 C -50,-58 -20,-54 0,-44 L 0,42 C -20,34 -50,36 -76,46 Z" fill="url(#ivorySurface3)" stroke="#7c5e3f" stroke-width="1.6" />
+        <path d="M 84,-50 C 50,-58 20,-54 0,-44 L 0,42 C 20,34 50,36 90,32 Z" fill="url(#ivorySurface3)" stroke="#7c5e3f" stroke-width="1.6" />
+        <!-- Illustrazione Pagina Sinistra (Sfera) -->
+        <g transform="translate(-40, -14) rotate(-4)" fill="#4b657d">
+          <circle cx="0" cy="0" r="20" />
+          <line x1="-20" y1="0" x2="20" y2="0" stroke="#f5ebe0" stroke-width="4" />
+          <circle cx="0" cy="0" r="7" fill="#4b657d" stroke="#f5ebe0" stroke-width="3.5" />
+          <rect x="-18" y="26" width="38" height="3.5" rx="1.5" />
+          <rect x="-10" y="34" width="30" height="3.5" rx="1.5" />
+          <polygon points="-18,32 -14,36 -18,40 -22,36" />
+        </g>
+        <!-- Illustrazione Pagina Destra (Drago Geometrico) -->
+        <g transform="translate(42, -16) rotate(-4)" fill="#4b657d">
+          <polygon points="-16,24 -12,-6 -4,-18 2,-8 12,-22 10,-6 20,-10 12,4 20,8 14,22" />
+          <circle cx="-2" cy="-2" r="2" fill="#f5ebe0" />
+          <rect x="-16" y="30" width="34" height="3.5" rx="1.5" />
+          <rect x="-16" y="38" width="26" height="3.5" rx="1.5" />
+        </g>
+      </g>
+      <use href="#emptyTagBanner3" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 2. DEPOSITO (BAULE ISOMETRICO)             -->
+    <!-- ========================================== -->
+    <g transform="translate(570, 195)">
+      <use href="#menuOctagonBase3" />
+      <g filter="url(#objShadow3)" transform="translate(0, -8)">
+        <!-- Cassa Inferiore -->
+        <polygon points="-82,-8 36,6 36,58 -78,40" fill="url(#blueArmor3)" stroke="#24130a" stroke-width="2" />
+        <polygon points="36,6 84,-22 80,28 36,58" fill="#172554" stroke="#24130a" stroke-width="2" />
+        <!-- Bordature Bronzo/Avorio Cassa -->
+        <path d="M -82,-8 L -68,-6 L -66,30 L 22,44 L 22,4 L 36,6 L 36,58 L -78,40 Z" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.5" />
+        <polygon points="36,6 48,-1 46,51 36,58" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.5" />
+        <polygon points="74,-16 84,-22 80,28 70,35" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.5" />
+        <!-- Coperchio Superiore -->
+        <polygon points="-84,-28 -38,-58 80,-44 36,-14" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="4" stroke-linejoin="round" />
+        <polygon points="-84,-28 36,-14 36,8 -82,-6" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <polygon points="36,-14 84,-44 84,-20 36,8" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <!-- Maniglia Superiore -->
+        <path d="M -20,-46 L -16,-62 C -14,-68 24,-62 26,-56 L 28,-38 L 16,-36 L 14,-50 L -8,-54 L -10,-44 Z" fill="url(#ivorySurface3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <!-- Gemma Centrale Baule -->
+        <g transform="translate(-20, 2)">
+          <polygon points="0,-24 20,0 0,24 -20,0" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+          <polygon points="0,-15 12,0 0,15 -12,0" fill="url(#cyanBright3)" stroke="#07101e" stroke-width="1" />
+          <polygon points="0,-7 5.5,0 0,7 -5.5,0" fill="#e0f2fe" />
+        </g>
+      </g>
+      <use href="#emptyTagBanner3" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 3. ANALISI (LENTE + CAPSULA)               -->
+    <!-- ========================================== -->
+    <g transform="translate(940, 195)">
+      <use href="#menuOctagonBase3" />
+      <g filter="url(#objShadow3)" transform="translate(0, -10)">
+        <!-- Capsula Incubatore a Destra -->
+        <g transform="translate(50, 6)">
+          <ellipse cx="0" cy="52" rx="25" ry="7" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.8" />
+          <rect x="-22" y="-42" width="44" height="88" rx="4" fill="url(#cyanBright3)" stroke="#bae6fd" stroke-width="2" />
+          <!-- Silhouette Drago nella Capsula -->
+          <polygon points="-8,30 -10,0 -2,-12 4,-6 12,-20 10,-4 18,-6 12,8 14,30" fill="#0c4a6e" />
+          <circle cx="2" cy="-8" r="2" fill="#7dd3fc" />
+          <rect x="-17" y="-36" width="7" height="74" rx="3.5" fill="#ffffff" opacity="0.6" />
+          <path d="M -25,-48 L -25,-38 A 25,7 0 0,0 25,-38 L 25,-48 Z" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.8" />
+          <ellipse cx="0" cy="-48" rx="25" ry="7" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="2" />
+        </g>
+        <!-- Lente d'Ingrandimento a Sinistra -->
+        <g transform="translate(-20, -14)">
+          <g transform="rotate(35) translate(0, 60)">
+            <rect x="-10" y="0" width="20" height="44" rx="4" fill="url(#blueArmor3)" stroke="#24130a" stroke-width="2" />
+            <rect x="-12" y="0" width="24" height="9" rx="2" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.6" />
+            <circle cx="0" cy="46" r="11" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2" />
+          </g>
+          <circle cx="0" cy="0" r="54" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2.2" />
+          <circle cx="0" cy="0" r="44" fill="#7dd3fc" fill-opacity="0.55" stroke="#e0f2fe" stroke-width="2" />
+          <path d="M -30,-18 A 34,34 0 0,1 20,-26" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" opacity="0.75" />
+        </g>
+      </g>
+      <use href="#emptyTagBanner3" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 4. DIARIO (QUADERNO + PENNA)               -->
+    <!-- ========================================== -->
+    <g transform="translate(200, 565)">
+      <use href="#menuOctagonBase3" />
+      <g filter="url(#objShadow3)" transform="translate(-8, -10)">
+        <g transform="translate(-10, 0) rotate(-10)">
+          <!-- Segnalibro Ciano -->
+          <polygon points="-16,48 -2,48 -2,74 -9,66 -16,74" fill="url(#cyanBright3)" stroke="#07101e" stroke-width="1.5" />
+          <!-- Retro e Pagine -->
+          <rect x="-46" y="-56" width="94" height="110" rx="6" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="3" />
+          <rect x="-42" y="-52" width="86" height="102" rx="4" fill="url(#ivoryShade3)" stroke="#24130a" stroke-width="1.5" />
+          <!-- Copertina Avorio -->
+          <rect x="-50" y="-60" width="88" height="106" rx="6" fill="url(#ivorySurface3)" stroke="url(#goldAccent3)" stroke-width="3" />
+          <!-- 4 Anelli Dorso Sinistro -->
+          <rect x="-58" y="-44" width="16" height="8" rx="4" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.5" />
+          <rect x="-58" y="-18" width="16" height="8" rx="4" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.5" />
+          <rect x="-58" y="8" width="16" height="8" rx="4" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.5" />
+          <rect x="-58" y="34" width="16" height="8" rx="4" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.5" />
+          <!-- Fibbia Destra -->
+          <path d="M 16,-14 L 44,-14 L 44,4 L 16,4 L 8,-5 Z" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="2" />
+          <!-- Gemma Romboidale Copertina -->
+          <g transform="translate(-6, -10)">
+            <polygon points="0,-22 17,0 0,22 -17,0" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.8" />
+            <polygon points="0,-14 10,0 0,14 -10,0" fill="url(#cyanBright3)" stroke="#07101e" stroke-width="1" />
+          </g>
+        </g>
+        <!-- Penna Stilografica -->
+        <g transform="translate(58, 6) rotate(12)">
+          <polygon points="-6,34 6,34 0,58" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.6" />
+          <path d="M -8,-44 C -8,-54 8,-54 8,-44 L 7,34 L -7,34 Z" fill="url(#blueArmor3)" stroke="#24130a" stroke-width="1.8" />
+          <rect x="-8.5" y="-10" width="17" height="6" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.2" />
+          <path d="M 6,-40 L 12,-36 L 10,-14" fill="none" stroke="url(#goldAccent3)" stroke-width="3" stroke-linecap="round" />
+        </g>
+      </g>
+      <use href="#emptyTagBanner3" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 5. SALVATAGGIO (BASE + FRECCIA CIANO)      -->
+    <!-- ========================================== -->
+    <g transform="translate(570, 565)">
+      <use href="#menuOctagonBase3" />
+      <g filter="url(#objShadow3)" transform="translate(0, -6)">
+        <polygon points="-66,-24 66,-24 88,12 -88,12" fill="url(#ivorySurface3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <polygon points="-44,-20 44,-20 58,8 -58,8" fill="url(#blueArmor3)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+        <rect x="-88" y="12" width="28" height="42" rx="4" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2" />
+        <rect x="60" y="12" width="28" height="42" rx="4" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2" />
+        <rect x="-60" y="12" width="120" height="42" fill="url(#ivorySurface3)" stroke="#24130a" stroke-width="2" />
+        <!-- Slot Ciano e Spia -->
+        <rect x="-40" y="26" width="64" height="14" rx="4" fill="#09101a" stroke="#24130a" stroke-width="1.6" />
+        <rect x="-35" y="30" width="54" height="6" rx="3" fill="#38bdf8" filter="url(#cyanGlow3)" />
+        <circle cx="40" cy="33" r="7" fill="#09101a" stroke="#24130a" stroke-width="1.6" />
+        <circle cx="40" cy="33" r="4" fill="#38bdf8" />
+        <!-- Freccia Ciano -->
+        <g transform="translate(0, -26)">
+          <polygon points="-20,-40 20,-40 20,-8 42,-8 0,34 -42,-8 -20,-8" fill="url(#cyanBright3)" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" filter="url(#cyanGlow3)" />
+        </g>
+      </g>
+      <use href="#emptyTagBanner3" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 6. IMPOSTAZIONI (INGRANAGGIO)              -->
+    <!-- ========================================== -->
+    <g transform="translate(940, 565)">
+      <use href="#menuOctagonBase3" />
+      <g filter="url(#objShadow3)" transform="translate(0, -12)">
+        <path d="M -15,-78 L 15,-78 L 21,-58 L 40,-50 L 56,-62 L 74,-44 L 60,-28 L 68,-10 L 86,-4 L 86,20 L 68,26 L 60,44 L 74,60 L 56,78 L 40,64 L 21,72 L 15,92 L -15,92 L -21,72 L -40,64 L -56,78 L -74,60 L -60,44 L -68,26 L -86,20 L -86,-4 L -68,-10 L -60,-28 L -74,-44 L -56,-62 L -40,-50 L -21,-58 Z" transform="translate(0, 5)" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <path d="M -15,-78 L 15,-78 L 21,-58 L 40,-50 L 56,-62 L 74,-44 L 60,-28 L 68,-10 L 86,-4 L 86,20 L 68,26 L 60,44 L 74,60 L 56,78 L 40,64 L 21,72 L 15,92 L -15,92 L -21,72 L -40,64 L -56,78 L -74,60 L -60,44 L -68,26 L -86,20 L -86,-4 L -68,-10 L -60,-28 L -74,-44 L -56,-62 L -40,-50 L -21,-58 Z" fill="url(#ivorySurface3)" stroke="url(#goldAccent3)" stroke-width="2.5" stroke-linejoin="round" />
+        <circle cx="0" cy="7" r="42" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="3.5" />
+        <circle cx="0" cy="7" r="26" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.8" />
+        <circle cx="0" cy="7" r="21" fill="url(#cyanBright3)" stroke="#07101e" stroke-width="1.5" />
+        <ellipse cx="-6" cy="1" rx="7" ry="4.5" transform="rotate(-25 -6 1)" fill="#ffffff" opacity="0.85" />
+      </g>
+      <use href="#emptyTagBanner3" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 7. CRONACHE (PERGAMENA)                    -->
+    <!-- ========================================== -->
+    <g transform="translate(200, 935)">
+      <use href="#menuOctagonBase3" />
+      <g filter="url(#objShadow3)" transform="translate(0, -12) rotate(-8)">
+        <!-- Rullo Superiore -->
+        <g transform="translate(0, -52)">
+          <rect x="-64" y="-12" width="128" height="24" rx="12" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="2.5" />
+          <ellipse cx="-58" cy="0" rx="12" ry="18" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.8" />
+          <circle cx="-66" cy="0" r="8" fill="url(#cyanBright3)" stroke="#07101e" stroke-width="1.2" />
+          <ellipse cx="58" cy="0" rx="12" ry="18" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="1.8" />
+        </g>
+        <!-- Foglio Pergamena -->
+        <path d="M -48,-42 L 50,-42 C 44,-8 48,22 58,46 L -40,46 C -50,22 -54,-8 -48,-42 Z" fill="url(#ivorySurface3)" stroke="#7c5e3f" stroke-width="1.8" />
+        <g fill="#4b657d">
+          <polygon points="-28,-16 -21,-9 -28,-2 -35,-9" />
+          <rect x="-12" y="-12" width="46" height="4" rx="2" />
+          <polygon points="-26,8 -19,15 -26,22 -33,15" />
+          <rect x="-10" y="12" width="46" height="4" rx="2" />
+          <polygon points="-24,30 -17,37 -24,44 -31,37" />
+          <rect x="-8" y="34" width="42" height="4" rx="2" />
+        </g>
+        <!-- Rullo Inferiore -->
+        <g transform="translate(6, 48)">
+          <rect x="-62" y="-15" width="128" height="30" rx="15" fill="url(#ivorySurface3)" stroke="#7c5e3f" stroke-width="1.8" />
+          <ellipse cx="-62" cy="0" rx="13" ry="20" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="2.5" />
+          <circle cx="-70" cy="0" r="8.5" fill="url(#cyanBright3)" stroke="#07101e" stroke-width="1.2" />
+          <ellipse cx="64" cy="0" rx="13" ry="20" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="2.5" />
+        </g>
+      </g>
+      <use href="#emptyTagBanner3" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 8. SFIDE (TROFEO)                          -->
+    <!-- ========================================== -->
+    <g transform="translate(570, 935)">
+      <use href="#menuOctagonBase3" />
+      <g filter="url(#objShadow3)" transform="translate(0, -10)">
+        <path d="M -48,-48 L -78,-54 C -82,-18 -68,12 -40,22 L -32,12 C -52,4 -64,-16 -60,-38 L -44,-34 Z" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <path d="M 48,-48 L 78,-54 C 82,-18 68,12 40,22 L 32,12 C 52,4 64,-16 60,-38 L 44,-34 Z" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <ellipse cx="0" cy="64" rx="48" ry="11" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2" />
+        <path d="M -38,44 L 38,44 L 42,58 C 42,64 -42,64 -42,58 Z" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="2" />
+        <path d="M -14,18 L 14,18 L 22,44 L -22,44 Z" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2" />
+        <path d="M -56,-64 L 56,-64 C 52,-6 34,22 0,22 C -34,22 -52,-6 -56,-64 Z" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+        <ellipse cx="0" cy="-64" rx="56" ry="11" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="2" />
+        <ellipse cx="0" cy="-64" rx="48" ry="7" fill="#78350f" />
+        <g transform="translate(0, -22)">
+          <polygon points="0,-24 18,0 0,24 -18,0" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.8" />
+          <polygon points="0,-15 11,0 0,15 -11,0" fill="url(#cyanBright3)" stroke="#07101e" stroke-width="1" />
+        </g>
+      </g>
+      <use href="#emptyTagBanner3" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 9. NEGOZIO (EDIFICIO CON TENDA)            -->
+    <!-- ========================================== -->
+    <g transform="translate(940, 935)">
+      <use href="#menuOctagonBase3" />
+      <g filter="url(#objShadow3)" transform="translate(-8, -10)">
+        <!-- Muri -->
+        <polygon points="-72,-10 42,-10 42,58 -72,58" fill="url(#ivorySurface3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <polygon points="42,-10 70,-24 70,44 42,58" fill="url(#ivoryShade3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+        <rect x="-76" y="48" width="120" height="12" rx="2" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.8" />
+        <!-- Porta e Finestra -->
+        <path d="M -52,56 L -52,10 C -52,-4 -22,-4 -22,10 L -22,56 Z" fill="url(#blueArmor3)" stroke="url(#goldAccent3)" stroke-width="2.5" />
+        <rect x="-44" y="14" width="14" height="14" rx="2" fill="#38bdf8" stroke="#09101a" stroke-width="1.2" />
+        <rect x="-4" y="4" width="34" height="28" rx="2" fill="#0ea5e9" stroke="url(#goldAccent3)" stroke-width="2.5" />
+        <line x1="13" y1="4" x2="13" y2="32" stroke="#ffffff" stroke-width="2" />
+        <line x1="-4" y1="18" x2="30" y2="18" stroke="#ffffff" stroke-width="2" />
+        <!-- Tenda a Strisce -->
+        <g transform="translate(0, -10)">
+          <polygon points="42,-54 68,-54 78,-14 50,0" fill="#1e3a8a" stroke="url(#goldAccent3)" stroke-width="2" stroke-linejoin="round" />
+          <path d="M -68,-52 L -46,-52 L -56,-4 L -80,-4 Z" fill="url(#blueArmor3)" stroke="#0f172a" stroke-width="1.5" />
+          <path d="M -80,-4 L -56,-4 L -56,6 C -56,14 -80,14 -80,6 Z" fill="#1d4ed8" stroke="#0f172a" stroke-width="1.5" />
+          <path d="M -46,-52 L -24,-52 L -30,-4 L -56,-4 Z" fill="url(#ivorySurface3)" stroke="#475569" stroke-width="1.5" />
+          <path d="M -56,-4 L -30,-4 L -30,6 C -30,14 -56,14 -56,6 Z" fill="#e2e8f0" stroke="#475569" stroke-width="1.5" />
+          <path d="M -24,-52 L -2,-52 L -4,-4 L -30,-4 Z" fill="url(#blueArmor3)" stroke="#0f172a" stroke-width="1.5" />
+          <path d="M -30,-4 L -4,-4 L -4,6 C -4,14 -30,14 -30,6 Z" fill="#1d4ed8" stroke="#0f172a" stroke-width="1.5" />
+          <path d="M -2,-52 L 20,-52 L 22,-4 L -4,-4 Z" fill="url(#ivorySurface3)" stroke="#475569" stroke-width="1.5" />
+          <path d="M -4,-4 L 22,-4 L 22,6 C 22,14 -4,14 -4,6 Z" fill="#e2e8f0" stroke="#475569" stroke-width="1.5" />
+          <path d="M 20,-52 L 44,-52 L 50,-4 L 22,-4 Z" fill="url(#blueArmor3)" stroke="#0f172a" stroke-width="1.5" />
+          <path d="M 22,-4 L 50,-4 L 50,6 C 50,14 22,14 22,6 Z" fill="#1d4ed8" stroke="#0f172a" stroke-width="1.5" />
+          <rect x="-72" y="-58" width="128" height="7" rx="3" fill="url(#bronzeMain3)" stroke="#24130a" stroke-width="1.6" />
+        </g>
+        <!-- Insegna Appesa -->
+        <g transform="translate(76, 12)">
+          <path d="M -12,-40 L 4,-40 L 4,-22" fill="none" stroke="url(#goldAccent3)" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round" />
+          <circle cx="0" cy="0" r="22" fill="url(#goldAccent3)" stroke="#24130a" stroke-width="2" />
+          <circle cx="0" cy="0" r="15" fill="none" stroke="#78350f" stroke-width="1.8" />
+          <line x1="-15" y1="0" x2="15" y2="0" stroke="#78350f" stroke-width="2" />
+          <circle cx="0" cy="0" r="5" fill="url(#goldAccent3)" stroke="#78350f" stroke-width="1.8" />
+        </g>
+      </g>
+      <use href="#emptyTagBanner3" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 230" width="100%" height="100%">
+  <defs>
+    <filter id="shadowStepper" x="-4%" y="-10%" width="108%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeMain8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <linearGradient id="trenchDark8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <!-- Lastra Pulsanti Laterali Blu Ardesia Scuro -->
+    <radialGradient id="slateBoard8" cx="50%" cy="45%" r="58%">
+      <stop offset="0%" stop-color="#22354f" />
+      <stop offset="65%" stop-color="#121c2b" />
+      <stop offset="100%" stop-color="#090e17" />
+    </radialGradient>
+
+    <!-- Display Centrale Chiaro Perla/Ghiaccio -->
+    <linearGradient id="displayPlate8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <!-- Segni - e + in Avorio 3D -->
+    <linearGradient id="ivorySign8" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="55%" stop-color="#f5ebe0" />
+      <stop offset="100%" stop-color="#cbb8a3" />
+    </linearGradient>
+
+    <!-- Gemma Romboidale -->
+    <g id="stepperGem8">
+      <polygon points="0,-31 31,0 0,31 -31,0" fill="url(#bronzeMain8)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-25 25,0 0,25 -25,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-20 20,0 0,20 -20,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-16 16,0 0,16 -16,0" fill="#0ea5e9" />
+      <polygon points="0,-16 16,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 16,0 0,16" fill="#0284c7" />
+      <polygon points="0,-7.5 7.5,0 0,7.5 -7.5,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowStepper)">
+    <!-- ========================================== -->
+    <!-- 1. MODULO SINISTRO: PULSANTE MENO (-)      -->
+    <!-- ========================================== -->
+    <g transform="translate(158, 115)">
+      <polygon points="-62,-92 62,-92 106,-48 106,48 62,92 -62,92 -106,48 -106,-48" fill="url(#bronzeMain8)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polyline points="-60,-88 60,-88 102,-46" fill="none" stroke="#fff3e6" stroke-width="1.6" opacity="0.85" />
+
+      <polygon points="-56,-78 56,-78 92,-42 92,42 56,78 -56,78 -92,42 -92,-42" fill="url(#trenchDark8)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round" />
+
+      <polygon points="-52,-72 52,-72 86,-38 86,38 52,72 -52,72 -86,38 -86,-38" fill="url(#slateBoard8)" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.75" stroke-linejoin="round" />
+
+      <!-- Segno Meno (-) 3D in Avorio -->
+      <rect x="-46" y="-10" width="92" height="32" rx="6" fill="#05080f" opacity="0.8" />
+      <rect x="-46" y="-16" width="92" height="32" rx="6" fill="url(#ivorySign8)" stroke="#1c110a" stroke-width="2.5" />
+      <line x1="-40" y1="-12" x2="40" y2="-12" stroke="#ffffff" stroke-width="2" stroke-linecap="round" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 2. MODULO CENTRALE: DISPLAY NUMERICO       -->
+    <!-- ========================================== -->
+    <g transform="translate(460, 115)">
+      <polygon points="-118,-92 118,-92 164,-46 164,46 118,92 -118,92 -164,46 -164,-46" fill="url(#bronzeMain8)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polyline points="-116,-88 116,-88 160,-44" fill="none" stroke="#fff3e6" stroke-width="1.6" opacity="0.85" />
+
+      <!-- Trincea Blu Ardesia Notte -->
+      <polygon points="-112,-78 112,-78 150,-40 150,40 112,78 -112,78 -150,40 -150,-40" fill="#09101a" stroke="#140c07" stroke-width="2" stroke-linejoin="round" />
+
+      <!-- Smusso Acciaio-Azzurro e Lastra Display Chiara -->
+      <polygon points="-106,-68 106,-68 138,-36 138,36 106,68 -106,68 -138,36 -138,-36" fill="#60a5fa" stroke="#0284c7" stroke-width="2" stroke-linejoin="round" />
+
+      <polygon points="-102,-62 102,-62 132,-32 132,32 102,62 -102,62 -132,32 -132,-32" fill="url(#displayPlate8)" stroke="#ffffff" stroke-width="2" stroke-linejoin="round" />
+
+      <!-- Sottili linee diagonali di riflesso sul display -->
+      <line x1="-80" y1="-62" x2="-20" y2="62" stroke="#64748b" stroke-width="1.2" opacity="0.12" />
+      <line x1="-55" y1="-62" x2="5" y2="62" stroke="#64748b" stroke-width="1.2" opacity="0.12" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 3. MODULO DESTRO: PULSANTE PIÙ (+)         -->
+    <!-- ========================================== -->
+    <g transform="translate(762, 115)">
+      <polygon points="-62,-92 62,-92 106,-48 106,48 62,92 -62,92 -106,48 -106,-48" fill="url(#bronzeMain8)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polyline points="-60,-88 60,-88 102,-46" fill="none" stroke="#fff3e6" stroke-width="1.6" opacity="0.85" />
+
+      <polygon points="-56,-78 56,-78 92,-42 92,42 56,78 -56,78 -92,42 -92,-42" fill="url(#trenchDark8)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round" />
+
+      <polygon points="-52,-72 52,-72 86,-38 86,38 52,72 -52,72 -86,38 -86,-38" fill="url(#slateBoard8)" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.75" stroke-linejoin="round" />
+
+      <!-- Segno Più (+) 3D in Avorio -->
+      <path d="M -15,-44 L 15,-44 L 15,-15 L 44,-15 L 44,15 L 15,15 L 15,44 L -15,44 L -15,15 L -44,15 L -44,-15 L -15,-15 Z" transform="translate(0, 6)" fill="#05080f" opacity="0.8" />
+      <path d="M -15,-44 L 15,-44 L 15,-15 L 44,-15 L 44,15 L 15,15 L 15,44 L -15,44 L -15,15 L -44,15 L -44,-15 L -15,-15 Z" fill="url(#ivorySign8)" stroke="#1c110a" stroke-width="2.5" stroke-linejoin="round" />
+    </g>
+
+    <!-- ========================================== -->
+    <!-- 4. SEI GEMME ROMBOIDALI SUGLI SNODI        -->
+    <!-- ========================================== -->
+    <!-- Estremità Sinistra -->
+    <use href="#stepperGem8" x="50" y="115" />
+    <!-- Snodo Tra Meno e Display (Coppia di Gemme) -->
+    <use href="#stepperGem8" x="264" y="115" />
+    <use href="#stepperGem8" x="298" y="115" />
+    <!-- Snodo Tra Display e Più (Coppia di Gemme) -->
+    <use href="#stepperGem8" x="656" y="115" />
+    <use href="#stepperGem8" x="622" y="115" />
+    <!-- Estremità Destra -->
+    <use href="#stepperGem8" x="870" y="115" />
+  </g>
+</svg>

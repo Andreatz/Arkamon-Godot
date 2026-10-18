@@ -1,0 +1,666 @@
+{
+  "version": 1,
+  "baseline": "1e9e0f1",
+  "species": [
+    {
+      "id": 1,
+      "type": "Normale",
+      "cost": 16,
+      "stage": 0
+    },
+    {
+      "id": 2,
+      "type": "Normale",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 3,
+      "type": "Normale",
+      "cost": 18,
+      "stage": 2
+    },
+    {
+      "id": 4,
+      "type": "Normale",
+      "cost": 21,
+      "stage": 3
+    },
+    {
+      "id": 5,
+      "type": "Oscurità",
+      "cost": 16,
+      "stage": 0
+    },
+    {
+      "id": 6,
+      "type": "Oscurità",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 7,
+      "type": "Oscurità",
+      "cost": 18,
+      "stage": 2
+    },
+    {
+      "id": 8,
+      "type": "Oscurità",
+      "cost": 21,
+      "stage": 3
+    },
+    {
+      "id": 9,
+      "type": "Psico",
+      "cost": 16,
+      "stage": 0
+    },
+    {
+      "id": 10,
+      "type": "Psico",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 11,
+      "type": "Psico",
+      "cost": 18,
+      "stage": 2
+    },
+    {
+      "id": 12,
+      "type": "Psico",
+      "cost": 21,
+      "stage": 3
+    },
+    {
+      "id": 13,
+      "type": "Terra",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 14,
+      "type": "Terra",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 15,
+      "type": "Terra",
+      "cost": 18,
+      "stage": 2
+    },
+    {
+      "id": 16,
+      "type": "Terra",
+      "cost": 18,
+      "stage": 0
+    },
+    {
+      "id": 17,
+      "type": "Terra",
+      "cost": 21,
+      "stage": 1
+    },
+    {
+      "id": 18,
+      "type": "Terra",
+      "cost": 21,
+      "stage": 2
+    },
+    {
+      "id": 19,
+      "type": "Terra",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 20,
+      "type": "Terra",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 21,
+      "type": "Psico",
+      "cost": 14,
+      "stage": 0
+    },
+    {
+      "id": 22,
+      "type": "Elettro",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 23,
+      "type": "Elettro",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 24,
+      "type": "Elettro",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 25,
+      "type": "Elettro",
+      "cost": 13,
+      "stage": 1
+    },
+    {
+      "id": 26,
+      "type": "Elettro",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 27,
+      "type": "Elettro",
+      "cost": 15,
+      "stage": 1
+    },
+    {
+      "id": 28,
+      "type": "Erba",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 29,
+      "type": "Erba",
+      "cost": 15,
+      "stage": 1
+    },
+    {
+      "id": 30,
+      "type": "Oscurità",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 31,
+      "type": "Oscurità",
+      "cost": 15,
+      "stage": 1
+    },
+    {
+      "id": 32,
+      "type": "Fuoco",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 33,
+      "type": "Fuoco",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 34,
+      "type": "Terra",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 35,
+      "type": "Terra",
+      "cost": 15,
+      "stage": 1
+    },
+    {
+      "id": 36,
+      "type": "Elettro",
+      "cost": 18,
+      "stage": 0
+    },
+    {
+      "id": 37,
+      "type": "Elettro",
+      "cost": 21,
+      "stage": 1
+    },
+    {
+      "id": 38,
+      "type": "Elettro",
+      "cost": 21,
+      "stage": 2
+    },
+    {
+      "id": 39,
+      "type": "Normale",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 40,
+      "type": "Normale",
+      "cost": 17,
+      "stage": 1
+    },
+    {
+      "id": 41,
+      "type": "Normale",
+      "cost": 16,
+      "stage": 2
+    },
+    {
+      "id": 42,
+      "type": "Normale",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 43,
+      "type": "Normale",
+      "cost": 15,
+      "stage": 1
+    },
+    {
+      "id": 44,
+      "type": "Oscurità",
+      "cost": 14,
+      "stage": 0
+    },
+    {
+      "id": 45,
+      "type": "Oscurità",
+      "cost": 14,
+      "stage": 0
+    },
+    {
+      "id": 46,
+      "type": "Oscurità",
+      "cost": 13,
+      "stage": 1
+    },
+    {
+      "id": 47,
+      "type": "Erba",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 48,
+      "type": "Erba",
+      "cost": 13,
+      "stage": 1
+    },
+    {
+      "id": 49,
+      "type": "Fuoco",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 50,
+      "type": "Fuoco",
+      "cost": 13,
+      "stage": 1
+    },
+    {
+      "id": 51,
+      "type": "Fuoco",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 52,
+      "type": "Erba",
+      "cost": 18,
+      "stage": 0
+    },
+    {
+      "id": 53,
+      "type": "Erba",
+      "cost": 21,
+      "stage": 1
+    },
+    {
+      "id": 54,
+      "type": "Erba",
+      "cost": 21,
+      "stage": 2
+    },
+    {
+      "id": 55,
+      "type": "Oscurità",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 56,
+      "type": "Acqua",
+      "cost": 14,
+      "stage": 0
+    },
+    {
+      "id": 57,
+      "type": "Acqua",
+      "cost": 13,
+      "stage": 1
+    },
+    {
+      "id": 58,
+      "type": "Acqua",
+      "cost": 18,
+      "stage": 0
+    },
+    {
+      "id": 59,
+      "type": "Acqua",
+      "cost": 21,
+      "stage": 1
+    },
+    {
+      "id": 60,
+      "type": "Acqua",
+      "cost": 21,
+      "stage": 2
+    },
+    {
+      "id": 61,
+      "type": "Acqua",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 62,
+      "type": "Normale",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 63,
+      "type": "Normale",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 64,
+      "type": "Normale",
+      "cost": 12,
+      "stage": 0
+    },
+    {
+      "id": 65,
+      "type": "Normale",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 66,
+      "type": "Normale",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 67,
+      "type": "Psico",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 68,
+      "type": "Psico",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 69,
+      "type": "Acqua",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 70,
+      "type": "Acqua",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 71,
+      "type": "Acqua",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 72,
+      "type": "Acqua",
+      "cost": 17,
+      "stage": 1
+    },
+    {
+      "id": 73,
+      "type": "Acqua",
+      "cost": 16,
+      "stage": 2
+    },
+    {
+      "id": 74,
+      "type": "Fuoco",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 75,
+      "type": "Fuoco",
+      "cost": 17,
+      "stage": 1
+    },
+    {
+      "id": 76,
+      "type": "Fuoco",
+      "cost": 16,
+      "stage": 2
+    },
+    {
+      "id": 77,
+      "type": "Fuoco",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 78,
+      "type": "Erba",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 79,
+      "type": "Oscurità",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 80,
+      "type": "Oscurità",
+      "cost": 17,
+      "stage": 1
+    },
+    {
+      "id": 81,
+      "type": "Oscurità",
+      "cost": 16,
+      "stage": 2
+    },
+    {
+      "id": 82,
+      "type": "Acqua",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 83,
+      "type": "Psico",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 84,
+      "type": "Psico",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 85,
+      "type": "Psico",
+      "cost": 15,
+      "stage": 1
+    },
+    {
+      "id": 86,
+      "type": "Elettro",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 87,
+      "type": "Elettro",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 88,
+      "type": "Elettro",
+      "cost": 18,
+      "stage": 2
+    },
+    {
+      "id": 89,
+      "type": "Psico",
+      "cost": 13,
+      "stage": 0
+    },
+    {
+      "id": 90,
+      "type": "Psico",
+      "cost": 17,
+      "stage": 1
+    },
+    {
+      "id": 91,
+      "type": "Psico",
+      "cost": 16,
+      "stage": 2
+    },
+    {
+      "id": 92,
+      "type": "Fuoco",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 93,
+      "type": "Fuoco",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 94,
+      "type": "Fuoco",
+      "cost": 18,
+      "stage": 2
+    },
+    {
+      "id": 95,
+      "type": "Erba",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 96,
+      "type": "Erba",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 97,
+      "type": "Erba",
+      "cost": 18,
+      "stage": 2
+    },
+    {
+      "id": 98,
+      "type": "Erba",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 99,
+      "type": "Normale",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 100,
+      "type": "Normale",
+      "cost": 15,
+      "stage": 1
+    },
+    {
+      "id": 101,
+      "type": "Oscurità",
+      "cost": 14,
+      "stage": 0
+    },
+    {
+      "id": 102,
+      "type": "Oscurità",
+      "cost": 13,
+      "stage": 1
+    },
+    {
+      "id": 103,
+      "type": "Terra",
+      "cost": 17,
+      "stage": 0
+    },
+    {
+      "id": 104,
+      "type": "Terra",
+      "cost": 18,
+      "stage": 1
+    },
+    {
+      "id": 105,
+      "type": "Erba",
+      "cost": 15,
+      "stage": 0
+    },
+    {
+      "id": 106,
+      "type": "Erba",
+      "cost": 15,
+      "stage": 1
+    },
+    {
+      "id": 107,
+      "type": "Normale",
+      "cost": 25,
+      "stage": 0
+    },
+    {
+      "id": 108,
+      "type": "Normale",
+      "cost": 25,
+      "stage": 0
+    },
+    {
+      "id": 109,
+      "type": "Psico",
+      "cost": 25,
+      "stage": 0
+    },
+    {
+      "id": 110,
+      "type": "Oscurità",
+      "cost": 25,
+      "stage": 0
+    }
+  ]
+}

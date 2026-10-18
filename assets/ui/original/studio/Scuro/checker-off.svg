@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" width="100%" height="100%">
+  <defs>
+    <filter id="shadowChecker" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Bronzo / Oro Rosa Principale (da percorso.svg) -->
+    <linearGradient id="bronzeOuter1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <linearGradient id="bronzeInner1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="30%" stop-color="#dead82" />
+      <stop offset="70%" stop-color="#8c5c3e" />
+      <stop offset="100%" stop-color="#472a17" />
+    </linearGradient>
+
+    <!-- Trincea Scura -->
+    <linearGradient id="trenchDark1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <!-- Lastra e Cavità Blu Ardesia Scuro -->
+    <linearGradient id="slateChannel1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0d141f" />
+      <stop offset="50%" stop-color="#1a2638" />
+      <stop offset="100%" stop-color="#0a1018" />
+    </linearGradient>
+
+    <radialGradient id="slateWell1" cx="50%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#1f2d40" />
+      <stop offset="65%" stop-color="#101824" />
+      <stop offset="100%" stop-color="#070b12" />
+    </radialGradient>
+
+    <clipPath id="wellClip1">
+      <polygon points="95,66 165,66 180,81 180,139 165,154 95,154 80,139 80,81" />
+    </clipPath>
+
+    <!-- Gemma Laterale a Diamante (Stile percorso.svg) -->
+    <g id="sideGem1">
+      <polygon points="0,-28 28,0 0,28 -28,0" fill="url(#bronzeOuter1)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-23 23,0 0,23 -23,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-18 18,0 0,18 -18,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#0ea5e9" />
+      <polygon points="0,-15 15,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 15,0 0,15" fill="#0284c7" />
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowChecker)">
+    <!-- 1. CORNICE OTTAGONALE ESTERNA IN BRONZO -->
+    <polygon points="72,22 188,22 222,56 222,164 188,198 72,198 38,164 38,56" fill="url(#bronzeOuter1)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="74,26 186,26 218,58" fill="none" stroke="#fff3e6" stroke-width="1.5" opacity="0.85" />
+
+    <!-- 2. TRINCEA E FASCIA INTERMEDIA BLU ARDESIA -->
+    <polygon points="78,34 182,34 208,60 208,160 182,186 78,186 52,160 52,60" fill="url(#slateChannel1)" stroke="#140c07" stroke-width="2" stroke-linejoin="round" />
+    <!-- Filetto Acciaio-Blu nella fascia intermedia -->
+    <polygon points="81,39 179,39 203,63 203,157 179,181 81,181 57,157 57,63" fill="none" stroke="#4b657d" stroke-width="1.5" opacity="0.8" />
+
+    <!-- 3. CORNICE OTTAGONALE INTERNA IN BRONZO -->
+    <polygon points="90,54 170,54 190,74 190,146 170,166 90,166 70,146 70,74" fill="url(#bronzeInner1)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+    <polyline points="92,58 168,58 186,76" fill="none" stroke="#fff7ed" stroke-width="1.2" opacity="0.8" />
+
+    <!-- 4. CAVITÀ CENTRALE INCASSATA BLU ARDESIA -->
+    <polygon points="95,64 165,64 180,79 180,141 165,156 95,156 80,141 80,79" fill="url(#slateWell1)" stroke="#0d131a" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Riflessi Diagonali e Accento Luminoso Inferiore (Stile percorso.svg) -->
+    <g clip-path="url(#wellClip1)">
+      <line x1="85" y1="64" x2="145" y2="156" stroke="#ffffff" stroke-width="1.2" opacity="0.06" />
+      <line x1="105" y1="64" x2="165" y2="156" stroke="#ffffff" stroke-width="1.2" opacity="0.06" />
+      <!-- Ombra interna superiore 3D -->
+      <polygon points="95,64 165,64 180,79 80,79" fill="#04070d" opacity="0.55" />
+    </g>
+    <line x1="96" y1="150" x2="164" y2="150" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.55" />
+
+    <!-- 5. DUE GEMME LATERALI (SINISTRA E DESTRA) -->
+    <use href="#sideGem1" x="40" y="110" />
+    <use href="#sideGem1" x="220" y="110" />
+  </g>
+</svg>

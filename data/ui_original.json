@@ -1,0 +1,733 @@
+{
+  "schema_version": 1,
+  "source_commit": "7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7",
+  "kit": {
+    "button-default": {
+      "texture": "res://assets/ui/original/player-kit/button-default.svg",
+      "size": [
+        657.0,
+        213.0
+      ],
+      "source_slice": 48,
+      "css_border_width": [
+        11,
+        18,
+        11,
+        18
+      ]
+    },
+    "button-primary": {
+      "texture": "res://assets/ui/original/player-kit/button-primary.svg",
+      "size": [
+        646.0,
+        192.0
+      ],
+      "source_slice": 44,
+      "css_border_width": [
+        11,
+        18,
+        11,
+        18
+      ]
+    },
+    "card-default": {
+      "texture": "res://assets/ui/original/player-kit/card-default.svg",
+      "size": [
+        813.0,
+        266.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "card-portrait": {
+      "texture": "res://assets/ui/original/player-kit/card-portrait.svg",
+      "size": [
+        433.0,
+        458.0
+      ],
+      "source_slice": 99,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "card-selected-cyan": {
+      "texture": "res://assets/ui/original/player-kit/card-selected-cyan.svg",
+      "size": [
+        554.0,
+        247.0
+      ],
+      "source_slice": 56,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "card-selected-violet": {
+      "texture": "res://assets/ui/original/player-kit/card-selected-violet.svg",
+      "size": [
+        565.0,
+        254.0
+      ],
+      "source_slice": 58,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "circle-cyan": {
+      "texture": "res://assets/ui/original/player-kit/circle-cyan.svg",
+      "size": [
+        282.0,
+        276.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "circle-default": {
+      "texture": "res://assets/ui/original/player-kit/circle-default.svg",
+      "size": [
+        272.0,
+        272.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "circle-selected": {
+      "texture": "res://assets/ui/original/player-kit/circle-selected.svg",
+      "size": [
+        275.0,
+        276.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "command-cancel": {
+      "texture": "res://assets/ui/original/player-kit/command-cancel.svg",
+      "size": [
+        450.0,
+        155.0
+      ],
+      "source_slice": 42,
+      "css_border_width": [
+        11,
+        18,
+        11,
+        18
+      ]
+    },
+    "command-close": {
+      "texture": "res://assets/ui/original/player-kit/command-close.svg",
+      "size": [
+        163.0,
+        146.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        11,
+        18,
+        11,
+        18
+      ]
+    },
+    "command-confirm": {
+      "texture": "res://assets/ui/original/player-kit/command-confirm.svg",
+      "size": [
+        505.0,
+        155.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        11,
+        18,
+        11,
+        18
+      ]
+    },
+    "command-left": {
+      "texture": "res://assets/ui/original/player-kit/command-left.svg",
+      "size": [
+        148.0,
+        146.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        11,
+        18,
+        11,
+        18
+      ]
+    },
+    "command-pass": {
+      "texture": "res://assets/ui/original/player-kit/command-pass.svg",
+      "size": [
+        580.0,
+        156.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        11,
+        18,
+        11,
+        18
+      ]
+    },
+    "command-right": {
+      "texture": "res://assets/ui/original/player-kit/command-right.svg",
+      "size": [
+        149.0,
+        145.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        11,
+        18,
+        11,
+        18
+      ]
+    },
+    "command-settings": {
+      "texture": "res://assets/ui/original/player-kit/command-settings.svg",
+      "size": [
+        168.0,
+        147.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        11,
+        18,
+        11,
+        18
+      ]
+    },
+    "icon-activity": {
+      "texture": "res://assets/ui/original/player-kit/icon-activity.svg",
+      "size": [
+        175.0,
+        200.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "icon-analysis": {
+      "texture": "res://assets/ui/original/player-kit/icon-analysis.svg",
+      "size": [
+        242.0,
+        241.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "icon-bag": {
+      "texture": "res://assets/ui/original/player-kit/icon-bag.svg",
+      "size": [
+        194.0,
+        206.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "icon-book": {
+      "texture": "res://assets/ui/original/player-kit/icon-book.svg",
+      "size": [
+        239.0,
+        241.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "icon-box": {
+      "texture": "res://assets/ui/original/player-kit/icon-box.svg",
+      "size": [
+        202.0,
+        211.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "icon-home": {
+      "texture": "res://assets/ui/original/player-kit/icon-home.svg",
+      "size": [
+        199.0,
+        202.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "icon-map": {
+      "texture": "res://assets/ui/original/player-kit/icon-map.svg",
+      "size": [
+        197.0,
+        198.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "icon-options": {
+      "texture": "res://assets/ui/original/player-kit/icon-options.svg",
+      "size": [
+        197.0,
+        201.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "icon-shop": {
+      "texture": "res://assets/ui/original/player-kit/icon-shop.svg",
+      "size": [
+        235.0,
+        241.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "icon-team": {
+      "texture": "res://assets/ui/original/player-kit/icon-team.svg",
+      "size": [
+        205.0,
+        210.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "item-antidote": {
+      "texture": "res://assets/ui/original/player-kit/item-antidote.svg",
+      "size": [
+        192.0,
+        258.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "item-coin": {
+      "texture": "res://assets/ui/original/player-kit/item-coin.svg",
+      "size": [
+        181.0,
+        184.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "item-potion": {
+      "texture": "res://assets/ui/original/player-kit/item-potion.svg",
+      "size": [
+        177.0,
+        251.472
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "item-revive": {
+      "texture": "res://assets/ui/original/player-kit/item-revive.svg",
+      "size": [
+        214.0,
+        219.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "item-sphere": {
+      "texture": "res://assets/ui/original/player-kit/item-sphere.svg",
+      "size": [
+        249.0,
+        251.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "item-superpotion": {
+      "texture": "res://assets/ui/original/player-kit/item-superpotion.svg",
+      "size": [
+        185.0,
+        258.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "map-pin": {
+      "texture": "res://assets/ui/original/player-kit/map-pin.svg",
+      "size": [
+        142.0,
+        187.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "panel-medium": {
+      "texture": "res://assets/ui/original/player-kit/panel-medium.svg",
+      "size": [
+        1161.0,
+        423.0
+      ],
+      "source_slice": 97,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "panel-wide": {
+      "texture": "res://assets/ui/original/player-kit/panel-wide.svg",
+      "size": [
+        2026.0,
+        709.0
+      ],
+      "source_slice": 163,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "reward-badge": {
+      "texture": "res://assets/ui/original/player-kit/reward-badge.svg",
+      "size": [
+        128.0,
+        128.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "row-blank": {
+      "texture": "res://assets/ui/original/player-kit/row-blank.svg",
+      "size": [
+        1661.0,
+        169.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "slot-cyan": {
+      "texture": "res://assets/ui/original/player-kit/slot-cyan.svg",
+      "size": [
+        272.0,
+        273.0
+      ],
+      "source_slice": 62,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "slot-default": {
+      "texture": "res://assets/ui/original/player-kit/slot-default.svg",
+      "size": [
+        272.0,
+        270.0
+      ],
+      "source_slice": 62,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "slot-selected": {
+      "texture": "res://assets/ui/original/player-kit/slot-selected.svg",
+      "size": [
+        263.0,
+        273.0
+      ],
+      "source_slice": 60,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "type-dark": {
+      "texture": "res://assets/ui/original/player-kit/type-dark.svg",
+      "size": [
+        237.0,
+        244.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "type-earth": {
+      "texture": "res://assets/ui/original/player-kit/type-earth.svg",
+      "size": [
+        238.0,
+        245.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "type-electric": {
+      "texture": "res://assets/ui/original/player-kit/type-electric.svg",
+      "size": [
+        247.0,
+        250.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "type-fire": {
+      "texture": "res://assets/ui/original/player-kit/type-fire.svg",
+      "size": [
+        242.0,
+        247.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "type-grass": {
+      "texture": "res://assets/ui/original/player-kit/type-grass.svg",
+      "size": [
+        252.0,
+        252.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "type-normal": {
+      "texture": "res://assets/ui/original/player-kit/type-normal.svg",
+      "size": [
+        241.0,
+        246.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "type-psychic": {
+      "texture": "res://assets/ui/original/player-kit/type-psychic.svg",
+      "size": [
+        241.0,
+        247.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "type-water": {
+      "texture": "res://assets/ui/original/player-kit/type-water.svg",
+      "size": [
+        249.0,
+        252.0
+      ],
+      "source_slice": 61,
+      "css_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    }
+  },
+  "fonts": {
+    "Chela One": {
+      "original": "res://assets/fonts/ChelaOne-Regular.ttf",
+      "family": "Chela One",
+      "glyphs": 249,
+      "license_description": null,
+      "license_url": "http://scripts.sil.org/OFL",
+      "godot_font": "res://assets/fonts/ChelaOne-Regular.ttf"
+    },
+    "Norwester": {
+      "original": "res://assets/fonts/Norwester.woff2",
+      "family": "Norwester",
+      "glyphs": 98,
+      "license_description": null,
+      "license_url": null,
+      "godot_font": "res://assets/fonts/Norwester.ttf"
+    }
+  },
+  "active_site_font": "res://assets/fonts/Norwester.ttf",
+  "original_ui_root": "res://assets/ui/original/",
+  "site_palette": {
+    "background": "#111827",
+    "surface": "#24193d",
+    "text": "#f8fafc",
+    "muted": "#c4b5fd",
+    "primary": "#c084fc",
+    "border": "#7c3aed"
+  },
+  "frame_usage": {
+    "panel": {
+      "source_slice_default": 61,
+      "draw_border_width": [
+        25,
+        25,
+        25,
+        25
+      ]
+    },
+    "button": {
+      "draw_border_width": [
+        11,
+        18,
+        11,
+        18
+      ],
+      "hover_brightness": 1.12,
+      "disabled_opacity": 0.45,
+      "pressed_scale": 0.95
+    }
+  },
+  "notes": [
+    "SVGs are individual scalable components, not full-screen 1920x1080 screen images.",
+    "Use original source_slice when sampling the texture; draw borders at the CSS border widths, allowing the center to stretch.",
+    "Original PNG and SVG bytes, alpha channels and canvas dimensions are unchanged."
+  ]
+}

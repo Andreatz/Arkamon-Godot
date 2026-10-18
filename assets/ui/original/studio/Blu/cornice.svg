@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 420" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow35" x="-8%" y="-8%" width="116%" height="118%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5.5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <!-- Metallo Argento-Champagne 3D -->
+    <linearGradient id="champagneBar35" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#f5ebd6"/>
+      <stop offset="55%" stop-color="#b59b78"/>
+      <stop offset="80%" stop-color="#e3d3bc"/>
+      <stop offset="100%" stop-color="#6e5536"/>
+    </linearGradient>
+
+    <!-- Oro Caldo Fregi Angolari e Castoni -->
+    <linearGradient id="goldClasp35" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffdf5"/>
+      <stop offset="35%" stop-color="#f5ce85"/>
+      <stop offset="75%" stop-color="#a8762e"/>
+      <stop offset="100%" stop-color="#4d3109"/>
+    </linearGradient>
+
+    <!-- Gemma Cabochon Angolare Ciano -->
+    <radialGradient id="cabochonCyan35" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ecfeff"/>
+      <stop offset="30%" stop-color="#22d3ee"/>
+      <stop offset="75%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#083344"/>
+    </radialGradient>
+
+    <!-- Maschera per forare la finestra ottagonale centrale (100% trasparente) -->
+    <mask id="centerCutoutMask35">
+      <rect x="0" y="0" width="420" height="420" fill="#ffffff"/>
+      <polygon points="116,80 304,80 340,116 340,304 304,340 116,340 80,304 80,116" fill="#000000"/>
+    </mask>
+
+    <!-- Fregio Angolare Scolpito con Gemma (Top-Left Base) -->
+    <g id="cornerClasp35">
+      <path d="M 32,32 L 96,32 L 88,48 L 62,88 L 48,88 L 32,96 Z" 
+            fill="url(#goldClasp35)" stroke="#171005" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Rilievi interni 3D del fregio -->
+      <polyline points="36,88 36,36 88,36" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85"/>
+      <polygon points="48,48 78,44 44,78" fill="#784f18" opacity="0.6"/>
+      <!-- Castone e Gemma Cabochon -->
+      <circle cx="58" cy="58" r="14" fill="#1f1305" stroke="#fffbeb" stroke-width="1"/>
+      <circle cx="58" cy="58" r="11.5" fill="url(#cabochonCyan35)"/>
+      <ellipse cx="54" cy="54" rx="4.5" ry="2.8" transform="rotate(-35 54 54)" fill="#ffffff" opacity="0.9"/>
+    </g>
+
+    <!-- Gemma Romboidale Mediana (N, E, S, W) -->
+    <g id="midSideGem35">
+      <polygon points="0,-38 38,0 0,38 -38,0" fill="url(#goldClasp35)" stroke="#171005" stroke-width="2.2" stroke-linejoin="round"/>
+      <polygon points="0,-31 31,0 0,31 -31,0" fill="none" stroke="#fffbeb" stroke-width="1.2" opacity="0.8"/>
+      <polygon points="0,-25 25,0 0,25 -25,0" fill="#241606" stroke="#593a12" stroke-width="1"/>
+      <polygon points="0,-20 20,0 0,20 -20,0" fill="#06b6d4" stroke="#083344" stroke-width="1.2"/>
+      <polygon points="0,-20 20,0 0,0" fill="#a5f3fc"/>
+      <polygon points="0,-20 0,0 -20,0" fill="#22d3ee"/>
+      <polygon points="0,0 20,0 0,20" fill="#0284c7"/>
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="#ecfeff"/>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow35)">
+    <!-- 1. CORPO CORNICE CON FINESTRA CENTRALE FORATA TRASPARENTE -->
+    <g mask="url(#centerCutoutMask35)">
+      <!-- Quadrato Esterno in Metallo Champagne-Argento -->
+      <rect x="34" y="34" width="352" height="352" rx="6" fill="url(#champagneBar35)" stroke="#171108" stroke-width="2.5"/>
+      <!-- Filetti di luce sulle barre esterne -->
+      <rect x="38" y="38" width="344" height="344" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+
+      <!-- Trincea Quadrata Blu Notte Profondo -->
+      <rect x="50" y="50" width="320" height="320" fill="#03152e" stroke="#1a1208" stroke-width="2.5"/>
+      <rect x="55" y="55" width="310" height="310" fill="none" stroke="#0b2954" stroke-width="3"/>
+
+      <!-- Cornice Ottagonale Interna in Metallo Champagne Attorno al Foro -->
+      <polygon points="110,66 310,66 354,110 354,310 310,354 110,354 66,310 66,110" 
+               fill="url(#champagneBar35)" stroke="#171108" stroke-width="2.5" stroke-linejoin="round"/>
+      
+      <!-- Bordo Interno Scuro e Filetto Speculare sul Foro -->
+      <polygon points="114,74 306,74 346,114 346,306 306,346 114,346 74,306 74,114" 
+               fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9"/>
+      <polygon points="116,80 304,80 340,116 340,304 304,340 116,340 80,304 80,116" 
+               fill="none" stroke="#171108" stroke-width="3" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 2. QUATTRO FREGI ANGOLARI CON GEMMA CABOCHON -->
+    <!-- Top-Left -->
+    <use href="#cornerClasp35" x="0" y="0"/>
+    <!-- Top-Right -->
+    <use href="#cornerClasp35" x="0" y="0" transform="translate(420, 0) scale(-1, 1)"/>
+    <!-- Bottom-Left -->
+    <use href="#cornerClasp35" x="0" y="0" transform="translate(0, 420) scale(1, -1)"/>
+    <!-- Bottom-Right -->
+    <use href="#cornerClasp35" x="0" y="0" transform="translate(420, 420) scale(-1, -1)"/>
+
+    <!-- 3. QUATTRO GEMME ROMBOIDALI SUI PUNTI MEDI (NORD, EST, SUD, OVEST) -->
+    <use href="#midSideGem35" x="210" y="52"/>
+    <use href="#midSideGem35" x="368" y="210"/>
+    <use href="#midSideGem35" x="210" y="368"/>
+    <use href="#midSideGem35" x="52" y="210"/>
+  </g>
+</svg>

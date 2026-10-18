@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 420" width="100%" height="100%">
+  <defs>
+    <filter id="shadowAzioni" x="-5%" y="-8%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65" />
+    </filter>
+
+    <linearGradient id="bronzeMain2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <linearGradient id="trenchDark2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <linearGradient id="slateBoard2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824" />
+      <stop offset="50%" stop-color="#1f2d40" />
+      <stop offset="100%" stop-color="#101722" />
+    </linearGradient>
+
+    <radialGradient id="slateGlow2" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#2b4263" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#1a273b" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#101824" stop-opacity="0" />
+    </radialGradient>
+
+    <linearGradient id="steelBevel2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#607d96" />
+      <stop offset="50%" stop-color="#364b61" />
+      <stop offset="100%" stop-color="#4b657d" />
+    </linearGradient>
+
+    <linearGradient id="headerPlate2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="65%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <radialGradient id="bronzeStud2" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="30%" stop-color="#eab68c" />
+      <stop offset="75%" stop-color="#8c5c3e" />
+      <stop offset="100%" stop-color="#3b2112" />
+    </radialGradient>
+
+    <clipPath id="innerClipAzioni">
+      <polygon points="96,62 964,62 1006,104 1006,336 974,368 86,368 54,336 54,104" />
+    </clipPath>
+
+    <!-- Gemma Romboidale Grande -->
+    <g id="gemLarge2">
+      <polygon points="0,-30 30,0 0,30 -30,0" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-25 25,0 0,25 -25,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-20 20,0 0,20 -20,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-16 16,0 0,16 -16,0" fill="#0ea5e9" />
+      <polygon points="0,-16 16,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 16,0 0,16" fill="#0284c7" />
+      <polygon points="0,-8 8,0 0,8 -8,0" fill="#e0f2fe" />
+    </g>
+
+    <!-- Gemma Romboidale Piccola -->
+    <g id="gemSmall2">
+      <polygon points="0,-20 20,0 0,20 -20,0" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <polygon points="0,-14 14,0 0,14 -14,0" fill="#07101e" />
+      <polygon points="0,-11 11,0 0,11 -11,0" fill="#0ea5e9" />
+      <polygon points="0,-11 11,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,-5 5,0 0,5 -5,0" fill="#e0f2fe" />
+    </g>
+
+    <!-- Pulsante d'Azione Interno (Stile percorso.svg) -->
+    <g id="actionButton2">
+      <!-- Ombra sul fondo -->
+      <polygon points="-155,-34 155,-34 185,0 155,34 -155,34 -185,0" transform="translate(0, 5)" fill="#060a0f" opacity="0.7" />
+      <!-- Cornice Bronzo Pulsante -->
+      <polygon points="-152,-32 152,-32 182,0 152,32 -152,32 -182,0" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <!-- Trincea Scura -->
+      <polygon points="-147,-25 147,-25 172,0 147,25 -147,25 -172,0" fill="url(#trenchDark2)" />
+      <!-- Lastra Interna Blu Ardesia con Filetto Acciaio-Blu -->
+      <polygon points="-143,-20 143,-20 164,0 143,20 -143,20 -164,0" fill="url(#slateBoard2)" stroke="#607d96" stroke-width="1.8" stroke-linejoin="round" />
+      <!-- Riflessi diagonali sul pulsante -->
+      <line x1="-100" y1="-20" x2="-70" y2="20" stroke="#ffffff" stroke-width="1.2" opacity="0.07" />
+      <line x1="-80" y1="-20" x2="-50" y2="20" stroke="#ffffff" stroke-width="1.2" opacity="0.07" />
+      <line x1="100" y1="-20" x2="70" y2="20" stroke="#ffffff" stroke-width="1.2" opacity="0.07" />
+      <!-- Gemme Laterali del Pulsante -->
+      <use href="#gemSmall2" x="-172" y="0" />
+      <use href="#gemSmall2" x="172" y="0" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowAzioni)">
+    <!-- 1. CORNICE PRINCIPALE ESTERNA IN BRONZO -->
+    <polygon points="86,38 974,38 1028,92 1028,348 984,392 76,392 32,348 32,92" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="88,42 972,42 1024,94" fill="none" stroke="#fff3e6" stroke-width="1.5" opacity="0.8" />
+
+    <!-- Trincea Scura -->
+    <polygon points="91,50 969,50 1016,97 1016,342 979,379 81,379 44,342 44,97" fill="url(#trenchDark2)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- Lastra Interna Blu Ardesia -->
+    <polygon points="96,58 964,58 1008,102 1008,337 974,371 86,371 52,337 52,102" fill="url(#slateBoard2)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- 2. CONTENUTO INTERNO VETRO ARDESIA -->
+    <g clip-path="url(#innerClipAzioni)">
+      <ellipse cx="530" cy="195" rx="380" ry="130" fill="url(#slateGlow2)" />
+      <path d="M 220,58 A 220,210 0 0,0 220,371 L 50,371 L 50,58 Z" fill="#0b111a" opacity="0.45" />
+      <path d="M 840,58 A 220,210 0 0,1 840,371 L 1010,371 L 1010,58 Z" fill="#0b111a" opacity="0.45" />
+
+      <g stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+        <line x1="150" y1="58" x2="300" y2="371" />
+        <line x1="190" y1="58" x2="340" y2="371" />
+        <line x1="910" y1="58" x2="760" y2="371" />
+        <line x1="870" y1="58" x2="720" y2="371" />
+      </g>
+
+      <path d="M 52,170 C 115,140 165,95 210,58" fill="none" stroke="#4b657d" stroke-width="2" opacity="0.45" />
+      <path d="M 52,245 C 125,265 190,300 250,340" fill="none" stroke="#4b657d" stroke-width="2" opacity="0.45" />
+      <path d="M 1008,170 C 945,140 895,95 850,58" fill="none" stroke="#4b657d" stroke-width="2" opacity="0.45" />
+      <path d="M 1008,245 C 935,265 870,300 810,340" fill="none" stroke="#4b657d" stroke-width="2" opacity="0.45" />
+
+      <polygon points="104,68 956,68 996,108 996,330 968,358 92,358 64,330 64,108" fill="none" stroke="url(#steelBevel2)" stroke-width="2" opacity="0.8" />
+
+      <!-- Piccoli Rombi Decorativi Interni -->
+      <g transform="translate(90, 200)">
+        <polygon points="0,-9 9,0 0,9 -9,0" fill="none" stroke="#7c93ab" stroke-width="1.5" />
+        <circle cx="0" cy="0" r="2.5" fill="#38bdf8" />
+      </g>
+      <g transform="translate(970, 200)">
+        <polygon points="0,-9 9,0 0,9 -9,0" fill="none" stroke="#7c93ab" stroke-width="1.5" />
+        <circle cx="0" cy="0" r="2.5" fill="#38bdf8" />
+      </g>
+    </g>
+
+    <!-- Rivetti Angoli Inferiori -->
+    <circle cx="72" cy="350" r="9" fill="url(#bronzeStud2)" stroke="#24130a" stroke-width="1.6" />
+    <circle cx="988" cy="350" r="9" fill="url(#bronzeStud2)" stroke="#24130a" stroke-width="1.6" />
+
+    <!-- 3. DUE PULSANTI D'AZIONE IN BASSO -->
+    <use href="#actionButton2" x="315" y="334" />
+    <use href="#actionButton2" x="745" y="334" />
+
+    <!-- 4. TARGA SUPERIORE (HEADER) -->
+    <g>
+      <polygon points="348,22 712,22 738,48 708,80 352,80 322,48" fill="#060a0f" opacity="0.65" />
+      <polygon points="355,28 330,28 316,40 330,52 355,52" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <circle cx="333" cy="40" r="4.5" fill="#38bdf8" stroke="#07101e" stroke-width="1" />
+      <polygon points="705,28 730,28 744,40 730,52 705,52" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <circle cx="727" cy="40" r="4.5" fill="#38bdf8" stroke="#07101e" stroke-width="1" />
+
+      <polygon points="364,12 696,12 726,42 702,68 358,68 334,42" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="370,19 690,19 714,42 696,60 364,60 346,42" fill="url(#headerPlate2)" stroke="#4b657d" stroke-width="1.5" stroke-linejoin="round" />
+
+      <circle cx="372" cy="40" r="7.5" fill="url(#bronzeStud2)" stroke="#24130a" stroke-width="1.5" />
+      <circle cx="688" cy="40" r="7.5" fill="url(#bronzeStud2)" stroke="#24130a" stroke-width="1.5" />
+
+      <g transform="translate(530, 40) scale(0.9, 1.15)">
+        <use href="#gemLarge2" />
+      </g>
+    </g>
+
+    <!-- 5. GEMME CORNICE E PULSANTE "X" -->
+    <use href="#gemSmall2" x="65" y="102" />
+    <use href="#gemLarge2" x="1022" y="230" />
+
+    <g transform="translate(982, 68)">
+      <circle cx="-2" cy="4" r="42" fill="#060a0f" opacity="0.6" />
+      <circle cx="0" cy="0" r="40" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="2" />
+      <path d="M -28,-22 A 35,35 0 0,1 28,-22" fill="none" stroke="#fff3e6" stroke-width="2" opacity="0.85" />
+      <circle cx="0" cy="0" r="30" fill="url(#trenchDark2)" stroke="#140c07" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="27" fill="url(#slateBoard2)" stroke="#607d96" stroke-width="1.8" />
+      <path d="M -12,-12 L 12,12 M 12,-12 L -12,12" stroke="#07101e" stroke-width="7" stroke-linecap="round" />
+      <path d="M -12,-12 L 12,12 M 12,-12 L -12,12" stroke="#f1f5f9" stroke-width="4.5" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

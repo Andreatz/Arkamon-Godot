@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" width="100%" height="100%">
+  <defs>
+    <filter id="shadow27" x="-6%" y="-12%" width="112%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso_2.svg) -->
+    <linearGradient id="bronzeMain27" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="22%" stop-color="#e5bfa0"/>
+      <stop offset="52%" stop-color="#8c5c3e"/>
+      <stop offset="82%" stop-color="#c99673"/>
+      <stop offset="100%" stop-color="#5e3a22"/>
+    </linearGradient>
+
+    <linearGradient id="trenchDark27" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a"/>
+      <stop offset="50%" stop-color="#2e1d13"/>
+      <stop offset="100%" stop-color="#140c07"/>
+    </linearGradient>
+
+    <!-- Smusso Bombato Acciaio-Blu (da percorso_2.svg) -->
+    <linearGradient id="steelBevel27" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#607d96"/>
+      <stop offset="25%" stop-color="#4b657d"/>
+      <stop offset="75%" stop-color="#27374d"/>
+      <stop offset="100%" stop-color="#4b657d"/>
+    </linearGradient>
+
+    <!-- Nucleo Blu Ardesia Scuro -->
+    <linearGradient id="slateBoard27" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824"/>
+      <stop offset="50%" stop-color="#1f2d40"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+
+    <clipPath id="capsuleClip27">
+      <polygon points="138,54 742,54 780,92 780,118 742,156 138,156 100,118 100,92"/>
+    </clipPath>
+
+    <!-- Gemma Laterale Romboidale (Stile percorso_2.svg) -->
+    <g id="sideGem27">
+      <polygon points="0,-40 40,0 0,40 -40,0" fill="url(#bronzeMain27)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="0,-34 34,0 0,34 -34,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75"/>
+      <polygon points="0,-28 28,0 0,28 -28,0" fill="#07101e" stroke="#1e130c" stroke-width="1"/>
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#0ea5e9"/>
+      <polygon points="0,-22 22,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,0 22,0 0,22" fill="#0284c7"/>
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#e0f2fe"/>
+    </g>
+  </defs>
+
+  <g filter="url(#shadow27)">
+    <!-- 1. CORNICE ESTERNA A CAPSULA SMUSSATA IN BRONZO -->
+    <path d="M 118,22 L 762,22 Q 792,22 812,46 L 844,86 Q 858,105 844,124 L 812,164 Q 792,188 762,188 L 118,188 Q 88,188 68,164 L 36,124 Q 22,105 36,86 L 68,46 Q 88,22 118,22 Z" 
+          fill="url(#bronzeMain27)" stroke="#24130a" stroke-width="2"/>
+
+    <!-- Trincea Scura Incassata -->
+    <path d="M 124,32 L 756,32 Q 782,32 798,52 L 826,88 Q 838,105 826,122 L 798,158 Q 782,178 756,178 L 124,178 Q 98,178 82,158 L 54,122 Q 42,105 54,88 L 82,52 Q 98,32 124,32 Z" 
+          fill="url(#trenchDark27)" stroke="#140c07" stroke-width="1.5"/>
+
+    <!-- 2. SMUSSO INTERMEDIO ACCIAIO-BLU E FILETTO BRONZO CHIARO -->
+    <polygon points="130,41 750,41 796,87 796,123 750,169 130,169 84,123 84,87" 
+             fill="url(#steelBevel27)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- 3. NUCLEO BLU ARDESIA SCURO -->
+    <polygon points="138,54 742,54 780,92 780,118 742,156 138,156 100,118 100,92" 
+             fill="url(#slateBoard27)" stroke="#0d131a" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Linee Diagonali di Riflesso (Stile percorso_2.svg) -->
+    <g clip-path="url(#capsuleClip27)" stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+      <line x1="175" y1="54" x2="245" y2="156"/>
+      <line x1="205" y1="54" x2="275" y2="156"/>
+      <line x1="705" y1="54" x2="635" y2="156"/>
+      <line x1="675" y1="54" x2="605" y2="156"/>
+    </g>
+
+    <!-- Piccoli Rombi Decorativi Interni -->
+    <g transform="translate(126, 105)">
+      <polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="#7c93ab" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="2.2" fill="#38bdf8"/>
+    </g>
+    <g transform="translate(754, 105)">
+      <polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="#7c93ab" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="2.2" fill="#38bdf8"/>
+    </g>
+
+    <!-- 4. GEMME LATERALI SINISTRA E DESTRA -->
+    <use href="#sideGem27" x="58" y="105"/>
+    <use href="#sideGem27" x="822" y="105"/>
+  </g>
+</svg>

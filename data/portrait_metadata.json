@@ -1,0 +1,1472 @@
+{
+  "/sprites/front_sprites/1.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      438,
+      85,
+      1737,
+      1954
+    ]
+  },
+  "/sprites/arkamon/1/front/idle-poster.webp": {
+    "width": 704,
+    "height": 704,
+    "alphaBounds": [
+      267,
+      188,
+      508,
+      532
+    ]
+  },
+  "/sprites/front_sprites/2.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      86,
+      104,
+      1943,
+      1918
+    ]
+  },
+  "/sprites/arkamon/2/front/idle-poster.webp": {
+    "width": 576,
+    "height": 576,
+    "alphaBounds": [
+      157,
+      156,
+      450,
+      444
+    ]
+  },
+  "/sprites/front_sprites/3.png": {
+    "width": 2400,
+    "height": 1792,
+    "alphaBounds": [
+      98,
+      98,
+      2385,
+      1712
+    ]
+  },
+  "/sprites/arkamon/3/front/idle-poster.webp": {
+    "width": 576,
+    "height": 576,
+    "alphaBounds": [
+      132,
+      216,
+      477,
+      458
+    ]
+  },
+  "/sprites/front_sprites/4.png": {
+    "width": 2400,
+    "height": 1792,
+    "alphaBounds": [
+      442,
+      13,
+      2265,
+      1758
+    ]
+  },
+  "/sprites/arkamon/4/front/idle-poster.webp": {
+    "width": 576,
+    "height": 576,
+    "alphaBounds": [
+      178,
+      214,
+      513,
+      458
+    ]
+  },
+  "/sprites/front_sprites/5.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      294,
+      82,
+      1767,
+      1956
+    ]
+  },
+  "/sprites/arkamon/5/front/idle-poster.webp": {
+    "width": 640,
+    "height": 640,
+    "alphaBounds": [
+      214,
+      162,
+      525,
+      509
+    ]
+  },
+  "/sprites/front_sprites/6.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      149,
+      0,
+      1927,
+      1973
+    ]
+  },
+  "/sprites/arkamon/6/front/idle-poster.webp": {
+    "width": 704,
+    "height": 704,
+    "alphaBounds": [
+      237,
+      197,
+      502,
+      497
+    ]
+  },
+  "/sprites/front_sprites/7.png": {
+    "width": 1792,
+    "height": 2400,
+    "alphaBounds": [
+      75,
+      1,
+      1683,
+      2400
+    ]
+  },
+  "/sprites/arkamon/7/front/idle-poster.webp": {
+    "width": 704,
+    "height": 704,
+    "alphaBounds": [
+      194,
+      174,
+      494,
+      543
+    ]
+  },
+  "/sprites/front_sprites/8.png": {
+    "width": 1792,
+    "height": 2400,
+    "alphaBounds": [
+      205,
+      0,
+      1719,
+      2400
+    ]
+  },
+  "/sprites/arkamon/8/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      319,
+      205,
+      534,
+      573
+    ]
+  },
+  "/sprites/front_sprites/9.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      194,
+      216,
+      1860,
+      1833
+    ]
+  },
+  "/sprites/arkamon/9/front/idle-poster.webp": {
+    "width": 512,
+    "height": 512,
+    "alphaBounds": [
+      125,
+      155,
+      392,
+      414
+    ]
+  },
+  "/sprites/front_sprites/10.png": {
+    "width": 1437,
+    "height": 1095,
+    "alphaBounds": [
+      0,
+      8,
+      1423,
+      1095
+    ]
+  },
+  "/sprites/arkamon/10/front/idle-poster.webp": {
+    "width": 576,
+    "height": 576,
+    "alphaBounds": [
+      146,
+      166,
+      482,
+      434
+    ]
+  },
+  "/sprites/front_sprites/11.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      122,
+      26,
+      1888,
+      2011
+    ]
+  },
+  "/sprites/arkamon/11/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      242,
+      222,
+      541,
+      558
+    ]
+  },
+  "/sprites/front_sprites/12.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      200,
+      136,
+      1912,
+      1994
+    ]
+  },
+  "/sprites/arkamon/12/front/idle-poster.webp": {
+    "width": 704,
+    "height": 704,
+    "alphaBounds": [
+      237,
+      200,
+      531,
+      522
+    ]
+  },
+  "/sprites/front_sprites/13.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      186,
+      113,
+      1936,
+      1827
+    ]
+  },
+  "/sprites/arkamon/13/front/idle-poster.webp": {
+    "width": 576,
+    "height": 576,
+    "alphaBounds": [
+      133,
+      215,
+      439,
+      430
+    ]
+  },
+  "/sprites/front_sprites/14.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      167,
+      117,
+      1912,
+      1962
+    ]
+  },
+  "/sprites/arkamon/14/front/idle-poster.webp": {
+    "width": 640,
+    "height": 640,
+    "alphaBounds": [
+      171,
+      222,
+      458,
+      483
+    ]
+  },
+  "/sprites/front_sprites/15.png": {
+    "width": 1792,
+    "height": 2400,
+    "alphaBounds": [
+      135,
+      106,
+      1614,
+      2234
+    ]
+  },
+  "/sprites/arkamon/15/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      166,
+      224,
+      589,
+      572
+    ]
+  },
+  "/sprites/front_sprites/16.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      177,
+      143,
+      1973,
+      1922
+    ]
+  },
+  "/sprites/arkamon/16/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      223,
+      241,
+      533,
+      549
+    ]
+  },
+  "/sprites/front_sprites/17.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      123,
+      31,
+      1890,
+      1976
+    ]
+  },
+  "/sprites/arkamon/17/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      265,
+      243,
+      497,
+      549
+    ]
+  },
+  "/sprites/front_sprites/18.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      54,
+      161,
+      2001,
+      1856
+    ]
+  },
+  "/sprites/arkamon/18/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      218,
+      221,
+      573,
+      544
+    ]
+  },
+  "/sprites/front_sprites/19.png": {
+    "width": 1335,
+    "height": 1178,
+    "alphaBounds": [
+      0,
+      11,
+      1332,
+      1164
+    ]
+  },
+  "/sprites/arkamon/19/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      232,
+      218,
+      528,
+      560
+    ]
+  },
+  "/sprites/front_sprites/20.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      160,
+      196,
+      1882,
+      1790
+    ]
+  },
+  "/sprites/arkamon/20/front/idle-poster.webp": {
+    "width": 704,
+    "height": 704,
+    "alphaBounds": [
+      191,
+      211,
+      493,
+      493
+    ]
+  },
+  "/sprites/front_sprites/21.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      233,
+      134,
+      1861,
+      1936
+    ]
+  },
+  "/sprites/arkamon/21/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      247,
+      246,
+      537,
+      571
+    ]
+  },
+  "/sprites/front_sprites/22.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      60,
+      128,
+      2045,
+      1975
+    ]
+  },
+  "/sprites/front_sprites/23.png": {
+    "width": 1792,
+    "height": 2400,
+    "alphaBounds": [
+      383,
+      197,
+      1498,
+      2352
+    ]
+  },
+  "/sprites/arkamon/23/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      255,
+      217,
+      510,
+      488
+    ]
+  },
+  "/sprites/front_sprites/24.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      139,
+      34,
+      1937,
+      1971
+    ]
+  },
+  "/sprites/arkamon/24/front/idle-poster.webp": {
+    "width": 704,
+    "height": 704,
+    "alphaBounds": [
+      210,
+      216,
+      504,
+      523
+    ]
+  },
+  "/sprites/front_sprites/25.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      110,
+      105,
+      1973,
+      1915
+    ]
+  },
+  "/sprites/arkamon/25/front/idle-poster.webp": {
+    "width": 704,
+    "height": 704,
+    "alphaBounds": [
+      234,
+      237,
+      470,
+      467
+    ]
+  },
+  "/sprites/front_sprites/26.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      155,
+      236,
+      1853,
+      1805
+    ]
+  },
+  "/sprites/arkamon/26/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      243,
+      262,
+      512,
+      514
+    ]
+  },
+  "/sprites/front_sprites/27.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      69,
+      28,
+      1957,
+      2013
+    ]
+  },
+  "/sprites/arkamon/27/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      262,
+      256,
+      504,
+      509
+    ]
+  },
+  "/sprites/front_sprites/28.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      218,
+      53,
+      1830,
+      2015
+    ]
+  },
+  "/sprites/arkamon/28/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      278,
+      259,
+      488,
+      511
+    ]
+  },
+  "/sprites/front_sprites/29.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      108,
+      157,
+      2011,
+      1890
+    ]
+  },
+  "/sprites/arkamon/29/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      241,
+      245,
+      545,
+      522
+    ]
+  },
+  "/sprites/front_sprites/30.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      311,
+      36,
+      1721,
+      2009
+    ]
+  },
+  "/sprites/arkamon/30/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      316,
+      288,
+      453,
+      479
+    ]
+  },
+  "/sprites/front_sprites/31.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      211,
+      117,
+      1888,
+      1939
+    ]
+  },
+  "/sprites/arkamon/31/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      289,
+      253,
+      526,
+      513
+    ]
+  },
+  "/sprites/front_sprites/32.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      169,
+      136,
+      1891,
+      1880
+    ]
+  },
+  "/sprites/arkamon/32/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      273,
+      273,
+      494,
+      495
+    ]
+  },
+  "/sprites/front_sprites/33.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      150,
+      80,
+      1903,
+      1934
+    ]
+  },
+  "/sprites/arkamon/33/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      248,
+      237,
+      525,
+      529
+    ]
+  },
+  "/sprites/front_sprites/34.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      75,
+      76,
+      1971,
+      1915
+    ]
+  },
+  "/sprites/arkamon/34/front/idle-poster.webp": {
+    "width": 704,
+    "height": 704,
+    "alphaBounds": [
+      228,
+      234,
+      473,
+      470
+    ]
+  },
+  "/sprites/front_sprites/35.png": {
+    "width": 1792,
+    "height": 2400,
+    "alphaBounds": [
+      52,
+      20,
+      1745,
+      2382
+    ]
+  },
+  "/sprites/arkamon/35/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      279,
+      239,
+      489,
+      529
+    ]
+  },
+  "/sprites/front_sprites/36.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      96,
+      141,
+      1979,
+      1943
+    ]
+  },
+  "/sprites/arkamon/36/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      288,
+      290,
+      480,
+      474
+    ]
+  },
+  "/sprites/front_sprites/37.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      54,
+      53,
+      1948,
+      1977
+    ]
+  },
+  "/sprites/arkamon/37/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      278,
+      276,
+      489,
+      488
+    ]
+  },
+  "/sprites/front_sprites/38.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      26,
+      41,
+      2004,
+      1977
+    ]
+  },
+  "/sprites/arkamon/38/front/idle-poster.webp": {
+    "width": 768,
+    "height": 768,
+    "alphaBounds": [
+      257,
+      260,
+      510,
+      507
+    ]
+  },
+  "/sprites/front_sprites/39.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      167,
+      54,
+      1840,
+      1988
+    ]
+  },
+  "/sprites/front_sprites/40.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      395,
+      41,
+      1711,
+      1970
+    ]
+  },
+  "/sprites/front_sprites/41.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      225,
+      32,
+      1899,
+      2030
+    ]
+  },
+  "/sprites/front_sprites/42.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      192,
+      182,
+      1878,
+      1923
+    ]
+  },
+  "/sprites/front_sprites/43.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      259,
+      129,
+      1657,
+      1965
+    ]
+  },
+  "/sprites/front_sprites/44.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      165,
+      103,
+      1969,
+      1999
+    ]
+  },
+  "/sprites/front_sprites/45.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      38,
+      227,
+      2029,
+      1678
+    ]
+  },
+  "/sprites/front_sprites/46.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      101,
+      130,
+      1960,
+      1928
+    ]
+  },
+  "/sprites/front_sprites/47.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      163,
+      229,
+      1822,
+      1755
+    ]
+  },
+  "/sprites/front_sprites/48.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      213,
+      120,
+      1878,
+      1960
+    ]
+  },
+  "/sprites/front_sprites/49.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      209,
+      163,
+      1819,
+      1908
+    ]
+  },
+  "/sprites/front_sprites/50.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      134,
+      200,
+      1876,
+      1858
+    ]
+  },
+  "/sprites/front_sprites/51.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      0,
+      76,
+      1993,
+      1939
+    ]
+  },
+  "/sprites/front_sprites/52.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      77,
+      78,
+      1969,
+      1998
+    ]
+  },
+  "/sprites/front_sprites/53.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      46,
+      57,
+      2020,
+      1970
+    ]
+  },
+  "/sprites/front_sprites/54.png": {
+    "width": 2400,
+    "height": 1792,
+    "alphaBounds": [
+      89,
+      0,
+      2332,
+      1792
+    ]
+  },
+  "/sprites/front_sprites/55.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      330,
+      54,
+      1681,
+      1955
+    ]
+  },
+  "/sprites/front_sprites/56.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      399,
+      91,
+      1903,
+      1921
+    ]
+  },
+  "/sprites/front_sprites/57.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      39,
+      26,
+      1995,
+      1993
+    ]
+  },
+  "/sprites/front_sprites/58.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      121,
+      50,
+      1955,
+      1988
+    ]
+  },
+  "/sprites/front_sprites/59.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      68,
+      28,
+      1994,
+      1990
+    ]
+  },
+  "/sprites/front_sprites/60.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      5,
+      0,
+      2048,
+      2047
+    ]
+  },
+  "/sprites/front_sprites/61.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      123,
+      147,
+      2014,
+      1846
+    ]
+  },
+  "/sprites/front_sprites/62.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      125,
+      107,
+      1961,
+      1776
+    ]
+  },
+  "/sprites/front_sprites/63.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      49,
+      148,
+      1968,
+      1921
+    ]
+  },
+  "/sprites/front_sprites/64.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      122,
+      126,
+      1933,
+      1958
+    ]
+  },
+  "/sprites/front_sprites/65.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      154,
+      76,
+      1908,
+      1952
+    ]
+  },
+  "/sprites/front_sprites/66.png": {
+    "width": 1792,
+    "height": 2400,
+    "alphaBounds": [
+      84,
+      86,
+      1646,
+      2383
+    ]
+  },
+  "/sprites/front_sprites/67.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      334,
+      28,
+      1704,
+      2006
+    ]
+  },
+  "/sprites/front_sprites/68.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      336,
+      41,
+      1725,
+      2043
+    ]
+  },
+  "/sprites/front_sprites/69.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      108,
+      205,
+      2026,
+      1813
+    ]
+  },
+  "/sprites/front_sprites/70.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      43,
+      74,
+      2015,
+      1944
+    ]
+  },
+  "/sprites/front_sprites/71.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      156,
+      322,
+      1871,
+      1932
+    ]
+  },
+  "/sprites/front_sprites/72.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      44,
+      108,
+      1984,
+      1921
+    ]
+  },
+  "/sprites/front_sprites/73.png": {
+    "width": 1248,
+    "height": 832,
+    "alphaBounds": [
+      28,
+      4,
+      1172,
+      806
+    ]
+  },
+  "/sprites/front_sprites/74.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      224,
+      52,
+      1791,
+      1937
+    ]
+  },
+  "/sprites/front_sprites/75.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      96,
+      104,
+      1944,
+      1950
+    ]
+  },
+  "/sprites/front_sprites/76.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      97,
+      28,
+      2007,
+      1992
+    ]
+  },
+  "/sprites/front_sprites/77.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      357,
+      44,
+      1657,
+      1964
+    ]
+  },
+  "/sprites/front_sprites/78.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      268,
+      208,
+      1816,
+      1878
+    ]
+  },
+  "/sprites/front_sprites/79.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      296,
+      85,
+      1819,
+      1957
+    ]
+  },
+  "/sprites/front_sprites/80.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      125,
+      23,
+      1940,
+      2024
+    ]
+  },
+  "/sprites/front_sprites/81.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      244,
+      9,
+      1823,
+      2048
+    ]
+  },
+  "/sprites/front_sprites/82.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      71,
+      53,
+      2027,
+      1825
+    ]
+  },
+  "/sprites/front_sprites/83.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      220,
+      49,
+      1866,
+      1957
+    ]
+  },
+  "/sprites/front_sprites/84.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      110,
+      104,
+      1925,
+      1929
+    ]
+  },
+  "/sprites/front_sprites/85.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      63,
+      19,
+      1970,
+      2003
+    ]
+  },
+  "/sprites/front_sprites/86.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      470,
+      22,
+      1722,
+      2006
+    ]
+  },
+  "/sprites/front_sprites/87.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      132,
+      56,
+      1897,
+      1980
+    ]
+  },
+  "/sprites/front_sprites/88.png": {
+    "width": 1792,
+    "height": 2400,
+    "alphaBounds": [
+      163,
+      0,
+      1607,
+      2394
+    ]
+  },
+  "/sprites/front_sprites/89.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      258,
+      0,
+      1835,
+      2048
+    ]
+  },
+  "/sprites/front_sprites/90.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      126,
+      21,
+      1736,
+      2022
+    ]
+  },
+  "/sprites/front_sprites/91.png": {
+    "width": 1792,
+    "height": 2400,
+    "alphaBounds": [
+      247,
+      10,
+      1507,
+      2389
+    ]
+  },
+  "/sprites/front_sprites/92.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      256,
+      112,
+      1871,
+      1916
+    ]
+  },
+  "/sprites/front_sprites/93.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      71,
+      60,
+      1964,
+      1958
+    ]
+  },
+  "/sprites/front_sprites/94.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      45,
+      78,
+      1997,
+      1934
+    ]
+  },
+  "/sprites/front_sprites/95.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      123,
+      112,
+      1942,
+      1905
+    ]
+  },
+  "/sprites/front_sprites/96.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      79,
+      52,
+      1993,
+      2008
+    ]
+  },
+  "/sprites/front_sprites/97.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      64,
+      65,
+      1967,
+      2045
+    ]
+  },
+  "/sprites/front_sprites/98.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      255,
+      24,
+      1793,
+      1957
+    ]
+  },
+  "/sprites/front_sprites/99.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      56,
+      78,
+      1997,
+      1812
+    ]
+  },
+  "/sprites/front_sprites/100.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      87,
+      2,
+      1947,
+      2048
+    ]
+  },
+  "/sprites/front_sprites/101.png": {
+    "width": 1792,
+    "height": 2400,
+    "alphaBounds": [
+      13,
+      259,
+      1779,
+      2144
+    ]
+  },
+  "/sprites/front_sprites/102.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      83,
+      41,
+      1958,
+      1993
+    ]
+  },
+  "/sprites/front_sprites/103.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      230,
+      105,
+      1904,
+      1952
+    ]
+  },
+  "/sprites/front_sprites/104.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      72,
+      113,
+      2000,
+      1942
+    ]
+  },
+  "/sprites/front_sprites/105.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      290,
+      161,
+      1901,
+      1879
+    ]
+  },
+  "/sprites/front_sprites/106.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      353,
+      82,
+      1821,
+      2009
+    ]
+  },
+  "/sprites/front_sprites/107.png": {
+    "width": 2400,
+    "height": 1792,
+    "alphaBounds": [
+      75,
+      60,
+      2372,
+      1791
+    ]
+  },
+  "/sprites/front_sprites/108.png": {
+    "width": 2400,
+    "height": 1792,
+    "alphaBounds": [
+      81,
+      3,
+      2400,
+      1792
+    ]
+  },
+  "/sprites/front_sprites/109.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      108,
+      72,
+      1950,
+      1851
+    ]
+  },
+  "/sprites/front_sprites/110.png": {
+    "width": 2048,
+    "height": 2048,
+    "alphaBounds": [
+      133,
+      29,
+      1959,
+      2003
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 240" width="100%" height="100%">
+  <defs>
+    <filter id="a20-shadow" x="-6%" y="-15%" width="112%" height="135%">
+      <feDropShadow dx="0" dy="5" stdDeviation="3.5" flood-color="#000614" flood-opacity="0.75" />
+    </filter>
+    <filter id="a20-gem-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#00040d" flood-opacity="0.85" />
+    </filter>
+    <filter id="a20-teal-glow" x="-5%" y="-30%" width="110%" height="160%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#00e5ff" flood-opacity="0.45" />
+    </filter>
+
+    <!-- Gradiente Barra Superiore: Energia Turchese / Smeraldo 3D -->
+    <linearGradient id="a20-teal-bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#004d40" />
+      <stop offset="15%" stop-color="#84ffff" />
+      <stop offset="35%" stop-color="#e0ffff" />
+      <stop offset="65%" stop-color="#00bfa5" />
+      <stop offset="90%" stop-color="#00695c" />
+      <stop offset="100%" stop-color="#00251a" />
+    </linearGradient>
+
+    <!-- Gradiente Barra Inferiore: Asta Cilindrica Oro / Bronzo 3D -->
+    <linearGradient id="a20-gold-bar" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3b2610" />
+      <stop offset="20%" stop-color="#ffffff" />
+      <stop offset="42%" stop-color="#f5e1c3" />
+      <stop offset="70%" stop-color="#a87e51" />
+      <stop offset="90%" stop-color="#5e3e1c" />
+      <stop offset="100%" stop-color="#261707" />
+    </linearGradient>
+
+    <linearGradient id="a20-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="32%" stop-color="#f5c97d" />
+      <stop offset="72%" stop-color="#bd7c2a" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <linearGradient id="a20-cyan-tl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0faff" />
+      <stop offset="60%" stop-color="#4dd2ff" />
+      <stop offset="100%" stop-color="#0099e6" />
+    </linearGradient>
+    <linearGradient id="a20-cyan-br" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0077cc" />
+      <stop offset="100%" stop-color="#002b5e" />
+    </linearGradient>
+
+    <!-- Gemma Romboidale Terminale -->
+    <g id="a20-end-gem" filter="url(#a20-gem-shadow)">
+      <polygon points="0,-42 40,0 0,42 -40,0" fill="url(#a20-gem-gold)" stroke="#241305" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="0,-42 -40,0 -31,0 0,-32" fill="#ffffff" opacity="0.8" />
+      <polygon points="0,42 40,0 31,0 0,32" fill="#593102" opacity="0.75" />
+      <polygon points="0,-27 25,0 0,27 -25,0" fill="#04152e" stroke="#663c0a" stroke-width="1.2" />
+      <polygon points="0,-24 -22,0 0,0" fill="url(#a20-cyan-tl)" />
+      <polygon points="0,-24 22,0 0,0" fill="#6ee2ff" />
+      <polygon points="0,24 -22,0 0,0" fill="#0088cc" />
+      <polygon points="0,24 22,0 0,0" fill="url(#a20-cyan-br)" />
+      <polygon points="0,-10 9,0 0,10 -9,0" fill="#e0faff" opacity="0.9" />
+    </g>
+  </defs>
+
+  <!-- ================================================= -->
+  <!-- 2. BARRA INFERIORE METALLICA ORO / BRONZO         -->
+  <!-- ================================================= -->
+  <g transform="translate(0, 178)" filter="url(#a20-shadow)">
+    <rect x="56" y="-9" width="588" height="18" fill="url(#a20-gold-bar)" stroke="#1c1105" stroke-width="1.8" />
+    <line x1="65" y1="-3.5" x2="635" y2="-3.5" stroke="#ffffff" stroke-width="2.2" opacity="0.85" stroke-linecap="round" />
+    <use href="#a20-end-gem" x="56" y="0" />
+    <use href="#a20-end-gem" x="644" y="0" />
+  </g>
+</svg>

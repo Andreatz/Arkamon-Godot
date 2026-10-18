@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 140" width="100%" height="100%">
+  <defs>
+    <filter id="a19-shadow" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3.5" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+
+    <!-- Castone Circolare Oro Champagne -->
+    <linearGradient id="a19-gold-bezel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="20%" stop-color="#f7e6cc" />
+      <stop offset="55%" stop-color="#d49e5d" />
+      <stop offset="88%" stop-color="#8c5820" />
+      <stop offset="100%" stop-color="#472808" />
+    </linearGradient>
+
+    <!-- Sfera Sinistra: Cristallo Ciano / Azzurro Lucido -->
+    <radialGradient id="a19-cyan-orb" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="22%" stop-color="#84ffff" />
+      <stop offset="55%" stop-color="#00b0ff" />
+      <stop offset="85%" stop-color="#0066cc" />
+      <stop offset="100%" stop-color="#002b66" />
+    </radialGradient>
+
+    <!-- Sfera Destra: Perla / Avorio Lucido -->
+    <radialGradient id="a19-pearl-orb" cx="38%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#faf6f0" />
+      <stop offset="80%" stop-color="#ded0be" />
+      <stop offset="100%" stop-color="#9e876e" />
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#a19-shadow)">
+    <!-- 1. SFERA SINISTRA (CIANO BRILLANTE) -->
+
+    <!-- 2. SFERA DESTRA (PERLA BIANCA) -->
+    <g transform="translate(206, 70)">
+      <circle cx="0" cy="0" r="47" fill="url(#a19-gold-bezel)" stroke="#170e04" stroke-width="2.2" />
+      <path d="M -38,-22 A 43,43 0 0,1 38,-22" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85" stroke-linecap="round" />
+      <!-- Sede Scura -->
+      <circle cx="0" cy="0" r="37.5" fill="#1a1209" stroke="#422608" stroke-width="1.4" />
+      <!-- Globo Perla 3D -->
+      <circle cx="0" cy="0" r="34.5" fill="url(#a19-pearl-orb)" />
+      <ellipse cx="-9" cy="-11" rx="12" ry="8" transform="rotate(-25 -9 -11)" fill="#ffffff" opacity="0.95" />
+    </g>
+  </g>
+</svg>

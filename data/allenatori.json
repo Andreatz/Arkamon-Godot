@@ -1,0 +1,348 @@
+[
+  {
+    "id": 201,
+    "nome": "Rivale",
+    "luogo": "Percorso_1",
+    "tipo": "PVP",
+    "squadra": [
+      { "pokemonId": 1, "livello": 5 },
+      { "pokemonId": 32, "livello": 5 },
+      { "pokemonId": 21, "livello": 5 },
+      { "pokemonId": 13, "livello": 5 },
+      { "pokemonId": 47, "livello": 5 },
+      { "pokemonId": 56, "livello": 5 }
+    ]
+  },
+  {
+    "id": 202,
+    "nome": "Gennaro Bullo",
+    "luogo": "Percorso_1",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 47, "livello": 5 },
+      { "pokemonId": 32, "livello": 5 }
+    ]
+  },
+  {
+    "id": 301,
+    "nome": "Luca",
+    "luogo": "Piacenza",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 13, "livello": 8 },
+      { "pokemonId": 47, "livello": 8 }
+    ]
+  },
+  {
+    "id": 203,
+    "nome": "Marco il Marinaio",
+    "luogo": "Venezia",
+    "tipo": "Capopalestra",
+    "squadra": [
+      { "pokemonId": 56, "livello": 10 },
+      { "pokemonId": 58, "livello": 10 },
+      { "pokemonId": 69, "livello": 11 },
+      { "pokemonId": 71, "livello": 11 },
+      { "pokemonId": 82, "livello": 12 },
+      { "pokemonId": 60, "livello": 12 }
+    ]
+  },
+  {
+    "id": 302,
+    "nome": "Anna Voltaggio",
+    "luogo": "Milano",
+    "tipo": "Capopalestra",
+    "squadra": [
+      { "pokemonId": 22, "livello": 16 },
+      { "pokemonId": 26, "livello": 16 },
+      { "pokemonId": 36, "livello": 17 },
+      { "pokemonId": 86, "livello": 17 },
+      { "pokemonId": 24, "livello": 18 },
+      { "pokemonId": 88, "livello": 18 }
+    ]
+  },
+  {
+    "id": 303,
+    "nome": "Bruno Roccia",
+    "luogo": "Torino",
+    "tipo": "Capopalestra",
+    "squadra": [
+      { "pokemonId": 13, "livello": 22 },
+      { "pokemonId": 16, "livello": 22 },
+      { "pokemonId": 34, "livello": 23 },
+      { "pokemonId": 103, "livello": 23 },
+      { "pokemonId": 20, "livello": 24 },
+      { "pokemonId": 17, "livello": 24 }
+    ]
+  },
+  {
+    "id": 304,
+    "nome": "Gianni il Pescatore",
+    "luogo": "Grosseto",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 56, "livello": 24 },
+      { "pokemonId": 58, "livello": 25 }
+    ]
+  },
+  {
+    "id": 305,
+    "nome": "Selene Marea",
+    "luogo": "Civitavecchia",
+    "tipo": "Capopalestra",
+    "squadra": [
+      { "pokemonId": 56, "livello": 28 },
+      { "pokemonId": 58, "livello": 28 },
+      { "pokemonId": 69, "livello": 29 },
+      { "pokemonId": 71, "livello": 29 },
+      { "pokemonId": 82, "livello": 30 },
+      { "pokemonId": 60, "livello": 31 }
+    ]
+  },
+  {
+    "id": 306,
+    "nome": "Vulcano Igneo",
+    "luogo": "Cagliari",
+    "tipo": "Capopalestra",
+    "squadra": [
+      { "pokemonId": 32, "livello": 34 },
+      { "pokemonId": 49, "livello": 34 },
+      { "pokemonId": 74, "livello": 35 },
+      { "pokemonId": 77, "livello": 35 },
+      { "pokemonId": 92, "livello": 36 },
+      { "pokemonId": 51, "livello": 37 }
+    ]
+  },
+  {
+    "id": 307,
+    "nome": "Aurora Mente",
+    "luogo": "Palermo",
+    "tipo": "Capopalestra",
+    "squadra": [
+      { "pokemonId": 9, "livello": 40 },
+      { "pokemonId": 21, "livello": 40 },
+      { "pokemonId": 67, "livello": 41 },
+      { "pokemonId": 83, "livello": 41 },
+      { "pokemonId": 84, "livello": 42 },
+      { "pokemonId": 12, "livello": 43 }
+    ]
+  },
+  {
+    "id": 308,
+    "nome": "Erika Foresta",
+    "luogo": "Foggia",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 28, "livello": 42 },
+      { "pokemonId": 52, "livello": 43 }
+    ]
+  },
+  {
+    "id": 309,
+    "nome": "Giada Vesuvio",
+    "luogo": "Napoli",
+    "tipo": "Capopalestra",
+    "squadra": [
+      { "pokemonId": 33, "livello": 46 },
+      { "pokemonId": 50, "livello": 46 },
+      { "pokemonId": 74, "livello": 47 },
+      { "pokemonId": 92, "livello": 47 },
+      { "pokemonId": 94, "livello": 48 },
+      { "pokemonId": 51, "livello": 49 }
+    ]
+  },
+  {
+    "id": 310,
+    "nome": "Ettore Tempesta",
+    "luogo": "Pescara",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 22, "livello": 50 },
+      { "pokemonId": 26, "livello": 51 }
+    ]
+  },
+  {
+    "id": 311,
+    "nome": "Imperatore Notturno",
+    "luogo": "Roma",
+    "tipo": "Capopalestra",
+    "squadra": [
+      { "pokemonId": 8, "livello": 56 },
+      { "pokemonId": 30, "livello": 57 },
+      { "pokemonId": 45, "livello": 57 },
+      { "pokemonId": 79, "livello": 58 },
+      { "pokemonId": 101, "livello": 59 },
+      { "pokemonId": 110, "livello": 60 }
+    ]
+  },
+  {
+    "id": 250,
+    "nome": "Pendolare Lia",
+    "luogo": "Percorso_2",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 13, "livello": 12 },
+      { "pokemonId": 47, "livello": 12 }
+    ]
+  },
+  {
+    "id": 251,
+    "nome": "Camionista Tito",
+    "luogo": "Percorso_3",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 32, "livello": 18 },
+      { "pokemonId": 26, "livello": 18 }
+    ]
+  },
+  {
+    "id": 252,
+    "nome": "Studente Bilo",
+    "luogo": "Percorso_4",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 21, "livello": 19 },
+      { "pokemonId": 22, "livello": 19 }
+    ]
+  },
+  {
+    "id": 253,
+    "nome": "Naturista Selva",
+    "luogo": "Percorso_5",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 28, "livello": 20 },
+      { "pokemonId": 52, "livello": 20 }
+    ]
+  },
+  {
+    "id": 254,
+    "nome": "Operaio Bruno",
+    "luogo": "Percorso_6",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 13, "livello": 21 },
+      { "pokemonId": 16, "livello": 21 }
+    ]
+  },
+  {
+    "id": 255,
+    "nome": "Esploratore Tom",
+    "luogo": "Percorso_7",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 56, "livello": 32 },
+      { "pokemonId": 49, "livello": 32 }
+    ]
+  },
+  {
+    "id": 256,
+    "nome": "Pescatrice Rina",
+    "luogo": "Percorso_8",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 58, "livello": 38 },
+      { "pokemonId": 60, "livello": 38 }
+    ]
+  },
+  {
+    "id": 257,
+    "nome": "Geologo Pietro",
+    "luogo": "Percorso_9",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 17, "livello": 43 },
+      { "pokemonId": 16, "livello": 43 }
+    ]
+  },
+  {
+    "id": 258,
+    "nome": "Cuoca Rosa",
+    "luogo": "ReggioCalabria",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 50, "livello": 44 },
+      { "pokemonId": 51, "livello": 44 }
+    ]
+  },
+  {
+    "id": 259,
+    "nome": "Pescatore Calò",
+    "luogo": "ReggioCalabria",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 56, "livello": 45 },
+      { "pokemonId": 60, "livello": 45 }
+    ]
+  },
+  {
+    "id": 260,
+    "nome": "Vagabondo Gino",
+    "luogo": "Percorso_10",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 32, "livello": 44 },
+      { "pokemonId": 33, "livello": 44 }
+    ]
+  },
+  {
+    "id": 261,
+    "nome": "Cantante Lola",
+    "luogo": "Percorso_11",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 21, "livello": 44 },
+      { "pokemonId": 12, "livello": 44 }
+    ]
+  },
+  {
+    "id": 262,
+    "nome": "Botanico Aldo",
+    "luogo": "Percorso_12",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 28, "livello": 45 },
+      { "pokemonId": 52, "livello": 45 }
+    ]
+  },
+  {
+    "id": 263,
+    "nome": "Tassista Mira",
+    "luogo": "Molisnt",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 22, "livello": 49 },
+      { "pokemonId": 26, "livello": 49 }
+    ]
+  },
+  {
+    "id": 264,
+    "nome": "Cacciatore Olmo",
+    "luogo": "Molisnt",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 8, "livello": 49 },
+      { "pokemonId": 33, "livello": 49 }
+    ]
+  },
+  {
+    "id": 265,
+    "nome": "Custode Filo",
+    "luogo": "Percorso_13",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 56, "livello": 49 },
+      { "pokemonId": 7, "livello": 49 }
+    ]
+  },
+  {
+    "id": 266,
+    "nome": "Pellegrina Sara",
+    "luogo": "Percorso_14",
+    "tipo": "NPC",
+    "squadra": [
+      { "pokemonId": 30, "livello": 53 },
+      { "pokemonId": 12, "livello": 53 }
+    ]
+  }
+]

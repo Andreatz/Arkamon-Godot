@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" width="100%" height="100%">
+  <defs>
+    <filter id="shadowFuga" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5.5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <linearGradient id="bronzeRing4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="55%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#472a17" />
+    </linearGradient>
+
+    <radialGradient id="slateDisc4" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#22354f" />
+      <stop offset="65%" stop-color="#121c2b" />
+      <stop offset="100%" stop-color="#090e17" />
+    </radialGradient>
+
+    <linearGradient id="ivoryRunner4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="55%" stop-color="#f5ebe0" />
+      <stop offset="100%" stop-color="#cbb8a3" />
+    </linearGradient>
+
+    <clipPath id="discClip4">
+      <circle cx="0" cy="0" r="78" />
+    </clipPath>
+
+    <g id="cardinalGem4">
+      <polygon points="0,-29 29,0 0,29 -29,0" fill="url(#bronzeRing4)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="0,-24 24,0 0,24 -24,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-19 19,0 0,19 -19,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-16 16,0 0,16 -16,0" fill="#0ea5e9" />
+      <polygon points="0,-16 16,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 16,0 0,16" fill="#0284c7" />
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowFuga)" transform="translate(140, 140)">
+    <!-- 1. ANELLO ESTERNO IN BRONZO -->
+    <circle cx="0" cy="0" r="106" fill="url(#bronzeRing4)" stroke="#1c0f07" stroke-width="2.5" />
+    <path d="M -86,-52 A 99,99 0 0,1 86,-52" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+
+    <!-- 2. TRINCEA SCURA E DISCO INTERNO BLU ARDESIA -->
+    <circle cx="0" cy="0" r="84" fill="#070b12" stroke="#1c0f07" stroke-width="2" />
+    <circle cx="0" cy="0" r="78" fill="url(#slateDisc4)" stroke="#38bdf8" stroke-width="2.5" stroke-opacity="0.8" />
+
+    <g clip-path="url(#discClip4)">
+      <line x1="-55" y1="-78" x2="25" y2="78" stroke="#ffffff" stroke-width="1.2" opacity="0.06" />
+      <line x1="-25" y1="-78" x2="55" y2="78" stroke="#ffffff" stroke-width="1.2" opacity="0.06" />
+    </g>
+
+    <!-- 3. ICONA OMINO IN CORSA ("FUGA") 3D IN AVORIO -->
+    <g>
+      <!-- Ombra portata dell'omino -->
+      <g transform="translate(2, 6)" fill="#05080f" opacity="0.85">
+        <circle cx="28" cy="-36" r="16" />
+        <path d="M 24,-18 L 36,6 L 52,6 C 60,6 60,20 52,20 L 28,20 C 24,20 21,17 19,13 L 14,2 Z" />
+        <path d="M -18,2 L 10,20 L -2,52 C -5,60 -19,55 -16,46 L -6,22 L -28,8 Z" />
+        <path d="M -16,-32 L 18,-22 C 24,-20 26,-13 21,-7 L 2,14 L 26,32 C 31,36 29,42 25,47 L 12,62 C 6,68 -6,60 0,52 L 10,38 L -20,14 C -26,9 -25,1 -18,-4 L -2,-16 L -16,-20 L -28,-10 C -35,-5 -44,-16 -36,-22 L -22,-32 C -19,-34 -16,-32 -16,-32 Z" />
+      </g>
+
+      <!-- Braccio Anteriore Destro (In secondo piano) -->
+      <path d="M 22,-20 L 35,4 L 51,4 C 60,4 60,19 51,19 L 28,19 C 23,19 20,16 18,11 L 12,-2 Z" fill="#d6c3af" stroke="#1c110a" stroke-width="2.5" stroke-linejoin="round" />
+
+      <!-- Gamba Posteriore Sinistra (In secondo piano) -->
+      <path d="M -14,2 L -26,16 L -52,25 C -62,28 -57,44 -46,40 L -16,29 C -12,27 -9,24 -6,20 L 4,8 Z" fill="#d6c3af" stroke="#1c110a" stroke-width="2.5" stroke-linejoin="round" />
+
+      <!-- Testa Circolare -->
+      <circle cx="28" cy="-36" r="15.5" fill="url(#ivoryRunner4)" stroke="#1c110a" stroke-width="2.5" />
+
+      <!-- Busto, Braccio Sinistro e Gamba Anteriore Destra (In primo piano) -->
+      <path d="M -16,-33 L 18,-23 C 25,-21 26,-14 21,-8 L 4,11 L 26,28 C 31,32 31,38 27,44 L 14,62 C 8,69 -6,61 0,52 L 11,36 L -20,11 C -26,6 -25,-2 -18,-7 L -1,-18 L -17,-21 L -30,-11 C -37,-5 -47,-17 -39,-24 L -24,-33 C -21,-35 -18,-34 -16,-33 Z" fill="url(#ivoryRunner4)" stroke="#1c110a" stroke-width="2.5" stroke-linejoin="round" />
+    </g>
+
+    <!-- 4. QUATTRO GEMME SUI PUNTI CARDINALI -->
+    <use href="#cardinalGem4" x="0" y="-98" />
+    <use href="#cardinalGem4" x="98" y="0" />
+    <use href="#cardinalGem4" x="0" y="98" />
+    <use href="#cardinalGem4" x="-98" y="0" />
+  </g>
+</svg>

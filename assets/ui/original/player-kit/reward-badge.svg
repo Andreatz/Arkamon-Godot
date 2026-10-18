@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="metal" x1="20" y1="10" x2="106" y2="118" gradientUnits="userSpaceOnUse"><stop stop-color="#dcf1ff"/><stop offset=".4" stop-color="#83b4ec"/><stop offset=".65" stop-color="#315580"/><stop offset="1" stop-color="#99c9f5"/></linearGradient>
+    <radialGradient id="core"><stop stop-color="#32b9ff"/><stop offset="1" stop-color="#124e91"/></radialGradient>
+  </defs>
+  <path d="m36 78-10 42 26-14 12 14 12-14 26 14-10-42H36Z" fill="#183359" stroke="#9ac8f8" stroke-width="3" stroke-linejoin="round"/>
+  <circle cx="64" cy="53" r="43" fill="#132440" stroke="url(#metal)" stroke-width="8"/>
+  <circle cx="64" cy="53" r="33" fill="url(#core)" stroke="#bfddff" stroke-width="2"/>
+  <path d="m64 28 7.1 16.4 17.9 1.7-13.5 11.8 4.2 17.5L64 66.2 48.3 75.4l4.2-17.5L39 46.1l17.9-1.7L64 28Z" fill="url(#metal)" stroke="#d8eeff" stroke-width="2" stroke-linejoin="round"/>
+</svg>
