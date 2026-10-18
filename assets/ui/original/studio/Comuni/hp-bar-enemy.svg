@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 220" width="100%" height="100%">
+  <defs>
+    <filter id="shadow7" x="-5%" y="-10%" width="110%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Metallo Bronzo-Oro (Stile percorso.svg) -->
+    <linearGradient id="bronzeGold7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff4e0"/>
+      <stop offset="25%" stop-color="#e8c391"/>
+      <stop offset="55%" stop-color="#966536"/>
+      <stop offset="82%" stop-color="#cfa06d"/>
+      <stop offset="100%" stop-color="#593818"/>
+    </linearGradient>
+
+    <linearGradient id="trenchDark7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f1209"/>
+      <stop offset="50%" stop-color="#382214"/>
+      <stop offset="100%" stop-color="#140b05"/>
+    </linearGradient>
+
+    <!-- Riempimento Barra Verde -> Ciano -> Azzurro -->
+    <linearGradient id="greenCyanBar7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#22c55e"/>
+      <stop offset="35%" stop-color="#10b981"/>
+      <stop offset="70%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <!-- Sotto-Barra Parzialmente Carica (Stile percorso.svg) -->
+    <linearGradient id="subBevelSteel7" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#526d82"/>
+      <stop offset="100%" stop-color="#27374d"/>
+    </linearGradient>
+    <linearGradient id="subFillGreenGrey7" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#274e2b"/>
+      <stop offset="43%" stop-color="#3b7a40"/>
+      <stop offset="46%" stop-color="#4ade80"/>
+      <stop offset="49%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <radialGradient id="slateCircle7" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#2c3545"/>
+      <stop offset="70%" stop-color="#18202c"/>
+      <stop offset="100%" stop-color="#0d121a"/>
+    </radialGradient>
+
+    <clipPath id="greenClip7">
+      <path d="M 128,92 L 162,62 L 968,62 C 962,92 952,114 938,126 L 128,126 Z"/>
+    </clipPath>
+
+    <!-- Gemma Verde Sfaccettata Stile percorso.svg -->
+    <g id="gemActiveGreen7">
+      <circle cx="0" cy="0" r="16" fill="url(#bronzeGold7)" stroke="#241407" stroke-width="1.8"/>
+      <circle cx="0" cy="0" r="12.5" fill="#071a12" stroke="#fff4e0" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="10.5" fill="#16a34a"/>
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#22c55e"/>
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#dcfce7"/>
+    </g>
+  </defs>
+
+  <g filter="url(#shadow7)">
+    <!-- 1. SOTTO-BARRA INFERIORE -->
+    <g>
+      <polygon points="118,136 726,136 726,180 714,192 114,192 114,148" fill="url(#bronzeGold7)" stroke="#241407" stroke-width="2" stroke-linejoin="round"/>
+      <polygon points="124,142 720,142 720,177 710,186 120,186 120,151" fill="url(#subBevelSteel7)" stroke="#090d16" stroke-width="1.5"/>
+      <polygon points="130,147 714,147 714,174 706,181 126,181 126,154" fill="url(#subFillGreenGrey7)"/>
+      <polygon points="124,142 720,142 720,152 124,152" fill="#000000" opacity="0.45"/>
+    </g>
+
+    <!-- 2. CORNICE PRINCIPALE BARRA HP -->
+    <g>
+      <path d="M 118,80 L 154,42 L 168,38 L 190,45 L 200,37 L 218,50 L 964,50 L 998,36 C 995,64 989,82 982,94 L 996,91 C 984,120 966,142 944,152 C 926,158 910,148 896,145 C 886,145 880,152 876,158 C 866,148 854,140 830,140 L 118,140 Z" 
+            fill="url(#bronzeGold7)" stroke="#241407" stroke-width="2" stroke-linejoin="round"/>
+
+      <path d="M 124,86 L 158,54 L 980,54 C 974,88 962,118 942,134 L 124,134 Z" fill="url(#trenchDark7)" stroke="#140b05" stroke-width="1.5"/>
+
+      <!-- Barra Verde-Ciano -->
+      <path d="M 128,92 L 162,62 L 968,62 C 962,92 952,114 938,126 L 128,126 Z" fill="url(#greenCyanBar7)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round"/>
+
+      <g clip-path="url(#greenClip7)">
+        <rect x="125" y="60" width="850" height="30" fill="#ffffff" opacity="0.22"/>
+        <rect x="125" y="60" width="850" height="9" fill="#ffffff" opacity="0.45"/>
+        <!-- Linee diagonali percorso.svg -->
+        <g stroke="#ffffff" stroke-width="1.5" opacity="0.14">
+          <line x1="240" y1="55" x2="290" y2="135"/>
+          <line x1="270" y1="55" x2="320" y2="135"/>
+          <line x1="780" y1="55" x2="730" y2="135"/>
+          <line x1="750" y1="55" x2="700" y2="135"/>
+        </g>
+        <path d="M 940,62 L 968,62 C 962,92 952,114 938,126 L 922,126 C 938,110 948,88 952,62 Z" fill="#ffffff" opacity="0.55"/>
+      </g>
+    </g>
+
+    <!-- 3. SEI GEMME VERDI ATTIVE SUPERIORI -->
+    <g transform="translate(0, 26)">
+      <use href="#gemActiveGreen7" x="778" y="0"/>
+      <use href="#gemActiveGreen7" x="812" y="0"/>
+      <use href="#gemActiveGreen7" x="846" y="0"/>
+      <use href="#gemActiveGreen7" x="880" y="0"/>
+      <use href="#gemActiveGreen7" x="914" y="0"/>
+      <use href="#gemActiveGreen7" x="948" y="0"/>
+    </g>
+
+    <!-- 4. MEDAGLIONE "HP" SINISTRO -->
+    <g transform="translate(78, 100)">
+      <g stroke="#241407" stroke-width="1.5" stroke-linejoin="round">
+        <polygon points="0,-78 -15,-52 15,-52" fill="url(#bronzeGold7)"/>
+        <polygon points="0,-78 15,-52 0,-52" fill="#7a4e28"/>
+        <polygon points="0,78 -15,52 15,52" fill="url(#bronzeGold7)"/>
+        <polygon points="0,78 15,52 0,52" fill="#593818"/>
+        <polygon points="-60,-46 -50,-18 -30,-40" fill="url(#bronzeGold7)"/>
+        <polygon points="56,-46 48,-18 28,-40" fill="url(#bronzeGold7)"/>
+        <polygon points="-65,6 -48,28 -52,-4" fill="url(#bronzeGold7)"/>
+      </g>
+
+      <circle cx="0" cy="0" r="55" fill="url(#bronzeGold7)" stroke="#241407" stroke-width="2"/>
+      <circle cx="0" cy="0" r="46" fill="url(#trenchDark7)" stroke="#140b05" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="41" fill="url(#slateCircle7)" stroke="#f5d5b8" stroke-width="2"/>
+    </g>
+
+    <!-- 5. LIVELLO TESTO -->
+    <g id="testo">
+      <g transform="translate(78, 100) rotate(-8)">
+        <text x="0" y="21" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="60" letter-spacing="-2" fill="#ffffff" stroke="#140b05" stroke-width="6" stroke-linejoin="round" paint-order="stroke">HP</text>
+      </g>
+    </g>
+  </g>
+</svg>

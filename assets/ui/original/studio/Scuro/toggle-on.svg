@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 240" width="100%" height="100%">
+  <defs>
+    <filter id="shadowToggleOn" x="-8%" y="-12%" width="116%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+    <filter id="knobShadowOn" x="-25%" y="-20%" width="145%" height="145%">
+      <feDropShadow dx="-4" dy="5" stdDeviation="5" flood-color="#022c22" flood-opacity="0.8" />
+    </filter>
+
+    <!-- Cornice Esterna in Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeFrame3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff9f2" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#b07d5b" />
+      <stop offset="100%" stop-color="#472a17" />
+    </linearGradient>
+
+    <!-- Anello del Cursore in Bronzo Dorato -->
+    <linearGradient id="knobBronzeRing3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="30%" stop-color="#eab68c" />
+      <stop offset="70%" stop-color="#8c5c3e" />
+      <stop offset="100%" stop-color="#472a17" />
+    </linearGradient>
+
+    <!-- Canale Interno Illuminato Turchese-Ciano (Stato ON) -->
+    <radialGradient id="cyanTealTrack3" cx="42%" cy="50%" r="58%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="45%" stop-color="#0d9488" />
+      <stop offset="85%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#134e4a" />
+    </radialGradient>
+
+    <!-- Sfera Cursore Avorio / Perla 3D -->
+    <radialGradient id="pearlKnob3" cx="36%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="48%" stop-color="#f7f0e6" />
+      <stop offset="80%" stop-color="#d8c7b4" />
+      <stop offset="100%" stop-color="#9e8770" />
+    </radialGradient>
+
+    <clipPath id="pillClip3">
+      <rect x="64" y="54" width="332" height="132" rx="66" />
+    </clipPath>
+
+    <!-- Gemma Laterale a Diamante (Stile percorso.svg) -->
+    <g id="sideGem3">
+      <polygon points="0,-31 31,0 0,31 -31,0" fill="url(#bronzeFrame3)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-25 25,0 0,25 -25,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-20 20,0 0,20 -20,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-16 16,0 0,16 -16,0" fill="#0ea5e9" />
+      <polygon points="0,-16 16,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 16,0 0,16" fill="#0284c7" />
+      <polygon points="0,-7.5 7.5,0 0,7.5 -7.5,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowToggleOn)">
+    <!-- 1. CORNICE ESTERNA A CAPSULA IN BRONZO -->
+    <rect x="42" y="32" width="376" height="176" rx="88" fill="url(#bronzeFrame3)" stroke="#1c0f07" stroke-width="2.5" />
+    <!-- Riflesso curvo superiore sulla cornice -->
+    <path d="M 58,82 A 82,82 0 0,1 130,38 L 330,38 A 82,82 0 0,1 402,82" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" opacity="0.85" />
+
+    <!-- 2. TRINCEA SCURA E CANALE ATTIVO TURCHESE-CIANO -->
+    <rect x="56" y="46" width="348" height="148" rx="74" fill="#04131a" stroke="#1c0f07" stroke-width="2" />
+    <rect x="64" y="54" width="332" height="132" rx="66" fill="url(#cyanTealTrack3)" stroke="#67e8f9" stroke-width="2.5" />
+
+    <!-- Riflessi Diagonali e Speculari nel Canale Attivo (Stile percorso.svg) -->
+    <g clip-path="url(#pillClip3)">
+      <g stroke="#ffffff" stroke-width="1.4" opacity="0.14">
+        <line x1="120" y1="54" x2="190" y2="186" />
+        <line x1="150" y1="54" x2="220" y2="186" />
+      </g>
+      <!-- Arco di riflesso superiore sinistro sul vetro turchese -->
+      <path d="M 82,84 A 58,58 0 0,1 134,60 L 260,60" fill="none" stroke="#ccfbf1" stroke-width="3" stroke-linecap="round" opacity="0.75" />
+    </g>
+
+    <!-- Piccolo Rombo Decorativo a Sinistra (Firma di percorso.svg) -->
+    <g transform="translate(112, 120)">
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="none" stroke="#ccfbf1" stroke-width="1.5" opacity="0.85" />
+      <circle cx="0" cy="0" r="2.5" fill="#ffffff" />
+    </g>
+
+    <!-- 3. CURSORE SFERICO DESTRO (STATO ON) -->
+    <g transform="translate(308, 120)" filter="url(#knobShadowOn)">
+      <!-- Anello Esterno in Bronzo Dorato -->
+      <circle cx="0" cy="0" r="68" fill="url(#knobBronzeRing3)" stroke="#24130a" stroke-width="2.2" />
+      <!-- Filetto Circolare Bianco Intermedio -->
+      <circle cx="0" cy="0" r="61" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.9" />
+      <!-- Sfera Interna Avorio / Perla 3D -->
+      <circle cx="0" cy="0" r="59.5" fill="url(#pearlKnob3)" />
+      <!-- Riflesso Ovale Nitido in Alto a Sinistra -->
+      <ellipse cx="-18" cy="-18" rx="22" ry="15" transform="rotate(-30 -18 -18)" fill="#ffffff" opacity="0.85" />
+    </g>
+
+    <!-- 4. DUE GEMME ROMBOIDALI ALLE ESTREMITÀ (SINISTRA E DESTRA) -->
+    <use href="#sideGem3" x="44" y="120" />
+    <use href="#sideGem3" x="416" y="120" />
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="100%" height="100%">
+  <defs>
+    <filter id="a32-glow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#00e5ff" flood-opacity="0.55" />
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000a14" flood-opacity="0.8" />
+    </filter>
+    <filter id="a32-gem-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3.5" stdDeviation="2.5" flood-color="#00060f" flood-opacity="0.9" />
+    </filter>
+
+    <!-- Cornice Esterna Ciano / Turchese Luminescente -->
+    <linearGradient id="a32-cyan-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="20%" stop-color="#b8ffff" />
+      <stop offset="55%" stop-color="#18ffff" />
+      <stop offset="88%" stop-color="#00acc1" />
+      <stop offset="100%" stop-color="#004d59" />
+    </linearGradient>
+
+    <!-- Fascia Interna Ottanio Profondo -->
+    <linearGradient id="a32-teal-band" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#006978" />
+      <stop offset="50%" stop-color="#003d4d" />
+      <stop offset="100%" stop-color="#001f29" />
+    </linearGradient>
+
+    <linearGradient id="a32-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <linearGradient id="a32-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a32-gem" filter="url(#a32-gem-shadow)">
+      <polygon points="0,-24 22,0 0,24 -22,0" fill="url(#a32-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-24 -22,0 -16,0 0,-18" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-15 14,0 0,15 -14,0" fill="#04152e" />
+      <polygon points="0,-13 12,0 0,13 -12,0" fill="url(#a32-cyan-gem)" />
+      <polygon points="0,-13 12,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,0 0,5 -4.5,0" fill="#e0faff" />
+    </g>
+  </defs>
+
+  <g filter="url(#a32-glow)" transform="translate(110, 110)">
+    <!-- 1. Cornice Ottagonale Esterna Turchese Brillante (Forata al centro) -->
+    <path d="M -52,-80 H 52 L 80,-52 V 52 L 52,80 H -52 L -80,52 V -52 Z
+             M -38,-50 L -50,-38 V 38 L -38,50 H 38 L 50,38 V -38 L 38,-50 Z" fill="url(#a32-cyan-frame)" fill-rule="evenodd" stroke="#00262e" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="-77,-51 -51,-77 51,-77 77,-51" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.95" />
+
+    <!-- 2. Fascia Ottagonale Interna Ottanio Scuro (Forata al centro) -->
+    <path d="M -47,-69 H 47 L 69,-47 V 47 L 47,69 H -47 L -69,47 V -47 Z
+             M -38,-50 L -50,-38 V 38 L -38,50 H 38 L 50,38 V -38 L 38,-50 Z" fill="url(#a32-teal-band)" fill-rule="evenodd" stroke="#001921" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Filetto luminoso ciano interno -->
+    <polygon points="-44,-64 44,-64 64,-44 64,44 44,64 -44,64 -64,44 -64,-44" fill="none" stroke="#4dd0e1" stroke-width="1.8" opacity="0.85" />
+    <polygon points="-38,-50 38,-50 50,-38 50,38 38,50 -38,50 -50,38 -50,-38" fill="none" stroke="#001219" stroke-width="2.2" />
+
+    <!-- 3. Le 4 Gemme Romboidali Cardinali -->
+    <use href="#a32-gem" x="0" y="-76" />
+    <use href="#a32-gem" x="0" y="76" />
+    <use href="#a32-gem" x="-76" y="0" />
+    <use href="#a32-gem" x="76" y="0" />
+  </g>
+</svg>

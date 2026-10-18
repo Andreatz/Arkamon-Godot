@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="100%" height="100%">
+  <defs>
+    <filter id="a31-shadow" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+    <filter id="a31-gem-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3.5" stdDeviation="2.5" flood-color="#00040f" flood-opacity="0.9" />
+    </filter>
+
+    <!-- Cornice Oro Champagne 3D -->
+    <linearGradient id="a31-gold-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#996832" />
+      <stop offset="100%" stop-color="#543412" />
+    </linearGradient>
+
+    <linearGradient id="a31-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <!-- Fascia Interna Blu Reale 3D -->
+    <linearGradient id="a31-royal-band" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d47a1" />
+      <stop offset="50%" stop-color="#062863" />
+      <stop offset="100%" stop-color="#021130" />
+    </linearGradient>
+
+    <linearGradient id="a31-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a31-gem" filter="url(#a31-gem-shadow)">
+      <polygon points="0,-24 22,0 0,24 -22,0" fill="url(#a31-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-24 -22,0 -16,0 0,-18" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-15 14,0 0,15 -14,0" fill="#04152e" />
+      <polygon points="0,-13 12,0 0,13 -12,0" fill="url(#a31-cyan-gem)" />
+      <polygon points="0,-13 12,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,0 0,5 -4.5,0" fill="#e0faff" />
+    </g>
+  </defs>
+
+  <g filter="url(#a31-shadow)" transform="translate(110, 110)">
+    <!-- 1. Cornice Ottagonale Esterna in Oro Champagne (Forata al centro) -->
+    <path d="M -52,-80 H 52 L 80,-52 V 52 L 52,80 H -52 L -80,52 V -52 Z
+             M -38,-50 L -50,-38 V 38 L -38,50 H 38 L 50,38 V -38 L 38,-50 Z" fill="url(#a31-gold-frame)" fill-rule="evenodd" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="-77,-51 -51,-77 51,-77 77,-51" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85" />
+
+    <!-- 2. Fascia Ottagonale Interna in Blu Reale (Forata al centro) -->
+    <path d="M -47,-69 H 47 L 69,-47 V 47 L 47,69 H -47 L -69,47 V -47 Z
+             M -38,-50 L -50,-38 V 38 L -38,50 H 38 L 50,38 V -38 L 38,-50 Z" fill="url(#a31-royal-band)" fill-rule="evenodd" stroke="#020b1f" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Filetti di bisello blu elettrico attorno al foro trasparente -->
+    <polygon points="-44,-64 44,-64 64,-44 64,44 44,64 -44,64 -64,44 -64,-44" fill="none" stroke="#2979ff" stroke-width="1.8" opacity="0.8" />
+    <polygon points="-38,-50 38,-50 50,-38 50,38 38,50 -38,50 -50,38 -50,-38" fill="none" stroke="#010817" stroke-width="2.2" />
+
+    <!-- 3. Le 4 Gemme Romboidali Cardinali -->
+    <use href="#a31-gem" x="0" y="-76" />
+    <use href="#a31-gem" x="0" y="76" />
+    <use href="#a31-gem" x="-76" y="0" />
+    <use href="#a31-gem" x="76" y="0" />
+  </g>
+</svg>

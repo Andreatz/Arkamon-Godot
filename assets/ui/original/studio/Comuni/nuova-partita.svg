@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 220" width="100%" height="100%">
+  <defs>
+    <filter id="shadow4" x="-8%" y="-12%" width="116%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+    <filter id="cyanGlow4" x="-30%" y="-50%" width="160%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Cornice Metallica Azzurro-Indaco (Stile percorso.svg) -->
+    <linearGradient id="indigoMetal4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="22%" stop-color="#7dd3fc"/>
+      <stop offset="52%" stop-color="#4f46e5"/>
+      <stop offset="82%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+
+    <!-- Trincea Scura Incassata -->
+    <linearGradient id="indigoTrench4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#090a1f"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#090a1f"/>
+    </linearGradient>
+
+    <!-- Lastra Interna Blu-Indaco -->
+    <linearGradient id="indigoSlate4" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#141638"/>
+      <stop offset="50%" stop-color="#232659"/>
+      <stop offset="100%" stop-color="#121330"/>
+    </linearGradient>
+
+    <clipPath id="innerClip4">
+      <polygon points="108,44 732,44 776,110 732,176 108,176 64,110"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#shadow4)">
+    <!-- 1. CORNICE ESTERNA METALLICA SMUSSATA -->
+    <polygon points="94,24 746,24 804,110 746,196 94,196 36,110" fill="url(#indigoMetal4)" stroke="#0f1026" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Filetto di luce superiore 3D -->
+    <polyline points="96,28 744,28 799,110" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+
+    <!-- 2. TRINCEA SCURA INCASSATA -->
+    <polygon points="101,34 739,34 790,110 739,186 101,186 50,110" fill="url(#indigoTrench4)" stroke="#090a1a" stroke-width="1.5"/>
+
+    <!-- 3. FILETTO INTERNO LUMINOSO E CORPO CENTRALE -->
+    <polygon points="108,44 732,44 776,110 732,176 108,176 64,110" fill="url(#indigoSlate4)" stroke="#93c5fd" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- 4. LINEE DIAGONALI DI RIFLESSO (Stile percorso.svg) -->
+    <g clip-path="url(#innerClip4)" stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+      <line x1="150" y1="40" x2="235" y2="180"/>
+      <line x1="185" y1="40" x2="270" y2="180"/>
+      <line x1="690" y1="40" x2="605" y2="180"/>
+      <line x1="655" y1="40" x2="570" y2="180"/>
+    </g>
+
+    <!-- 5. ROMBI DECORATIVI LATERALI INTERNI -->
+    <g transform="translate(92, 110)">
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="none" stroke="#818cf8" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="3" fill="#38bdf8"/>
+    </g>
+    <g transform="translate(748, 110)">
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="none" stroke="#818cf8" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="3" fill="#38bdf8"/>
+    </g>
+
+    <!-- 6. BAGLIORI CIANO CENTRALI -->
+    <g filter="url(#cyanGlow4)">
+      <ellipse cx="420" cy="26" rx="100" ry="3.5" fill="#38bdf8"/>
+      <ellipse cx="420" cy="26" rx="45" ry="2" fill="#ffffff"/>
+      <ellipse cx="420" cy="194" rx="100" ry="3.5" fill="#38bdf8"/>
+      <ellipse cx="420" cy="194" rx="45" ry="2" fill="#ffffff"/>
+    </g>
+
+    <!-- 7. LIVELLO TESTO -->
+    <g id="testo">
+      <text x="420" y="130" text-anchor="middle" font-family="'Segoe UI', 'Montserrat', 'Arial', sans-serif" font-weight="800" font-size="56" letter-spacing="1.2" fill="#ffffff" stroke="#090a1f" stroke-width="3.5" paint-order="stroke">NUOVA PARTITA</text>
+    </g>
+  </g>
+</svg>

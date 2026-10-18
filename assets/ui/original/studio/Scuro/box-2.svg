@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 330" width="100%" height="100%">
+  <defs>
+    <filter id="shadow26" x="-4%" y="-8%" width="108%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso_2.svg) -->
+    <linearGradient id="bronzeMain26" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="22%" stop-color="#e5bfa0"/>
+      <stop offset="52%" stop-color="#8c5c3e"/>
+      <stop offset="82%" stop-color="#c99673"/>
+      <stop offset="100%" stop-color="#5e3a22"/>
+    </linearGradient>
+
+    <linearGradient id="trenchDark26" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a"/>
+      <stop offset="50%" stop-color="#2e1d13"/>
+      <stop offset="100%" stop-color="#140c07"/>
+    </linearGradient>
+
+    <!-- Lastra Blu Ardesia Scuro (Area Principale e Colonna) -->
+    <linearGradient id="slateBoard26" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824"/>
+      <stop offset="50%" stop-color="#1f2d40"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+
+    <!-- Smusso Acciaio-Blu -->
+    <linearGradient id="subBevel26" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4b657d"/>
+      <stop offset="100%" stop-color="#607d96"/>
+    </linearGradient>
+
+    <!-- Header Bianco Perla -->
+    <linearGradient id="headerPearl26" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Rivetto Oro/Bronzo -->
+    <radialGradient id="bronzeStud26" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="30%" stop-color="#f59e0b"/>
+      <stop offset="75%" stop-color="#8c5c3e"/>
+      <stop offset="100%" stop-color="#3b2112"/>
+    </radialGradient>
+
+    <clipPath id="mainAreaClip26">
+      <polygon points="145,86 988,86 1018,116 1018,268 994,292 145,292 122,269 122,109"/>
+    </clipPath>
+
+    <!-- Gemma Romboidale (Stile percorso_2.svg) -->
+    <g id="diamondGem26">
+      <polygon points="0,-35 30,0 0,35 -30,0" fill="url(#bronzeMain26)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="0,-29 24,0 0,29 -24,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75"/>
+      <polygon points="0,-23 19,0 0,23 -19,0" fill="#07101e" stroke="#1e130c" stroke-width="1"/>
+      <polygon points="0,-18 15,0 0,18 -15,0" fill="#0ea5e9"/>
+      <polygon points="0,-18 15,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,0 15,0 0,18" fill="#0284c7"/>
+      <polygon points="0,-9 7,0 0,9 -7,0" fill="#e0f2fe"/>
+    </g>
+  </defs>
+
+  <g filter="url(#shadow26)">
+    <!-- 1. CORNICE ESTERNA GENERALE IN BRONZO -->
+    <polygon points="48,14 996,14 1042,60 1042,278 1006,314 48,314 22,288 22,40" 
+             fill="url(#bronzeMain26)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Trincea Scura Generale -->
+    <polygon points="54,24 990,24 1030,64 1030,272 998,304 54,304 34,284 34,44" 
+             fill="url(#trenchDark26)" stroke="#140c07" stroke-width="1.5"/>
+
+    <!-- 2. AREA PRINCIPALE IN VETRO BLU ARDESIA (BASSO-DESTRA) -->
+    <polygon points="145,86 988,86 1018,116 1018,268 994,292 145,292 122,269 122,109" 
+             fill="url(#slateBoard26)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Riflessi Diagonali e Cornice Interna Area Principale -->
+    <g clip-path="url(#mainAreaClip26)">
+      <g stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+        <line x1="200" y1="86" x2="310" y2="292"/>
+        <line x1="235" y1="86" x2="345" y2="292"/>
+        <line x1="930" y1="86" x2="820" y2="292"/>
+        <line x1="895" y1="86" x2="785" y2="292"/>
+      </g>
+
+      <polygon points="152,94 982,94 1008,120 1008,262 988,282 152,282 132,262 132,120" 
+               fill="none" stroke="url(#subBevel26)" stroke-width="1.8" opacity="0.65"/>
+
+      <!-- Piccoli Rombi Decorativi Laterali -->
+      <g transform="translate(154, 189)">
+        <polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="#7c93ab" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="2.2" fill="#38bdf8"/>
+      </g>
+      <g transform="translate(984, 189)">
+        <polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="#7c93ab" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="2.2" fill="#38bdf8"/>
+      </g>
+    </g>
+
+    <!-- Rivetto in basso a destra e piccola gemma sul bordo destro -->
+    <circle cx="1004" cy="276" r="7" fill="url(#bronzeStud26)" stroke="#24130a" stroke-width="1.5"/>
+    <g transform="translate(1024, 96)">
+      <polygon points="0,-14 14,0 0,14 -14,0" fill="url(#bronzeMain26)" stroke="#24130a" stroke-width="1.5"/>
+      <polygon points="0,-8 8,0 0,8 -8,0" fill="#0ea5e9"/>
+      <polygon points="0,-4 4,0 0,4 -4,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- 3. BARRA HEADER SUPERIORE CHIARA -->
+    <g>
+      <!-- Cornice in Bronzo Header -->
+      <polygon points="156,22 990,22 1014,46 1014,56 992,78 156,78 138,60 138,40" 
+               fill="url(#bronzeMain26)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Trincea Scura Header -->
+      <polygon points="160,26 986,26 1008,48 989,72 160,72 142,54 142,44" fill="url(#trenchDark26)"/>
+      <!-- Lastra Bianco Perla -->
+      <polygon points="164,30 982,30 1002,49 985,68 164,68 148,52 148,46" 
+               fill="url(#headerPearl26)" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Rivetti alle estremità dell'Header -->
+      <circle cx="172" cy="49" r="8.5" fill="url(#bronzeStud26)" stroke="#24130a" stroke-width="1.5"/>
+      <circle cx="976" cy="49" r="8.5" fill="url(#bronzeStud26)" stroke="#24130a" stroke-width="1.5"/>
+      <!-- Gemma Centrale dell'Header -->
+      <use href="#diamondGem26" x="572" y="49"/>
+    </g>
+
+    <!-- 4. COLONNA VERTICALE SINISTRA (SIDEBAR) -->
+    <g>
+      <!-- Cornice in Bronzo Colonna -->
+      <polygon points="48,18 92,18 114,40 114,288 92,310 48,310 26,288 26,40" 
+               fill="url(#bronzeMain26)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Trincea Scura Colonna -->
+      <polygon points="52,24 88,24 106,42 106,286 88,304 52,304 34,286 34,42" fill="url(#trenchDark26)"/>
+      <!-- Lastra Interna Blu Ardesia Colonna -->
+      <polygon points="55,29 85,29 101,45 101,283 85,299 55,299 39,283 39,45" 
+               fill="url(#slateBoard26)" stroke="#f5d5b8" stroke-width="1.8" stroke-linejoin="round"/>
+      <!-- Rivetti Superiore e Inferiore della Colonna -->
+      <circle cx="70" cy="48" r="8.5" fill="url(#bronzeStud26)" stroke="#24130a" stroke-width="1.5"/>
+      <circle cx="70" cy="280" r="8.5" fill="url(#bronzeStud26)" stroke="#24130a" stroke-width="1.5"/>
+      <!-- Gemma Romboidale al Centro della Colonna -->
+      <use href="#diamondGem26" x="70" y="168"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 340" width="100%" height="100%">
+  <defs>
+    <filter id="a16-shadow" x="-15%" y="-6%" width="130%" height="115%">
+      <feDropShadow dx="0" dy="6" stdDeviation="4.5" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+    <filter id="a16-crystal-glow" x="-25%" y="-10%" width="150%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#001926" flood-opacity="0.9" />
+    </filter>
+
+    <linearGradient id="a16-gold-frame" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="22%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#8c5d2b" />
+      <stop offset="100%" stop-color="#4d2f10" />
+    </linearGradient>
+
+    <linearGradient id="a16-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <linearGradient id="a16-navy-slot" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#01091c" />
+      <stop offset="50%" stop-color="#052154" />
+      <stop offset="100%" stop-color="#020d26" />
+    </linearGradient>
+
+    <!-- Gradienti Cristallo Centrale Smeraldo / Turchese 3D -->
+    <linearGradient id="a16-crystal-left" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64ffda" />
+      <stop offset="100%" stop-color="#00bfa5" />
+    </linearGradient>
+    <linearGradient id="a16-crystal-mid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#a7ffeb" />
+      <stop offset="65%" stop-color="#1de9b6" />
+      <stop offset="100%" stop-color="#00bfa5" />
+    </linearGradient>
+    <linearGradient id="a16-crystal-right" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00bfa5" />
+      <stop offset="100%" stop-color="#00695c" />
+    </linearGradient>
+
+    <linearGradient id="a16-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a16-gem" filter="url(#a16-crystal-glow)">
+      <polygon points="0,-24 22,0 0,24 -22,0" fill="url(#a16-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-24 -22,0 -16,0 0,-18" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-15 14,0 0,15 -14,0" fill="#04152e" />
+      <polygon points="0,-13 12,0 0,13 -12,0" fill="url(#a16-cyan-gem)" />
+      <polygon points="0,-13 12,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,0 0,5 -4.5,0" fill="#e0faff" />
+    </g>
+  </defs>
+
+  <g filter="url(#a16-shadow)">
+    <!-- 1. Cornice Esagonale Verticale Allungata -->
+    <polygon points="70,12 108,50 108,290 70,328 32,290 32,50" fill="url(#a16-gold-frame)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+    <!-- Luce speculare lungo il profilo sinistro e superiore -->
+    <polyline points="35,288 35,51 70,16 105,51" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85" />
+
+    <!-- 2. Scanalatura Interna Scura -->
+    <polygon points="70,26 98,54 98,286 70,314 42,286 42,54" fill="#020a1c" stroke="#36220e" stroke-width="1.6" stroke-linejoin="round" />
+
+    <!-- 3. Canale Incassato Blu Notte con Filetto Blu -->
+    <polygon points="70,34 92,56 92,284 70,306 48,284 48,56" fill="url(#a16-navy-slot)" stroke="#0d47a1" stroke-width="1.8" stroke-linejoin="round" />
+
+    <!-- 4. Cristallo Verticale Sfaccettato 3D Smeraldo/Turchese -->
+    <g filter="url(#a16-crystal-glow)">
+      <!-- Sagoma base del cristallo -->
+      <path d="M 70,98 L 85,112 V 228 L 70,242 L 55,228 V 112 Z" fill="url(#a16-crystal-mid)" stroke="#004d40" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Faccetta sinistra -->
+      <polygon points="55,112 65,118 65,222 55,228" fill="url(#a16-crystal-left)" />
+      <!-- Faccetta destra in ombra -->
+      <polygon points="85,112 75,118 75,222 85,228" fill="url(#a16-crystal-right)" />
+      <!-- Tavola centrale luminosa -->
+      <rect x="65" y="118" width="10" height="104" fill="url(#a16-crystal-mid)" />
+      <!-- Cuspide superiore brillante (Riflesso Bianco) -->
+      <polygon points="70,99 84,112 75,118 65,118 56,112" fill="#e0f2f1" opacity="0.9" />
+      <ellipse cx="67" cy="111" rx="5" ry="7" fill="#ffffff" />
+      <!-- Cuspide inferiore -->
+      <polygon points="65,222 75,222 84,228 70,241 56,228" fill="#00897b" />
+    </g>
+
+    <!-- 5. Gemme Romboidali alle Estremità Superiore e Inferiore -->
+    <use href="#a16-gem" x="70" y="42" />
+    <use href="#a16-gem" x="70" y="298" />
+  </g>
+</svg>

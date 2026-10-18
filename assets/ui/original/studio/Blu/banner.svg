@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 340" width="100%" height="100%">
+  <defs>
+    <filter id="a5-shadow" x="-5%" y="-8%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+    <filter id="a5-elem-shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#00040f" flood-opacity="0.85" />
+    </filter>
+
+    <linearGradient id="a5-gold-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="15%" stop-color="#f7ebd9" />
+      <stop offset="52%" stop-color="#cfb08b" />
+      <stop offset="88%" stop-color="#946e42" />
+      <stop offset="100%" stop-color="#543818" />
+    </linearGradient>
+
+    <linearGradient id="a5-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6e5" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#633606" />
+    </linearGradient>
+
+    <radialGradient id="a5-royal-bg" cx="50%" cy="48%" r="62%">
+      <stop offset="0%" stop-color="#083685" />
+      <stop offset="60%" stop-color="#052159" />
+      <stop offset="100%" stop-color="#021030" />
+    </radialGradient>
+
+    <linearGradient id="a5-blue-bevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2979ff" />
+      <stop offset="50%" stop-color="#0d47a1" />
+      <stop offset="100%" stop-color="#1565c0" />
+    </linearGradient>
+
+    <linearGradient id="a5-header-plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#eef2f7" />
+      <stop offset="100%" stop-color="#cdd5e0" />
+    </linearGradient>
+
+    <radialGradient id="a5-gold-stud" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff9db" />
+      <stop offset="40%" stop-color="#f7b733" />
+      <stop offset="85%" stop-color="#b56207" />
+      <stop offset="100%" stop-color="#592c00" />
+    </radialGradient>
+
+    <linearGradient id="a5-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <clipPath id="a5-inner-clip">
+      <polygon points="94,54 826,54 868,96 868,262 834,296 86,296 52,262 52,96" />
+    </clipPath>
+
+    <!-- Gemma Romboidale Standard -->
+    <g id="a5-gem" filter="url(#a5-elem-shadow)">
+      <polygon points="0,-28 26,0 0,28 -26,0" fill="url(#a5-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-28 -26,0 -19,0 0,-21" fill="#ffffff" opacity="0.7" />
+      <polygon points="0,-18 16,0 0,18 -16,0" fill="#04152e" />
+      <polygon points="0,-16 14,0 0,16 -14,0" fill="url(#a5-cyan-gem)" />
+      <polygon points="0,-16 14,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#e0faff" />
+    </g>
+
+    <!-- Rivetto Dorato 3D -->
+    <g id="a5-rivet">
+      <circle cx="0" cy="0" r="8.5" fill="url(#a5-gold-stud)" stroke="#2b1400" stroke-width="1.5" />
+    </g>
+  </defs>
+
+  <g filter="url(#a5-shadow)">
+    <!-- 1. CORNICE ESTERNA PRINCIPALE -->
+    <polygon points="88,34 832,34 888,90 888,268 840,316 80,316 32,268 32,90" fill="url(#a5-gold-frame)" stroke="#1c130a" stroke-width="2.4" stroke-linejoin="round" />
+    <polyline points="35,90 89,37 831,37 885,90" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" />
+
+    <!-- Scanalatura Blu Notte -->
+    <polygon points="92,46 828,46 876,94 876,264 836,304 84,304 44,264 44,94" fill="#020b1f" stroke="#36220e" stroke-width="1.6" stroke-linejoin="round" />
+
+    <!-- 2. PANNELLO INTERNO BLU REALE CON VENATURE E BISELLI -->
+    <polygon points="96,54 824,54 868,98 868,260 832,296 88,296 52,260 52,98" fill="url(#a5-royal-bg)" stroke="url(#a5-blue-bevel)" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- Effetti di Luce / Venature Magiche Blu sui Lati (Clipped) -->
+    <g clip-path="url(#a5-inner-clip)">
+      <path d="M 45,140 C 120,105 140,55 215,50 C 145,95 120,185 195,245 C 240,280 295,295 340,298 L 50,298 Z" fill="#1e88e5" opacity="0.16" />
+      <path d="M 55,155 C 115,125 135,80 185,55 M 60,210 C 130,225 175,275 265,295" fill="none" stroke="#64b5f6" stroke-width="2.5" opacity="0.35" />
+      <path d="M 875,140 C 800,105 780,55 705,50 C 775,95 800,185 725,245 C 680,280 625,295 580,298 L 870,298 Z" fill="#1e88e5" opacity="0.16" />
+      <path d="M 865,155 C 805,125 785,80 735,55 M 860,210 C 790,225 745,275 655,295" fill="none" stroke="#64b5f6" stroke-width="2.5" opacity="0.35" />
+      <!-- Filetto luminoso interno sagomato -->
+      <polygon points="102,62 818,62 858,102 858,256 826,288 94,288 62,256 62,102" fill="none" stroke="#2979ff" stroke-width="1.6" opacity="0.65" />
+    </g>
+
+    <!-- Rivetti Dorati negli Angoli Inferiori -->
+    <use href="#a5-rivet" x="66" y="276" />
+    <use href="#a5-rivet" x="854" y="276" />
+
+    <!-- Piccola Gemma Romboidale sullo Smusso Superiore Sinistro -->
+    <use href="#a5-gem" x="67" y="84" transform="scale(0.68)" style="transform-origin: 67px 84px;" />
+
+    <!-- Gemme Romboidali Laterali (Sinistra e Destra) -->
+    <use href="#a5-gem" x="35" y="182" />
+    <use href="#a5-gem" x="885" y="182" />
+
+    <!-- 3. TARGHETTA SUPERIORE CENTRALE (HEADER BADGE) -->
+    <g filter="url(#a5-elem-shadow)">
+      <!-- Alette Laterali con Piccoli Castoni -->
+      <polygon points="278,36 292,26 308,26 308,46 292,46" fill="url(#a5-gold-frame)" stroke="#1c130a" stroke-width="1.8" stroke-linejoin="round" />
+      <circle cx="293" cy="36" r="4" fill="#a7f3d0" stroke="#36220e" stroke-width="1" />
+      <polygon points="642,36 628,26 612,26 612,46 628,46" fill="url(#a5-gold-frame)" stroke="#1c130a" stroke-width="1.8" stroke-linejoin="round" />
+      <circle cx="627" cy="36" r="4" fill="#6ee7cb" stroke="#36220e" stroke-width="1" />
+
+      <!-- Cornice Ottagonale della Targhetta -->
+      <polygon points="322,10 598,10 622,36 598,64 322,64 298,36" fill="url(#a5-gold-frame)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+      <!-- Piastra Interna Bianco-Perla -->
+      <polygon points="327,17 593,17 612,36 593,57 327,57 308,36" fill="url(#a5-header-plate)" stroke="#6e7e91" stroke-width="1.5" stroke-linejoin="round" />
+      <polyline points="311,36 328,20 592,20" fill="none" stroke="#ffffff" stroke-width="2" />
+
+      <!-- Rivetti Dorati della Targhetta -->
+      <circle cx="326" cy="37" r="6.5" fill="url(#a5-gold-stud)" stroke="#2b1400" stroke-width="1.2" />
+      <circle cx="594" cy="37" r="6.5" fill="url(#a5-gold-stud)" stroke="#2b1400" stroke-width="1.2" />
+
+      <!-- Gemma Centrale Verticale della Targhetta -->
+      <g transform="translate(460, 37)">
+        <polygon points="0,-33 24,0 0,33 -24,0" fill="url(#a5-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+        <polygon points="0,-21 15,0 0,21 -15,0" fill="#04152e" />
+        <polygon points="0,-19 13,0 0,19 -13,0" fill="url(#a5-cyan-gem)" />
+        <polygon points="0,-19 13,0 0,0" fill="#7be5ff" opacity="0.8" />
+        <polygon points="0,-8 5,0 0,8 -5,0" fill="#e8fbff" />
+      </g>
+    </g>
+
+    <!-- 4. PULSANTE CIRCOLARE CHIUDI (X) IN ALTO A DESTRA -->
+    <g transform="translate(850, 62)" filter="url(#a5-elem-shadow)">
+      <circle cx="0" cy="0" r="36" fill="url(#a5-gold-frame)" stroke="#1c130a" stroke-width="2.2" />
+      <circle cx="0" cy="0" r="28" fill="#020b1f" stroke="#8c6230" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="25" fill="url(#a5-royal-bg)" stroke="#1e88e5" stroke-width="1.5" />
+      <!-- Icona X in Avorio 3D -->
+      <path d="M -11,-15 L 0,-4 L 11,-15 L 15,-11 L 4,0 L 15,11 L 11,15 L 0,4 L -11,15 L -15,11 L -4,0 L -15,-11 Z" fill="url(#a5-header-plate)" stroke="#1c130a" stroke-width="1.5" stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>

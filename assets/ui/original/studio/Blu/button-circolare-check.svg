@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" width="100%" height="100%">
+  <defs>
+    <filter id="a12-shadow" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+    <filter id="a12-elem-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="3.5" stdDeviation="2.5" flood-color="#00040f" flood-opacity="0.9" />
+    </filter>
+
+    <linearGradient id="a12-gold-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#996832" />
+      <stop offset="100%" stop-color="#543412" />
+    </linearGradient>
+
+    <linearGradient id="a12-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <!-- Gradiente Disco Blu Reale 3D -->
+    <radialGradient id="a12-blue-disc" cx="45%" cy="38%" r="65%">
+      <stop offset="0%" stop-color="#0d47a1" />
+      <stop offset="55%" stop-color="#062863" />
+      <stop offset="88%" stop-color="#031538" />
+      <stop offset="100%" stop-color="#010a1f" />
+    </radialGradient>
+
+    <linearGradient id="a12-blue-bevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#40c4ff" />
+      <stop offset="45%" stop-color="#1565c0" />
+      <stop offset="100%" stop-color="#0277bd" />
+    </linearGradient>
+
+    <!-- Gradiente Spunta Avorio 3D -->
+    <linearGradient id="a12-ivory-check" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f7efe4" />
+      <stop offset="85%" stop-color="#d6c4ae" />
+      <stop offset="100%" stop-color="#9e8870" />
+    </linearGradient>
+
+    <linearGradient id="a12-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a12-gem" filter="url(#a12-elem-shadow)">
+      <polygon points="0,-23 21,0 0,23 -21,0" fill="url(#a12-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-23 -21,0 -15,0 0,-17" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-14 13,0 0,14 -13,0" fill="#04152e" />
+      <polygon points="0,-12 11,0 0,12 -11,0" fill="url(#a12-cyan-gem)" />
+      <polygon points="0,-12 11,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,0 0,5 -4.5,0" fill="#e0faff" />
+    </g>
+  </defs>
+
+  <g filter="url(#a12-shadow)" transform="translate(110, 110)">
+    <!-- 1. Anello Esterno Oro Champagne -->
+    <circle cx="0" cy="0" r="82" fill="url(#a12-gold-rim)" stroke="#1c130a" stroke-width="2.2" />
+    <path d="M -68,-36 A 77,77 0 0,1 68,-36" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" stroke-linecap="round" />
+
+    <!-- 2. Scanalatura Scura Blu Notte -->
+    <circle cx="0" cy="0" r="68" fill="#020b1f" stroke="#36220e" stroke-width="1.8" />
+
+    <!-- 3. Disco Centrale Blu Reale Bombato -->
+    <circle cx="0" cy="0" r="61" fill="url(#a12-blue-disc)" stroke="url(#a12-blue-bevel)" stroke-width="3" />
+    <path d="M -46,-28 A 54,54 0 0,1 46,-28" fill="none" stroke="#80d8ff" stroke-width="2.2" opacity="0.8" stroke-linecap="round" />
+    <path d="M -42,32 A 54,54 0 0,0 42,32" fill="none" stroke="#29b6f6" stroke-width="1.8" opacity="0.55" stroke-linecap="round" />
+
+    <!-- 4. Icona Spunta (✓) Scolpita in 3D -->
+    <g filter="url(#a12-elem-shadow)">
+      <path d="M -38,2 L -26,-10 C -24,-12 -21,-12 -19,-10 L -7,2 L 26,-32 C 28,-34 31,-34 33,-32 L 45,-20 C 47,-18 47,-15 45,-13 L -3,35 C -5,37 -8,37 -10,35 L -38,8 C -40,6 -40,4 -38,2 Z" fill="url(#a12-ivory-check)" stroke="#1c130a" stroke-width="1.8" stroke-linejoin="round" />
+      <!-- Faccetta d'ombra inferiore e luce superiore -->
+      <polygon points="-36,5 -7,34 43,-16 39,-18 -7,28 -33,2" fill="#b5a088" opacity="0.65" />
+      <polyline points="-35,3 -22,-9 -7,6 30,-30 42,-18" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- 5. Gemme Cardinali -->
+    <use href="#a12-gem" x="0" y="-78" />
+    <use href="#a12-gem" x="0" y="78" />
+    <use href="#a12-gem" x="-78" y="0" />
+    <use href="#a12-gem" x="78" y="0" />
+  </g>
+</svg>

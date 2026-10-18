@@ -1,0 +1,143 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 320" width="100%" height="100%">
+  <defs>
+    <filter id="shadow25" x="-4%" y="-8%" width="108%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso_2.svg) -->
+    <linearGradient id="bronzeMain25" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="22%" stop-color="#e5bfa0"/>
+      <stop offset="52%" stop-color="#8c5c3e"/>
+      <stop offset="82%" stop-color="#c99673"/>
+      <stop offset="100%" stop-color="#5e3a22"/>
+    </linearGradient>
+
+    <linearGradient id="trenchDark25" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a"/>
+      <stop offset="50%" stop-color="#2e1d13"/>
+      <stop offset="100%" stop-color="#140c07"/>
+    </linearGradient>
+
+    <!-- Lastra Principale Blu Ardesia Scuro -->
+    <linearGradient id="slateBoard25" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824"/>
+      <stop offset="50%" stop-color="#1f2d40"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+
+    <!-- Smusso Acciaio-Blu Interno -->
+    <linearGradient id="subBevel25" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4b657d"/>
+      <stop offset="100%" stop-color="#607d96"/>
+    </linearGradient>
+
+    <!-- Targa Titolo Superiore Chiara -->
+    <linearGradient id="headerPearl25" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="60%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Rivetto Oro/Bronzo -->
+    <radialGradient id="bronzeStud25" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="30%" stop-color="#f59e0b"/>
+      <stop offset="75%" stop-color="#8c5c3e"/>
+      <stop offset="100%" stop-color="#3b2112"/>
+    </radialGradient>
+
+    <clipPath id="boardClip25">
+      <polygon points="88,66 972,66 1012,106 1012,248 982,278 78,278 48,248 48,106"/>
+    </clipPath>
+
+    <!-- Gemma Romboidale Allungata (Stile percorso_2.svg) -->
+    <g id="pointedGem25">
+      <polygon points="0,-35 28,0 0,35 -28,0" fill="url(#bronzeMain25)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="0,-29 23,0 0,29 -23,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75"/>
+      <polygon points="0,-23 18,0 0,23 -18,0" fill="#07101e" stroke="#1e130c" stroke-width="1"/>
+      <polygon points="0,-18 14,0 0,18 -14,0" fill="#0ea5e9"/>
+      <polygon points="0,-18 14,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,0 14,0 0,18" fill="#0284c7"/>
+      <polygon points="0,-9 7,0 0,9 -7,0" fill="#e0f2fe"/>
+    </g>
+  </defs>
+
+  <g filter="url(#shadow25)">
+    <!-- 1. CORNICE PRINCIPALE ESTERNA IN BRONZO -->
+    <polygon points="78,44 982,44 1034,96 1034,260 994,300 66,300 26,260 26,96" 
+             fill="url(#bronzeMain25)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+    
+    <!-- Trincea Scura Incassata -->
+    <polygon points="83,54 977,54 1023,100 1023,255 988,290 72,290 37,255 37,100" 
+             fill="url(#trenchDark25)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Lastra Interna Blu Ardesia con Filetto Chiaro -->
+    <polygon points="88,62 972,62 1014,104 1014,250 983,281 77,281 46,250 46,104" 
+             fill="url(#slateBoard25)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- 2. DETTAGLI INTERNI VETRO ARDESIA (Stile percorso_2.svg) -->
+    <g clip-path="url(#boardClip25)">
+      <!-- Linee Diagonali di Riflesso -->
+      <g stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+        <line x1="140" y1="62" x2="260" y2="281"/>
+        <line x1="180" y1="62" x2="300" y2="281"/>
+        <line x1="920" y1="62" x2="800" y2="281"/>
+        <line x1="880" y1="62" x2="760" y2="281"/>
+      </g>
+
+      <!-- Sottile Cornice Geometrica Interna in Acciaio-Blu -->
+      <polygon points="94,72 966,72 1004,110 1004,244 977,271 83,271 56,244 56,110" 
+               fill="none" stroke="url(#subBevel25)" stroke-width="1.8" opacity="0.65"/>
+
+      <!-- Piccoli Rombi Decorativi Laterali con Punto Ciano -->
+      <g transform="translate(82, 178)">
+        <polygon points="0,-9 9,0 0,9 -9,0" fill="none" stroke="#7c93ab" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="2.5" fill="#38bdf8"/>
+      </g>
+      <g transform="translate(978, 178)">
+        <polygon points="0,-9 9,0 0,9 -9,0" fill="none" stroke="#7c93ab" stroke-width="1.5"/>
+        <circle cx="0" cy="0" r="2.5" fill="#38bdf8"/>
+      </g>
+    </g>
+
+    <!-- Rivetti in Bronzo negli Angoli Inferiori -->
+    <circle cx="62" cy="264" r="7" fill="url(#bronzeStud25)" stroke="#24130a" stroke-width="1.5"/>
+    <circle cx="998" cy="264" r="7" fill="url(#bronzeStud25)" stroke="#24130a" stroke-width="1.5"/>
+
+    <!-- 3. TARGA TITOLO SUPERIORE (HEADER) -->
+    <g>
+      <!-- Ombra portata della targa sul pannello sottostante -->
+      <polygon points="342,32 718,32 744,58 715,90 345,90 316,58" fill="#060a0f" opacity="0.7"/>
+
+      <!-- Alette appuntite laterali della targa -->
+      <polygon points="350,40 322,40 308,52 322,64 350,64" fill="url(#bronzeMain25)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round"/>
+      <circle cx="326" cy="52" r="5.5" fill="url(#bronzeStud25)" stroke="#24130a" stroke-width="1.2"/>
+
+      <polygon points="710,40 738,40 752,52 738,64 710,64" fill="url(#bronzeMain25)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round"/>
+      <circle cx="734" cy="52" r="5.5" fill="url(#bronzeStud25)" stroke="#24130a" stroke-width="1.2"/>
+
+      <!-- Cornice in Bronzo della Targa -->
+      <polygon points="356,22 704,22 732,50 732,56 710,78 350,78 328,56 328,50" 
+               fill="url(#bronzeMain25)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+      
+      <!-- Trincea Scura Targa -->
+      <polygon points="360,27 700,27 725,52 706,72 354,72 335,52" fill="url(#trenchDark25)"/>
+
+      <!-- Lastra Interna Chiara Targa -->
+      <polygon points="364,31 696,31 718,52 702,68 358,68 342,52" 
+               fill="url(#headerPearl25)" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round"/>
+
+      <!-- Rivetti Interni Targa -->
+      <circle cx="360" cy="50" r="7.5" fill="url(#bronzeStud25)" stroke="#24130a" stroke-width="1.5"/>
+      <circle cx="700" cy="50" r="7.5" fill="url(#bronzeStud25)" stroke="#24130a" stroke-width="1.5"/>
+
+      <!-- Gemma Centrale della Targa -->
+      <use href="#pointedGem25" x="530" y="50"/>
+    </g>
+
+    <!-- 4. GEMME LATERALI SINISTRA E DESTRA -->
+    <use href="#pointedGem25" x="34" y="178"/>
+    <use href="#pointedGem25" x="1026" y="178"/>
+  </g>
+</svg>

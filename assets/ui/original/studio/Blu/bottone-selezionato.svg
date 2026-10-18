@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow28" x="-6%" y="-12%" width="112%" height="130%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5.5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <!-- Cornice Metallica Ciano-Acqua 3D -->
+    <linearGradient id="cyanMetalFrame28" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ecfeff"/>
+      <stop offset="22%" stop-color="#67e8f9"/>
+      <stop offset="55%" stop-color="#0891b2"/>
+      <stop offset="85%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#155e75"/>
+    </linearGradient>
+
+    <!-- Smusso Blu Zaffiro Bombato -->
+    <linearGradient id="sapphireBevel28" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc"/>
+      <stop offset="18%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#034078"/>
+      <stop offset="85%" stop-color="#001d3d"/>
+      <stop offset="100%" stop-color="#0077b6"/>
+    </linearGradient>
+
+    <linearGradient id="sapphireInner28" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00509d"/>
+      <stop offset="30%" stop-color="#00296b"/>
+      <stop offset="75%" stop-color="#001845"/>
+      <stop offset="100%" stop-color="#003566"/>
+    </linearGradient>
+
+    <!-- Castone Oro Caldo -->
+    <linearGradient id="goldBezel28" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="40%" stop-color="#f59e0b"/>
+      <stop offset="80%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+  </defs>
+
+  <g filter="url(#dropShadow28)">
+    <!-- 1. CORNICE ESTERNA IN METALLO CIANO-ACQUA -->
+    <path d="M 118,22 L 762,22 Q 792,22 812,46 L 844,86 Q 858,105 844,124 L 812,164 Q 792,188 762,188 L 118,188 Q 88,188 68,164 L 44,130 Q 32,105 44,80 L 68,46 Q 88,22 118,22 Z" 
+          fill="url(#cyanMetalFrame28)" stroke="#082f49" stroke-width="2.5"/>
+
+    <!-- Filetto Speculare Bianco lungo la Cornice Ciano -->
+    <path d="M 118,27 L 762,27 Q 788,27 805,48" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.9"/>
+    <path d="M 118,183 L 762,183 Q 788,183 805,162" fill="none" stroke="#cffafe" stroke-width="2.5" stroke-linecap="round" opacity="0.8"/>
+
+    <!-- Trincea Scura Incassata -->
+    <path d="M 124,33 L 756,33 Q 782,33 798,54 L 826,89 Q 838,105 826,121 L 798,156 Q 782,177 756,177 L 124,177 Q 98,177 82,156 L 56,121 Q 44,105 56,89 L 82,54 Q 98,33 124,33 Z" 
+          fill="#020814" stroke="#0e7490" stroke-width="1.5"/>
+
+    <!-- 2. CORPO BLU ZAFFIRO 3D -->
+    <polygon points="130,42 750,42 796,88 796,122 750,168 130,168 84,122 84,88" 
+             fill="url(#sapphireBevel28)" stroke="#0284c7" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <polygon points="138,54 742,54 780,92 780,118 742,156 138,156 100,118 100,92" 
+             fill="url(#sapphireInner28)"/>
+
+    <polyline points="104,90 138,56 742,56 776,90" fill="none" stroke="#bae6fd" stroke-width="3" stroke-linecap="round" opacity="0.85"/>
+    <polyline points="104,120 138,154 742,154 776,120" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+
+    <!-- 3. GEMMA ROMBOIDALE DESTRA -->
+    <g transform="translate(822, 105)">
+      <polygon points="0,-42 42,0 0,42 -42,0" fill="url(#goldBezel28)" stroke="#140c04" stroke-width="2.5" stroke-linejoin="round"/>
+      <polygon points="0,-35 35,0 0,35 -35,0" fill="#fde68a" opacity="0.75"/>
+      <polygon points="0,-29 29,0 0,29 -29,0" fill="#b45309" stroke="#451a03" stroke-width="1"/>
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#06b6d4" stroke="#083344" stroke-width="1.5"/>
+      <polygon points="0,-22 22,0 0,0" fill="#a5f3fc"/>
+      <polygon points="0,-22 0,0 -22,0" fill="#22d3ee"/>
+      <polygon points="0,0 22,0 0,22" fill="#0284c7"/>
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#ecfeff"/>
+    </g>
+
+    <!-- 4. PUNTATORE TRIANGOLARE SINISTRO (FRECCIA CIANO/ORO 3D) -->
+    <g>
+      <!-- Ombra portata della freccia sul corpo blu -->
+      <polygon points="28,54 116,105 28,156" transform="translate(5, 4)" fill="#010612" opacity="0.75"/>
+      <!-- Castone Triangolare Esterno in Oro 3D -->
+      <path d="M 24,56 Q 24,48 31,52 L 112,101 Q 118,105 112,109 L 31,158 Q 24,162 24,154 Z" 
+            fill="url(#goldBezel28)" stroke="#140c04" stroke-width="2.5" stroke-linejoin="round"/>
+      <!-- Smusso luminoso interno oro -->
+      <polygon points="30,60 104,105 30,150" fill="none" stroke="#fef3c7" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Gemma Triangolare Ciano Sfaccettata -->
+      <polygon points="36,68 96,105 36,142" fill="#06b6d4" stroke="#083344" stroke-width="1.5" stroke-linejoin="round"/>
+      <!-- Sfaccettature 3D interne della gemma triangolare -->
+      <polygon points="36,68 96,105 56,105" fill="#a5f3fc"/>
+      <polygon points="36,68 56,105 36,142" fill="#22d3ee"/>
+      <polygon points="56,105 96,105 36,142" fill="#0284c7"/>
+      <polygon points="42,84 74,105 42,126" fill="#ecfeff" opacity="0.6"/>
+    </g>
+  </g>
+</svg>

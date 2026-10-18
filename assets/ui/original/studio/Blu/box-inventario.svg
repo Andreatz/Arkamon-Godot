@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" width="100%" height="100%">
+  <defs>
+    <filter id="a30-shadow" x="-4%" y="-5%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000614" flood-opacity="0.85" />
+    </filter>
+    <filter id="a30-elem-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#00040f" flood-opacity="0.85" />
+    </filter>
+
+    <!-- Cornice Oro Champagne / Avorio -->
+    <linearGradient id="a30-gold-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="15%" stop-color="#f7ebd9" />
+      <stop offset="52%" stop-color="#cfb08b" />
+      <stop offset="88%" stop-color="#946e42" />
+      <stop offset="100%" stop-color="#543818" />
+    </linearGradient>
+
+    <linearGradient id="a30-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <!-- Sfondo Principale Blu Reale (Con i 12 fori trasparenti) -->
+    <radialGradient id="a30-royal-bg" cx="50%" cy="50%" r="65%">
+      <stop offset="0%" stop-color="#083685" />
+      <stop offset="65%" stop-color="#041e4f" />
+      <stop offset="100%" stop-color="#020f2b" />
+    </radialGradient>
+
+    <linearGradient id="a30-blue-bevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2979ff" />
+      <stop offset="50%" stop-color="#0d47a1" />
+      <stop offset="100%" stop-color="#1565c0" />
+    </linearGradient>
+
+    <linearGradient id="a30-header-plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#eef2f7" />
+      <stop offset="100%" stop-color="#cdd5e0" />
+    </linearGradient>
+
+    <radialGradient id="a30-gold-stud" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff9db" />
+      <stop offset="40%" stop-color="#f7b733" />
+      <stop offset="85%" stop-color="#b56207" />
+      <stop offset="100%" stop-color="#592c00" />
+    </radialGradient>
+
+    <linearGradient id="a30-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <!-- Gemma Romboidale Media per Bordi Finestra -->
+    <g id="a30-border-gem" filter="url(#a30-elem-shadow)">
+      <polygon points="0,-24 21,0 0,24 -21,0" fill="url(#a30-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-24 -21,0 -15,0 0,-18" fill="#ffffff" opacity="0.75" />
+      <polygon points="0,-15 13,0 0,15 -13,0" fill="#04152e" />
+      <polygon points="0,-13 11,0 0,13 -11,0" fill="url(#a30-cyan-gem)" />
+      <polygon points="0,-13 11,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 4.5,0 0,5 -4.5,0" fill="#e0faff" />
+    </g>
+
+    <!-- Gemma Romboidale Piccola per Slot Inventario -->
+    <g id="a30-slot-gem">
+      <polygon points="0,-16 14,0 0,16 -14,0" fill="url(#a30-gem-gold)" stroke="#241406" stroke-width="1.4" stroke-linejoin="round" />
+      <polygon points="0,-10 9,0 0,10 -9,0" fill="#04152e" />
+      <polygon points="0,-8.5 7.5,0 0,8.5 -7.5,0" fill="url(#a30-cyan-gem)" />
+      <polygon points="0,-3.5 3,0 0,3.5 -3,0" fill="#e0faff" />
+    </g>
+
+    <!-- Componente Cornice Singolo Slot Inventario (140x132, centro trasparente 92x84) -->
+    <g id="a30-item-slot" filter="url(#a30-elem-shadow)">
+      <!-- Anello Ottagonale Esterno Oro Champagne (con foro trasparente) -->
+      <path d="M -46,-66 H 46 L 70,-42 V 42 L 46,66 H -46 L -70,42 V -42 Z
+               M -36,-42 L -46,-32 V 32 L -36,42 H 36 L 46,32 V -32 L 36,-42 Z" fill="url(#a30-gold-frame)" fill-rule="evenodd" stroke="#1c130a" stroke-width="2" stroke-linejoin="round" />
+      <!-- Fascia Interna Blu Reale tra Oro e Foro Trasparente -->
+      <path d="M -42,-58 H 42 L 62,-38 V 38 L 42,58 H -42 L -62,38 V -38 Z
+               M -36,-42 L -46,-32 V 32 L -36,42 H 36 L 46,32 V -32 L 36,-42 Z" fill="#041a42" fill-rule="evenodd" stroke="#1e88e5" stroke-width="1.8" stroke-linejoin="round" />
+      <!-- Bordo scuro interno che delimita la finestra trasparente -->
+      <polygon points="-36,-42 36,-42 46,-32 46,32 36,42 -36,42 -46,32 -46,-32" fill="none" stroke="#010612" stroke-width="2" />
+      <!-- Gemme Laterali Sinistra e Destra dello Slot -->
+      <use href="#a30-slot-gem" x="-66" y="0" />
+      <use href="#a30-slot-gem" x="66" y="0" />
+    </g>
+  </defs>
+
+  <g filter="url(#a30-shadow)">
+    <!-- ================================================================= -->
+    <!-- 1. CORNICE ESTERNA E PANNELLO BLU (CON 12 FORI SLOT TRASPARENTI)  -->
+    <!-- ================================================================= -->
+    <!-- Cornice Oro Esterna con i 12 intagli ottagonali corrispondenti agli slot -->
+    <path d="M 68,18 H 892 L 928,54 V 538 L 884,582 H 76 L 32,538 V 54 Z
+             M 174,138 L 164,148 V 212 L 174,222 H 246 L 256,212 V 148 L 246,138 Z
+             M 354,138 L 344,148 V 212 L 354,222 H 426 L 436,212 V 148 L 426,138 Z
+             M 534,138 L 524,148 V 212 L 534,222 H 606 L 616,212 V 148 L 606,138 Z
+             M 714,138 L 704,148 V 212 L 714,222 H 786 L 796,212 V 148 L 786,138 Z
+             M 174,286 L 164,296 V 360 L 174,370 H 246 L 256,360 V 296 L 246,286 Z
+             M 354,286 L 344,296 V 360 L 354,370 H 426 L 436,360 V 296 L 426,286 Z
+             M 534,286 L 524,296 V 360 L 534,370 H 606 L 616,360 V 296 L 606,286 Z
+             M 714,286 L 704,296 V 360 L 714,370 H 786 L 796,360 V 296 L 786,286 Z
+             M 174,434 L 164,444 V 508 L 174,518 H 246 L 256,508 V 444 L 246,434 Z
+             M 354,434 L 344,444 V 508 L 354,518 H 426 L 436,508 V 444 L 426,434 Z
+             M 534,434 L 524,444 V 508 L 534,518 H 606 L 616,508 V 444 L 606,434 Z
+             M 714,434 L 704,444 V 508 L 714,518 H 786 L 796,508 V 444 L 786,434 Z" fill="url(#a30-gold-frame)" fill-rule="evenodd" stroke="#1c130a" stroke-width="2.4" stroke-linejoin="round" />
+
+    <!-- Pannello Blu Reale Interno (anch'esso forato sui 12 slot con fill-rule="evenodd") -->
+    <path d="M 74,32 H 886 L 914,60 V 532 L 878,568 H 82 L 46,532 V 60 Z
+             M 174,138 L 164,148 V 212 L 174,222 H 246 L 256,212 V 148 L 246,138 Z
+             M 354,138 L 344,148 V 212 L 354,222 H 426 L 436,212 V 148 L 426,138 Z
+             M 534,138 L 524,148 V 212 L 534,222 H 606 L 616,212 V 148 L 606,138 Z
+             M 714,138 L 704,148 V 212 L 714,222 H 786 L 796,212 V 148 L 786,138 Z
+             M 174,286 L 164,296 V 360 L 174,370 H 246 L 256,360 V 296 L 246,286 Z
+             M 354,286 L 344,296 V 360 L 354,370 H 426 L 436,360 V 296 L 426,286 Z
+             M 534,286 L 524,296 V 360 L 534,370 H 606 L 616,360 V 296 L 606,286 Z
+             M 714,286 L 704,296 V 360 L 714,370 H 786 L 796,360 V 296 L 786,286 Z
+             M 174,434 L 164,444 V 508 L 174,518 H 246 L 256,508 V 444 L 246,434 Z
+             M 354,434 L 344,444 V 508 L 354,518 H 426 L 436,508 V 444 L 426,434 Z
+             M 534,434 L 524,444 V 508 L 534,518 H 606 L 616,508 V 444 L 606,434 Z
+             M 714,434 L 704,444 V 508 L 714,518 H 786 L 796,508 V 444 L 786,434 Z" fill="url(#a30-royal-bg)" fill-rule="evenodd" stroke="url(#a30-blue-bevel)" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- Venature Magiche Blu lungo i bordi laterali della finestra -->
+    <path d="M 55,160 C 95,220 65,310 105,390 C 120,430 80,490 125,555" fill="none" stroke="#42a5f5" stroke-width="3" opacity="0.25" />
+    <path d="M 905,160 C 865,220 895,310 855,390 C 840,430 880,490 835,555" fill="none" stroke="#42a5f5" stroke-width="3" opacity="0.25" />
+
+    <!-- Filetto Luminoso Perimetrale Interno -->
+    <polygon points="80,40 880,40 906,66 906,528 874,560 86,560 54,528 54,66" fill="none" stroke="#2979ff" stroke-width="1.5" opacity="0.55" />
+
+    <!-- Rivetti Dorati negli Angoli Inferiori -->
+    <circle cx="72" cy="546" r="7.5" fill="url(#a30-gold-stud)" stroke="#2b1400" stroke-width="1.4" />
+    <circle cx="888" cy="546" r="7.5" fill="url(#a30-gold-stud)" stroke="#2b1400" stroke-width="1.4" />
+
+    <!-- 4 Gemme Romboidali sui Bordi Laterali della Finestra -->
+    <use href="#a30-border-gem" x="39" y="152" />
+    <use href="#a30-border-gem" x="39" y="420" />
+    <use href="#a30-border-gem" x="921" y="152" />
+    <use href="#a30-border-gem" x="921" y="420" />
+
+    <!-- ================================================================= -->
+    <!-- 2. GRIGLIA 4x3 DEI 12 SLOT INVENTARIO                             -->
+    <!-- ================================================================= -->
+    <!-- Riga 1 (y = 180) -->
+    <use href="#a30-item-slot" x="210" y="180" />
+    <use href="#a30-item-slot" x="390" y="180" />
+    <use href="#a30-item-slot" x="570" y="180" />
+    <use href="#a30-item-slot" x="750" y="180" />
+
+    <!-- Riga 2 (y = 328) -->
+    <use href="#a30-item-slot" x="210" y="328" />
+    <use href="#a30-item-slot" x="390" y="328" />
+    <use href="#a30-item-slot" x="570" y="328" />
+    <use href="#a30-item-slot" x="750" y="328" />
+
+    <!-- Riga 3 (y = 476) -->
+    <use href="#a30-item-slot" x="210" y="476" />
+    <use href="#a30-item-slot" x="390" y="476" />
+    <use href="#a30-item-slot" x="570" y="476" />
+    <use href="#a30-item-slot" x="750" y="476" />
+
+    <!-- ================================================================= -->
+    <!-- 3. PULSANTI FRECCIA PAGINAZIONE (< IN ALTO A SX, > IN ALTO A DX)  -->
+    <!-- ================================================================= -->
+    <!-- Pulsante Freccia Sinistra (<) -->
+    <g transform="translate(106, 78)" filter="url(#a30-elem-shadow)">
+      <polygon points="-26,-42 26,-42 44,-24 44,24 26,42 -26,42 -44,24 -44,-24" fill="url(#a30-gold-frame)" stroke="#1c130a" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="-22,-34 22,-34 36,-20 36,20 22,34 -22,34 -36,20 -36,-20" fill="#041a42" stroke="#1e88e5" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="-16,0 12,-22 12,22" fill="url(#a30-header-plate)" stroke="#1c130a" stroke-width="1.6" stroke-linejoin="round" />
+    </g>
+
+    <!-- Pulsante Freccia Destra (>) -->
+    <g transform="translate(854, 78)" filter="url(#a30-elem-shadow)">
+      <polygon points="-26,-42 26,-42 44,-24 44,24 26,42 -26,42 -44,24 -44,-24" fill="url(#a30-gold-frame)" stroke="#1c130a" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="-22,-34 22,-34 36,-20 36,20 22,34 -22,34 -36,20 -36,-20" fill="#041a42" stroke="#1e88e5" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="16,0 -12,-22 -12,22" fill="url(#a30-header-plate)" stroke="#1c130a" stroke-width="1.6" stroke-linejoin="round" />
+    </g>
+
+    <!-- ================================================================= -->
+    <!-- 4. TARGHETTA SUPERIORE CENTRALE (HEADER BADGE)                    -->
+    <!-- ================================================================= -->
+    <g filter="url(#a30-elem-shadow)">
+      <polygon points="286,8 674,8 706,42 674,76 286,76 254,42" fill="url(#a30-gold-frame)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polygon points="292,16 668,16 694,42 668,68 292,68 266,42" fill="url(#a30-header-plate)" stroke="#6e7e91" stroke-width="1.5" stroke-linejoin="round" />
+      <polyline points="270,42 293,19 667,19" fill="none" stroke="#ffffff" stroke-width="2" />
+
+      <!-- Rivetti Dorati della Targhetta -->
+      <circle cx="288" cy="42" r="7" fill="url(#a30-gold-stud)" stroke="#2b1400" stroke-width="1.2" />
+      <circle cx="672" cy="42" r="7" fill="url(#a30-gold-stud)" stroke="#2b1400" stroke-width="1.2" />
+
+      <!-- Gemma Centrale della Targhetta -->
+      <g transform="translate(480, 42)">
+        <polygon points="0,-36 27,0 0,36 -27,0" fill="url(#a30-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+        <polygon points="0,-23 17,0 0,23 -17,0" fill="#04152e" />
+        <polygon points="0,-21 15,0 0,21 -15,0" fill="url(#a30-cyan-gem)" />
+        <polygon points="0,-21 15,0 0,0" fill="#7be5ff" opacity="0.8" />
+        <polygon points="0,-8 6,0 0,8 -6,0" fill="#e8fbff" />
+      </g>
+    </g>
+  </g>
+</svg>

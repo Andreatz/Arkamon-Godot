@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" width="100%" height="100%">
+  <defs>
+    <filter id="shadowGenOff" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Anello in Bronzo / Oro Champagne (da percorso.svg) -->
+    <linearGradient id="bronzeRing1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="55%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#472a17" />
+    </linearGradient>
+
+    <!-- Sfera Centrale Avorio / Perla 3D -->
+    <radialGradient id="pearlSphere1" cx="38%" cy="34%" r="64%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#f7f0e6" />
+      <stop offset="78%" stop-color="#d8c7b4" />
+      <stop offset="100%" stop-color="#9e8770" />
+    </radialGradient>
+
+    <!-- Gemma Cardinale a Diamante (Stile percorso.svg) -->
+    <g id="cardinalGem1">
+      <polygon points="0,-27 27,0 0,27 -27,0" fill="url(#bronzeRing1)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-17 17,0 0,17 -17,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-14 14,0 0,14 -14,0" fill="#0ea5e9" />
+      <polygon points="0,-14 14,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 14,0 0,14" fill="#0284c7" />
+      <polygon points="0,-6.5 6.5,0 0,6.5 -6.5,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowGenOff)" transform="translate(130, 130)">
+    <!-- 1. ANELLO ESTERNO IN BRONZO -->
+    <circle cx="0" cy="0" r="88" fill="url(#bronzeRing1)" stroke="#1c0f07" stroke-width="2.5" />
+    <!-- Archi di luce superiore sull'anello -->
+    <path d="M -72,-42 A 82,82 0 0,1 -24,-78" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.85" />
+    <path d="M 24,-78 A 82,82 0 0,1 72,-42" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity="0.85" />
+
+    <!-- 2. TRINCEA SCURA INCASSATA -->
+    <circle cx="0" cy="0" r="70" fill="#120a05" stroke="#1c0f07" stroke-width="2" />
+
+    <!-- 3. SFERA CENTRALE AVORIO / PERLA 3D -->
+    <circle cx="0" cy="0" r="64" fill="url(#pearlSphere1)" stroke="#24130a" stroke-width="2" />
+    <!-- Riflesso ovale superiore sinistro -->
+    <ellipse cx="-18" cy="-20" rx="22" ry="14" transform="rotate(-28 -18 -20)" fill="#ffffff" opacity="0.85" />
+    <!-- Filetti di luce di rimbalzo inferiori -->
+    <path d="M -44,38 A 57,57 0 0,0 -12,56" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.7" />
+    <path d="M 12,56 A 57,57 0 0,0 44,38" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.7" />
+
+    <!-- 4. QUATTRO GEMME SUI PUNTI CARDINALI (N, E, S, W) -->
+    <use href="#cardinalGem1" x="0" y="-82" />
+    <use href="#cardinalGem1" x="82" y="0" />
+    <use href="#cardinalGem1" x="0" y="82" />
+    <use href="#cardinalGem1" x="-82" y="0" />
+  </g>
+</svg>

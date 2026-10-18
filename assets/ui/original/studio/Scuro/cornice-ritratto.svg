@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 580" width="100%" height="100%">
+  <defs>
+    <filter id="shadowRitratto" x="-8%" y="-6%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6.5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeMain5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="25%" stop-color="#e5bfa0" />
+      <stop offset="55%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <!-- Canale Blu Ardesia Scuro -->
+    <linearGradient id="slateChannel5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f2d40" />
+      <stop offset="50%" stop-color="#101824" />
+      <stop offset="100%" stop-color="#090e17" />
+    </linearGradient>
+
+    <!-- Lastra Chiara Targa Inferiore -->
+    <linearGradient id="pearlPlate5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <!-- Rivetto Sferico in Bronzo -->
+    <radialGradient id="bronzeStud5" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="30%" stop-color="#eab68c" />
+      <stop offset="75%" stop-color="#8c5c3e" />
+      <stop offset="100%" stop-color="#3b2112" />
+    </radialGradient>
+
+    <!-- Maschera per forare il quadrato interno (100% trasparente) -->
+    <mask id="squareHoleMask5">
+      <rect x="0" y="0" width="540" height="580" fill="#ffffff" />
+      <rect x="74" y="64" width="392" height="362" rx="4" fill="#000000" />
+    </mask>
+
+    <!-- Grande Gemma Angolare a Diamante -->
+    <g id="cornerGemLarge5">
+      <polygon points="0,-38 38,0 0,38 -38,0" fill="url(#bronzeMain5)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="0,-32 32,0 0,32 -32,0" fill="none" stroke="#fff3e6" stroke-width="1.1" opacity="0.75" />
+      <polygon points="0,-26 26,0 0,26 -26,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#0ea5e9" />
+      <polygon points="0,-22 22,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 22,0 0,22" fill="#0284c7" />
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#e0f2fe" />
+    </g>
+
+    <!-- Gemma Piccola per la Targa Inferiore -->
+    <g id="gemSmall5">
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="url(#bronzeMain5)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#07101e" />
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#0ea5e9" />
+      <polygon points="0,-12 12,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowRitratto)">
+    <!-- 1. CORNICE QUADRATA PRINCIPALE CON FORO CENTRALE TRASPARENTE -->
+    <g mask="url(#squareHoleMask5)">
+      <!-- Cornice Esterna in Bronzo con Angoli Smussati -->
+      <polygon points="58,20 482,20 506,44 506,446 482,470 58,470 34,446 34,44" fill="url(#bronzeMain5)" stroke="#24130a" stroke-width="2.5" stroke-linejoin="round" />
+      <polyline points="60,24 480,24 502,46" fill="none" stroke="#fff3e6" stroke-width="1.8" opacity="0.85" />
+
+      <!-- Canale Intermedio Blu Ardesia Scuro -->
+      <rect x="46" y="32" width="448" height="426" rx="6" fill="url(#slateChannel5)" stroke="#140c07" stroke-width="2" />
+      <!-- Filetto Luminoso Ciano/Acciaio lungo il canale -->
+      <rect x="54" y="40" width="432" height="410" rx="4" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.65" />
+
+      <!-- Riflessi diagonali lungo le barre del canale -->
+      <g stroke="#ffffff" stroke-width="1.5" opacity="0.08">
+        <line x1="160" y1="32" x2="190" y2="62" />
+        <line x1="350" y1="430" x2="380" y2="458" />
+      </g>
+
+      <!-- Cornice Interna in Bronzo Attorno al Foro Quadrato -->
+      <rect x="64" y="54" width="412" height="382" rx="6" fill="url(#bronzeMain5)" stroke="#24130a" stroke-width="2" />
+      <rect x="74" y="64" width="392" height="362" rx="4" fill="none" stroke="#24130a" stroke-width="3" />
+    </g>
+
+    <!-- 2. QUATTRO GRANDI GEMME SUGLI ANGOLI DELLA CORNICE -->
+    <use href="#cornerGemLarge5" x="66" y="56" />
+    <use href="#cornerGemLarge5" x="474" y="56" />
+    <use href="#cornerGemLarge5" x="66" y="434" />
+    <use href="#cornerGemLarge5" x="474" y="434" />
+
+    <!-- 3. TARGA ESAGONALE SEPARATA IN BASSO -->
+    <g transform="translate(270, 518)">
+      <!-- Ombra sul fondo -->
+      <polygon points="-154,-38 154,-38 186,0 154,38 -154,38 -186,0" transform="translate(0, 5)" fill="#060a0f" opacity="0.7" />
+      <!-- Cornice Esterna in Bronzo -->
+      <polygon points="-152,-36 152,-36 184,0 152,36 -152,36 -184,0" fill="url(#bronzeMain5)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+      <!-- Trincea Blu Ardesia -->
+      <polygon points="-145,-28 145,-28 172,0 145,28 -145,28 -172,0" fill="#09101a" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.65" />
+      <!-- Cornice Interna in Bronzo -->
+      <polygon points="-128,-24 128,-24 148,0 128,24 -128,24 -148,0" fill="url(#bronzeMain5)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <!-- Lastra Chiara in Perla/Platino -->
+      <polygon points="-124,-18 124,-18 140,0 124,18 -124,18 -140,0" fill="url(#pearlPlate5)" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+
+      <!-- Rivetti Sferici in Bronzo sulla Targa -->
+      <circle cx="-126" cy="0" r="8" fill="url(#bronzeStud5)" stroke="#24130a" stroke-width="1.5" />
+      <circle cx="126" cy="0" r="8" fill="url(#bronzeStud5)" stroke="#24130a" stroke-width="1.5" />
+
+      <!-- Gemme Laterali della Targa -->
+      <use href="#gemSmall5" x="-168" y="0" />
+      <use href="#gemSmall5" x="168" y="0" />
+    </g>
+  </g>
+</svg>

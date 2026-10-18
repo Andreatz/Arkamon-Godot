@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" width="880" height="360">
+  <defs>
+    <!-- Gradiente Vetro Cilindrico Ciano -->
+    <linearGradient id="tube-glass-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.65"/>
+      <stop offset="18%" stop-color="#06b6d4" stop-opacity="0.25"/>
+      <stop offset="50%" stop-color="#083344" stop-opacity="0.15"/>
+      <stop offset="82%" stop-color="#06b6d4" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#a5f3fc" stop-opacity="0.7"/>
+    </linearGradient>
+
+    <linearGradient id="cap-metal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="30%" stop-color="#64748b"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="75%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <filter id="cyan-neon" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#22d3ee" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <!-- ==================== 2. BOX DIALOGO SCI-FI JRPG ("PROFESSORE") ==================== -->
+  <g transform="translate(265, 155)">
+    <!-- Cornice Principale con Angoli Smussati a 45° e Bagliore Ciano -->
+    <polygon points="24,22 576,22 596,42 596,158 576,178 24,178 4,158 4,42" fill="#090d16" fill-opacity="0.92" stroke="#38bdf8" stroke-width="3.5" filter="url(#cyan-neon)"/>
+    <!-- Filettatura Interna Tecnologica -->
+    <polygon points="30,30 570,30 586,46 586,152 570,168 30,168 14,152 14,46" fill="none" stroke="#0284c7" stroke-width="1.5"/>
+    <!-- Tacche Luminose Angolari -->
+    <polyline points="8,62 8,40 26,22 54,22" fill="none" stroke="#e0f2fe" stroke-width="4"/>
+    <polyline points="592,62 592,40 574,22 546,22" fill="none" stroke="#e0f2fe" stroke-width="4"/>
+    <polyline points="8,138 8,160 26,178 54,178" fill="none" stroke="#e0f2fe" stroke-width="4"/>
+    <polyline points="592,138 592,160 574,178 546,178" fill="none" stroke="#e0f2fe" stroke-width="4"/>
+
+    <!-- Tab Nome Personaggio ("PROFESSORE") -->
+    <polygon points="36,2 194,2 208,18 194,36 36,36 22,18" fill="#1e293b" stroke="#38bdf8" stroke-width="2.5"/>
+    <text x="115" y="25" font-family="'Segoe UI', sans-serif" font-size="15" font-weight="900" fill="#e0f2fe" text-anchor="middle" letter-spacing="1.2">PROFESSORE</text>
+
+    <!-- Testo Dialogo Multi-Riga -->
+    <text x="48" y="82" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#f8fafc">Scegli con cura il tuo compagno d'avventura! Sarà il</text>
+    <text x="48" y="114" font-family="'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#f8fafc">coraggioso Vyrath, l'oscuro Darklaw, o il misterioso Felyss?</text>
+
+    <!-- Cursore Animato Continua -->
+    <polygon points="550,144 568,144 559,158" fill="#67e8f9" filter="url(#cyan-neon)"/>
+  </g>
+
+</svg>

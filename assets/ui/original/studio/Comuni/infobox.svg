@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 280" width="100%" height="100%">
+  <defs>
+    <filter id="shadow1" x="-8%" y="-10%" width="116%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="glowCyan1" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradiente Metallo Argento-Acciaio (Stile percorso.svg) -->
+    <linearGradient id="silverMetal1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="25%" stop-color="#cbd5e1"/>
+      <stop offset="55%" stop-color="#64748b"/>
+      <stop offset="85%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+
+    <!-- Gradiente Bronzo/Oro Rosa (Stile percorso.svg) -->
+    <linearGradient id="bronzeMetal1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="25%" stop-color="#e5bfa0"/>
+      <stop offset="55%" stop-color="#8d5e40"/>
+      <stop offset="85%" stop-color="#c89672"/>
+      <stop offset="100%" stop-color="#5e3a22"/>
+    </linearGradient>
+
+    <linearGradient id="bronzeDiagonal1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="35%" stop-color="#eab68c"/>
+      <stop offset="75%" stop-color="#9a6746"/>
+      <stop offset="100%" stop-color="#52321c"/>
+    </linearGradient>
+
+    <!-- Trincea Scura Incassata -->
+    <linearGradient id="trenchDark1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e1510"/>
+      <stop offset="50%" stop-color="#2c221e"/>
+      <stop offset="100%" stop-color="#0f141c"/>
+    </linearGradient>
+
+    <!-- Lastra Interna Blu Ardesia Scuro -->
+    <linearGradient id="slateGlass1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111a26"/>
+      <stop offset="48%" stop-color="#1c2b3e"/>
+      <stop offset="52%" stop-color="#142030"/>
+      <stop offset="100%" stop-color="#0e1824"/>
+    </linearGradient>
+
+    <!-- Luce Ciano Basso e Alto Sinistra -->
+    <radialGradient id="tlCyan1" cx="8%" cy="15%" r="35%">
+      <stop offset="0%" stop-color="#e0f2fe" stop-opacity="0.9"/>
+      <stop offset="30%" stop-color="#0ea5e9" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#0ea5e9" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="bcCyan1" cx="50%" cy="100%" r="45%">
+      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.75"/>
+      <stop offset="40%" stop-color="#0284c7" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0"/>
+    </radialGradient>
+
+    <clipPath id="panelClip1">
+      <polygon points="88,48 820,48 836,64 836,216 808,232 72,232 56,216 56,80"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#shadow1)">
+    <!-- 1. CORNICE METALLICA ESTERNA PRINCIPALE -->
+    <polygon points="40,32 836,32 854,50 854,248 58,248 40,230" fill="url(#silverMetal1)" stroke="#1a1d24" stroke-width="2"/>
+
+    <!-- Filetto di luce superiore/inferiore cornice -->
+    <polyline points="282,35 835,35 851,51" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.8"/>
+    <polyline points="43,115 43,229 59,245 605,245" fill="none" stroke="#e2e8f0" stroke-width="1.2" opacity="0.6"/>
+
+    <!-- 2. INTARSI ANGOLARI IN BRONZO/ORO (Stile percorso.svg) -->
+    <!-- Placca Orizzontale Top-Left -->
+    <polygon points="118,32 284,32 270,44 104,44" fill="url(#bronzeMetal1)" stroke="#24150b" stroke-width="1.5"/>
+    <!-- Angolo Smussato Top-Left -->
+    <polygon points="40,32 110,32 96,44 82,44 52,74 52,96 40,108" fill="url(#bronzeDiagonal1)" stroke="#24150b" stroke-width="1.5"/>
+    <polyline points="43,35 102,35 93,42 80,42 50,72 50,94" fill="none" stroke="#fff7ed" stroke-width="1.5" opacity="0.9"/>
+
+    <!-- Placca Orizzontale Bottom-Right -->
+    <polygon points="624,236 790,236 776,248 610,248" fill="url(#bronzeMetal1)" stroke="#24150b" stroke-width="1.5"/>
+    <!-- Angolo Smussato Bottom-Right -->
+    <polygon points="854,172 854,248 784,248 798,236 812,236 842,206 842,184" fill="url(#bronzeDiagonal1)" stroke="#24150b" stroke-width="1.5"/>
+    <polyline points="851,178 851,245 790,245" fill="none" stroke="#fff7ed" stroke-width="1.5" opacity="0.8"/>
+
+    <!-- 3. TRINCEA SCURA INCASSATA E FILETTO INTERNO -->
+    <polygon points="84,42 824,42 842,60 842,220 812,238 68,238 50,220 50,76" fill="url(#trenchDark1)" stroke="#0d1117" stroke-width="1.5"/>
+    <polygon points="86,45 822,45 839,62 839,218 810,235 70,235 53,218 53,78" fill="none" stroke="#94a3b8" stroke-width="2"/>
+
+    <!-- 4. LASTRA INTERNA VETRO ARDESIA -->
+    <g clip-path="url(#panelClip1)">
+      <rect x="50" y="45" width="790" height="190" fill="url(#slateGlass1)"/>
+
+      <!-- Riflessi Diagonali Sottili (Stile percorso.svg) -->
+      <g stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+        <line x1="160" y1="45" x2="270" y2="235"/>
+        <line x1="195" y1="45" x2="305" y2="235"/>
+        <line x1="720" y1="45" x2="610" y2="235"/>
+        <line x1="685" y1="45" x2="575" y2="235"/>
+      </g>
+
+      <!-- Luci Ciano Radiali -->
+      <rect x="50" y="45" width="790" height="190" fill="url(#tlCyan1)"/>
+      <rect x="50" y="45" width="790" height="190" fill="url(#bcCyan1)"/>
+
+      <!-- Sfaccettature Cristalline Geometriche (Basso-Destra) -->
+      <g stroke="#38bdf8" stroke-width="1" opacity="0.3">
+        <polygon points="720,232 755,178 790,232" fill="#0284c7" fill-opacity="0.25"/>
+        <polygon points="755,178 815,152 836,195 790,232" fill="#0369a1" fill-opacity="0.3"/>
+        <polyline points="685,232 725,185 755,178 785,130 836,155" fill="none"/>
+        <line x1="740" y1="232" x2="805" y2="140" stroke-width="1.5"/>
+      </g>
+
+      <!-- Filetto Geometrico Interno -->
+      <polygon points="92,54 814,54 828,68 828,212 804,226 76,226 62,212 62,84" fill="none" stroke="#38bdf8" stroke-width="1.2" opacity="0.35"/>
+    </g>
+
+    <!-- 5. ACCENTI LUMINOSI CIANO E ROMBI INTERNI -->
+    <polyline points="56,130 56,80 88,48 190,48" fill="none" stroke="#7dd3fc" stroke-width="2.5" filter="url(#glowCyan1)"/>
+    <line x1="310" y1="232" x2="590" y2="232" stroke="#7dd3fc" stroke-width="2.5" filter="url(#glowCyan1)"/>
+
+    <!-- Piccoli Rombi Decorativi Interni (Stile percorso.svg) -->
+    <g transform="translate(82, 140)">
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="none" stroke="#64748b" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="2.5" fill="#38bdf8"/>
+    </g>
+    <g transform="translate(810, 140)">
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="none" stroke="#64748b" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="2.5" fill="#38bdf8"/>
+    </g>
+  </g>
+</svg>

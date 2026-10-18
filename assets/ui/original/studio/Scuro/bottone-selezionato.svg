@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" width="100%" height="100%">
+  <defs>
+    <filter id="shadow28" x="-6%" y="-12%" width="112%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Cornice Metallica Ciano-Acciaio (con la stratificazione di percorso_2.svg) -->
+    <linearGradient id="cyanMetal28" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="22%" stop-color="#7dd3fc"/>
+      <stop offset="52%" stop-color="#0284c7"/>
+      <stop offset="82%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#075985"/>
+    </linearGradient>
+
+    <!-- Bronzo / Oro Rosa per i Castoni delle Gemme -->
+    <linearGradient id="bronzeMain28" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="22%" stop-color="#e5bfa0"/>
+      <stop offset="52%" stop-color="#8c5c3e"/>
+      <stop offset="82%" stop-color="#c99673"/>
+      <stop offset="100%" stop-color="#5e3a22"/>
+    </linearGradient>
+
+    <linearGradient id="trenchDark28" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#091321"/>
+      <stop offset="50%" stop-color="#14243b"/>
+      <stop offset="100%" stop-color="#060c17"/>
+    </linearGradient>
+
+    <!-- Smusso Acciaio-Blu -->
+    <linearGradient id="steelBevel28" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#607d96"/>
+      <stop offset="50%" stop-color="#364b61"/>
+      <stop offset="100%" stop-color="#4b657d"/>
+    </linearGradient>
+
+    <!-- Nucleo Blu Ardesia Scuro -->
+    <linearGradient id="slateBoard28" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824"/>
+      <stop offset="50%" stop-color="#1f2d40"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+
+    <clipPath id="capsuleClip28">
+      <polygon points="138,54 742,54 780,92 780,118 742,156 138,156 100,118 100,92"/>
+    </clipPath>
+  </defs>
+
+  <g filter="url(#shadow28)">
+    <!-- 1. CORNICE ESTERNA METALLICA CIANO -->
+    <path d="M 118,22 L 762,22 Q 792,22 812,46 L 844,86 Q 858,105 844,124 L 812,164 Q 792,188 762,188 L 118,188 Q 88,188 68,164 L 44,130 Q 32,105 44,80 L 68,46 Q 88,22 118,22 Z" 
+          fill="url(#cyanMetal28)" stroke="#082f49" stroke-width="2"/>
+    <path d="M 118,26 L 762,26 Q 788,26 805,46" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" opacity="0.85"/>
+
+    <!-- Trincea Scura Incassata -->
+    <path d="M 124,32 L 756,32 Q 782,32 798,52 L 826,88 Q 838,105 826,122 L 798,158 Q 782,178 756,178 L 124,178 Q 98,178 82,158 L 56,122 Q 44,105 56,88 L 82,52 Q 98,32 124,32 Z" 
+          fill="url(#trenchDark28)" stroke="#07101e" stroke-width="1.5"/>
+
+    <!-- 2. SMUSSO INTERMEDIO E NUCLEO BLU ARDESIA -->
+    <polygon points="130,41 750,41 796,87 796,123 750,169 130,169 84,123 84,87" 
+             fill="url(#steelBevel28)" stroke="#bae6fd" stroke-width="2" stroke-linejoin="round"/>
+
+    <polygon points="138,54 742,54 780,92 780,118 742,156 138,156 100,118 100,92" 
+             fill="url(#slateBoard28)" stroke="#0d131a" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Linee Diagonali di Riflesso (Stile percorso_2.svg) -->
+    <g clip-path="url(#capsuleClip28)" stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+      <line x1="175" y1="54" x2="245" y2="156"/>
+      <line x1="205" y1="54" x2="275" y2="156"/>
+      <line x1="705" y1="54" x2="635" y2="156"/>
+      <line x1="675" y1="54" x2="605" y2="156"/>
+    </g>
+
+    <!-- Piccolo Rombo Decorativo Interno Destro -->
+    <g transform="translate(754, 105)">
+      <polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="#7c93ab" stroke-width="1.5"/>
+      <circle cx="0" cy="0" r="2.2" fill="#38bdf8"/>
+    </g>
+
+    <!-- 3. GEMMA ROMBOIDALE DESTRA (Stile percorso_2.svg) -->
+    <g transform="translate(822, 105)">
+      <polygon points="0,-40 40,0 0,40 -40,0" fill="url(#bronzeMain28)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="0,-34 34,0 0,34 -34,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75"/>
+      <polygon points="0,-28 28,0 0,28 -28,0" fill="#07101e" stroke="#1e130c" stroke-width="1"/>
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#0ea5e9"/>
+      <polygon points="0,-22 22,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,0 22,0 0,22" fill="#0284c7"/>
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- 4. PUNTATORE TRIANGOLARE SINISTRO IN BRONZO E GEMMA CIANO -->
+    <g>
+      <!-- Ombra portata sul corpo -->
+      <polygon points="26,52 118,105 26,158" transform="translate(5, 4)" fill="#060a0f" opacity="0.75"/>
+      <!-- Castone Triangolare in Bronzo (Stile percorso_2.svg) -->
+      <path d="M 24,55 Q 24,48 31,52 L 114,101 Q 120,105 114,109 L 31,158 Q 24,162 24,155 Z" 
+            fill="url(#bronzeMain28)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+      <polygon points="29,59 107,105 29,151" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75"/>
+      <!-- Trincea Triangolare Scura -->
+      <polygon points="33,64 101,105 33,146" fill="#07101e" stroke="#1e130c" stroke-width="1" stroke-linejoin="round"/>
+      <!-- Gemma Triangolare Ciano Sfaccettata -->
+      <polygon points="37,70 94,105 37,140" fill="#0ea5e9"/>
+      <polygon points="37,70 94,105 56,105" fill="#7dd3fc"/>
+      <polygon points="56,105 94,105 37,140" fill="#0284c7"/>
+      <polygon points="42,84 75,105 42,126" fill="#e0f2fe"/>
+    </g>
+  </g>
+</svg>

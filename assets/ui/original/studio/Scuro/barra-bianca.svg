@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 190" width="100%" height="100%">
+  <defs>
+    <filter id="shadow23" x="-5%" y="-12%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso_2.svg) -->
+    <linearGradient id="bronzeMain23" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="22%" stop-color="#e5bfa0"/>
+      <stop offset="52%" stop-color="#8c5c3e"/>
+      <stop offset="82%" stop-color="#c99673"/>
+      <stop offset="100%" stop-color="#5e3a22"/>
+    </linearGradient>
+
+    <linearGradient id="trenchDark23" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a"/>
+      <stop offset="50%" stop-color="#2e1d13"/>
+      <stop offset="100%" stop-color="#140c07"/>
+    </linearGradient>
+
+    <!-- Smusso Acciaio Chiaro per la Lastra Perla -->
+    <linearGradient id="pearlBevel23" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+
+    <!-- Superficie Interna Avorio/Perla -->
+    <linearGradient id="pearlPlate23" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#dbe4ee"/>
+    </linearGradient>
+
+    <!-- Rivetto Sferico in Bronzo Dorato -->
+    <radialGradient id="bronzeStud23" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="30%" stop-color="#f59e0b"/>
+      <stop offset="70%" stop-color="#9a6746"/>
+      <stop offset="100%" stop-color="#472a17"/>
+    </radialGradient>
+
+    <clipPath id="pearlClip23">
+      <polygon points="105,45 815,45 850,80 850,110 815,145 105,145 70,110 70,80"/>
+    </clipPath>
+
+    <!-- Gemma Laterale Romboidale -->
+    <g id="sideGem23">
+      <polygon points="0,-36 36,0 0,36 -36,0" fill="url(#bronzeMain23)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="0,-30 30,0 0,30 -30,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75"/>
+      <polygon points="0,-24 24,0 0,24 -24,0" fill="#07101e" stroke="#1e130c" stroke-width="1"/>
+      <polygon points="0,-19 19,0 0,19 -19,0" fill="#0ea5e9"/>
+      <polygon points="0,-19 19,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,0 19,0 0,19" fill="#0284c7"/>
+      <polygon points="0,-9 9,0 0,9 -9,0" fill="#e0f2fe"/>
+    </g>
+  </defs>
+
+  <g filter="url(#shadow23)">
+    <!-- 1. CORNICE ESTERNA IN BRONZO -->
+    <polygon points="88,22 832,22 882,72 882,118 832,168 88,168 38,118 38,72" 
+             fill="url(#bronzeMain23)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+    <polyline points="90,26 830,26 878,74" fill="none" stroke="#fff3e6" stroke-width="1.2" opacity="0.8"/>
+
+    <!-- 2. TRINCEA SCURA INCASSATA -->
+    <polygon points="94,31 826,31 871,76 871,114 826,159 94,159 49,114 49,76" 
+             fill="url(#trenchDark23)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- 3. LASTRA INTERNA BIANCO PERLA SMUSSATA -->
+    <polygon points="99,37 821,37 862,78 862,112 821,153 99,153 58,112 58,78" 
+             fill="url(#pearlBevel23)" stroke="#24130a" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <polygon points="105,45 815,45 850,80 850,110 815,145 105,145 70,110 70,80" 
+             fill="url(#pearlPlate23)" stroke="#ffffff" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Linee Diagonali di Riflesso Sottili sulla Lastra Chiara -->
+    <g clip-path="url(#pearlClip23)" stroke="#64748b" stroke-width="1.2" opacity="0.12">
+      <line x1="150" y1="45" x2="215" y2="145"/>
+      <line x1="180" y1="45" x2="245" y2="145"/>
+      <line x1="770" y1="45" x2="705" y2="145"/>
+      <line x1="740" y1="45" x2="675" y2="145"/>
+    </g>
+
+    <!-- 4. RIVETTI SFERICI D'ORO/BRONZO INTERNI -->
+    <g transform="translate(96, 95)">
+      <circle cx="2" cy="3" r="15" fill="#64748b" opacity="0.45"/>
+      <circle cx="0" cy="0" r="15" fill="url(#bronzeStud23)" stroke="#24130a" stroke-width="2"/>
+      <circle cx="-4" cy="-4" r="4" fill="#fff7ed" opacity="0.7"/>
+    </g>
+    <g transform="translate(824, 95)">
+      <circle cx="-2" cy="3" r="15" fill="#64748b" opacity="0.45"/>
+      <circle cx="0" cy="0" r="15" fill="url(#bronzeStud23)" stroke="#24130a" stroke-width="2"/>
+      <circle cx="-4" cy="-4" r="4" fill="#fff7ed" opacity="0.7"/>
+    </g>
+
+    <!-- 5. GEMME LATERALI SINISTRA E DESTRA -->
+    <use href="#sideGem23" x="48" y="95"/>
+    <use href="#sideGem23" x="872" y="95"/>
+  </g>
+</svg>

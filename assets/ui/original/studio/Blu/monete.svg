@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 155" width="100%" height="100%">
+  <defs>
+    <filter id="a2-shadow" x="-6%" y="-12%" width="112%" height="130%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4.5" flood-color="#000614" flood-opacity="0.75" />
+    </filter>
+    <filter id="a2-coin-shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="2" dy="4" stdDeviation="3.5" flood-color="#00040d" flood-opacity="0.85" />
+    </filter>
+
+    <linearGradient id="a2-frame-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="20%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d1a877" />
+      <stop offset="88%" stop-color="#996b36" />
+      <stop offset="100%" stop-color="#593814" />
+    </linearGradient>
+
+    <linearGradient id="a2-blue-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#041a47" />
+      <stop offset="50%" stop-color="#082d73" />
+      <stop offset="100%" stop-color="#031336" />
+    </linearGradient>
+
+    <linearGradient id="a2-blue-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2979ff" />
+      <stop offset="50%" stop-color="#0d47a1" />
+      <stop offset="100%" stop-color="#1565c0" />
+    </linearGradient>
+
+    <!-- Gradiente Moneta / Medaglione Oro Caldo -->
+    <radialGradient id="a2-coin-body" cx="38%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff8d6" />
+      <stop offset="28%" stop-color="#ffd56b" />
+      <stop offset="68%" stop-color="#e09626" />
+      <stop offset="100%" stop-color="#8c4f04" />
+    </radialGradient>
+    <linearGradient id="a2-coin-rim" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3c4" />
+      <stop offset="40%" stop-color="#f5b342" />
+      <stop offset="80%" stop-color="#b86b11" />
+      <stop offset="100%" stop-color="#5c3000" />
+    </linearGradient>
+
+    <linearGradient id="a2-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a2-side-gem" filter="url(#a2-coin-shadow)">
+      <polygon points="0,-27 25,0 0,27 -25,0" fill="url(#a2-coin-rim)" stroke="#241305" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-27 -25,0 -18,0 0,-20" fill="#ffffff" opacity="0.7" />
+      <polygon points="0,-16 15,0 0,16 -15,0" fill="#03122b" stroke="#663c0a" stroke-width="1" />
+      <polygon points="0,-14 13,0 0,14 -13,0" fill="url(#a2-cyan-gem)" />
+      <polygon points="0,-14 13,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#d9faff" opacity="0.9" />
+    </g>
+  </defs>
+
+  <g filter="url(#a2-shadow)">
+    <!-- Cornice Esterna Smussata -->
+    <polygon points="74,16 466,16 508,58 508,97 466,139 74,139 32,97 32,58" fill="url(#a2-frame-gold)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="35,58 75,19 465,19 505,58" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" />
+
+    <!-- Scanalatura Blu Notte -->
+    <polygon points="79,26 461,26 497,62 497,93 461,129 79,129 43,93 43,62" fill="#020b1f" stroke="#36220e" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- Lastra Interna Blu Reale con Bisello Luminoso -->
+    <polygon points="84,33 456,33 488,65 488,90 456,122 84,122 52,90 52,65" fill="url(#a2-blue-bg)" stroke="url(#a2-blue-rim)" stroke-width="2.6" stroke-linejoin="round" />
+    <!-- Riflesso diagonale sottile sul fondo blu -->
+    <path d="M 425,118 C 448,105 462,85 472,62" fill="none" stroke="#1e88e5" stroke-width="4" opacity="0.25" stroke-linecap="round" />
+
+    <!-- Medaglione Circolare Dorato Sinistro -->
+    <g transform="translate(115, 77.5)" filter="url(#a2-coin-shadow)">
+      <circle cx="0" cy="0" r="46" fill="url(#a2-coin-rim)" stroke="#241305" stroke-width="2" />
+      <circle cx="0" cy="0" r="39" fill="url(#a2-coin-body)" stroke="#9e5808" stroke-width="1.5" />
+      <path d="M -32,-18 A 36,36 0 0,1 32,-18" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.75" stroke-linecap="round" />
+
+    </g>
+
+    <!-- Gemme Laterali Estreme -->
+    <use href="#a2-side-gem" x="42" y="77.5" />
+    <use href="#a2-side-gem" x="498" y="77.5" />
+  </g>
+</svg>

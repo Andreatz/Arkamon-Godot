@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <filter id="a9-shadow" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3.5" flood-color="#000614" flood-opacity="0.75" />
+    </filter>
+    <filter id="a9-cyan-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="2.5" flood-color="#00f2fe" flood-opacity="0.6" />
+    </filter>
+
+    <linearGradient id="a9-gold-outer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="20%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#996832" />
+      <stop offset="100%" stop-color="#543412" />
+    </linearGradient>
+
+    <radialGradient id="a9-navy-channel" cx="50%" cy="50%" r="55%">
+      <stop offset="65%" stop-color="#031536" />
+      <stop offset="92%" stop-color="#082861" />
+      <stop offset="100%" stop-color="#010817" />
+    </radialGradient>
+
+    <!-- Anello Turchese / Ciano Luminescente -->
+    <linearGradient id="a9-cyan-ring" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b8ffff" />
+      <stop offset="30%" stop-color="#19f5e8" />
+      <stop offset="75%" stop-color="#00bfa5" />
+      <stop offset="100%" stop-color="#007d6f" />
+    </linearGradient>
+
+    <!-- Sfera Centrale Perlata / Crema 3D -->
+    <radialGradient id="a9-pearl-orb" cx="42%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#fcf7f0" />
+      <stop offset="80%" stop-color="#e3d2bd" />
+      <stop offset="100%" stop-color="#a88863" />
+    </radialGradient>
+  </defs>
+
+  <g filter="url(#a9-shadow)" transform="translate(80, 80)">
+    <!-- 1. Anello Esterno in Oro Champagne 3D -->
+    <circle cx="0" cy="0" r="64" fill="url(#a9-gold-outer)" stroke="#1c130a" stroke-width="2.2" />
+    <path d="M -54,-28 A 60,60 0 0,1 54,-28" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" stroke-linecap="round" />
+
+    <!-- 2. Canale Concentrico Blu Notte -->
+    <circle cx="0" cy="0" r="53" fill="url(#a9-navy-channel)" stroke="#472c10" stroke-width="2" />
+
+    <!-- 3. Anello Concentrico Turchese Luminescente -->
+    <circle cx="0" cy="0" r="41" fill="url(#a9-cyan-ring)" stroke="#011c24" stroke-width="1.8" filter="url(#a9-cyan-glow)" />
+    <path d="M -34,-16 A 38,38 0 0,1 34,-16" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.85" stroke-linecap="round" />
+
+    <!-- 4. Scanalatura Scura attorno alla Sfera -->
+    <circle cx="0" cy="0" r="32" fill="#031822" />
+
+    <!-- 5. Sfera Perlata Centrale 3D -->
+    <circle cx="0" cy="0" r="28.5" fill="url(#a9-pearl-orb)" stroke="#634524" stroke-width="1.2" />
+    <ellipse cx="-7" cy="-9" rx="11" ry="7" transform="rotate(-20 -7 -9)" fill="#ffffff" opacity="0.85" />
+  </g>
+</svg>

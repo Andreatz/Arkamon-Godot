@@ -1,0 +1,203 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1380 190" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow32" x="-5%" y="-10%" width="110%" height="125%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+    <filter id="iconShadow32" x="-15%" y="-15%" width="130%" height="135%">
+      <feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#00081c" flood-opacity="0.85"/>
+    </filter>
+
+    <!-- Cornice Champagne-Oro -->
+    <linearGradient id="frameGold32" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#f5ebd6"/>
+      <stop offset="60%" stop-color="#bfa37c"/>
+      <stop offset="85%" stop-color="#dfd1be"/>
+      <stop offset="100%" stop-color="#6e5638"/>
+    </linearGradient>
+
+    <!-- Vetro Blu Zaffiro Pulsante -->
+    <radialGradient id="sapphireBtn32" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#053c85"/>
+      <stop offset="65%" stop-color="#022252"/>
+      <stop offset="100%" stop-color="#01122e"/>
+    </radialGradient>
+
+    <!-- Gradiente Icone 3D Avorio/Crema Scolpito -->
+    <linearGradient id="ivoryIcon32" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="45%" stop-color="#f5ebd9"/>
+      <stop offset="80%" stop-color="#d6c3a5"/>
+      <stop offset="100%" stop-color="#a68e6e"/>
+    </linearGradient>
+
+    <linearGradient id="ivoryShade32" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d6c3a5"/>
+      <stop offset="100%" stop-color="#8c7355"/>
+    </linearGradient>
+
+    <!-- Componente Base Singolo Pulsante Ottagonale -->
+    <g id="octaBtnBase32">
+      <!-- Cornice Esterna -->
+      <polygon points="-46,-68 46,-68 68,-46 68,46 46,68 -46,68 -68,46 -68,-46" 
+               fill="url(#frameGold32)" stroke="#17120b" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Trincea Scura -->
+      <polygon points="-42,-60 42,-60 60,-42 60,42 42,60 -42,60 -60,42 -60,-42" 
+               fill="#020b1c" stroke="#54422b" stroke-width="1.2" stroke-linejoin="round"/>
+      <!-- Vetro Blu Zaffiro Interno -->
+      <polygon points="-38,-55 38,-55 55,-38 55,38 38,55 -38,55 -55,38 -55,-38" 
+               fill="url(#sapphireBtn32)" stroke="#0284c7" stroke-width="2" stroke-linejoin="round"/>
+      <!-- Filetto Speculare Interno -->
+      <polyline points="-50,-36 -36,-50 36,-50 50,-36" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.7"/>
+      <polyline points="-50,36 -36,50 36,50 50,36" fill="none" stroke="#0ea5e9" stroke-width="1.2" opacity="0.5"/>
+
+      <!-- Gemme Laterali Ciano (Sinistra e Destra) -->
+      <g transform="translate(-68, 0)">
+        <polygon points="0,-16 14,0 0,16 -14,0" fill="url(#frameGold32)" stroke="#17120b" stroke-width="1.5"/>
+        <polygon points="0,-10 9,0 0,10 -9,0" fill="#06b6d4" stroke="#083344" stroke-width="0.8"/>
+        <polygon points="0,-10 9,0 0,0" fill="#a5f3fc"/>
+        <polygon points="0,-4 4,0 0,4 -4,0" fill="#ffffff"/>
+      </g>
+      <g transform="translate(68, 0)">
+        <polygon points="0,-16 14,0 0,16 -14,0" fill="url(#frameGold32)" stroke="#17120b" stroke-width="1.5"/>
+        <polygon points="0,-10 9,0 0,10 -9,0" fill="#06b6d4" stroke="#083344" stroke-width="0.8"/>
+        <polygon points="0,-10 9,0 0,0" fill="#a5f3fc"/>
+        <polygon points="0,-4 4,0 0,4 -4,0" fill="#ffffff"/>
+      </g>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow32)">
+    <!-- 1. PULSANTE IMPRONTE / PASSI -->
+    <g transform="translate(95, 95)">
+      <use href="#octaBtnBase32"/>
+      <g filter="url(#iconShadow32)" stroke="#2b2116" stroke-width="1.2">
+        <!-- Impronta Sinistra (Bassa) -->
+        <g transform="translate(-16, 12) rotate(-10)">
+          <path d="M -11,-8 C -12,-22 -6,-30 0,-30 C 6,-30 12,-22 11,-8 C 10,2 8,8 8,12 L -8,12 C -8,8 -10,2 -11,-8 Z" fill="url(#ivoryIcon32)"/>
+          <path d="M -7,17 L 7,17 L 6,25 C 6,29 -6,29 -6,25 Z" fill="url(#ivoryIcon32)"/>
+        </g>
+        <!-- Impronta Destra (Alta) -->
+        <g transform="translate(16, -12) rotate(8)">
+          <path d="M -11,-8 C -12,-22 -6,-30 0,-30 C 6,-30 12,-22 11,-8 C 10,2 8,8 8,12 L -8,12 C -8,8 -10,2 -11,-8 Z" fill="url(#ivoryIcon32)"/>
+          <path d="M -7,17 L 7,17 L 6,25 C 6,29 -6,29 -6,25 Z" fill="url(#ivoryIcon32)"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- 2. PULSANTE GRUPPO / SQUADRA -->
+    <g transform="translate(265, 95)">
+      <use href="#octaBtnBase32"/>
+      <g filter="url(#iconShadow32)" stroke="#2b2116" stroke-width="1.3" stroke-linejoin="round">
+        <!-- Persona Sinistra -->
+        <circle cx="-25" cy="-10" r="9.5" fill="url(#ivoryIcon32)"/>
+        <path d="M -38,32 L -38,14 C -38,6 -32,2 -24,2 L -16,2 L -16,32 Z" fill="url(#ivoryShade32)"/>
+        <!-- Persona Destra -->
+        <circle cx="25" cy="-10" r="9.5" fill="url(#ivoryIcon32)"/>
+        <path d="M 38,32 L 38,14 C 38,6 32,2 24,2 L 16,2 L 16,32 Z" fill="url(#ivoryShade32)"/>
+        <!-- Persona Centrale (In primo piano) -->
+        <circle cx="0" cy="-18" r="12" fill="url(#ivoryIcon32)"/>
+        <path d="M -18,35 L -18,12 C -18,0 -10,-4 0,-4 C 10,-4 18,0 18,12 L 18,35 Z" fill="url(#ivoryIcon32)"/>
+      </g>
+    </g>
+
+    <!-- 3. PULSANTE ZAINO / BORSA -->
+    <g transform="translate(435, 95)">
+      <use href="#octaBtnBase32"/>
+      <g filter="url(#iconShadow32)" stroke="#2b2116" stroke-width="1.4" stroke-linejoin="round">
+        <!-- Manico Superiore -->
+        <path d="M -12,-24 L -12,-32 C -12,-37 12,-37 12,-32 L 12,-24" fill="none" stroke="url(#ivoryIcon32)" stroke-width="5"/>
+        <!-- Corpo Principale Zaino -->
+        <path d="M -26,-16 C -30,0 -32,22 -30,32 C -28,36 16,38 22,36 L 26,-16 Z" fill="url(#ivoryIcon32)"/>
+        <!-- Fianco Laterale 3D Destro -->
+        <path d="M 22,36 L 32,28 C 34,16 32,-6 26,-16 L 18,-8 L 18,36 Z" fill="url(#ivoryShade32)"/>
+        <!-- Patta Superiore (Flap) -->
+        <path d="M -27,-16 C -27,-24 25,-24 25,-16 L 20,4 C 16,12 -22,12 -26,4 Z" fill="url(#ivoryIcon32)"/>
+        <!-- Fibbia Centrale -->
+        <rect x="-7" y="1" width="12" height="15" rx="2" fill="url(#ivoryIcon32)"/>
+      </g>
+    </g>
+
+    <!-- 4. PULSANTE MAPPA PIEGHEVOLE -->
+    <g transform="translate(605, 95)">
+      <use href="#octaBtnBase32"/>
+      <g filter="url(#iconShadow32)" stroke="#2b2116" stroke-width="1.4" stroke-linejoin="round">
+        <!-- Pannello Sinistro -->
+        <polygon points="-32,-20 -18,-30 -18,22 -32,32" fill="url(#ivoryShade32)"/>
+        <!-- Pannello Centrale (Illuminato) -->
+        <polygon points="-18,-30 6,-16 6,36 -18,22" fill="url(#ivoryIcon32)"/>
+        <!-- Pannello Destro -->
+        <polygon points="6,-16 30,-30 30,22 6,36" fill="url(#ivoryShade32)"/>
+        <polygon points="10,-14 26,-23 26,18 10,28" fill="url(#ivoryIcon32)" stroke="none" opacity="0.5"/>
+      </g>
+    </g>
+
+    <!-- 5. PULSANTE SPADE INCROCIATE -->
+    <g transform="translate(775, 95)">
+      <use href="#octaBtnBase32"/>
+      <g filter="url(#iconShadow32)" stroke="#2b2116" stroke-width="1.3" stroke-linejoin="round">
+        <!-- Spada 1 (Da Alto-Sinistra a Basso-Destra) -->
+        <g transform="rotate(-45)">
+          <polygon points="-6,-42 0,-50 6,-42 5,14 -5,14" fill="url(#ivoryIcon32)"/>
+          <line x1="0" y1="-48" x2="0" y2="14" stroke="#b8a182" stroke-width="1"/>
+          <rect x="-14" y="14" width="28" height="6" rx="2" fill="url(#ivoryShade32)"/>
+          <rect x="-3.5" y="20" width="7" height="14" fill="url(#ivoryIcon32)"/>
+          <circle cx="0" cy="36" r="5" fill="url(#ivoryShade32)"/>
+        </g>
+        <!-- Spada 2 (Da Alto-Destra a Basso-Sinistra - In primo piano) -->
+        <g transform="rotate(45)">
+          <polygon points="-6,-42 0,-50 6,-42 5,14 -5,14" fill="url(#ivoryIcon32)"/>
+          <line x1="0" y1="-48" x2="0" y2="14" stroke="#ffffff" stroke-width="1"/>
+          <rect x="-14" y="14" width="28" height="6" rx="2" fill="url(#ivoryIcon32)"/>
+          <rect x="-3.5" y="20" width="7" height="14" fill="url(#ivoryShade32)"/>
+          <circle cx="0" cy="36" r="5" fill="url(#ivoryIcon32)"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- 6. PULSANTE ICOSAEDRO / CRISTALLO SFACCETTATO (D20) -->
+    <g transform="translate(945, 95)">
+      <use href="#octaBtnBase32"/>
+      <g filter="url(#iconShadow32)" stroke="#2b2116" stroke-width="1.5" stroke-linejoin="round">
+        <!-- Esagono Esterno -->
+        <polygon points="0,-38 33,-19 33,19 0,38 -33,19 -33,-19" fill="url(#ivoryIcon32)"/>
+        <!-- Triangolo Equilatero Centrale -->
+        <polygon points="0,-20 18,12 -18,12" fill="url(#ivoryIcon32)"/>
+        <!-- Sfaccettature Laterali Ombreggiate 3D -->
+        <polygon points="0,-38 33,-19 0,-20" fill="#ffffff" opacity="0.6"/>
+        <polygon points="33,-19 33,19 18,12 0,-20" fill="url(#ivoryShade32)" opacity="0.5"/>
+        <polygon points="-33,19 0,38 18,12 -18,12" fill="url(#ivoryShade32)" opacity="0.7"/>
+        <polygon points="33,19 0,38 18,12" fill="#8c7355"/>
+        <!-- Raggi di connessione vertici -->
+        <line x1="0" y1="-38" x2="0" y2="-20"/>
+        <line x1="33" y1="-19" x2="0" y2="-20"/>
+        <line x1="-33" y1="-19" x2="0" y2="-20"/>
+        <line x1="-33" y1="-19" x2="-18" y2="12"/>
+        <line x1="-33" y1="19" x2="-18" y2="12"/>
+        <line x1="0" y1="38" x2="-18" y2="12"/>
+        <line x1="0" y1="38" x2="18" y2="12"/>
+        <line x1="33" y1="19" x2="18" y2="12"/>
+        <line x1="33" y1="-19" x2="18" y2="12"/>
+      </g>
+    </g>
+
+    <!-- 7. PULSANTE FRECCIA CURVA INDIETRO -->
+    <g transform="translate(1115, 95)">
+      <use href="#octaBtnBase32"/>
+      <g filter="url(#iconShadow32)">
+        <path d="M -32,-8 L 0,-34 L 0,-18 C 24,-18 38,-4 38,14 C 38,30 22,40 2,38 C 16,34 20,24 20,14 C 20,2 12,-2 0,-2 L 0,14 Z" 
+              fill="url(#ivoryIcon32)" stroke="#2b2116" stroke-width="1.5" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <!-- 8. PULSANTE SPUNTA / CONFERMA -->
+    <g transform="translate(1285, 95)">
+      <use href="#octaBtnBase32"/>
+      <g filter="url(#iconShadow32)">
+        <polygon points="-36,6 -24,-6 -8,10 24,-28 38,-14 -8,36" 
+                 fill="url(#ivoryIcon32)" stroke="#2b2116" stroke-width="1.5" stroke-linejoin="round"/>
+        <polyline points="-33,6 -24,-3 -8,13 24,-25 35,-14" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.8"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 540" width="100%" height="100%">
+  <defs>
+    <filter id="a38-shadow" x="-8%" y="-6%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5.5" flood-color="#000614" flood-opacity="0.85" />
+    </filter>
+    <filter id="a38-elem-shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#00040f" flood-opacity="0.9" />
+    </filter>
+    <filter id="a38-rune-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <linearGradient id="a38-gold-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ebd9" />
+      <stop offset="55%" stop-color="#d4ab79" />
+      <stop offset="88%" stop-color="#996832" />
+      <stop offset="100%" stop-color="#543412" />
+    </linearGradient>
+
+    <linearGradient id="a38-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#5e3404" />
+    </linearGradient>
+
+    <!-- Canale Circolare Blu Reale Magico -->
+    <linearGradient id="a38-royal-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0091ea" />
+      <stop offset="30%" stop-color="#062863" />
+      <stop offset="70%" stop-color="#031538" />
+      <stop offset="100%" stop-color="#0d47a1" />
+    </linearGradient>
+
+    <!-- Disco Blu Scuro del Badge Secondario -->
+    <radialGradient id="a38-dark-badge" cx="45%" cy="40%" r="65%">
+      <stop offset="0%" stop-color="#072c59" />
+      <stop offset="70%" stop-color="#031833" />
+      <stop offset="100%" stop-color="#010b19" />
+    </radialGradient>
+
+    <linearGradient id="a38-plate-white" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="65%" stop-color="#f2f4f8" />
+      <stop offset="100%" stop-color="#d4dbe6" />
+    </linearGradient>
+
+    <radialGradient id="a38-gold-stud" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff9db" />
+      <stop offset="45%" stop-color="#f7b733" />
+      <stop offset="85%" stop-color="#b56207" />
+      <stop offset="100%" stop-color="#592c00" />
+    </radialGradient>
+
+    <linearGradient id="a38-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <!-- Gemma Romboidale Cardinale -->
+    <g id="a38-gem" filter="url(#a38-elem-shadow)">
+      <polygon points="0,-32 30,0 0,32 -30,0" fill="url(#a38-gem-gold)" stroke="#1f1105" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="0,-32 -30,0 -22,0 0,-24" fill="#ffffff" opacity="0.8" />
+      <polygon points="0,32 30,0 22,0 0,24" fill="#593102" opacity="0.75" />
+      <polygon points="0,-20 19,0 0,20 -19,0" fill="#03122b" />
+      <polygon points="0,-18 -17,0 0,0" fill="#80e5ff" />
+      <polygon points="0,-18 17,0 0,0" fill="#00b4fc" />
+      <polygon points="0,18 -17,0 0,0" fill="#0088cc" />
+      <polygon points="0,18 17,0 0,0" fill="#004d80" />
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0faff" opacity="0.9" />
+    </g>
+  </defs>
+
+  <g filter="url(#a38-shadow)">
+    <!-- ========================================================= -->
+    <!-- 1. ANELLO PRINCIPALE CON APERTURA CENTRALE TRASPARENTE    -->
+    <!-- ========================================================= -->
+    <g transform="translate(270, 240)">
+      <!-- Anello Esterno + Interno in Oro Champagne (Forato a r=146 con fill-rule="evenodd") -->
+      <path d="M 0,-206 A 206,206 0 1,0 0,206 A 206,206 0 1,0 0,-206 Z
+               M 0,-146 A 146,146 0 1,1 0,146 A 146,146 0 1,1 0,-146 Z" fill="url(#a38-gold-frame)" fill-rule="evenodd" stroke="#1c130a" stroke-width="2.4" />
+
+      <!-- Canale Concentrico Blu Reale (r=190 -> r=162) -->
+      <path d="M 0,-190 A 190,190 0 1,0 0,190 A 190,190 0 1,0 0,-190 Z
+               M 0,-162 A 162,162 0 1,1 0,162 A 162,162 0 1,1 0,-162 Z" fill="url(#a38-royal-ring)" fill-rule="evenodd" stroke="#020b1f" stroke-width="2.2" />
+
+      <!-- Filetti di Luce Speculare sull'Oro -->
+      <path d="M -165,-118 A 202,202 0 0,1 165,-118" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.8" />
+      <circle cx="0" cy="0" r="150" fill="none" stroke="#fff6e6" stroke-width="1.6" opacity="0.85" />
+
+      <!-- 3 Sfere / Rivetti d'Oro sul Bordo Esterno (Nord-Ovest, Nord-Est, Sud-Ovest) -->
+      <circle cx="-140" cy="-140" r="8.5" fill="url(#a38-gold-stud)" stroke="#241304" stroke-width="1.6" />
+      <circle cx="140" cy="-140" r="8.5" fill="url(#a38-gold-stud)" stroke="#241304" stroke-width="1.6" />
+      <circle cx="-140" cy="140" r="8.5" fill="url(#a38-gold-stud)" stroke="#241304" stroke-width="1.6" />
+
+      <!-- 3 Gemme Cardinali Principali (Nord, Ovest, Est) -->
+      <use href="#a38-gem" x="0" y="-186" />
+      <use href="#a38-gem" x="-186" y="0" />
+      <use href="#a38-gem" x="186" y="0" />
+    </g>
+
+    <!-- ========================================================= -->
+    <!-- 2. TARGHETTA / BANNER ORIZZONTALE INFERIORE               -->
+    <!-- ========================================================= -->
+    <g transform="translate(270, 466)" filter="url(#a38-elem-shadow)">
+      <!-- Cornice Esagonale Oro Champagne -->
+      <polygon points="-164,-42 164,-42 202,0 164,42 -164,42 -202,0" fill="url(#a38-gold-frame)" stroke="#1c130a" stroke-width="2.4" stroke-linejoin="round" />
+      <!-- Accenti Angolari Blu Notte -->
+      <polygon points="-158,-33 158,-33 188,0 158,33 -158,33 -188,0" fill="#031538" stroke="#1e88e5" stroke-width="1.6" stroke-linejoin="round" />
+      <!-- Piastra Centrale Bianco-Perla -->
+      <polygon points="-142,-31 142,-31 166,0 142,31 -142,31 -166,0" fill="url(#a38-gold-frame)" stroke="#1c130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="-138,-25 138,-25 158,0 138,25 -138,25 -158,0" fill="url(#a38-plate-white)" stroke="#94a3b8" stroke-width="1.4" stroke-linejoin="round" />
+      <polyline points="-154,0 -137,-22 137,-22" fill="none" stroke="#ffffff" stroke-width="2" />
+
+      <!-- Gemme Laterali della Targhetta -->
+      <use href="#a38-gem" x="-176" y="0" transform="scale(0.76)" style="transform-origin: -176px 0px;" />
+      <use href="#a38-gem" x="176" y="0" transform="scale(0.76)" style="transform-origin: 176px 0px;" />
+    </g>
+
+    <!-- Gemma Cardinale Sud dell'Anello (Sovrapposta al Bordo Superiore della Targhetta) -->
+    <use href="#a38-gem" x="270" y="422" transform="scale(0.82)" style="transform-origin: 270px 422px;" />
+
+    <!-- ========================================================= -->
+    <!-- 3. MEDAGLIONE SECONDARIO IN BASSO A DESTRA                -->
+    <!-- ========================================================= -->
+    <g transform="translate(408, 382)" filter="url(#a38-elem-shadow)">
+      <circle cx="0" cy="0" r="56" fill="url(#a38-gold-frame)" stroke="#1c130a" stroke-width="2.2" />
+      <path d="M -45,-25 A 52,52 0 0,1 45,-25" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85" stroke-linecap="round" />
+      <circle cx="0" cy="0" r="44" fill="url(#a38-dark-badge)" stroke="#42270c" stroke-width="2" />
+      <!-- Gemma Romboidale sul Bordo Destro del Medaglione Secondario -->
+      <use href="#a38-gem" x="48" y="0" transform="scale(0.68)" style="transform-origin: 48px 0px;" />
+    </g>
+  </g>
+</svg>

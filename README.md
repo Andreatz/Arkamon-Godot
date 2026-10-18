@@ -1,8 +1,20 @@
-# Arkamon — Godot 0.2
+# Arkamon — Godot 0.3
 
 La campagna 2D di **Arkamon per due giocatori sullo stesso PC**, realizzata in Godot 4.7.2 Standard. Parti da Pordenone, esplora la regione, allena e cattura i tuoi compagni, conquista le otto medaglie e affronta la Lega a Roma.
 
-La versione 0.2 estende la prima demo con la campagna regionale e i suoi sistemi locali. Dati e materiali di riferimento vengono da [Arkamon Beta](https://github.com/Andreatz/Arkamon-Beta), al commit fissato `7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7`. [PORTING.md](docs/PORTING.md) distingue le funzioni trasferite dalle parti della Beta che restano fuori da questa versione.
+La versione **0.3 riprende la grafica originale del sito** sopra la campagna regionale della 0.2: font, cornici SVG, icone, logo, sfondo del titolo e disposizione delle schermate. L'interfaccia usa controlli nativi Godot: gli asset sono quelli originali, mentre resa del testo e adattamenti delle viste possono differire dal browser. I salvataggi della campagna **0.2 restano compatibili**. Dati e materiali di riferimento vengono da [Arkamon Beta](https://github.com/Andreatz/Arkamon-Beta), al commit fissato `7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7`. [PORTING.md](docs/PORTING.md) distingue le funzioni trasferite dalle parti della Beta che restano fuori da questa versione.
+
+![Titolo con lo sfondo originale del sito](docs/images/title.png)
+
+## Grafica del sito nella versione 0.3
+
+- **Norwester originale**, logo, PNG dell'interfaccia e **48 SVG del kit** per pulsanti, cornici, icone, oggetti e tipi. Le cornici si adattano alle dimensioni dei controlli mantenendo i bordi, come nel sito.
+- Titolo con il **video originale**, convertito per Godot: otto secondi, **192 fotogrammi a 24 FPS**. Con movimento ridotto viene mostrato il primo fotogramma.
+- Stage **1440×810 in rapporto 16:9**, centrato e adattato alla finestra. La mappa regionale occupa lo stage con coordinate, strade e pannelli del tema originale, icone dei luoghi e avatar G1/G2. Le mappe locali aprono le attività su richiesta.
+- **Nuova Partita → nomi dei due allenatori → scelta degli starter**: laboratorio con lo sfondo e gli avatar originali, ritratti compatti e compagni distinti.
+- Il pulsante **Partita** apre gli strumenti con sei voci: Menù Partita, Squadra, Deposito, Arkadex, Analisi e Borsa. Impostazioni e Sfide sono accessibili dal Menù Partita anche prima di iniziare una campagna; Backup raccoglie esportazione, ripristino e importazione della prima demo.
+
+L'[audit della UI canonica](docs/UI_REFERENCE_AUDIT.md) identifica le viste effettivamente usate dal sito, separandole dalle anteprime di studio. La [provenienza degli asset UI](docs/UI_ASSET_PROVENANCE.md) documenta **321 output verificati**, circa **16 MiB**, e le trasformazioni del font e del video. Questa versione non dichiara una corrispondenza assoluta di ogni pixel o di tutte le funzioni React.
 
 ![La regione di Arkamon nella campagna Godot](docs/images/world.png)
 
@@ -26,7 +38,7 @@ Il workflow [Godot - verifica e build Windows](https://github.com/Andreatz/Arkam
 
 ## Come iniziare
 
-1. Scegli **Nuova campagna**, i nomi e due starter diversi. I giocatori si alternano sullo stesso computer; non serve una connessione di rete.
+1. Scegli **Nuova Partita**, inserisci i nomi e scegli due starter diversi. I giocatori si alternano sullo stesso computer; non serve una connessione di rete.
 2. Ogni turno ha **due azioni**: due movimenti oppure un movimento e un'interazione. Aprire la vista di un luogo è gratuito. Esplorare un cespuglio, sfidare un allenatore, curare la squadra o acquistare conclude le azioni disponibili. Premi **Passa il turno** quando hai finito.
 3. Visita città e percorsi collegati. Allena i compagni negli incontri e nelle sfide disponibili, senza lasciare indietro i membri di livello più basso: al limite della fascia, l'EXP viene scartata e non accumulata. Puoi spostare i compagni tra squadra e deposito per preparare la formazione.
 4. I **centri in città curano gratuitamente** tutta la squadra. Una sconfitta non termina la campagna: recupera le forze prima di ripartire. Il negozio usa le monete vinte contro gli allenatori.
@@ -34,11 +46,11 @@ Il workflow [Godot - verifica e build Windows](https://github.com/Andreatz/Arkam
 
 Gli incontri e gli allenatori già completati sono registrati per ciascun giocatore. Le interazioni sui singoli punti non configurate nel riferimento originale restano vuote finché non vengono assegnate dall'editor; la versione Godot non inventa dialoghi o incontri del Percorso 15.
 
-**Comandi:** mouse oppure **Tab/Invio**; in battaglia **1–3** per le mosse disponibili; **F11** per lo schermo intero, **M** per l'audio. Le impostazioni comprendono movimento ridotto e velocità delle animazioni normale, 2× o 3×. La modalità normale conserva i tempi originali.
+**Comandi:** mouse oppure **Tab/Invio**; in battaglia **1–3** per le mosse disponibili; **F11** per lo schermo intero, **M** per l'audio, **Esc** per tornare al menu o al viaggio. Le impostazioni comprendono movimento ridotto e velocità delle animazioni normale, 2× o 3×. La modalità normale conserva i tempi originali.
 
 ## Sfide a seed e Fanta-Team
 
-Dal titolo apri **Sfide a seed e Fanta-Team** per una partita separata dalla campagna. Le squadre hanno sei forme al livello 20, un budget di 100 crediti e nessuna specie ripetuta. La modalità a seed genera entrambe le squadre; Fanta-Team permette di scegliere la propria formazione. Sono disponibili regole aggiornate v2 e prezzi classici v1, codici JSON da copiare/importare e una classifica locale degli ultimi 30 risultati.
+Dal titolo apri **Partita → Sfide** per una partita separata dalla campagna. Le squadre hanno sei forme al livello 20, un budget di 100 crediti e nessuna specie ripetuta. La modalità a seed genera entrambe le squadre; Fanta-Team permette di scegliere la propria formazione. Sono disponibili regole aggiornate v2 e prezzi classici v1, codici JSON da copiare/importare e una classifica locale degli ultimi 30 risultati.
 
 Seed, costi, squadre e identificatori sono compatibili con le regole della Beta. I tiri della battaglia usano il generatore di Godot: **i risultati dei combattimenti non sono confrontabili tra i due motori**. La classifica distingue seed, squadra, modalità e versione delle regole. I progressi della campagna non vengono usati o premiati dalla sfida separata.
 
@@ -46,19 +58,23 @@ Seed, costi, squadre e identificatori sono compatibili con le regole della Beta.
 
 Tutte le 110 forme hanno un ritratto. Le **37 forme animate presenti nella sorgente originale** dispongono di **185 clip** fra attesa, attacco, colpo, vittoria e KO: **17.754 fotogrammi originali a 24 FPS**, mantenuti in ordine. Le altre 73 forme usano ritratti statici con reazioni ed effetti Godot. Le trasformazioni dei materiali e i loro limiti sono descritti nella [provenienza](docs/ASSET_PROVENANCE.md).
 
-Sono inclusi quattro effetti audio e otto effetti grafici generici per tipo di azione/tipo. Il gioco non include la libreria web completa dei 276 effetti curati per le singole mosse, né tutte le personalizzazioni SVG e dell'interfaccia React.
+Sono inclusi quattro effetti audio e otto effetti grafici generici per tipo di azione/tipo. Il gioco non include la libreria web completa dei 276 effetti curati per le singole mosse, né l'intero sistema di personalizzazione visuale dell'interfaccia React.
+
+![Battaglia con gli elementi originali del sito](docs/images/battle.png)
+
+![Squadra nella nuova interfaccia nativa](docs/images/party.png)
 
 ## Salvataggi e backup
 
-La campagna salva in `user://full_campaign.json`, con file temporaneo e copia precedente di recupero. Nei combattimenti il punto di ripresa comprende squadre, PV, status, turno e stato del generatore casuale; la ripresa parte dall'ultimo turno salvato. I backup del **Diario e strumenti** comprendono entrambi i giocatori e la configurazione delle interazioni e della Lega.
+La campagna salva in `user://full_campaign.json`, con file temporaneo e copia precedente di recupero. Nei combattimenti il punto di ripresa comprende squadre, PV, status, turno e stato del generatore casuale; la ripresa parte dall'ultimo turno salvato. I backup di **Partita → Backup** comprendono entrambi i giocatori e la configurazione delle interazioni e della Lega.
 
-Per compatibilità, la cartella Windows resta `%APPDATA%/Godot/app_userdata/Arkamon — Il primo viaggio/`. La prima demo Godot conserva `campaign.json`: dal titolo si può importarne squadra, pozioni e monete in una nuova campagna, previa conferma. Le sfere della prima demo non hanno un oggetto equivalente nel catalogo della campagna e non vengono convertite. La migrazione riparte da Pordenone e non assegna medaglie o una vittoria della Lega. **I salvataggi del browser non sono importati direttamente.**
+Per compatibilità, la cartella Windows resta `%APPDATA%/Godot/app_userdata/Arkamon — Il primo viaggio/`. La prima demo Godot conserva `campaign.json`: da **Partita → Backup** si può importarne squadra, pozioni e monete in una nuova campagna, previa conferma. Le sfere della prima demo non hanno un oggetto equivalente nel catalogo della campagna e non vengono convertite. La migrazione riparte da Pordenone e non assegna medaglie o una vittoria della Lega. **I salvataggi del browser non sono importati direttamente.**
 
 Le sfide scrivono il proprio registro in `user://challenges.json`. La campagna e la classifica non richiedono account o server.
 
 ## Sviluppo e verifiche
 
-Importa `project.godot` in **Godot 4.7.2 Standard**, senza .NET, poi premi **F5**. Il progetto usa il renderer **Compatibility**. Le schermate sono costruite da GDScript con nodi Control; non sono tutte scene indipendenti da impaginare nell'editor.
+Importa `project.godot` in **Godot 4.7.2 Standard**, senza .NET, poi premi **F5**. Il progetto usa il renderer **Compatibility**. Le schermate sono costruite da GDScript con nodi Control; `site_shell.gd`, `site_scenes.gd`, `site_player.gd` e `site_battle.gd` compongono la presentazione ispirata al sito; non sono tutte scene indipendenti da impaginare nell'editor.
 
 ```powershell
 $godot = & ./tools/fetch_godot.ps1
@@ -73,6 +89,6 @@ $godot = & ./tools/fetch_godot.ps1 -WithTemplates
 
 ## Materiali e attribuzioni
 
-Vedi [ASSET_PROVENANCE.md](docs/ASSET_PROVENANCE.md) per fonti, trasformazioni e attribuzioni disponibili, e `data/import_manifest.json` per i checksum. Copiare i materiali del progetto originale non attribuisce nuove licenze ai contenuti. Il credito originale del suono di cura resta in `assets/audio/CreditToZachry.txt` e nel pacchetto Windows.
+Vedi [ASSET_PROVENANCE.md](docs/ASSET_PROVENANCE.md) per fonti, trasformazioni e attribuzioni disponibili, e `data/import_manifest.json` per i checksum. Copiare i materiali del progetto originale non attribuisce nuove licenze ai contenuti. Gli asset della UI hanno una [provenienza separata](docs/UI_ASSET_PROVENANCE.md) e checksum in `data/ui_import_manifest.json`. Il credito originale del suono di cura resta in `assets/audio/CreditToZachry.txt` e nel pacchetto Windows.
 
 Il porting include il gioco locale e i suoi strumenti nativi. Votazioni del pubblico con QR e backend, strumenti di regia React e personalizzazione visuale completa della UI web non sono trasferiti in questa versione.

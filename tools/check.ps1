@@ -29,7 +29,7 @@ function Invoke-GodotChecked([string[]]$Arguments, [string]$Description, [string
 Invoke-GodotChecked -Arguments @('--headless', '--path', $projectDirectory, '--editor', '--quit') -Description 'Importazione risorse e script.'
 Invoke-GodotChecked -Arguments @('--headless', '--path', $projectDirectory, '--script', 'res://tests/test_core.gd') -Description 'Verifica logica di gioco e salvataggi.'
 Invoke-GodotChecked -Arguments @('--headless', '--path', $projectDirectory, '--script', 'res://tests/test_flow.gd') -Description 'Verifica flusso di gioco e interfaccia.'
-foreach ($test in @('test_battle_session', 'test_campaign', 'test_game', 'test_interactions', 'test_media', 'test_challenges')) {
+foreach ($test in @('test_battle_session', 'test_campaign', 'test_game', 'test_interactions', 'test_media', 'test_challenges', 'test_site_ui')) {
     $testFile = Join-Path $projectDirectory "tests/$test.gd"
     if (-not (Test-Path -LiteralPath $testFile)) { throw "Verifica richiesta mancante: $test" }
     Invoke-GodotChecked -Arguments @('--headless', '--path', $projectDirectory, '--script', "res://tests/$test.gd") -Description "Verifica $test."

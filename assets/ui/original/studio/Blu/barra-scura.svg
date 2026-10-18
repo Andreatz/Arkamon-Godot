@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 190" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow22" x="-5%" y="-12%" width="110%" height="130%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Cornice Avorio-Oro 3D -->
+    <linearGradient id="ivoryGold22" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#fdf4dc"/>
+      <stop offset="65%" stop-color="#d69e49"/>
+      <stop offset="100%" stop-color="#945d14"/>
+    </linearGradient>
+
+    <linearGradient id="innerGoldBevel22" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#b87314"/>
+      <stop offset="50%" stop-color="#f7c35c"/>
+      <stop offset="100%" stop-color="#ffe8a3"/>
+    </linearGradient>
+
+    <!-- Vetro Blu Zaffiro Profondo -->
+    <linearGradient id="sapphireCore22" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#063982"/>
+      <stop offset="20%" stop-color="#03255c"/>
+      <stop offset="80%" stop-color="#021b45"/>
+      <stop offset="100%" stop-color="#052f70"/>
+    </linearGradient>
+
+    <!-- Smusso Blu Elettrico Interno -->
+    <linearGradient id="electricBevel22" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="30%" stop-color="#0284c7"/>
+      <stop offset="70%" stop-color="#0369a1"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+
+    <clipPath id="sapphireClip22">
+      <polygon points="104,48 816,48 848,80 848,110 816,142 104,142 72,110 72,80"/>
+    </clipPath>
+
+    <!-- Gemma Laterale Romboidale -->
+    <g id="sideGem22">
+      <polygon points="0,-38 36,0 0,38 -36,0" fill="url(#ivoryGold22)" stroke="#1c1105" stroke-width="2.2" stroke-linejoin="round"/>
+      <polygon points="0,-31 29,0 0,31 -29,0" fill="#e0a343" stroke="#784408" stroke-width="1"/>
+      <polygon points="0,-22 20,0 0,22 -20,0" fill="#0284c7" stroke="#082f49" stroke-width="1.2"/>
+      <polygon points="0,-22 20,0 0,0" fill="#67e8f9"/>
+      <polygon points="0,-22 0,0 -20,0" fill="#22d3ee"/>
+      <polygon points="0,0 20,0 0,22" fill="#0369a1"/>
+      <polygon points="0,-10 9,0 0,10 -9,0" fill="#e0f2fe"/>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow22)">
+    <!-- 1. CORNICE ESTERNA AVORIO-ORO -->
+    <polygon points="88,22 832,22 882,72 882,118 832,168 88,168 38,118 38,72" 
+             fill="url(#ivoryGold22)" stroke="#1a1208" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- Smusso Oro Caldo Intermedio -->
+    <polygon points="93,31 827,31 871,75 871,115 827,159 93,159 49,115 49,75" 
+             fill="url(#innerGoldBevel22)" stroke="#5c3506" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Trincea Blu Notte Scura -->
+    <polygon points="97,36 823,36 864,77 864,113 823,154 97,154 56,113 56,77" 
+             fill="#020e24" stroke="#010714" stroke-width="1.5"/>
+
+    <!-- 2. LASTRA BLU ZAFFIRO SMUSSATA -->
+    <polygon points="104,45 816,45 852,81 852,109 816,145 104,145 68,109 68,81" 
+             fill="url(#electricBevel22)"/>
+    
+    <polygon points="108,50 812,50 845,83 845,107 812,140 108,140 75,107 75,83" 
+             fill="url(#sapphireCore22)"/>
+
+    <!-- Venature Eteree Blu/Ciano Interne -->
+    <g clip-path="url(#sapphireClip22)" fill="none" stroke="#38bdf8" opacity="0.22">
+      <path d="M 75,130 C 130,115 160,65 230,52" stroke-width="8" filter="blur(3px)"/>
+      <path d="M 90,140 C 145,120 175,70 255,50" stroke-width="2"/>
+      <path d="M 845,60 C 785,75 755,125 685,138" stroke-width="8" filter="blur(3px)"/>
+      <path d="M 830,50 C 770,70 740,120 665,140" stroke-width="2"/>
+    </g>
+
+    <!-- Filetto Speculare Superiore Azzurro -->
+    <polyline points="106,48 814,48 848,82" fill="none" stroke="#bae6fd" stroke-width="2" opacity="0.8"/>
+
+    <!-- 3. GEMME LATERALI SINISTRA E DESTRA -->
+    <use href="#sideGem22" x="48" y="95"/>
+    <use href="#sideGem22" x="872" y="95"/>
+  </g>
+</svg>

@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 280" width="100%" height="100%">
+  <defs>
+    <filter id="shadowSelezione" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5.5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Anello Esterno Turchese-Ciano (Armonizzato con percorso.svg) -->
+    <linearGradient id="tealRing6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="30%" stop-color="#0d9488" />
+      <stop offset="75%" stop-color="#0f766e" />
+      <stop offset="100%" stop-color="#115e59" />
+    </linearGradient>
+
+    <!-- Anello Interno Blu Ardesia Notte -->
+    <linearGradient id="darkSlateRing6" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#091526" />
+      <stop offset="50%" stop-color="#10233d" />
+      <stop offset="100%" stop-color="#060d17" />
+    </linearGradient>
+
+    <!-- Bronzo / Oro Rosa per i Castoni delle 4 Gemme (da percorso.svg) -->
+    <linearGradient id="bronzeBezel6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="25%" stop-color="#e5bfa0" />
+      <stop offset="55%" stop-color="#8c5c3e" />
+      <stop offset="85%" stop-color="#6e4429" />
+      <stop offset="100%" stop-color="#3b2112" />
+    </linearGradient>
+
+    <!-- Maschera per forare il centro dell'anello (100% trasparente) -->
+    <mask id="reticleHoleMask6">
+      <rect x="0" y="0" width="280" height="280" fill="#ffffff" />
+      <circle cx="140" cy="140" r="52" fill="#000000" />
+    </mask>
+
+    <!-- Gemma a Losanga Allungata Verticale (Stile percorso.svg) -->
+    <g id="elongatedGem6">
+      <!-- Castone in Bronzo Sfaccettato -->
+      <polygon points="0,-46 30,0 0,46 -30,0" fill="url(#bronzeBezel6)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <!-- Divisioni 3D del castone -->
+      <polygon points="0,-46 -30,0 -18,0 0,-28" fill="#fff7ed" opacity="0.65" />
+      <polygon points="0,46 30,0 18,0 0,28" fill="#3b2112" opacity="0.65" />
+      <!-- Trincea e Gemma Ciano Allungata -->
+      <polygon points="0,-31 19,0 0,31 -19,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-28 17,0 0,28 -17,0" fill="#0ea5e9" />
+      <polygon points="0,-28 17,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 17,0 0,28" fill="#0284c7" />
+      <polygon points="0,-13 8,0 0,13 -8,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowSelezione)">
+    <!-- 1. ANELLO CONCENTRICO CON FORO CENTRALE TRASPARENTE -->
+    <g mask="url(#reticleHoleMask6)">
+      <!-- Fascia Esterna Turchese -->
+      <circle cx="140" cy="140" r="82" fill="url(#tealRing6)" stroke="#042f2e" stroke-width="2.5" />
+      <!-- Archi Speculari Bianchi Superiori -->
+      <path d="M 73,98 A 76,76 0 0,1 112,68" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" opacity="0.9" />
+      <path d="M 168,68 A 76,76 0 0,1 207,98" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" opacity="0.9" />
+
+      <!-- Fascia Interna Blu Ardesia Notte Attorno al Foro -->
+      <circle cx="140" cy="140" r="66" fill="url(#darkSlateRing6)" stroke="#042f2e" stroke-width="1.5" />
+      <circle cx="140" cy="140" r="52" fill="none" stroke="#04101e" stroke-width="3" />
+    </g>
+
+    <!-- 2. QUATTRO GEMME A LOSANGA ALLUNGATA SUI PUNTI CARDINALI -->
+    <!-- Nord -->
+    <use href="#elongatedGem6" x="140" y="64" />
+    <!-- Sud -->
+    <use href="#elongatedGem6" x="140" y="216" />
+    <!-- Ovest (Ruotata di 90 gradi) -->
+    <use href="#elongatedGem6" x="64" y="140" transform="rotate(-90 64 140)" />
+    <!-- Est (Ruotata di 90 gradi) -->
+    <use href="#elongatedGem6" x="216" y="140" transform="rotate(90 216 140)" />
+  </g>
+</svg>

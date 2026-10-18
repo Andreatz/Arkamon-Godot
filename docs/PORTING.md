@@ -1,6 +1,6 @@
-# Porting della campagna Godot 0.2
+# Porting della campagna e della UI Godot 0.3
 
-Il riferimento fissato è [Arkamon-Beta al commit 7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7](https://github.com/Andreatz/Arkamon-Beta/tree/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7). La versione 0.2 trasferisce la campagna regionale per due giocatori e i sistemi locali necessari per giocarla. Non dichiara una parità completa con ogni funzione e strumento della versione web.
+Il riferimento fissato è [Arkamon-Beta al commit 7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7](https://github.com/Andreatz/Arkamon-Beta/tree/7ec91d1f4e3e5252317044b1ee300b8b3e4d80a7). La versione 0.2 ha trasferito la campagna regionale per due giocatori e i sistemi locali necessari per giocarla; la 0.3 aggiunge i materiali originali del sito e una presentazione nativa basata sulle sue viste di produzione. Non dichiara una parità completa con ogni funzione e strumento della versione web.
 
 ## Struttura nativa
 
@@ -14,6 +14,7 @@ Il riferimento fissato è [Arkamon-Beta al commit 7ec91d1f4e3e5252317044b1ee300b
 | `InteractionRules` e `InteractionEditor` | Configurazione nativa delle attività sui punti delle mappe locali e loro completamento. |
 | `ChallengeModel` e `ChallengeMenu` | Squadre a seed/Fanta-Team, codici, versioni delle regole e registro locale separato. |
 | `SaveStore` | Validazione e scrittura JSON con file temporaneo, copia precedente e recupero. |
+| `SiteShell`, `SiteScenes`, `SitePlayer`, `SiteBattle` | Cornice comune, titolo/laboratorio/mappe, strumenti del giocatore e battaglia, composti con nodi Godot e asset originali del sito. |
 | `WorldBoard` | Mappa regionale e grafi delle mappe locali originali, selezione dei punti e posizioni dei giocatori. |
 | `CreatureActor` | Ritratti, riproduzione delle clip originali e reazioni visive agli eventi. |
 
@@ -41,6 +42,18 @@ Le sfide a seed e Fanta-Team riproducono le regole v1/v2: sei forme al livello 2
 
 **Lo stream di casualità dei combattimenti resta quello di Godot.** Seed e squadra compatibili non garantiscono gli stessi lanci o risultati della Beta. Le classifiche locali sono separate e confrontano solo la stessa configurazione e versione delle regole. Il generatore counter originale è usato per la generazione delle squadre e per le verifiche di compatibilità.
 
+## Presentazione del sito nella 0.3
+
+Il riferimento grafico è il percorso di produzione documentato in [UI_REFERENCE_AUDIT.md](UI_REFERENCE_AUDIT.md), al commit fissato, con i default del tema **Notte Viola**. Le anteprime di UI Studio e gli esperimenti grafici della Beta non sostituiscono il riferimento del gioco attivo. Una sessione browser può avere personalizzazioni locali non presenti nel commit.
+
+Sono riutilizzati i **48 SVG del player-kit**, il logo, le icone e i widget PNG originali e il font **Norwester**. Il WOFF2 originale è conservato insieme alla sua decompressione TTF per Godot; Chela One è incluso ma non è il font globale attivo del riferimento. Gli SVG restano file originali e vengono composti in cornici adattabili con bordi separati dal centro. `data/ui_original.json` registra dimensioni, tagli dei bordi e percorsi; `data/ui_import_manifest.json` contiene i 321 output e i relativi checksum. La provenienza UI è separata in [UI_ASSET_PROVENANCE.md](UI_ASSET_PROVENANCE.md).
+
+Lo stage nativo 1440×810 mantiene il rapporto 16:9. Il titolo usa il filmato originale, convertito in OggTheora, con 192 fotogrammi a 24 FPS e primo fotogramma statico per movimento ridotto. Dopo **Nuova Partita**, i nomi precedono la selezione degli starter, con gli avatar e lo sfondo del laboratorio originali. La mappa principale usa le coordinate, le strade e i pannelli di `data/site_theme.json`; i valori COORDS della scena web sono soltanto fallback. Le attività delle mappe locali si aprono su richiesta, senza occupare stabilmente un terzo della mappa.
+
+**Partita** apre la navigazione Menù Partita, Squadra, Deposito, Arkadex, Analisi e Borsa. Il Menù Partita raccoglie Diario, Backup, Impostazioni, Cronache, Registro del match e Sfide; Impostazioni e Sfide restano accessibili anche prima di una campagna. Backup raccoglie esportazione, ripristino e migrazione della prima demo. **Esc** riporta al menu o al viaggio secondo la vista corrente.
+
+Questa è un'implementazione nativa della presentazione, non l'esecuzione delle componenti React dentro Godot. Materiali, palette e struttura derivano dal sito; rasterizzazione dei font, ridimensionamento, animazioni dell'interfaccia e alcuni controlli possono differire. Non viene dichiarata una corrispondenza assoluta di ogni pixel né la parità di ogni funzione React. Le immagini del rilascio sono title/world/battle/party in `docs/images/`.
+
 ## Materiali riprodotti
 
 Sono inclusi i ritratti di tutte le forme, sfondi, mappe, avatar e le animazioni disponibili per **37 forme** nella sorgente fissata. Le **185 clip** di attesa, attacco, colpo, vittoria e KO conservano **17.754 fotogrammi originali**, ordine e tempi di **24 FPS**. Non vengono inventati fotogrammi o saltati frame per abbreviare una clip. Le opzioni 2×/3× modificano intenzionalmente la velocità di riproduzione; il movimento ridotto limita gli effetti visivi.
@@ -49,14 +62,14 @@ Le altre 73 forme utilizzano ritratti statici con reazioni Godot. Quattro effett
 
 ## Persistenza e compatibilità
 
-La campagna usa `user://full_campaign.json`; il vecchio prototipo usa `user://campaign.json`; il registro delle sfide usa `user://challenges.json`. Per conservare la compatibilità con la prima demo, il nome della cartella Godot rimane **Arkamon — Il primo viaggio**. Non sono usati direttamente i salvataggi del browser.
+La campagna usa `user://full_campaign.json`; il vecchio prototipo usa `user://campaign.json`; il registro delle sfide usa `user://challenges.json`. La 0.3 carica i salvataggi della campagna 0.2 senza migrazione. Per conservare la compatibilità con la prima demo, il nome della cartella Godot rimane **Arkamon — Il primo viaggio**. Non sono usati direttamente i salvataggi del browser.
 
-Gli snapshot degli scontri comprendono squadre, stato degli Arkamon, turno, slot attivi e generatore casuale. La UI può riprendere dall'ultimo turno salvato. Le scritture mantengono una copia precedente e i backup esportati comprendono entrambi i giocatori. La migrazione della prima demo Godot conserva squadra, monete e pozioni e riparte da Pordenone; le sfere della demo non vengono convertite in un oggetto diverso. La vecchia conclusione della demo non viene trasformata in otto medaglie o in una vittoria della Lega.
+Gli snapshot degli scontri comprendono squadre, stato degli Arkamon, turno, slot attivi e generatore casuale. La UI può riprendere dall'ultimo turno salvato. Le scritture mantengono una copia precedente e i backup esportati comprendono entrambi i giocatori. La migrazione della prima demo Godot, disponibile da Partita → Backup, conserva squadra, monete e pozioni e riparte da Pordenone; le sfere della demo non vengono convertite in un oggetto diverso. La vecchia conclusione della demo non viene trasformata in otto medaglie o in una vittoria della Lega.
 
 ## Parti non trasferite
 
 - Votazioni del pubblico tramite QR e relativi servizi/backend.
-- Strumenti di regia e amministrazione React completi, compreso il sistema visuale di colori, layout e singoli SVG della UI web.
+- Strumenti di regia e amministrazione React completi, compreso il sistema di modifica visuale dei colori e dei layout della UI web. Gli asset SVG originali sono inclusi nella 0.3; il relativo editor React completo non è trasferito.
 - Libreria completa degli effetti curati per ogni mossa.
 - Importazione diretta dei salvataggi web e funzionalità di rete/account.
 

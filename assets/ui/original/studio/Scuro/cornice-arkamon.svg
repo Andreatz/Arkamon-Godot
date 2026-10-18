@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 520" width="100%" height="100%">
+  <defs>
+    <filter id="shadowArk" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6.5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeMain2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <linearGradient id="trenchDark2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <!-- Fascia Circolare Blu Ardesia Scuro -->
+    <linearGradient id="slateBand2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#263849" />
+      <stop offset="50%" stop-color="#15202e" />
+      <stop offset="100%" stop-color="#0b1119" />
+    </linearGradient>
+
+    <!-- Cavità Badge Secondario -->
+    <radialGradient id="subBadgeSlate2" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#1f2d40" />
+      <stop offset="70%" stop-color="#101824" />
+      <stop offset="100%" stop-color="#070b12" />
+    </radialGradient>
+
+    <!-- Lastra Chiara Targa Inferiore -->
+    <linearGradient id="pearlPlate2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+
+    <linearGradient id="steelBevel2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#607d96" />
+      <stop offset="100%" stop-color="#4b657d" />
+    </linearGradient>
+
+    <!-- Rivetto Sferico in Bronzo -->
+    <radialGradient id="bronzeStud2" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="30%" stop-color="#eab68c" />
+      <stop offset="75%" stop-color="#8c5c3e" />
+      <stop offset="100%" stop-color="#3b2112" />
+    </radialGradient>
+
+    <!-- Maschera per forare il centro del grande anello (100% trasparente) -->
+    <mask id="mainCircleHole2">
+      <rect x="0" y="0" width="540" height="520" fill="#ffffff" />
+      <circle cx="260" cy="230" r="134" fill="#000000" />
+    </mask>
+
+    <!-- Gemma Romboidale Media -->
+    <g id="gemMed2">
+      <polygon points="0,-28 28,0 0,28 -28,0" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-23 23,0 0,23 -23,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-18 18,0 0,18 -18,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#0ea5e9" />
+      <polygon points="0,-15 15,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 15,0 0,15" fill="#0284c7" />
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0f2fe" />
+    </g>
+
+    <!-- Gemma Romboidale Piccola -->
+    <g id="gemSmall2">
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#07101e" />
+      <polygon points="0,-12 12,0 0,12 -12,0" fill="#0ea5e9" />
+      <polygon points="0,-12 12,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowArk)">
+    <!-- 1. ANELLO PRINCIPALE CON FORO CENTRALE TRASPARENTE -->
+    <g mask="url(#mainCircleHole2)">
+      <!-- Anello Esterno in Bronzo -->
+      <circle cx="260" cy="230" r="196" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="2.5" />
+      <path d="M 105,110 A 190,190 0 0,1 415,110" fill="none" stroke="#fff3e6" stroke-width="2" opacity="0.8" />
+
+      <!-- Fascia Intermedia Blu Ardesia Scuro -->
+      <circle cx="260" cy="230" r="178" fill="url(#slateBand2)" stroke="#140c07" stroke-width="2.5" />
+      <!-- Filetto Luminoso Ciano/Acciaio nella Fascia -->
+      <circle cx="260" cy="230" r="175" fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.5" />
+
+      <!-- Anello Interno in Bronzo Attorno al Foro -->
+      <circle cx="260" cy="230" r="152" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="2.5" />
+      <circle cx="260" cy="230" r="140" fill="none" stroke="#5e3a22" stroke-width="3" />
+      <circle cx="260" cy="230" r="134" fill="none" stroke="#24130a" stroke-width="3.5" />
+
+      <!-- Rivetti Sferici sull'Anello Esterno -->
+      <circle cx="126" cy="96" r="8.5" fill="url(#bronzeStud2)" stroke="#24130a" stroke-width="1.6" />
+      <circle cx="394" cy="96" r="8.5" fill="url(#bronzeStud2)" stroke="#24130a" stroke-width="1.6" />
+      <circle cx="126" cy="364" r="8.5" fill="url(#bronzeStud2)" stroke="#24130a" stroke-width="1.6" />
+    </g>
+
+    <!-- 2. TARGA ESAGONALE INFERIORE -->
+    <g transform="translate(260, 446)">
+      <!-- Ombra sul fondo -->
+      <polygon points="-162,-42 162,-42 196,0 162,42 -162,42 -196,0" transform="translate(0, 5)" fill="#060a0f" opacity="0.7" />
+      <!-- Cornice Esterna in Bronzo -->
+      <polygon points="-160,-40 160,-40 194,0 160,40 -160,40 -194,0" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+      <!-- Trincea Blu Ardesia -->
+      <polygon points="-153,-32 153,-32 182,0 153,32 -153,32 -182,0" fill="#09101a" stroke="#38bdf8" stroke-width="1.5" stroke-opacity="0.6" />
+      <!-- Cornice Interna in Bronzo/Acciaio -->
+      <polygon points="-136,-26 136,-26 158,0 136,26 -136,26 -158,0" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="1.6" stroke-linejoin="round" />
+      <!-- Lastra Chiara in Perla/Platino -->
+      <polygon points="-132,-20 132,-20 150,0 132,20 -132,20 -150,0" fill="url(#pearlPlate2)" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Riflessi diagonali sulla targa -->
+      <line x1="-90" y1="-20" x2="-60" y2="20" stroke="#64748b" stroke-width="1.2" opacity="0.12" />
+      <line x1="-70" y1="-20" x2="-40" y2="20" stroke="#64748b" stroke-width="1.2" opacity="0.12" />
+
+      <!-- Gemme Laterali della Targa -->
+      <use href="#gemSmall2" x="-172" y="0" />
+      <use href="#gemSmall2" x="172" y="0" />
+    </g>
+
+    <!-- 3. BADGE CIRCOLARE SECONDARIO IN BASSO A DESTRA -->
+    <g transform="translate(394, 368)">
+      <circle cx="-3" cy="5" r="56" fill="#060a0f" opacity="0.7" />
+      <!-- Anello in Bronzo -->
+      <circle cx="0" cy="0" r="54" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="2.2" />
+      <path d="M -38,-28 A 48,48 0 0,1 38,-28" fill="none" stroke="#fff7ed" stroke-width="2.5" stroke-linecap="round" opacity="0.85" />
+      <!-- Cavità Blu Ardesia Scuro -->
+      <circle cx="0" cy="0" r="42" fill="url(#subBadgeSlate2)" stroke="#140c07" stroke-width="2" />
+      <circle cx="0" cy="0" r="39" fill="none" stroke="#4b657d" stroke-width="1.2" opacity="0.6" />
+      <!-- Gemma sul Bordo Destro del Badge -->
+      <use href="#gemSmall2" x="46" y="0" />
+    </g>
+
+    <!-- 4. QUATTRO GEMME CARDINALI DELL'ANELLO PRINCIPALE -->
+    <use href="#gemMed2" x="260" y="44" />
+    <use href="#gemMed2" x="74" y="230" />
+    <use href="#gemMed2" x="446" y="230" />
+    <use href="#gemMed2" x="260" y="402" />
+  </g>
+</svg>

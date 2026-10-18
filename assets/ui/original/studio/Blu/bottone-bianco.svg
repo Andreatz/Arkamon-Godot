@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 210" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow29" x="-6%" y="-12%" width="112%" height="130%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5.5" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Cornice Blu Elettrico / Blu Notte Esterna -->
+    <linearGradient id="navyBlueFrame29" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="20%" stop-color="#0284c7"/>
+      <stop offset="50%" stop-color="#032b5e"/>
+      <stop offset="80%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#021836"/>
+    </linearGradient>
+
+    <!-- Smusso Esterno Lastra Ghiaccio/Perla -->
+    <linearGradient id="iceBevel29" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="25%" stop-color="#dbeafe"/>
+      <stop offset="75%" stop-color="#bfdbfe"/>
+      <stop offset="100%" stop-color="#93c5fd"/>
+    </linearGradient>
+
+    <!-- Piano Centrale Bianco Perla 3D -->
+    <linearGradient id="pearlCore29" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#f8fafc"/>
+      <stop offset="100%" stop-color="#e2e8f0"/>
+    </linearGradient>
+
+    <!-- Castone e Inserti in Oro -->
+    <linearGradient id="goldBezel29" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="80%" stop-color="#92400e"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+
+    <!-- Gemma Romboidale Laterale -->
+    <g id="sideGem29">
+      <polygon points="0,-42 42,0 0,42 -42,0" fill="url(#goldBezel29)" stroke="#140c04" stroke-width="2.5" stroke-linejoin="round"/>
+      <polygon points="0,-35 35,0 0,35 -35,0" fill="#fef08a" opacity="0.75"/>
+      <polygon points="0,-29 29,0 0,29 -29,0" fill="#a16207" stroke="#451a03" stroke-width="1"/>
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#06b6d4" stroke="#083344" stroke-width="1.5"/>
+      <polygon points="0,-22 22,0 0,0" fill="#a5f3fc"/>
+      <polygon points="0,-22 0,0 -22,0" fill="#22d3ee"/>
+      <polygon points="0,0 22,0 0,22" fill="#0284c7"/>
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#ecfeff"/>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow29)">
+    <!-- 1. CORNICE ESTERNA BLU NOTTE CON SPIGOLI IN ORO -->
+    <path d="M 118,22 L 762,22 Q 792,22 812,46 L 844,86 Q 858,105 844,124 L 812,164 Q 792,188 762,188 L 118,188 Q 88,188 68,164 L 36,124 Q 22,105 36,86 L 68,46 Q 88,22 118,22 Z" 
+          fill="url(#navyBlueFrame29)" stroke="#090d16" stroke-width="2.5"/>
+
+    <!-- Inserti Angolari Curvi in Oro (Sinistra e Destra) -->
+    <path d="M 118,22 Q 88,22 68,46 L 44,76 L 54,84 L 78,54 Q 95,33 122,33 Z" fill="url(#goldBezel29)" stroke="#140c04" stroke-width="1.5"/>
+    <path d="M 118,188 Q 88,188 68,164 L 44,134 L 54,126 L 78,156 Q 95,177 122,177 Z" fill="url(#goldBezel29)" stroke="#140c04" stroke-width="1.5"/>
+    <path d="M 762,22 Q 792,22 812,46 L 836,76 L 826,84 L 802,54 Q 785,33 758,33 Z" fill="url(#goldBezel29)" stroke="#140c04" stroke-width="1.5"/>
+    <path d="M 762,188 Q 792,188 812,164 L 836,134 L 826,126 L 802,156 Q 785,177 758,177 Z" fill="url(#goldBezel29)" stroke="#140c04" stroke-width="1.5"/>
+
+    <!-- Trincea Blu Notte Profondo -->
+    <path d="M 122,32 L 758,32 Q 782,32 798,52 L 826,88 Q 838,105 826,122 L 798,158 Q 782,178 758,178 L 122,178 Q 98,178 82,158 L 54,122 Q 42,105 54,88 L 82,52 Q 98,32 122,32 Z" 
+          fill="#020b1c" stroke="#01050d" stroke-width="1.5"/>
+
+    <!-- 2. LASTRA INTERNA BIANCO PERLA / GHIACCIO 3D -->
+    <!-- Smusso Esterno Ghiaccio -->
+    <polygon points="128,42 752,42 798,88 798,122 752,168 128,168 82,122 82,88" 
+             fill="url(#iceBevel29)" stroke="#93c5fd" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- Piano Superiore Bianco Perla -->
+    <polygon points="136,53 744,53 782,91 782,119 744,157 136,157 98,119 98,91" 
+             fill="url(#pearlCore29)" stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- 3. GEMME LATERALI SINISTRA E DESTRA -->
+    <use href="#sideGem29" x="58" y="105"/>
+    <use href="#sideGem29" x="822" y="105"/>
+  </g>
+</svg>

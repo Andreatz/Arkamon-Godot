@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320" width="100%" height="100%">
+  <defs>
+    <filter id="shadow24" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso_2.svg) -->
+    <linearGradient id="bronzeMain24" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6"/>
+      <stop offset="22%" stop-color="#e5bfa0"/>
+      <stop offset="52%" stop-color="#8c5c3e"/>
+      <stop offset="82%" stop-color="#c99673"/>
+      <stop offset="100%" stop-color="#5e3a22"/>
+    </linearGradient>
+
+    <linearGradient id="trenchDark24" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a"/>
+      <stop offset="50%" stop-color="#2e1d13"/>
+      <stop offset="100%" stop-color="#140c07"/>
+    </linearGradient>
+
+    <!-- Lastra Interna Blu Ardesia Scuro -->
+    <linearGradient id="slateBoard24" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824"/>
+      <stop offset="50%" stop-color="#1f2d40"/>
+      <stop offset="100%" stop-color="#101722"/>
+    </linearGradient>
+
+    <!-- Gradiente Icona "X" Corallo / Rame Sfaccettato -->
+    <linearGradient id="coralTop24" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffedd5"/>
+      <stop offset="25%" stop-color="#fb923c"/>
+      <stop offset="70%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#9a3412"/>
+    </linearGradient>
+
+    <linearGradient id="coralBevel24" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdba74"/>
+      <stop offset="50%" stop-color="#c2410c"/>
+      <stop offset="100%" stop-color="#431407"/>
+    </linearGradient>
+
+    <clipPath id="octagonClip24">
+      <polygon points="106,58 214,58 262,106 262,214 214,262 106,262 58,214 58,106"/>
+    </clipPath>
+
+    <!-- Gemma Cardinale a Diamante (Stile percorso_2.svg) -->
+    <g id="cardinalGem24">
+      <polygon points="0,-32 32,0 0,32 -32,0" fill="url(#bronzeMain24)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round"/>
+      <polygon points="0,-26 26,0 0,26 -26,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75"/>
+      <polygon points="0,-21 21,0 0,21 -21,0" fill="#07101e" stroke="#1e130c" stroke-width="1"/>
+      <polygon points="0,-17 17,0 0,17 -17,0" fill="#0ea5e9"/>
+      <polygon points="0,-17 17,0 0,0" fill="#7dd3fc"/>
+      <polygon points="0,0 17,0 0,17" fill="#0284c7"/>
+      <polygon points="0,-8 8,0 0,8 -8,0" fill="#e0f2fe"/>
+    </g>
+  </defs>
+
+  <g filter="url(#shadow24)">
+    <!-- 1. CORNICE OTTAGONALE ESTERNA IN BRONZO -->
+    <polygon points="95,40 225,40 280,95 280,225 225,280 95,280 40,225 40,95" 
+             fill="url(#bronzeMain24)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- 2. TRINCEA SCURA INCASSATA -->
+    <polygon points="101,50 219,50 270,101 270,219 219,270 101,270 50,219 50,101" 
+             fill="url(#trenchDark24)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round"/>
+
+    <!-- 3. LASTRA OTTAGONALE BLU ARDESIA CON FILETTO CHIARO -->
+    <polygon points="106,58 214,58 262,106 262,214 214,262 106,262 58,214 58,106" 
+             fill="url(#slateBoard24)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Riflessi Diagonali Interni (Stile percorso_2.svg) -->
+    <g clip-path="url(#octagonClip24)" stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+      <line x1="70" y1="58" x2="190" y2="262"/>
+      <line x1="105" y1="58" x2="225" y2="262"/>
+    </g>
+
+    <!-- 4. ICONA "X" CENTRALE SFACCETTATA 3D -->
+    <g transform="translate(160, 160)">
+      <!-- Ombra netta portata sul fondo ardesia -->
+      <polygon points="0,-19 36,-55 55,-36 19,0 55,36 36,55 0,19 -36,55 -55,36 -19,0 -55,-36 -36,-55" 
+               transform="translate(0, 6)" fill="#070b12" opacity="0.8"/>
+      
+      <!-- Bordo Esterno Smussato della X -->
+      <polygon points="0,-19 36,-55 55,-36 19,0 55,36 36,55 0,19 -36,55 -55,36 -19,0 -55,-36 -36,-55" 
+               fill="url(#coralBevel24)" stroke="#24130a" stroke-width="2" stroke-linejoin="round"/>
+
+      <!-- Faccia Superiore Illuminata della X -->
+      <polygon points="0,-12 36,-48 48,-36 12,0 48,36 36,48 0,12 -36,48 -48,36 -12,0 -48,-36 -36,-48" 
+               fill="url(#coralTop24)" stroke="#ffedd5" stroke-width="1" stroke-linejoin="round"/>
+    </g>
+
+    <!-- 5. QUATTRO GEMME SUI PUNTI CARDINALI -->
+    <use href="#cardinalGem24" x="160" y="45"/>
+    <use href="#cardinalGem24" x="275" y="160"/>
+    <use href="#cardinalGem24" x="160" y="275"/>
+    <use href="#cardinalGem24" x="45" y="160"/>
+  </g>
+</svg>

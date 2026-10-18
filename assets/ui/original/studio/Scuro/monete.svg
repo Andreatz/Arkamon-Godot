@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" width="100%" height="100%">
+  <defs>
+    <filter id="shadowMonete" x="-6%" y="-12%" width="112%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Cornice in Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeMain9" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <linearGradient id="trenchDark9" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <!-- Lastra Interna Blu Ardesia Scuro (da percorso.svg) -->
+    <linearGradient id="slateBoard9" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#101824" />
+      <stop offset="50%" stop-color="#1f2d40" />
+      <stop offset="100%" stop-color="#101722" />
+    </linearGradient>
+
+    <!-- Grande Moneta d'Oro 3D -->
+    <radialGradient id="goldCoinOrb9" cx="36%" cy="32%" r="65%">
+      <stop offset="0%" stop-color="#fef9c3" />
+      <stop offset="28%" stop-color="#facc15" />
+      <stop offset="68%" stop-color="#ca8a04" />
+      <stop offset="92%" stop-color="#854d0e" />
+      <stop offset="100%" stop-color="#422006" />
+    </radialGradient>
+
+    <linearGradient id="coinRim9" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="50%" stop-color="#d97706" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+
+    <clipPath id="boardClip9">
+      <polygon points="116,44 644,44 696,96 696,114 644,166 116,166 64,114 64,96" />
+    </clipPath>
+
+    <!-- Gemma Laterale a Diamante (Stile percorso.svg) -->
+    <g id="endGem9">
+      <polygon points="0,-34 34,0 0,34 -34,0" fill="url(#bronzeMain9)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="0,-28 28,0 0,28 -28,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-18 18,0 0,18 -18,0" fill="#0ea5e9" />
+      <polygon points="0,-18 18,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 18,0 0,18" fill="#0284c7" />
+      <polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowMonete)">
+    <!-- 1. CORNICE ESTERNA IN BRONZO -->
+    <polygon points="104,22 656,22 726,92 726,118 656,188 104,188 34,118 34,92" fill="url(#bronzeMain9)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="106,26 654,26 721,93" fill="none" stroke="#fff3e6" stroke-width="1.6" opacity="0.85" />
+
+    <!-- 2. TRINCEA SCURA INCASSATA -->
+    <polygon points="110,34 650,34 712,96 712,114 650,176 110,176 48,114 48,96" fill="url(#trenchDark9)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- 3. LASTRA INTERNA BLU ARDESIA CON FILETTO CIANO/ACCIAIO -->
+    <polygon points="116,44 644,44 696,96 696,114 644,166 116,166 64,114 64,96" fill="url(#slateBoard9)" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.75" stroke-linejoin="round" />
+
+    <!-- Riflessi Diagonali e Curva Decorativa Destra (Stile percorso.svg + monete.svg) -->
+    <g clip-path="url(#boardClip9)">
+      <g stroke="#ffffff" stroke-width="1.2" opacity="0.06">
+        <line x1="260" y1="44" x2="330" y2="166" />
+        <line x1="290" y1="44" x2="360" y2="166" />
+        <line x1="580" y1="44" x2="510" y2="166" />
+      </g>
+      <path d="M 664,82 C 648,118 625,145 595,158" fill="none" stroke="#4b657d" stroke-width="3.5" stroke-linecap="round" opacity="0.55" />
+    </g>
+
+    <!-- Piccolo Rombo Decorativo Interno a Destra (Firma di percorso.svg) -->
+    <g transform="translate(652, 105)">
+      <polygon points="0,-8.5 8.5,0 0,8.5 -8.5,0" fill="none" stroke="#7c93ab" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="2.2" fill="#38bdf8" />
+    </g>
+
+    <!-- 4. GRANDE MONETA D'ORO SFERICA 3D A SINISTRA -->
+    <g transform="translate(160, 105)">
+      <!-- Ombra portata della moneta sulla barra -->
+      <circle cx="4" cy="5" r="64" fill="#05080f" opacity="0.75" />
+      <!-- Bordo Esterno Moneta -->
+      <circle cx="0" cy="0" r="62" fill="url(#coinRim9)" stroke="#24130a" stroke-width="2.2" />
+      <!-- Corpo Bombato Moneta d'Oro -->
+      <circle cx="0" cy="0" r="54" fill="url(#goldCoinOrb9)" stroke="#92400e" stroke-width="1.5" />
+      <!-- Arco Speculare Bianco Superiore -->
+      <path d="M -42,-24 A 48,48 0 0,1 42,-24" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" opacity="0.85" />
+    </g>
+
+    <!-- 5. GEMME LATERALI SINISTRA E DESTRA -->
+    <use href="#endGem9" x="58" y="105" />
+    <use href="#endGem9" x="702" y="105" />
+  </g>
+</svg>

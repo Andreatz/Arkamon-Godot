@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Ombra portata globale per stacco 3D -->
+    <filter id="g2-drop-shadow" x="-12%" y="-12%" width="124%" height="124%">
+      <feDropShadow dx="0" dy="6" stdDeviation="6" flood-color="#000000" flood-opacity="0.75" />
+    </filter>
+    <filter id="g2-elem-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3.5" flood-color="#000000" flood-opacity="0.8" />
+    </filter>
+    <filter id="g2-leaf-shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2.5" stdDeviation="2" flood-color="#0d0703" flood-opacity="0.85" />
+    </filter>
+
+    <!-- Gradienti Metallici Anelli -->
+    <linearGradient id="g2-ring-outer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff6e8" />
+      <stop offset="18%" stop-color="#f2d6b8" />
+      <stop offset="48%" stop-color="#c9966d" />
+      <stop offset="78%" stop-color="#8c5a36" />
+      <stop offset="100%" stop-color="#4f2d15" />
+    </linearGradient>
+    <linearGradient id="g2-ring-mid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff2de" />
+      <stop offset="25%" stop-color="#ebcba8" />
+      <stop offset="60%" stop-color="#b8845c" />
+      <stop offset="100%" stop-color="#61391d" />
+    </linearGradient>
+    <linearGradient id="g2-ring-inner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fae5cd" />
+      <stop offset="45%" stop-color="#c49068" />
+      <stop offset="100%" stop-color="#704323" />
+    </linearGradient>
+    <linearGradient id="g2-groove-dark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#170d06" />
+      <stop offset="50%" stop-color="#2b180c" />
+      <stop offset="100%" stop-color="#120904" />
+    </linearGradient>
+
+    <!-- Gradienti Foglie d'Alloro 3D -->
+    <linearGradient id="g2-leaf-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffeed9" />
+      <stop offset="35%" stop-color="#e8c39e" />
+      <stop offset="75%" stop-color="#b58057" />
+      <stop offset="100%" stop-color="#784b2a" />
+    </linearGradient>
+    <linearGradient id="g2-leaf-shade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8845c" />
+      <stop offset="50%" stop-color="#80502e" />
+      <stop offset="100%" stop-color="#422512" />
+    </linearGradient>
+    <linearGradient id="g2-leaf-inner" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#9e6d47" />
+      <stop offset="60%" stop-color="#633b1e" />
+      <stop offset="100%" stop-color="#331b0b" />
+    </linearGradient>
+
+    <!-- Gradienti Medaglione Inferiore e Testo -->
+    <linearGradient id="g2-medal-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff5e6" />
+      <stop offset="22%" stop-color="#edd0b1" />
+      <stop offset="55%" stop-color="#b58058" />
+      <stop offset="85%" stop-color="#754829" />
+      <stop offset="100%" stop-color="#452612" />
+    </linearGradient>
+    <radialGradient id="g2-medal-disc" cx="42%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#222f42" />
+      <stop offset="65%" stop-color="#141c28" />
+      <stop offset="100%" stop-color="#0b1017" />
+    </radialGradient>
+    <linearGradient id="g2-text-gold" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f7d4b2" />
+      <stop offset="35%" stop-color="#df9f6c" />
+      <stop offset="75%" stop-color="#ad6b3b" />
+      <stop offset="100%" stop-color="#78421c" />
+    </linearGradient>
+
+    <!-- Gradienti Gemma Ciano / Azzurro (G2) -->
+    <linearGradient id="g2-gem-center" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#d4f6ff" />
+      <stop offset="100%" stop-color="#8ae2ff" />
+    </linearGradient>
+    <linearGradient id="g2-gem-tl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8cebff" />
+      <stop offset="100%" stop-color="#29beff" />
+    </linearGradient>
+    <linearGradient id="g2-gem-tr" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#47ccff" />
+      <stop offset="100%" stop-color="#0088e6" />
+    </linearGradient>
+    <linearGradient id="g2-gem-bl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1aa3ff" />
+      <stop offset="100%" stop-color="#005cb8" />
+    </linearGradient>
+    <linearGradient id="g2-gem-br" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0066cc" />
+      <stop offset="100%" stop-color="#002b66" />
+    </linearGradient>
+
+    <!-- Ramo d'Alloro Sinistro -->
+    <g id="g2-wreath-branch">
+      <path d="M 122,126 C 118,148 116,172 118,195 C 102,175 104,148 122,126 Z" fill="url(#g2-leaf-inner)" stroke="#170c05" stroke-width="1.5" />
+      <path d="M 102,165 C 94,190 94,218 100,242 C 82,222 82,190 102,165 Z" fill="url(#g2-leaf-inner)" stroke="#170c05" stroke-width="1.5" />
+      <path d="M 92,215 C 86,242 90,270 102,292 C 78,274 76,242 92,215 Z" fill="url(#g2-leaf-inner)" stroke="#170c05" stroke-width="1.5" />
+      <path d="M 96,268 C 98,296 108,322 126,342 C 98,328 88,298 96,268 Z" fill="url(#g2-leaf-inner)" stroke="#170c05" stroke-width="1.5" />
+      <path d="M 114,318 C 124,344 142,366 168,382 C 136,374 116,348 114,318 Z" fill="url(#g2-leaf-inner)" stroke="#170c05" stroke-width="1.5" />
+
+      <g filter="url(#g2-leaf-shadow)">
+        <path d="M 118,105 C 95,132 92,168 108,198 C 122,174 128,140 118,105 Z" fill="url(#g2-leaf-shade)" stroke="#170c05" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M 118,105 C 95,132 92,168 108,198 C 109,165 112,135 118,105 Z" fill="url(#g2-leaf-light)" />
+        <path d="M 118,105 C 95,132 92,168 108,198" fill="none" stroke="#fff5e6" stroke-width="1" opacity="0.6" />
+      </g>
+
+      <g filter="url(#g2-leaf-shadow)">
+        <path d="M 88,142 C 66,172 68,210 92,240 C 102,212 104,176 88,142 Z" fill="url(#g2-leaf-shade)" stroke="#170c05" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M 88,142 C 66,172 68,210 92,240 C 88,206 87,174 88,142 Z" fill="url(#g2-leaf-light)" />
+      </g>
+
+      <g filter="url(#g2-leaf-shadow)">
+        <path d="M 70,192 C 52,226 62,265 92,292 C 98,262 92,225 70,192 Z" fill="url(#g2-leaf-shade)" stroke="#170c05" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M 70,192 C 52,226 62,265 92,292 C 82,258 75,225 70,192 Z" fill="url(#g2-leaf-light)" />
+      </g>
+
+      <g filter="url(#g2-leaf-shadow)">
+        <path d="M 67,248 C 56,284 74,322 110,342 C 108,310 96,275 67,248 Z" fill="url(#g2-leaf-shade)" stroke="#170c05" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M 67,248 C 56,284 74,322 110,342 C 94,312 80,280 67,248 Z" fill="url(#g2-leaf-light)" />
+      </g>
+
+      <g filter="url(#g2-leaf-shadow)">
+        <path d="M 78,304 C 76,340 102,374 144,386 C 134,354 114,324 78,304 Z" fill="url(#g2-leaf-shade)" stroke="#170c05" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M 78,304 C 76,340 102,374 144,386 C 120,360 98,332 78,304 Z" fill="url(#g2-leaf-light)" />
+      </g>
+
+      <g filter="url(#g2-leaf-shadow)">
+        <path d="M 126,392 C 142,414 176,422 206,412 C 186,396 156,388 126,392 Z" fill="url(#g2-leaf-light)" stroke="#170c05" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M 126,392 C 155,400 182,406 206,412 C 186,396 156,388 126,392 Z" fill="url(#g2-leaf-shade)" />
+      </g>
+
+      <g filter="url(#g2-leaf-shadow)">
+        <path d="M 98,354 C 106,386 142,408 188,406 C 168,380 138,360 98,354 Z" fill="url(#g2-leaf-shade)" stroke="#170c05" stroke-width="1.8" stroke-linejoin="round" />
+        <path d="M 98,354 C 106,386 142,408 188,406 C 154,388 124,372 98,354 Z" fill="url(#g2-leaf-light)" />
+      </g>
+    </g>
+  </defs>
+
+  <g filter="url(#g2-drop-shadow)">
+    <!-- 1. CORONA D'ALLORO -->
+    <use href="#g2-wreath-branch" />
+    <use href="#g2-wreath-branch" transform="translate(500, 0) scale(-1, 1)" />
+
+    <!-- 2. ANELLO CIRCOLARE CONCENTRICO (Centro Trasparente r=108) -->
+    <path d="M 250,95 A 160,160 0 1,0 250,415 A 160,160 0 1,0 250,95 Z
+             M 250,147 A 108,108 0 1,1 250,363 A 108,108 0 1,1 250,147 Z" fill="url(#g2-groove-dark)" fill-rule="evenodd" stroke="#0f0804" stroke-width="2.5" />
+
+    <path d="M 250,101 A 154,154 0 1,0 250,409 A 154,154 0 1,0 250,101 Z
+             M 250,119 A 136,136 0 1,1 250,391 A 136,136 0 1,1 250,119 Z" fill="url(#g2-ring-outer)" fill-rule="evenodd" stroke="#241308" stroke-width="1.5" />
+    <path d="M 102,215 A 152,152 0 0,1 398,215" fill="none" stroke="#fff9f0" stroke-width="2" opacity="0.75" />
+
+    <path d="M 250,125 A 130,130 0 1,0 250,385 A 130,130 0 1,0 250,125 Z
+             M 250,135 A 120,120 0 1,1 250,375 A 120,120 0 1,1 250,135 Z" fill="url(#g2-ring-mid)" fill-rule="evenodd" stroke="#1f1006" stroke-width="1.2" />
+    <path d="M 124,225 A 129,129 0 0,1 376,225" fill="none" stroke="#fff6e8" stroke-width="1.4" opacity="0.65" />
+
+    <path d="M 250,140 A 115,115 0 1,0 250,370 A 115,115 0 1,0 250,140 Z
+             M 250,147 A 108,108 0 1,1 250,363 A 108,108 0 1,1 250,147 Z" fill="url(#g2-ring-inner)" fill-rule="evenodd" stroke="#170c05" stroke-width="1.5" />
+
+    <!-- 3. CASTONE E GEMMA SUPERIORE CIANO / AZZURRA -->
+    <g filter="url(#g2-elem-shadow)">
+      <!-- Piccole alette/speroni laterali dietro il castone -->
+      <polygon points="203,103 216,89 224,107" fill="url(#g2-ring-outer)" stroke="#1a0e06" stroke-width="1.5" stroke-linejoin="round" />
+      <polygon points="297,103 284,89 276,107" fill="url(#g2-ring-outer)" stroke="#1a0e06" stroke-width="1.5" stroke-linejoin="round" />
+
+      <!-- Castone Romboidale Esterno Sfaccettato 3D -->
+      <polygon points="250,56 290,96 250,136 210,96" fill="url(#g2-ring-outer)" stroke="#170c05" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="250,56 290,96 280,96 250,66" fill="#fae5cd" opacity="0.7" />
+      <polygon points="250,56 210,96 220,96 250,66" fill="#fff7eb" opacity="0.85" />
+      <polygon points="250,136 290,96 280,96 250,126" fill="#5e361a" opacity="0.8" />
+      <polygon points="250,136 210,96 220,96 250,126" fill="#85522f" opacity="0.7" />
+
+      <!-- Sede interna scura e filetto oro -->
+      <polygon points="250,66 280,96 250,126 220,96" fill="#071524" stroke="#f7dfc4" stroke-width="1.5" />
+
+      <!-- Gemma Azzurra Sfaccettata (5 facce) -->
+      <polygon points="250,72 226,96 239,96 250,85" fill="url(#g2-gem-tl)" />
+      <polygon points="250,72 274,96 261,96 250,85" fill="url(#g2-gem-tr)" />
+      <polygon points="250,120 226,96 239,96 250,107" fill="url(#g2-gem-bl)" />
+      <polygon points="250,120 274,96 261,96 250,107" fill="url(#g2-gem-br)" />
+      <polygon points="250,85 261,96 250,107 239,96" fill="url(#g2-gem-center)" />
+      <polyline points="227,96 250,73 273,96" fill="none" stroke="#e8fbff" stroke-width="1" opacity="0.85" />
+    </g>
+
+    <!-- 4. MEDAGLIONE INFERIORE "G2" -->
+    <g filter="url(#g2-elem-shadow)" transform="translate(250, 392)">
+      <circle cx="0" cy="0" r="57" fill="url(#g2-medal-rim)" stroke="#170c05" stroke-width="2.2" />
+      <path d="M -52,-18 A 55,55 0 0,1 52,-18" fill="none" stroke="#fff9f0" stroke-width="2" opacity="0.8" />
+
+      <circle cx="0" cy="0" r="46" fill="#1a0e06" />
+      <circle cx="0" cy="0" r="43" fill="url(#g2-medal-disc)" stroke="url(#g2-ring-outer)" stroke-width="2.5" />
+      <circle cx="0" cy="0" r="40.5" fill="none" stroke="#060a0f" stroke-width="2.5" opacity="0.75" />
+
+      <!-- Tipografia Vettoriale 3D "G2" -->
+      <!-- Ombra/Estrusione 3D inferiore -->
+      <g fill="#080b10" transform="translate(0, 3)">
+        <!-- Lettera G -->
+        <path d="M 0,-2 H -13 V 5 H -7 V 9 C -8.5,10.2 -11,10.8 -13.8,10.8 C -19.5,10.8 -23.5,6.5 -23.5,0 C -23.5,-6.5 -19.5,-10.8 -13.5,-10.8 C -9.8,-10.8 -6.8,-9.2 -5,-6.5 L 1.5,-11.5 C -1.8,-16.2 -7,-19 -13.8,-19 C -25.2,-19 -33,-11.2 -33,0 C -33,11.2 -25.2,19 -13.5,19 C -6.2,19 -0.5,16.2 2,13.5 V -2 Z" />
+        <!-- Numero 2 -->
+        <path d="M 6,-9.5 L 14,-7.5 C 14.5,-10 16.5,-11.2 19,-11.2 C 21.8,-11.2 23.5,-9.6 23.5,-7.2 C 23.5,-4.5 21.2,-2.2 16.5,2.2 L 5.5,12.5 V 18.5 H 33 V 10.5 H 18.5 L 23.5,5.8 C 29.5,0.2 32.8,-3.2 32.8,-8 C 32.8,-14.8 27.2,-19 19.2,-19 C 11.8,-19 7.2,-15 6,-9.5 Z" />
+      </g>
+      <!-- Corpo Metallico Rame-Oro "G2" -->
+      <g fill="url(#g2-text-gold)" stroke="#241307" stroke-width="1.5" stroke-linejoin="round">
+        <!-- Lettera G -->
+        <path d="M 0,-2 H -13 V 5 H -7 V 9 C -8.5,10.2 -11,10.8 -13.8,10.8 C -19.5,10.8 -23.5,6.5 -23.5,0 C -23.5,-6.5 -19.5,-10.8 -13.5,-10.8 C -9.8,-10.8 -6.8,-9.2 -5,-6.5 L 1.5,-11.5 C -1.8,-16.2 -7,-19 -13.8,-19 C -25.2,-19 -33,-11.2 -33,0 C -33,11.2 -25.2,19 -13.5,19 C -6.2,19 -0.5,16.2 2,13.5 V -2 Z" />
+        <!-- Numero 2 -->
+        <path d="M 6,-9.5 L 14,-7.5 C 14.5,-10 16.5,-11.2 19,-11.2 C 21.8,-11.2 23.5,-9.6 23.5,-7.2 C 23.5,-4.5 21.2,-2.2 16.5,2.2 L 5.5,12.5 V 18.5 H 33 V 10.5 H 18.5 L 23.5,5.8 C 29.5,0.2 32.8,-3.2 32.8,-8 C 32.8,-14.8 27.2,-19 19.2,-19 C 11.8,-19 7.2,-15 6,-9.5 Z" />
+      </g>
+    </g>
+  </g>
+</svg>

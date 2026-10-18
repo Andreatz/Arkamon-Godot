@@ -23,6 +23,11 @@ var challenge_menu: ChallengeMenu
 var challenge_descriptor: Dictionary = {}
 var previous_campaign: Dictionary = {}
 var animation_speed: float = 1.0
+var title_video: VideoStreamPlayer
+var site_shade: ColorRect
+var site_menu_button: Button
+var site_audio_button: Button
+var starter_names_confirmed: bool = false
 
 func _ready() -> void:
 	theme = ArkUI.make_theme()
@@ -73,89 +78,66 @@ func _bind_player() -> void:
 	if model and not model.state.is_empty():
 		campaign = model.player()
 
+func _build_shell() -> void:
+	SiteShell.build(self)
+
 func _clear_page(next_screen: String) -> void:
 	_bind_player()
-	super._clear_page(next_screen)
+	SiteShell.clear(self, next_screen)
+
+func _show_dex_for(index: int) -> void:
+	view_player = index
+	dex_page = 0
+	_show_dex()
+
+func _show_active_analysis() -> void:
+	if model.state.is_empty(): return
+	_show_creature_details(model.player().party[int(model.player().active)], _show_party)
+
+func _heading(kicker: String, title: String, description: String = "") -> void:
+	var column := ArkUI.vbox(4)
+	column.add_child(ArkUI.label(kicker.to_upper(), 12, ArkUI.MINT))
+	column.add_child(ArkUI.label(title.to_upper(), 28))
+	if not description.is_empty(): column.add_child(ArkUI.paragraph(description, 14))
+	page.add_child(column)
 
 func _refresh_inventory() -> void:
 	if not is_instance_valid(inventory_label) or not model or model.state.is_empty(): return
 	var person: Dictionary = model.player()
-	inventory_label.text = "%s · %d monete · %d/8 medaglie" % [person.name, int(person.coins), person.badges.size()]
+	inventory_label.text = "%d ₳" % int(person.coins)
 
 func _show_title() -> void:
-	busy = false
-	_background("laboratory")
-	_clear_page("title")
-	var row := ArkUI.hbox(32)
-	row.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	page.add_child(row)
-	var column := ArkUI.vbox(18)
-	column.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	row.add_child(column)
-	column.add_child(ArkUI.label("DUE ALLENATORI · UNA REGIONE", 17, ArkUI.MINT))
-	column.add_child(ArkUI.label("La tua storia.\nIl tuo Arkamon.", 56))
-	column.add_child(ArkUI.paragraph("Da Pordenone a Roma. Esplora città e percorsi, conquista le medaglie e prepara la tua squadra per la Lega.", 23))
-	column.add_child(ArkUI.button("Nuova campagna  →", _request_new_game, true))
-	var resume := ArkUI.button("Riprendi campagna", _continue_game)
-	resume.disabled = not SaveStore.has_save(save_path)
-	column.add_child(resume)
-	if SaveStore.has_save(SAVE_PATH):
-		column.add_child(ArkUI.button("Importa il viaggio della prima demo", _migrate_demo))
-	column.add_child(ArkUI.button("Sfide a seed e Fanta-Team", _show_challenges))
-	column.add_child(ArkUI.button("Impostazioni", _show_settings))
-	column.add_child(ArkUI.button("Esci", func() -> void: get_tree().quit()))
-	var card := ArkUI.panel()
-	card.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	row.add_child(card)
-	var hero := CreatureActor.new()
-	card.add_child(hero)
-	hero.setup(5, false, not reduced_motion)
-	page.add_child(ArkUI.label("Campagna locale per due · 110 forme · Battaglie, catture ed evoluzioni", 17, ArkUI.MUTED))
-	_focus_first()
+	SiteScenes.title(self)
 
 func _show_starters() -> void:
-	_background("laboratory")
-	_clear_page("starters")
-	var choice := starter_choices.size()
-	_heading("Il laboratorio", "%s, scegli il tuo compagno" % player_names[choice], "Gli allenatori scelgono compagni diversi. Lo starter rimasto accompagnerà il Rivale.")
-	var names := ArkUI.hbox(14)
-	name_inputs.clear()
-	for index in 2:
-		var edit := LineEdit.new()
-		edit.text = player_names[index]
-		edit.max_length = 30
-		edit.placeholder_text = "Nome giocatore %d" % (index + 1)
-		edit.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		edit.text_changed.connect(func(value: String) -> void: player_names[index] = value.strip_edges() if not value.strip_edges().is_empty() else "Giocatore %d" % (index + 1))
-		names.add_child(edit)
-		name_inputs.append(edit)
-	page.add_child(names)
-	var cards := ArkUI.hbox(18)
-	cards.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	page.add_child(cards)
-	for id: int in [1, 5, 9]:
-		var member: Dictionary = rules.creature(id, 5)
-		var card := ArkUI.panel()
-		card.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		cards.add_child(card)
-		var column := ArkUI.vbox()
-		card.add_child(column)
-		var actor := CreatureActor.new()
-		actor.size_flags_vertical = Control.SIZE_EXPAND_FILL
-		actor.custom_minimum_size.y = 180
-		column.add_child(actor)
-		actor.setup(id, false, not reduced_motion)
-		column.add_child(ArkUI.label(member.name, 30))
-		column.add_child(ArkUI.label(member.type, 18, ArkUI.type_color(member.type)))
-		var choose := ArkUI.button("Già scelto" if id in starter_choices else "Scegli " + String(member.name), _new_game.bind(id), true)
-		choose.disabled = id in starter_choices
-		column.add_child(choose)
-	page.add_child(ArkUI.button("← Titolo", func() -> void: starter_choices.clear(); _show_title()))
-	_focus_first()
+	SiteScenes.starters(self)
 
 func _request_new_game() -> void:
 	starter_choices.clear()
+	starter_names_confirmed = false
 	super._request_new_game()
+
+func _toggle_sound() -> void:
+	sound_enabled = not sound_enabled
+	if not sound_enabled: sound.stop()
+	_save_preferences()
+	if is_instance_valid(site_audio_button): site_audio_button.text = "Audio ON" if sound_enabled else "Audio OFF"
+
+func _focus_deferred() -> void:
+	if screen == "battle" and action_buttons.size() > 1:
+		for index in range(1, action_buttons.size()):
+			if is_instance_valid(action_buttons[index]) and action_buttons[index].is_visible_in_tree() and not action_buttons[index].disabled:
+				action_buttons[index].grab_focus()
+				return
+	for node: Node in page.find_children("*", "Button", true, false):
+		if node is Button and node.is_visible_in_tree() and not node.disabled:
+			node.grab_focus()
+			return
+
+func _focus_starter_name() -> void:
+	if screen != "starters" or starter_names_confirmed or name_inputs.is_empty(): return
+	var edit := name_inputs[0]
+	if is_instance_valid(edit) and edit.is_inside_tree() and edit.is_visible_in_tree(): edit.grab_focus()
 
 func _new_game(id: int) -> void:
 	if id in starter_choices or not id in [1, 5, 9]: return
@@ -233,59 +215,10 @@ func _scroll_column(parent: Control) -> VBoxContainer:
 	return column
 
 func _footer(back: Callable = _show_world) -> void:
-	page.add_child(ArkUI.button("← Torna", back))
-	_focus_first()
+	SiteShell.footer(self, back)
 
 func _show_world() -> void:
-	busy = false
-	session = null
-	_clear_page("world")
-	var person: Dictionary = model.player()
-	_background_for(String(person.location))
-	_heading("Turno %d · %s · %d azioni" % [int(model.state.turn), person.name, int(model.state.actions_left)], "La regione di Arkamon", "Posizione: %s. Scegli una strada adiacente oppure entra nel luogo attuale." % _place(person.location))
-	var row := ArkUI.hbox(18)
-	row.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	page.add_child(row)
-	var board_panel := ArkUI.panel()
-	board_panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	board_panel.size_flags_stretch_ratio = 2.2
-	row.add_child(board_panel)
-	var board := WorldBoard.new()
-	board.definition = world_data.get("main_map", {})
-	board.positions = [String(model.state.players[0].location), String(model.state.players[1].location)]
-	board.reachable = model.available_destinations()
-	var board_column := ArkUI.vbox(6)
-	board_panel.add_child(board_column)
-	board.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	board.custom_minimum_size.y = 220
-	board_column.add_child(board)
-	board_column.add_child(ArkUI.label("Punti verdi: strade raggiungibili · Oro: giocatori · Passa sul punto per leggere il luogo", 13, ArkUI.MUTED))
-	board.selected.connect(_travel)
-	var side := ArkUI.panel()
-	side.custom_minimum_size.x = 330
-	side.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	row.add_child(side)
-	var actions := _scroll_column(side)
-	actions.add_child(ArkUI.label("%s · %s" % [person.name, _place(person.location)], 22, ArkUI.GOLD))
-	actions.add_child(ArkUI.button("Entra nel luogo  →", _enter_location, true))
-	for destination: Variant in model.available_destinations():
-		var name := String(destination.get("id", destination.get("name", ""))) if destination is Dictionary else String(destination)
-		actions.add_child(ArkUI.button("Viaggia: " + _place(name), _travel.bind(name)))
-	actions.add_child(ArkUI.button("Squadra e deposito", _show_party))
-	actions.add_child(ArkUI.button("Borsa", _show_bag))
-	actions.add_child(ArkUI.button("Arkadex", _show_dex))
-	actions.add_child(ArkUI.button("Diario e strumenti", _show_tools))
-	var other: Dictionary = model.state.players[1 - int(model.state.active_player)]
-	if other.location == person.location:
-		actions.add_child(ArkUI.button("Sfida " + String(other.name), _start_pvp))
-	var footer := ArkUI.hbox()
-	footer.add_child(ArkUI.button("Passa il turno", _end_turn, true))
-	footer.add_child(ArkUI.button("Salva", func() -> void: _save(true)))
-	footer.add_child(ArkUI.spacer())
-	footer.add_child(ArkUI.button("Guida", _show_help))
-	footer.add_child(ArkUI.button("Titolo", _show_title))
-	page.add_child(footer)
-	_focus_first()
+	SiteScenes.world(self)
 
 func _place(value: String) -> String:
 	return value.replace("_", " ").replace("ReggioCalabria", "Reggio Calabria")
@@ -315,51 +248,7 @@ func _enter_location() -> void:
 	_show_location()
 
 func _show_location() -> void:
-	_clear_page("location")
-	var person: Dictionary = model.player()
-	var location := String(person.location)
-	_background_for(location)
-	_heading(String(person.name), _place(location), "Muoviti sui punti collegati. Le attività del luogo sono disponibili nel pannello a destra.")
-	var row := ArkUI.hbox(18)
-	row.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	page.add_child(row)
-	var map_panel := ArkUI.panel()
-	map_panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	map_panel.size_flags_stretch_ratio = 2.2
-	row.add_child(map_panel)
-	var maps: Dictionary = world_data.get("local_maps", {})
-	if maps.has(location):
-		var board := WorldBoard.new()
-		board.local = true
-		board.definition = maps[location]
-		board.positions = [String(model.player(0).get("local_positions", {}).get(location, "")) if String(model.player(0).location) == location else "", String(model.player(1).get("local_positions", {}).get(location, "")) if String(model.player(1).location) == location else ""]
-		map_panel.add_child(board)
-		board.selected.connect(_local_move)
-	else:
-		var image_path := String(world_data.get("backgrounds", {}).get(location, "res://assets/backgrounds/route_1.webp"))
-		map_panel.add_child(ArkUI.texture(image_path))
-	var side := ArkUI.panel()
-	side.custom_minimum_size.x = 340
-	side.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	row.add_child(side)
-	var actions := _scroll_column(side)
-	if not location.begins_with("Percorso_"):
-		actions.add_child(ArkUI.button("Centro cure", _heal_party, true))
-		actions.add_child(ArkUI.button("Arkastore", _show_shop))
-		actions.add_child(ArkUI.button("Deposito", _show_party))
-	else:
-		for bush: String in ["A", "B", "C", "D", "E", "F"]:
-			actions.add_child(ArkUI.button("Esplora cespuglio " + bush, _wild_encounter.bind(bush), true))
-	for trainer: Dictionary in model.trainers_here():
-		var defeated: bool = int(trainer.id) in person.defeated
-		actions.add_child(ArkUI.button(("✓ " if defeated else "Sfida: ") + String(trainer.nome), _trainer_encounter.bind(int(trainer.id))))
-	if location == "Roma":
-		actions.add_child(ArkUI.button("La Lega di Arkamon", _show_league, true))
-	actions.add_child(ArkUI.button("Squadra", _show_party))
-	actions.add_child(ArkUI.button("Interagisci sul punto", _interact_current, true))
-	actions.add_child(ArkUI.button("Borsa", _show_bag))
-	page.add_child(ArkUI.button("Concludi la visita · Passa il turno", _end_turn, true))
-	_focus_first()
+	SiteScenes.location(self)
 
 func _local_move(node_id: String) -> void:
 	var result: Dictionary = model.local_move(node_id)
@@ -431,66 +320,12 @@ func _present_snapshot() -> void:
 	enemy = session.active_creature("enemy")
 
 func _show_battle() -> void:
-	# Reuse the tested arena layout, then replace its actions with the session flow.
 	battle_step = 1
-	super._show_battle()
-	arena.custom_minimum_size.y = 180
-	player_actor.playback_speed = animation_speed
-	enemy_actor.playback_speed = animation_speed
-	var title_row := page.get_child(1) as HBoxContainer
-	(title_row.get_child(0) as Label).text = _place(String(model.player().location))
-	(title_row.get_child(2) as Label).text = String(battle_context.get("title", battle_context.get("name", "Battaglia"))).to_upper()
+	SiteBattle.build(self)
 	_refresh_health()
-	if action_buttons.size() > 0:
-		action_buttons[0].text = "Ritirata" if session.kind == "wild" else "Abbandona lo scontro"
 
 func _build_actions() -> void:
-	_refresh_inventory()
-	for child in action_panel.get_children():
-		action_panel.remove_child(child)
-		child.queue_free()
-	while action_buttons.size() > 1: action_buttons.pop_back()
-	if session.finished:
-		var next := ArkUI.button("Prosegui  →", _leave_battle, true)
-		action_panel.add_child(next)
-		action_buttons.append(next)
-		next.grab_focus()
-		return
-	if not session.needs_switch.is_empty():
-		action_panel.add_child(ArkUI.label("SCEGLI CHI ENTRA IN CAMPO", 17, ArkUI.GOLD))
-		_add_switch_buttons(String(session.needs_switch[0]), true)
-		return
-	var member: Dictionary = session.active_creature(input_side)
-	var who := String(model.player().name) if input_side == "player" else String(battle_context.get("name", "Giocatore 2"))
-	action_panel.add_child(ArkUI.label("TURNO %d · %s" % [turn_count, who], 16, ArkUI.GOLD))
-	var grid := GridContainer.new()
-	grid.columns = 3
-	grid.add_theme_constant_override("h_separation", 8)
-	grid.add_theme_constant_override("v_separation", 8)
-	action_panel.add_child(grid)
-	var moves: Array = rules.available_moves(member)
-	for index in moves.size():
-		var move: Dictionary = moves[index]
-		var button := ArkUI.button("%d  %s" % [index + 1, move.name], _queue_action.bind({"type": "attack", "move_id": int(move.id)}), true)
-		button.add_theme_font_size_override("font_size", 16)
-		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		grid.add_child(button)
-		action_buttons.append(button)
-	if not moves.is_empty():
-		var supreme := ArkUI.button("Mossa Suprema", _supreme_dialog)
-		grid.add_child(supreme)
-		action_buttons.append(supreme)
-	var change := ArkUI.button("Cambia", _show_battle_switch)
-	grid.add_child(change)
-	action_buttons.append(change)
-	var bag := ArkUI.button("Borsa", _show_battle_bag)
-	bag.disabled = input_side != "player" or session.kind == "pvp" or not challenge_descriptor.is_empty()
-	grid.add_child(bag)
-	action_buttons.append(bag)
-	if session.kind == "wild":
-		var capture := ArkUI.button("Cattura", _queue_action.bind({"type": "capture"}))
-		grid.add_child(capture)
-		action_buttons.append(capture)
+	SiteBattle.actions(self)
 
 func _queue_action(action: Dictionary) -> void:
 	if busy or session.finished: return
@@ -564,24 +399,7 @@ func _animate_event(event: Dictionary) -> void:
 	await _pause(0.24 / animation_speed if type in ["status", "xp", "switch"] else wait_time)
 
 func _apply_presented() -> void:
-	for side: String in ["player", "enemy"]:
-		if not presented.has(side): continue
-		var value: Dictionary = presented[side]
-		var actor: CreatureActor = player_actor if side == "player" else enemy_actor
-		if int(actor.get_meta("species", 0)) != int(value.get("species_id", 0)):
-			actor.setup(int(value.get("species_id", 1)), side == "enemy", not reduced_motion)
-			actor.set_meta("species", int(value.get("species_id", 0)))
-		var bar: ProgressBar = player_hp if side == "player" else enemy_hp
-		var label: Label = player_health if side == "player" else enemy_health
-		bar.max_value = float(value.get("max_hp", 1))
-		bar.value = float(value.get("hp", 0))
-		var stat_column := bar.get_parent() as VBoxContainer
-		var name_row := stat_column.get_child(0) as HBoxContainer
-		(name_row.get_child(0) as Label).text = String(value.get("name", "Arkamon"))
-		(name_row.get_child(2) as Label).text = "Lv.%d · %s" % [int(value.get("level", 5)), value.get("type", "")]
-		var condition: Variant = value.get("status", {})
-		var status := String(condition.get("type", "")) if condition is Dictionary else String(condition)
-		label.text = "PV %d / %d · %s" % [int(value.get("hp", 0)), int(value.get("max_hp", 1)), status]
+	SiteBattle.refresh(self)
 
 func _refresh_health() -> void:
 	if not session: return
@@ -664,6 +482,7 @@ func _add_switch_buttons(side: String, forced: bool = false) -> void:
 		action_buttons.append(button)
 
 func _show_battle_switch() -> void:
+	SiteBattle.prepare_overlay(self)
 	for child in action_panel.get_children(): child.queue_free()
 	_add_switch_buttons(input_side)
 	action_panel.add_child(ArkUI.button("Annulla", _build_actions))
@@ -679,12 +498,14 @@ func _switch_battle(side: String, index: int, forced: bool) -> void:
 		_queue_action({"type": "switch", "index": index})
 
 func _supreme_dialog() -> void:
+	SiteBattle.prepare_overlay(self)
 	for child in action_panel.get_children(): child.queue_free()
 	for move: Dictionary in rules.available_moves(session.active_creature(input_side)):
 		action_panel.add_child(ArkUI.button("Suprema: " + String(move.name) + " · costo 50% PV massimi", _queue_action.bind({"type": "supreme", "move_id": int(move.id)})))
 	action_panel.add_child(ArkUI.button("Annulla", _build_actions))
 
 func _show_battle_bag() -> void:
+	SiteBattle.prepare_overlay(self)
 	for child in action_panel.get_children(): child.queue_free()
 	var grid := GridContainer.new()
 	grid.columns = 3
@@ -704,6 +525,7 @@ func _battle_item(item: Dictionary) -> void:
 	var action: Dictionary = prepared.action
 	action["item_id"] = item.id
 	if kind == "revive":
+		SiteBattle.prepare_overlay(self)
 		for child in action_panel.get_children(): child.queue_free()
 		for index in session.teams.player.size():
 			var member: Dictionary = session.teams.player[index]
@@ -719,6 +541,11 @@ func _unhandled_key_input(event: InputEvent) -> void:
 	if not event is InputEventKey or not event.pressed or event.echo: return
 	if event.keycode == KEY_F11: _toggle_fullscreen()
 	elif event.keycode == KEY_M: _toggle_sound()
+	elif event.keycode == KEY_ESCAPE:
+		if screen == "battle":
+			if not busy: _build_actions()
+		elif model.state.is_empty(): _show_title()
+		elif screen != "world" and screen != "location": _return_to_campaign()
 	elif screen == "battle" and not busy and not session.finished and session.needs_switch.is_empty():
 		var moves: Array = rules.available_moves(session.active_creature(input_side))
 		var index := int(event.keycode) - KEY_1
@@ -735,8 +562,11 @@ func _full_preview() -> void:
 	var mode := args[mode_index + 1] if mode_index >= 0 and mode_index + 1 < args.size() else "world"
 	match mode:
 		"title": _show_title()
-		"starters": _show_starters()
+		"names": starter_names_confirmed = false; _show_starters()
+		"starters": starter_names_confirmed = true; _show_starters()
+		"tools": _show_tools()
 		"party": _show_party()
+		"bag": _show_bag()
 		"dex": _show_dex()
 		"shop": _show_shop()
 		"box": _show_box()
@@ -755,6 +585,9 @@ func _full_preview() -> void:
 		"battle": _start_session([rules.creature(28, 5), rules.creature(32, 5)], "npc")
 	await get_tree().process_frame
 	await get_tree().process_frame
+	if "--animate-title" in args and mode == "title":
+		await get_tree().create_timer(0.6).timeout
+		print("TITLE_VIDEO_POSITION=", title_video.get_stream_position())
 	await RenderingServer.frame_post_draw
 	var image := get_viewport().get_texture().get_image()
 	var index := args.find("--screenshot")
@@ -766,40 +599,7 @@ func _full_preview() -> void:
 
 func _show_party() -> void:
 	_clear_page("party")
-	_heading("%s · %d compagni" % [model.player().name, model.player().party.size()], "Squadra e deposito", "La differenza di livello in squadra non può superare cinque. Le catture fuori fascia vanno nel deposito.")
-	var tabs := ArkUI.hbox()
-	tabs.add_child(ArkUI.button("Squadra", _show_party, true))
-	tabs.add_child(ArkUI.button("Deposito · Box %d/30" % box_page, _show_box))
-	tabs.add_child(ArkUI.button("Borsa", _show_bag))
-	page.add_child(tabs)
-	var list := _scroll_column(page)
-	var party: Array = model.player().party
-	for index in party.size():
-		var member: Dictionary = party[index]
-		var panel := ArkUI.panel()
-		list.add_child(panel)
-		var row := ArkUI.hbox(12)
-		panel.add_child(row)
-		var portrait := ArkUI.texture("res://assets/creatures/%d.png" % int(member.species_id))
-		portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		portrait.custom_minimum_size = Vector2(76, 76)
-		row.add_child(portrait)
-		var info := ArkUI.vbox(4)
-		info.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		row.add_child(info)
-		info.add_child(ArkUI.label(String(member.name), 24))
-		info.add_child(ArkUI.label("%s · Lv.%d · PV %d/%d" % [member.type, int(member.level), int(member.hp), int(member.max_hp)], 18, ArkUI.MUTED))
-		var choose := ArkUI.button("In campo" if index == int(model.player().active) else "Schiera", _choose_companion.bind(index))
-		choose.disabled = int(member.hp) <= 0 or int(model.player().active) == index
-		row.add_child(choose)
-		row.add_child(ArkUI.button("Analisi", _show_creature_details.bind(member.duplicate(true), _show_party)))
-		var definition: Dictionary = rules.species[int(member.species_id)]
-		if int(definition.get("evoluzioneId", 0)) > 0 and int(member.level) >= int(definition.get("livelloEvoluzione", 101)):
-			row.add_child(ArkUI.button("Evolvi", _evolve.bind(index), true))
-		var deposit := ArkUI.button("Deposita", _deposit.bind(index))
-		deposit.disabled = party.size() <= 1
-		row.add_child(deposit)
-	_footer(_return_to_campaign)
+	SitePlayer.build_party(self)
 
 func _choose_companion(index: int) -> void:
 	var party: Array = model.player().party
@@ -849,30 +649,7 @@ func _show_evolution(before: int, after: int, back: Callable) -> void:
 
 func _show_box() -> void:
 	_clear_page("box")
-	_heading(String(model.player().name), "Deposito · Box %d / 30" % box_page, "Seleziona un posto occupato per ritirare il compagno o scambiarlo con un membro della squadra.")
-	var navigation := ArkUI.hbox()
-	navigation.add_child(ArkUI.button("← Box", func() -> void: box_page = maxi(1, box_page - 1); _show_box()))
-	navigation.add_child(ArkUI.button("Squadra", _show_party))
-	navigation.add_child(ArkUI.button("Box →", func() -> void: box_page = mini(30, box_page + 1); _show_box()))
-	page.add_child(navigation)
-	var grid := GridContainer.new()
-	grid.columns = 7
-	grid.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	grid.add_theme_constant_override("h_separation", 10)
-	grid.add_theme_constant_override("v_separation", 10)
-	page.add_child(grid)
-	var box: Dictionary = model.player().box
-	for slot in range(1, 36):
-		var key := "%d:%d" % [box_page, slot]
-		var member: Dictionary = box.get(key, {})
-		var text := "—" if member.is_empty() else "%s\nLv. %d · %d PV" % [member.name, int(member.level), int(member.hp)]
-		var button := ArkUI.button(text, _box_dialog.bind(key))
-		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		button.size_flags_vertical = Control.SIZE_EXPAND_FILL
-		button.add_theme_font_size_override("font_size", 16)
-		button.disabled = member.is_empty()
-		grid.add_child(button)
-	_footer(_return_to_campaign)
+	SitePlayer.build_box(self)
 
 func _box_dialog(slot: String) -> void:
 	var member: Dictionary = model.player().box.get(slot, {})
@@ -926,31 +703,7 @@ func _shop_items() -> Array:
 
 func _show_shop() -> void:
 	_clear_page("shop")
-	_heading("Arkastore · " + _place(String(model.player().location)), "Prepara il prossimo incontro", "Il carrello viene acquistato tutto insieme. I prezzi e gli effetti riprendono Arkamon Beta.")
-	var list := _scroll_column(page)
-	var total: int = 0
-	for item: Dictionary in _shop_items():
-		var panel := ArkUI.panel()
-		list.add_child(panel)
-		var row := ArkUI.hbox()
-		panel.add_child(row)
-		var info := ArkUI.vbox(4)
-		info.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		row.add_child(info)
-		info.add_child(ArkUI.label("%s · %d monete" % [item.name, int(item.price)], 22))
-		info.add_child(ArkUI.label("In borsa: %d" % int(model.player().bag.get(item.id, 0)), 17, ArkUI.MUTED))
-		var count := SpinBox.new()
-		count.min_value = 0
-		count.max_value = 99
-		count.value = int(cart.get(item.id, 0))
-		count.custom_minimum_size.x = 120
-		count.value_changed.connect(func(value: float) -> void: cart[item.id] = int(value); _update_cart_total())
-		row.add_child(count)
-		total += int(cart.get(item.id, 0)) * int(item.price)
-	snapshot_label = ArkUI.label("Totale: %d monete · Disponibili: %d" % [total, int(model.player().coins)], 22, ArkUI.GOLD)
-	page.add_child(snapshot_label)
-	page.add_child(ArkUI.button("Acquista il carrello", _purchase, true))
-	_footer(_return_to_campaign)
+	SitePlayer.build_shop(self)
 
 func _update_cart_total() -> void:
 	var total: int = 0
@@ -968,14 +721,7 @@ func _purchase() -> void:
 
 func _show_bag() -> void:
 	_clear_page("bag")
-	_heading(String(model.player().name), "La borsa", "Scegli un oggetto e il compagno su cui usarlo. La Masterball si usa negli incontri selvatici.")
-	var list := _scroll_column(page)
-	for item: Dictionary in _shop_items():
-		var quantity := int(model.player().bag.get(item.id, 0))
-		var button := ArkUI.button("%s  × %d" % [item.name, quantity], _show_item_targets.bind(String(item.id)))
-		button.disabled = quantity <= 0 or item.id == "masterball"
-		list.add_child(button)
-	_footer(_return_to_campaign)
+	SitePlayer.build_bag(self)
 
 func _show_item_targets(item_id: String) -> void:
 	chosen_item = item_id
@@ -995,83 +741,17 @@ func _apply_item(index: int) -> void:
 
 func _show_dex() -> void:
 	_clear_page("dex")
-	var person: Dictionary = model.player() if view_player < 0 else model.state.players[view_player]
-	_heading("%s · viste %d · ottenute %d" % [person.name, person.dex_seen.size(), person.dex_obtained.size()], "Arkadex", "Le creature non ancora incontrate conservano il loro mistero.")
-	var top := ArkUI.hbox()
-	for index in 2:
-		top.add_child(ArkUI.button(String(model.state.players[index].name), func() -> void: view_player = index; dex_page = 0; _show_dex()))
-	top.add_child(ArkUI.spacer())
-	top.add_child(ArkUI.button("←", func() -> void: dex_page = maxi(0, dex_page - 1); _show_dex()))
-	top.add_child(ArkUI.label("%d / 7" % (dex_page + 1), 19))
-	top.add_child(ArkUI.button("→", func() -> void: dex_page = mini(6, dex_page + 1); _show_dex()))
-	page.add_child(top)
-	var grid := GridContainer.new()
-	grid.columns = 6
-	grid.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	page.add_child(grid)
-	for index in range(dex_page * 18 + 1, mini(111, dex_page * 18 + 19)):
-		var known: bool = index in person.dex_seen or str(index) in person.dex_seen
-		var obtained: bool = index in person.dex_obtained or str(index) in person.dex_obtained
-		var definition: Dictionary = rules.species[index]
-		var panel := ArkUI.panel()
-		panel.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-		panel.size_flags_vertical = Control.SIZE_EXPAND_FILL
-		grid.add_child(panel)
-		var column := ArkUI.vbox(3)
-		panel.add_child(column)
-		var portrait := ArkUI.texture("res://assets/creatures/%d.png" % index)
-		portrait.stretch_mode = TextureRect.STRETCH_KEEP_ASPECT_CENTERED
-		portrait.custom_minimum_size = Vector2(60, 55)
-		portrait.size_flags_vertical = Control.SIZE_EXPAND_FILL
-		portrait.modulate = Color.WHITE if known else Color(0.02, 0.04, 0.05, 0.8)
-		column.add_child(portrait)
-		column.add_child(ArkUI.label("#%03d %s" % [index, definition.nome if known else "???"], 15, ArkUI.MINT if obtained else ArkUI.TEXT))
-		column.add_child(ArkUI.label(definition.tipo if known else "Da scoprire", 13, ArkUI.MUTED))
-		if known: column.add_child(ArkUI.button("Scheda", _show_dex_entry.bind(index)))
-	_footer(_return_to_campaign)
+	SitePlayer.build_dex(self)
 
 func _show_dex_entry(id: int) -> void:
 	_show_creature_details(rules.creature(id, 5), _show_dex)
 
 func _show_creature_details(member: Dictionary, back: Callable) -> void:
 	_clear_page("analysis")
-	_heading("Arkadex · #%03d" % int(member.species_id), String(member.name), "%s · Livello %d · PV %d/%d" % [member.type, int(member.level), int(member.hp), int(member.max_hp)])
-	var row := ArkUI.hbox(24)
-	row.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	page.add_child(row)
-	var actor := CreatureActor.new()
-	actor.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	row.add_child(actor)
-	actor.setup(int(member.species_id), false, not reduced_motion)
-	var side := ArkUI.panel()
-	side.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	row.add_child(side)
-	var info := _scroll_column(side)
-	info.add_child(ArkUI.label("Mosse disponibili", 24, ArkUI.GOLD))
-	for move: Dictionary in rules.available_moves(member):
-		info.add_child(ArkUI.paragraph("%s · %s\n%d dadi D6 + %d · %s" % [move.name, move.type, int(move.dice), int(move.bonus), String(move.get("effect", ""))], 21, ArkUI.TEXT))
-	var status_name := rules.status_name(member)
-	if not status_name.is_empty(): info.add_child(ArkUI.label("Stato: " + status_name, 21, ArkUI.RED))
-	var definition: Dictionary = rules.species[int(member.species_id)]
-	if int(definition.get("evoluzioneId", 0)) > 0: info.add_child(ArkUI.paragraph("Può evolversi dal livello %d." % int(definition.get("livelloEvoluzione", 0)), 21))
-	info.add_child(ArkUI.paragraph("Gli attacchi efficaci infliggono il 50% di danno in più. Le resistenze dimezzano il danno.", 20))
-	_footer(back)
+	SitePlayer.build_details(self, member, back)
 
 func _show_tools() -> void:
-	_clear_page("tools")
-	_heading(String(model.player().name), "Diario della campagna", "Progressi, incontri e ricordi del viaggio. I backup comprendono entrambi i giocatori.")
-	var buttons := ArkUI.hbox()
-	buttons.add_child(ArkUI.button("Esporta backup", _backup_export))
-	buttons.add_child(ArkUI.button("Ripristina backup", _backup_import))
-	buttons.add_child(ArkUI.button("Registro scontri", _show_archive))
-	buttons.add_child(ArkUI.button("Editor interazioni", _show_interaction_editor))
-	page.add_child(buttons)
-	var list := _scroll_column(page)
-	for entry: Variant in model.player().journal:
-		var text := String(entry.get("message", entry.get("text", entry.get("title", "")))) if entry is Dictionary else String(entry)
-		list.add_child(ArkUI.paragraph(text, 20, ArkUI.TEXT))
-	if model.player().journal.is_empty(): list.add_child(ArkUI.label("Il viaggio è appena cominciato.", 22))
-	_footer(_return_to_campaign)
+	SiteScenes.tools(self)
 
 func _show_archive() -> void:
 	_clear_page("archive")
@@ -1303,11 +983,19 @@ func _start_challenge(descriptor: Dictionary) -> void:
 	_start_session(descriptor.enemy, "npc")
 
 func _show_settings() -> void:
-	super._show_settings()
-	var panel := page.get_child(3) as PanelContainer
-	if panel == null: return
-	var column := panel.get_child(0) as VBoxContainer
-	column.add_child(ArkUI.label("Velocità delle animazioni", 24))
+	_clear_page("settings")
+	_heading("Strumenti della partita", "Impostazioni", "Personalizza audio, movimento e velocità della tua avventura.")
+	var panel := ArkUI.panel()
+	panel.size_flags_vertical = Control.SIZE_EXPAND_FILL
+	page.add_child(panel)
+	var column := _scroll_column(panel)
+	column.add_child(ArkUI.label("Audio degli effetti", 20))
+	column.add_child(ArkUI.button("Attivo" if sound_enabled else "Disattivato", func() -> void: _toggle_sound(); _show_settings()))
+	column.add_child(ArkUI.label("Movimento ridotto", 20))
+	column.add_child(ArkUI.paragraph("Riduce oscillazioni e movimenti degli attacchi.", 14))
+	column.add_child(ArkUI.button("Attivo" if reduced_motion else "Disattivato", func() -> void: reduced_motion = not reduced_motion; _save_preferences(); _show_settings()))
+	column.add_child(ArkUI.button("Schermo intero / finestra · F11", _toggle_fullscreen))
+	column.add_child(ArkUI.label("Velocità delle animazioni", 20))
 	var picker := OptionButton.new()
 	picker.add_item("Normale · Tutti i fotogrammi originali", 1)
 	picker.add_item("Rapida · 2×", 2)
@@ -1315,12 +1003,7 @@ func _show_settings() -> void:
 	picker.select(clampi(int(animation_speed) - 1, 0, 2))
 	picker.item_selected.connect(func(index: int) -> void: animation_speed = float(index + 1); _save_preferences())
 	column.add_child(picker)
-	panel.remove_child(column)
-	var scroll := ScrollContainer.new()
-	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
-	panel.add_child(scroll)
-	column.size_flags_horizontal = Control.SIZE_EXPAND_FILL
-	scroll.add_child(column)
+	_footer(_show_title if model.state.is_empty() else _return_to_campaign)
 
 func _load_preferences() -> void:
 	super._load_preferences()

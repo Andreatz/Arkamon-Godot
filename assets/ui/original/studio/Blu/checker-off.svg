@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 180" width="100%" height="100%">
+  <defs>
+    <filter id="a7-shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000614" flood-opacity="0.75" />
+    </filter>
+    <filter id="a7-gem-shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="3" stdDeviation="2.5" flood-color="#00040f" flood-opacity="0.85" />
+    </filter>
+
+    <linearGradient id="a7-gold-outer" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ead7" />
+      <stop offset="55%" stop-color="#d4ad7d" />
+      <stop offset="88%" stop-color="#9e6f3c" />
+      <stop offset="100%" stop-color="#5e3c19" />
+    </linearGradient>
+
+    <linearGradient id="a7-gold-inner" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff8eb" />
+      <stop offset="35%" stop-color="#ebbd78" />
+      <stop offset="75%" stop-color="#b37732" />
+      <stop offset="100%" stop-color="#613a0d" />
+    </linearGradient>
+
+    <radialGradient id="a7-navy-center" cx="50%" cy="45%" r="65%">
+      <stop offset="0%" stop-color="#062356" />
+      <stop offset="70%" stop-color="#031538" />
+      <stop offset="100%" stop-color="#010a1f" />
+    </radialGradient>
+
+    <linearGradient id="a7-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a7-gem" filter="url(#a7-gem-shadow)">
+      <polygon points="0,-25 23,0 0,25 -23,0" fill="url(#a7-gold-inner)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-25 -23,0 -17,0 0,-19" fill="#ffffff" opacity="0.7" />
+      <polygon points="0,-16 15,0 0,16 -15,0" fill="#04152e" />
+      <polygon points="0,-14 13,0 0,14 -13,0" fill="url(#a7-cyan-gem)" />
+      <polygon points="0,-14 13,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 5,0 0,5 -5,0" fill="#e0faff" />
+    </g>
+  </defs>
+
+  <g filter="url(#a7-shadow)">
+    <!-- 1. Ottagono Esterno Oro Champagne -->
+    <polygon points="56,16 154,16 180,42 180,138 154,164 56,164 30,138 30,42" fill="url(#a7-gold-outer)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="32,43 57,19 153,19 178,43" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.85" />
+
+    <!-- 2. Canale Intermedio Scuro in Blu Notte -->
+    <polygon points="61,27 149,27 169,47 169,133 149,153 61,153 41,133 41,47" fill="#03122e" stroke="#42290f" stroke-width="1.8" stroke-linejoin="round" />
+    <polygon points="63,30 147,30 166,49 166,131 147,150 63,150 44,131 44,49" fill="none" stroke="#0d3c85" stroke-width="1.5" opacity="0.7" />
+
+    <!-- 3. Cornice Ottagonale Interna Oro Caldo -->
+    <polygon points="70,42 140,42 152,54 152,126 140,138 70,138 58,126 58,54" fill="url(#a7-gold-inner)" stroke="#1c1105" stroke-width="2" stroke-linejoin="round" />
+    <polyline points="60,55 71,44 139,44 150,55" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.8" />
+
+    <!-- 4. Riquadro Centrale Incassato Blu Profondo -->
+    <polygon points="74,50 136,50 144,58 144,122 136,130 74,130 66,122 66,58" fill="url(#a7-navy-center)" stroke="#010714" stroke-width="1.8" stroke-linejoin="round" />
+    <line x1="74" y1="127" x2="136" y2="127" stroke="#154591" stroke-width="1.5" opacity="0.6" />
+
+    <!-- 5. Gemme Romboidali Laterali -->
+    <use href="#a7-gem" x="32" y="90" />
+    <use href="#a7-gem" x="178" y="90" />
+  </g>
+</svg>

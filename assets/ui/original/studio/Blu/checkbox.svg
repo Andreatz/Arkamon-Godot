@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 340" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow21" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Oro-Avorio Cornice 3D -->
+    <linearGradient id="ivoryGold21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#fff3d1"/>
+      <stop offset="65%" stop-color="#e0a94f"/>
+      <stop offset="100%" stop-color="#9c6314"/>
+    </linearGradient>
+
+    <linearGradient id="warmGold21" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe8a3"/>
+      <stop offset="50%" stop-color="#d99026"/>
+      <stop offset="100%" stop-color="#784408"/>
+    </linearGradient>
+
+    <!-- Fondo Blu Notte Scuro -->
+    <linearGradient id="darkNavy21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#062852"/>
+      <stop offset="50%" stop-color="#041c3b"/>
+      <stop offset="100%" stop-color="#021024"/>
+    </linearGradient>
+
+    <!-- Piastra Bianca/Perla (Stato 3) -->
+    <linearGradient id="pearlPlate21" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="55%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Gradiente Spunta Oro 3D -->
+    <linearGradient id="checkGold21" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="30%" stop-color="#fcd34d"/>
+      <stop offset="70%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+
+    <!-- Gemma Angolare -->
+    <g id="cornerGem21">
+      <polygon points="0,-36 36,0 0,36 -36,0" fill="url(#ivoryGold21)" stroke="#1c1206" stroke-width="2" stroke-linejoin="round"/>
+      <polygon points="0,-29 29,0 0,29 -29,0" fill="url(#warmGold21)"/>
+      <polygon points="0,-22 22,0 0,22 -22,0" fill="#0284c7" stroke="#082f49" stroke-width="1.2"/>
+      <polygon points="0,-22 22,0 0,0" fill="#67e8f9"/>
+      <polygon points="0,-22 0,0 -22,0" fill="#38bdf8"/>
+      <polygon points="0,0 22,0 0,22" fill="#0369a1"/>
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#e0f2fe"/>
+    </g>
+
+    <!-- Cornice Base Romboidale con 4 Gemme -->
+    <g id="diamondFrameBase21">
+      <!-- Bordo Esterno Romboidale Avorio-Oro -->
+      <polygon points="0,-142 142,0 0,142 -142,0" fill="url(#ivoryGold21)" stroke="#1c1206" stroke-width="2.5" stroke-linejoin="round"/>
+      <polygon points="0,-134 134,0 0,134 -134,0" fill="none" stroke="#d99026" stroke-width="2"/>
+      
+      <!-- Trincea Blu Scura Intermedia -->
+      <polygon points="0,-124 124,0 0,124 -124,0" fill="#03152e" stroke="#1e1206" stroke-width="2"/>
+
+      <!-- Cornice Interna Oro Smussata con Angoli Arrotondati -->
+      <path d="M -10,-94 Q 0,-104 10,-94 L 94,-10 Q 104,0 94,10 L 10,94 Q 0,104 -10,94 L -94,10 Q -104,0 -94,-10 Z" 
+            fill="url(#ivoryGold21)" stroke="#1c1206" stroke-width="2"/>
+      <path d="M -8,-84 Q 0,-92 8,-84 L 84,-8 Q 92,0 84,8 L 8,84 Q 0,92 -8,84 L -84,8 Q -92,0 -84,-8 Z" 
+            fill="url(#darkNavy21)" stroke="#b87314" stroke-width="2.5"/>
+
+      <!-- 4 Gemme sui Vertici (N, E, S, W) -->
+      <use href="#cornerGem21" x="0" y="-110"/>
+      <use href="#cornerGem21" x="110" y="0"/>
+      <use href="#cornerGem21" x="0" y="110"/>
+      <use href="#cornerGem21" x="-110" y="0"/>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow21)">
+    <!-- 1. STATO VUOTO (SINISTRA) -->
+    <g transform="translate(165, 170)">
+      <use href="#diamondFrameBase21"/>
+    </g>
+
+    <!-- 2. STATO GEMMA ATTIVA (CENTRO) -->
+    <g transform="translate(480, 170)">
+      <use href="#diamondFrameBase21"/>
+      <!-- Grande Cristallo Centrale Ciano 3D -->
+      <g>
+        <!-- Ombra profonda del cristallo -->
+        <path d="M -6,-68 Q 0,-74 6,-68 L 68,-6 Q 74,0 68,6 L 6,68 Q 0,74 -6,68 L -68,6 Q -74,0 -68,-6 Z" fill="#010b19" opacity="0.8"/>
+        <!-- Quadrante Nord-Ovest (Luce Massima) -->
+        <path d="M 0,-68 L -68,0 L 0,0 Z" fill="#a5f3fc"/>
+        <!-- Quadrante Nord-Est (Ciano Brillante) -->
+        <path d="M 0,-68 L 68,0 L 0,0 Z" fill="#22d3ee"/>
+        <!-- Quadrante Sud-Ovest (Azzurro Medio) -->
+        <path d="M 0,68 L -68,0 L 0,0 Z" fill="#06b6d4"/>
+        <!-- Quadrante Sud-Est (Blu Ciano Profondo) -->
+        <path d="M 0,68 L 68,0 L 0,0 Z" fill="#0284c7"/>
+        <!-- Sfaccettature interne cristalline -->
+        <polygon points="0,-52 52,0 0,52 -52,0" fill="none" stroke="#e0f2fe" stroke-width="2" opacity="0.65"/>
+        <polygon points="0,-52 -52,0 0,0" fill="#ffffff" opacity="0.5"/>
+        <!-- Contorno esterno cristallo -->
+        <polygon points="0,-68 68,0 0,68 -68,0" fill="none" stroke="#083344" stroke-width="2" stroke-linejoin="round"/>
+      </g>
+    </g>
+
+    <!-- 3. STATO SPUNTA DORATA (DESTRA) -->
+    <g transform="translate(795, 170)">
+      <use href="#diamondFrameBase21"/>
+      <!-- Piastra Interna Perla Smussata -->
+      <path d="M -7,-74 Q 0,-81 7,-74 L 74,-7 Q 81,0 74,7 L 7,74 Q 0,81 -7,74 L -74,7 Q -81,0 -74,-7 Z" 
+            fill="url(#pearlPlate21)" stroke="#64748b" stroke-width="1.5"/>
+      <path d="M -5,-66 Q 0,-72 5,-66 L 66,-5 Q 72,0 66,5 L 5,66 Q 0,72 -5,66 L -66,5 Q -72,0 -66,-5 Z" 
+            fill="none" stroke="#ffffff" stroke-width="2.5"/>
+
+      <!-- Icona Checkmark / Spunta 3D in Oro -->
+      <g>
+        <!-- Ombra portata della spunta -->
+        <path d="M -42,4 L -26,-12 L -8,6 L 28,-30 L 44,-14 L -8,38 Z" transform="translate(0, 4)" fill="#475569" opacity="0.5"/>
+        <!-- Corpo Spunta Oro -->
+        <path d="M -42,4 L -26,-12 L -8,6 L 28,-30 L 44,-14 L -8,38 Z" 
+              fill="url(#checkGold21)" stroke="#451a03" stroke-width="2.5" stroke-linejoin="round"/>
+        <!-- Riflesso Superiore Spunta -->
+        <polyline points="-38,4 -26,-8 -8,10 28,-26 40,-14" fill="none" stroke="#fffbeb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1020 220" width="100%" height="100%">
+  <defs>
+    <filter id="shadow5" x="-5%" y="-10%" width="110%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="5" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+
+    <!-- Metallo Bronzo-Oro (Stile percorso.svg) -->
+    <linearGradient id="bronzeGold5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff4e0"/>
+      <stop offset="25%" stop-color="#e8c391"/>
+      <stop offset="55%" stop-color="#966536"/>
+      <stop offset="82%" stop-color="#cfa06d"/>
+      <stop offset="100%" stop-color="#593818"/>
+    </linearGradient>
+
+    <linearGradient id="trenchDark5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f1209"/>
+      <stop offset="50%" stop-color="#382214"/>
+      <stop offset="100%" stop-color="#140b05"/>
+    </linearGradient>
+
+    <!-- Riempimento Barra Rossa 3D -->
+    <linearGradient id="redBar5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6b1116"/>
+      <stop offset="45%" stop-color="#a81c24"/>
+      <stop offset="85%" stop-color="#e12d39"/>
+      <stop offset="100%" stop-color="#f86a6a"/>
+    </linearGradient>
+
+    <!-- Sotto-Barra Bordeaux con Smusso (Come il sotto-pannello di percorso.svg) -->
+    <linearGradient id="subBarBevel5" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#8c4f4f"/>
+      <stop offset="100%" stop-color="#522626"/>
+    </linearGradient>
+    <linearGradient id="subBarCore5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#380d12"/>
+      <stop offset="60%" stop-color="#54151c"/>
+      <stop offset="100%" stop-color="#2b090d"/>
+    </linearGradient>
+
+    <!-- Sfondo Ardesia Medaglione HP -->
+    <radialGradient id="slateCircle5" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#2c3545"/>
+      <stop offset="70%" stop-color="#18202c"/>
+      <stop offset="100%" stop-color="#0d121a"/>
+    </radialGradient>
+
+    <clipPath id="redClip5">
+      <path d="M 128,92 L 162,62 L 968,62 C 962,92 952,114 938,126 L 128,126 Z"/>
+    </clipPath>
+
+    <!-- Castone Gemma Circolare con Sfaccettatura a Diamante (Stile percorso.svg) -->
+    <g id="gemActiveGreen5">
+      <circle cx="0" cy="0" r="16" fill="url(#bronzeGold5)" stroke="#241407" stroke-width="1.8"/>
+      <circle cx="0" cy="0" r="12.5" fill="#071a12" stroke="#fff4e0" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="10.5" fill="#16a34a"/>
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#22c55e"/>
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#bbf7d0"/>
+    </g>
+
+    <g id="gemInactiveGrey5">
+      <circle cx="0" cy="0" r="16" fill="url(#bronzeGold5)" stroke="#241407" stroke-width="1.8"/>
+      <circle cx="0" cy="0" r="12.5" fill="#0f141c" stroke="#fff4e0" stroke-width="0.8"/>
+      <circle cx="0" cy="0" r="10.5" fill="#475569"/>
+      <polygon points="0,-10 10,0 0,10 -10,0" fill="#64748b"/>
+      <polygon points="0,-5 5,0 0,5 -5,0" fill="#cbd5e1" opacity="0.6"/>
+    </g>
+  </defs>
+
+  <g filter="url(#shadow5)">
+    <!-- 1. SOTTO-BARRA INFERIORE SMUSSATA -->
+    <g>
+      <polygon points="118,136 726,136 726,180 714,192 114,192 114,148" fill="url(#bronzeGold5)" stroke="#241407" stroke-width="2" stroke-linejoin="round"/>
+      <polygon points="124,142 720,142 720,177 710,186 120,186 120,151" fill="url(#subBarBevel5)" stroke="#1a090b" stroke-width="1.5"/>
+      <polygon points="130,147 714,147 714,174 706,181 126,181 126,154" fill="url(#subBarCore5)"/>
+      <!-- Ombra portata superiore sulla sotto-barra -->
+      <polygon points="124,142 720,142 720,152 124,152" fill="#000000" opacity="0.45"/>
+      <!-- Fascia diagonale di riflesso -->
+      <polygon points="625,147 650,147 635,181 610,181" fill="#ffffff" opacity="0.07"/>
+    </g>
+
+    <!-- 2. CORNICE PRINCIPALE BARRA HP (Stile percorso.svg) -->
+    <g>
+      <!-- Struttura Esterna Bronzo-Oro -->
+      <path d="M 118,80 L 154,42 L 168,38 L 190,45 L 200,37 L 218,50 L 964,50 L 998,36 C 995,64 989,82 982,94 L 996,91 C 984,120 966,142 944,152 C 926,158 910,148 896,145 C 886,145 880,152 876,158 C 866,148 854,140 830,140 L 118,140 Z" 
+            fill="url(#bronzeGold5)" stroke="#241407" stroke-width="2" stroke-linejoin="round"/>
+
+      <!-- Trincea Scura Incassata -->
+      <path d="M 124,86 L 158,54 L 980,54 C 974,88 962,118 942,134 L 124,134 Z" fill="url(#trenchDark5)" stroke="#140b05" stroke-width="1.5"/>
+
+      <!-- Filetto Chiaro Interno e Riempimento Barra Rossa -->
+      <path d="M 128,92 L 162,62 L 968,62 C 962,92 952,114 938,126 L 128,126 Z" fill="url(#redBar5)" stroke="#f5d5b8" stroke-width="2" stroke-linejoin="round"/>
+
+      <!-- Dettagli Interni Barra Rossa (Riflesso Orizzontale + Linee Diagonali percorso.svg) -->
+      <g clip-path="url(#redClip5)">
+        <!-- Metà superiore lucida -->
+        <rect x="125" y="60" width="850" height="32" fill="#ffffff" opacity="0.16"/>
+        <rect x="125" y="60" width="850" height="10" fill="#fca5a5" opacity="0.45"/>
+        <!-- Linee diagonali sottili -->
+        <g stroke="#ffffff" stroke-width="1.5" opacity="0.1">
+          <line x1="240" y1="55" x2="290" y2="135"/>
+          <line x1="270" y1="55" x2="320" y2="135"/>
+          <line x1="780" y1="55" x2="730" y2="135"/>
+          <line x1="750" y1="55" x2="700" y2="135"/>
+        </g>
+        <!-- Smusso luminoso estremo destro -->
+        <path d="M 940,62 L 968,62 C 962,92 952,114 938,126 L 922,126 C 938,110 948,88 952,62 Z" fill="#ffffff" opacity="0.45"/>
+      </g>
+    </g>
+
+    <!-- 3. SEI GEMME SUPERIORI (1 Verde + 5 Grigie) -->
+    <g transform="translate(0, 26)">
+      <use href="#gemActiveGreen5" x="778" y="0"/>
+      <use href="#gemInactiveGrey5" x="812" y="0"/>
+      <use href="#gemInactiveGrey5" x="846" y="0"/>
+      <use href="#gemInactiveGrey5" x="880" y="0"/>
+      <use href="#gemInactiveGrey5" x="914" y="0"/>
+      <use href="#gemInactiveGrey5" x="948" y="0"/>
+    </g>
+
+    <!-- 4. MEDAGLIONE "HP" SINISTRO (Stile percorso.svg) -->
+    <g transform="translate(78, 100)">
+      <!-- Punte Sfaccettate Esterne (Come la corona di percorso.svg) -->
+      <g stroke="#241407" stroke-width="1.5" stroke-linejoin="round">
+        <!-- Punta Nord -->
+        <polygon points="0,-78 -15,-52 15,-52" fill="url(#bronzeGold5)"/>
+        <polygon points="0,-78 15,-52 0,-52" fill="#7a4e28"/>
+        <!-- Punta Sud -->
+        <polygon points="0,78 -15,52 15,52" fill="url(#bronzeGold5)"/>
+        <polygon points="0,78 15,52 0,52" fill="#593818"/>
+        <!-- Punta Nord-Ovest -->
+        <polygon points="-60,-46 -50,-18 -30,-40" fill="url(#bronzeGold5)"/>
+        <!-- Punta Nord-Est -->
+        <polygon points="56,-46 48,-18 28,-40" fill="url(#bronzeGold5)"/>
+        <!-- Punta Ovest -->
+        <polygon points="-65,6 -48,28 -52,-4" fill="url(#bronzeGold5)"/>
+      </g>
+
+      <!-- Anello Esterno Bronzo-Oro -->
+      <circle cx="0" cy="0" r="55" fill="url(#bronzeGold5)" stroke="#241407" stroke-width="2"/>
+      <!-- Trincea Circolare Scura -->
+      <circle cx="0" cy="0" r="46" fill="url(#trenchDark5)" stroke="#140b05" stroke-width="1.5"/>
+      <!-- Filetto Chiaro e Centro Ardesia -->
+      <circle cx="0" cy="0" r="41" fill="url(#slateCircle5)" stroke="#f5d5b8" stroke-width="2"/>
+    </g>
+
+    <!-- 5. LIVELLO TESTO -->
+    <g id="testo">
+      <g transform="translate(78, 100) rotate(-8)">
+        <text x="0" y="21" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-weight="900" font-size="60" letter-spacing="-2" fill="#ffffff" stroke="#140b05" stroke-width="6" stroke-linejoin="round" paint-order="stroke">HP</text>
+      </g>
+      <text x="942" y="106" text-anchor="end" font-family="'Segoe UI', 'Montserrat', sans-serif" font-weight="900" font-size="29" fill="#ffffff" stroke="#38090d" stroke-width="4.5" paint-order="stroke">Lv. 10</text>
+    </g>
+  </g>
+</svg>

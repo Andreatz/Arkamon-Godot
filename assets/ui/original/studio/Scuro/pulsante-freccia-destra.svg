@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" width="100%" height="100%">
+  <defs>
+    <filter id="shadowArrR" x="-12%" y="-12%" width="124%" height="128%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <linearGradient id="bronzeMain2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <linearGradient id="trenchDark2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <radialGradient id="slateBoard2" cx="50%" cy="45%" r="58%">
+      <stop offset="0%" stop-color="#22354f" />
+      <stop offset="65%" stop-color="#121c2b" />
+      <stop offset="100%" stop-color="#090e17" />
+    </radialGradient>
+
+    <linearGradient id="ivoryArrow2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#f5ebe0" />
+      <stop offset="100%" stop-color="#d6c4b0" />
+    </linearGradient>
+
+    <clipPath id="octaClip2">
+      <polygon points="82,42 178,42 204,68 204,152 178,178 82,178 56,152 56,68" />
+    </clipPath>
+
+    <g id="sideGem2">
+      <polygon points="0,-28 28,0 0,28 -28,0" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-23 23,0 0,23 -23,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-18 18,0 0,18 -18,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-15 15,0 0,15 -15,0" fill="#0ea5e9" />
+      <polygon points="0,-15 15,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 15,0 0,15" fill="#0284c7" />
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowArrR)">
+    <!-- 1. CORNICE OTTAGONALE ESTERNA IN BRONZO -->
+    <polygon points="72,20 188,20 224,56 224,164 188,200 72,200 36,164 36,56" fill="url(#bronzeMain2)" stroke="#24130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="74,24 186,24 220,58" fill="none" stroke="#fff3e6" stroke-width="1.6" opacity="0.85" />
+
+    <!-- 2. TRINCEA SCURA E LASTRA BLU ARDESIA -->
+    <polygon points="77,32 183,32 212,61 212,159 183,188 77,188 48,159 48,61" fill="url(#trenchDark2)" stroke="#140c07" stroke-width="1.5" stroke-linejoin="round" />
+
+    <polygon points="80,38 180,38 206,64 206,156 180,182 80,182 54,156 54,64" fill="url(#slateBoard2)" stroke="#0d131a" stroke-width="1.5" stroke-linejoin="round" />
+
+    <g clip-path="url(#octaClip2)">
+      <line x1="75" y1="38" x2="155" y2="182" stroke="#ffffff" stroke-width="1.2" opacity="0.06" />
+      <line x1="105" y1="38" x2="185" y2="182" stroke="#ffffff" stroke-width="1.2" opacity="0.06" />
+    </g>
+    <polygon points="83,43 177,43 201,67 201,153 177,177 83,177 59,153 59,67" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.7" stroke-linejoin="round" />
+
+    <!-- 3. FRECCIA TRIANGOLARE DESTRA 3D IN AVORIO SMUSSATO -->
+    <g transform="translate(130, 110)">
+      <!-- Ombra portata -->
+      <path d="M -28,-46 Q -28,-54 -21,-48 L 36,-5 Q 42,0 36,5 L -21,48 Q -28,54 -28,46 Z" transform="translate(0, 6)" fill="#05080f" opacity="0.85" />
+      <!-- Smusso 3D Ombreggiato -->
+      <path d="M -28,-46 Q -28,-54 -21,-48 L 36,-5 Q 42,0 36,5 L -21,48 Q -28,54 -28,46 Z" fill="#b8a38e" stroke="#1c110a" stroke-width="2.5" stroke-linejoin="round" />
+      <!-- Piano Superiore Illuminato -->
+      <polygon points="-22,-42 29,0 -22,42" fill="url(#ivoryArrow2)" />
+      <!-- Filetto Speculare Bianco -->
+      <polyline points="-22,38 -22,-42 27,0" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- 4. DUE GEMME LATERALI -->
+    <use href="#sideGem2" x="38" y="110" />
+    <use href="#sideGem2" x="222" y="110" />
+  </g>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 185" width="100%" height="100%">
+  <defs>
+    <filter id="a14-shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="5" stdDeviation="4" flood-color="#000614" flood-opacity="0.75" />
+    </filter>
+    <filter id="a14-check-shadow" x="-18%" y="-18%" width="136%" height="136%">
+      <feDropShadow dx="0" dy="4" stdDeviation="2.5" flood-color="#00040f" flood-opacity="0.9" />
+    </filter>
+
+    <linearGradient id="a14-gold-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="18%" stop-color="#f7ead7" />
+      <stop offset="55%" stop-color="#d4ad7d" />
+      <stop offset="88%" stop-color="#9e6f3c" />
+      <stop offset="100%" stop-color="#5e3c19" />
+    </linearGradient>
+
+    <linearGradient id="a14-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6e5" />
+      <stop offset="35%" stop-color="#f0be6e" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#693b08" />
+    </linearGradient>
+
+    <radialGradient id="a14-blue-panel" cx="50%" cy="42%" r="65%">
+      <stop offset="0%" stop-color="#0a3d91" />
+      <stop offset="65%" stop-color="#052159" />
+      <stop offset="100%" stop-color="#021030" />
+    </radialGradient>
+
+    <linearGradient id="a14-blue-rim" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2979ff" />
+      <stop offset="50%" stop-color="#0d47a1" />
+      <stop offset="100%" stop-color="#1e88e5" />
+    </linearGradient>
+
+    <linearGradient id="a14-ivory-check" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#f7efe4" />
+      <stop offset="85%" stop-color="#d6c4ae" />
+      <stop offset="100%" stop-color="#9e8870" />
+    </linearGradient>
+
+    <linearGradient id="a14-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <g id="a14-gem" filter="url(#a14-check-shadow)">
+      <polygon points="0,-24 22,0 0,24 -22,0" fill="url(#a14-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-24 -22,0 -16,0 0,-18" fill="#ffffff" opacity="0.7" />
+      <polygon points="0,-15 14,0 0,15 -14,0" fill="#04152e" />
+      <polygon points="0,-13 12,0 0,13 -12,0" fill="url(#a14-cyan-gem)" />
+      <polygon points="0,-13 12,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-5 5,0 0,5 -5,0" fill="#e0faff" />
+    </g>
+  </defs>
+
+  <g filter="url(#a14-shadow)">
+    <!-- 1. Cornice Ottagonale Esterna -->
+    <polygon points="55,16 155,16 184,45 184,140 155,169 55,169 26,140 26,45" fill="url(#a14-gold-frame)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+    <polyline points="28,46 56,19 154,19 182,46" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" />
+
+    <!-- 2. Scanalatura Blu Notte -->
+    <polygon points="59,26 151,26 174,49 174,136 151,159 59,159 36,136 36,49" fill="#020b1f" stroke="#36220e" stroke-width="1.5" stroke-linejoin="round" />
+
+    <!-- 3. Riquadro Ottagonale Blu Reale con Filetto Luminoso -->
+    <polygon points="64,34 146,34 164,52 164,133 146,151 64,151 46,133 46,52" fill="url(#a14-blue-panel)" stroke="url(#a14-blue-rim)" stroke-width="2.6" stroke-linejoin="round" />
+
+    <!-- 4. Icona Spunta (✓) Scolpita in 3D -->
+    <g filter="url(#a14-check-shadow)">
+      <path d="M 59,98 L 70,86 C 72,84 75,84 77,86 L 91,100 L 131,56 C 133,54 136,54 138,56 L 150,67 C 152,69 152,72 150,74 L 95,132 C 93,134 90,134 88,132 L 59,104 C 57,102 57,100 59,98 Z" fill="url(#a14-ivory-check)" stroke="#1c130a" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="61,101 91,131 148,71 144,68 91,124 64,98" fill="#b5a088" opacity="0.65" />
+      <polyline points="62,99 73,88 91,105 135,58 147,69" fill="none" stroke="#ffffff" stroke-width="2" opacity="0.9" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- 5. Gemme Romboidali Laterali -->
+    <use href="#a14-gem" x="28" y="92.5" />
+    <use href="#a14-gem" x="182" y="92.5" />
+  </g>
+</svg>

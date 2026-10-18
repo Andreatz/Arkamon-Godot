@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 300" width="100%" height="100%">
+  <defs>
+    <filter id="shadowHome" x="-12%" y="-10%" width="124%" height="125%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5.5" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Bronzo / Oro Rosa (da percorso.svg) -->
+    <linearGradient id="bronzeRing3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="55%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#472a17" />
+    </linearGradient>
+
+    <!-- Disco Interno Blu Ardesia Scuro (da percorso.svg) -->
+    <radialGradient id="slateDisc3" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#22354f" />
+      <stop offset="65%" stop-color="#121c2b" />
+      <stop offset="100%" stop-color="#090e17" />
+    </radialGradient>
+
+    <!-- Icona Casa in Avorio Scolpito 3D -->
+    <linearGradient id="ivoryHouse3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="55%" stop-color="#f5ebe0" />
+      <stop offset="100%" stop-color="#cbb8a3" />
+    </linearGradient>
+
+    <clipPath id="discClip3">
+      <circle cx="0" cy="0" r="78" />
+    </clipPath>
+
+    <!-- Gemma Cardinale Standard (N, E, W) -->
+    <g id="cardinalGem3">
+      <polygon points="0,-29 29,0 0,29 -29,0" fill="url(#bronzeRing3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="0,-24 24,0 0,24 -24,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-19 19,0 0,19 -19,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-16 16,0 0,16 -16,0" fill="#0ea5e9" />
+      <polygon points="0,-16 16,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 16,0 0,16" fill="#0284c7" />
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0f2fe" />
+    </g>
+
+    <!-- Gemma Inferiore a Lancia / Punta Allungata (Sud) -->
+    <g id="spearGemSouth3">
+      <polygon points="0,-29 30,0 0,52 -30,0" fill="url(#bronzeRing3)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <!-- Sfaccettature 3D della punta inferiore in bronzo -->
+      <polygon points="0,52 -30,0 -18,0 0,24" fill="#fff7ed" opacity="0.55" />
+      <polygon points="0,52 30,0 18,0 0,24" fill="#3b2112" opacity="0.7" />
+      <polygon points="0,-24 24,0 0,28 -24,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <!-- Incasso e Gemma Ciano -->
+      <polygon points="0,-19 19,0 0,19 -19,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-16 16,0 0,16 -16,0" fill="#0ea5e9" />
+      <polygon points="0,-16 16,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 16,0 0,16" fill="#0284c7" />
+      <polygon points="0,-7 7,0 0,7 -7,0" fill="#e0f2fe" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowHome)" transform="translate(140, 140)">
+    <!-- 1. ANELLO ESTERNO IN BRONZO -->
+    <circle cx="0" cy="0" r="106" fill="url(#bronzeRing3)" stroke="#1c0f07" stroke-width="2.5" />
+    <path d="M -86,-52 A 99,99 0 0,1 86,-52" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" opacity="0.8" />
+
+    <!-- 2. TRINCEA SCURA E DISCO INTERNO BLU ARDESIA -->
+    <circle cx="0" cy="0" r="84" fill="#070b12" stroke="#1c0f07" stroke-width="2" />
+    <circle cx="0" cy="0" r="78" fill="url(#slateDisc3)" stroke="#38bdf8" stroke-width="2" stroke-opacity="0.65" />
+
+    <!-- Riflessi Diagonali e Archi Luminosi Interni -->
+    <g clip-path="url(#discClip3)">
+      <line x1="-55" y1="-78" x2="25" y2="78" stroke="#ffffff" stroke-width="1.2" opacity="0.06" />
+      <line x1="-25" y1="-78" x2="55" y2="78" stroke="#ffffff" stroke-width="1.2" opacity="0.06" />
+    </g>
+    <path d="M -58,-38 A 69,69 0 0,1 58,-38" fill="none" stroke="#7dd3fc" stroke-width="3" stroke-linecap="round" opacity="0.75" />
+    <path d="M -52,44 A 68,68 0 0,0 52,44" fill="none" stroke="#38bdf8" stroke-width="2" stroke-linecap="round" opacity="0.45" />
+
+    <!-- 3. ICONA CASA 3D IN AVORIO CON PORTA AD ARCO -->
+    <g>
+      <!-- Ombra portata della casa -->
+      <path d="M 0,-52 L 54,-4 C 58,0 56,5 50,5 L 38,5 L 38,42 C 38,46 34,49 30,49 L -30,49 C -34,49 -38,46 -38,42 L -38,5 L -50,5 C -56,5 -58,0 -54,-4 Z" transform="translate(0, 6)" fill="#05080f" opacity="0.85" />
+      <!-- Corpo Casa con Porta ad Arco Forata (fill-rule="evenodd") -->
+      <path fill-rule="evenodd" d="M 0,-52 L 54,-4 C 58,0 56,5 50,5 L 38,5 L 38,42 C 38,46 34,49 30,49 L -30,49 C -34,49 -38,46 -38,42 L -38,5 L -50,5 C -56,5 -58,0 -54,-4 Z 
+               M -15,38 L 15,38 L 15,8 C 15,-8 -15,-8 -15,8 Z" fill="url(#ivoryHouse3)" stroke="#1c110a" stroke-width="2.5" stroke-linejoin="round" />
+      <!-- Riflesso bianco sugli spioventi del tetto -->
+      <polyline points="-51,-2 0,-48 51,-2" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    </g>
+
+    <!-- 4. GEMME CARDINALI (3 Standard + 1 Punta a Lancia Inferiore) -->
+    <use href="#cardinalGem3" x="0" y="-98" />
+    <use href="#cardinalGem3" x="98" y="0" />
+    <use href="#cardinalGem3" x="-98" y="0" />
+    <use href="#spearGemSouth3" x="0" y="98" />
+  </g>
+</svg>

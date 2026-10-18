@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 320" width="100%" height="100%">
+  <defs>
+    <filter id="dropShadow25" x="-4%" y="-8%" width="108%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="5.5" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <!-- Metallo Avorio-Argento-Oro Cornice -->
+    <linearGradient id="metalFrame25" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="20%" stop-color="#f5efe0"/>
+      <stop offset="50%" stop-color="#cbb898"/>
+      <stop offset="80%" stop-color="#e3d1b4"/>
+      <stop offset="100%" stop-color="#8c7353"/>
+    </linearGradient>
+
+    <linearGradient id="goldRim25" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fffbeb"/>
+      <stop offset="40%" stop-color="#eab308"/>
+      <stop offset="80%" stop-color="#a16207"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </linearGradient>
+
+    <!-- Vetro Blu Zaffiro Profondo -->
+    <radialGradient id="sapphireGlass25" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#063780"/>
+      <stop offset="55%" stop-color="#032254"/>
+      <stop offset="100%" stop-color="#011230"/>
+    </radialGradient>
+
+    <!-- Targa Superiore Bianco Perla -->
+    <linearGradient id="headerPearl25" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="65%" stop-color="#f1f5f9"/>
+      <stop offset="100%" stop-color="#cbd5e1"/>
+    </linearGradient>
+
+    <!-- Rivetto Oro 3D -->
+    <radialGradient id="goldStud25" cx="35%" cy="30%" r="65%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="30%" stop-color="#facc15"/>
+      <stop offset="75%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#451a03"/>
+    </radialGradient>
+
+    <clipPath id="mainGlassClip25">
+      <polygon points="88,68 972,68 1012,108 1012,248 982,278 78,278 48,248 48,108"/>
+    </clipPath>
+
+    <!-- Gemma Romboidale a Punta Allungata -->
+    <g id="pointedGem25">
+      <polygon points="0,-36 28,0 0,36 -28,0" fill="url(#metalFrame25)" stroke="#1f170d" stroke-width="2" stroke-linejoin="round"/>
+      <polygon points="0,-29 22,0 0,29 -22,0" fill="url(#goldRim25)"/>
+      <polygon points="0,-21 15,0 0,21 -15,0" fill="#0891b2" stroke="#042f2e" stroke-width="1"/>
+      <polygon points="0,-21 15,0 0,0" fill="#67e8f9"/>
+      <polygon points="0,-21 0,0 -15,0" fill="#22d3ee"/>
+      <polygon points="0,0 15,0 0,21" fill="#0e7490"/>
+      <polygon points="0,-10 7,0 0,10 -7,0" fill="#ecfeff"/>
+    </g>
+  </defs>
+
+  <g filter="url(#dropShadow25)">
+    <!-- 1. CORNICE PRINCIPALE ESTERNA -->
+    <polygon points="78,44 982,44 1034,96 1034,260 994,300 66,300 26,260 26,96" 
+             fill="url(#metalFrame25)" stroke="#1a140c" stroke-width="2.5" stroke-linejoin="round"/>
+    
+    <!-- Trincea e Smusso Blu Elettrico -->
+    <polygon points="83,56 977,56 1022,101 1022,255 988,289 72,289 38,255 38,101" 
+             fill="#021029" stroke="#786142" stroke-width="2" stroke-linejoin="round"/>
+
+    <polygon points="88,64 972,64 1014,106 1014,250 983,281 77,281 46,250 46,106" 
+             fill="url(#sapphireGlass25)" stroke="#0ea5e9" stroke-width="2.5" stroke-linejoin="round"/>
+
+    <!-- 2. VENATURE ETEREE LUMINOSE NEL VETRO ZAFFIRO -->
+    <g clip-path="url(#mainGlassClip25)">
+      <!-- Onde fluide morbide a sinistra e destra -->
+      <path d="M 45,140 Q 130,120 160,65 L 45,65 Z" fill="#0284c7" opacity="0.25"/>
+      <path d="M 150,68 C 110,130 135,235 280,278 L 48,278 L 48,68 Z" fill="#0369a1" opacity="0.2"/>
+      <path d="M 165,68 C 120,135 150,235 310,278" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.3"/>
+      <path d="M 48,215 C 125,210 185,250 245,278" fill="none" stroke="#7dd3fc" stroke-width="1.5" opacity="0.25"/>
+
+      <path d="M 900,68 C 950,130 925,235 770,278 L 1012,278 L 1012,68 Z" fill="#0369a1" opacity="0.22"/>
+      <path d="M 885,68 C 935,135 905,235 740,278" fill="none" stroke="#38bdf8" stroke-width="2" opacity="0.35"/>
+      <path d="M 1012,185 C 930,195 860,245 795,278" fill="none" stroke="#7dd3fc" stroke-width="1.8" opacity="0.3"/>
+
+      <!-- Cornice sfaccettata interna al vetro -->
+      <polygon points="94,74 966,74 1004,112 1004,244 977,271 83,271 56,244 56,112" 
+               fill="none" stroke="#38bdf8" stroke-width="1.5" opacity="0.45"/>
+    </g>
+
+    <!-- Rivetti d'oro negli angoli inferiori -->
+    <circle cx="62" cy="264" r="7" fill="url(#goldStud25)" stroke="#1f1204" stroke-width="1.5"/>
+    <circle cx="998" cy="264" r="7" fill="url(#goldStud25)" stroke="#1f1204" stroke-width="1.5"/>
+
+    <!-- 3. TARGA SUPERIORE (HEADER BIANCO PERLA) -->
+    <g>
+      <!-- Ombra della targa sul vetro blu -->
+      <polygon points="345,30 715,30 742,57 715,88 345,88 318,57" fill="#01091a" opacity="0.65"/>
+
+      <!-- Fregi appuntiti laterali della targa -->
+      <polygon points="350,40 322,40 310,52 322,64 350,64" fill="url(#metalFrame25)" stroke="#1a140c" stroke-width="1.8"/>
+      <circle cx="326" cy="52" r="5.5" fill="url(#goldStud25)" stroke="#1f1204" stroke-width="1.2"/>
+
+      <polygon points="710,40 738,40 750,52 738,64 710,64" fill="url(#metalFrame25)" stroke="#1a140c" stroke-width="1.8"/>
+      <circle cx="734" cy="52" r="5.5" fill="url(#goldStud25)" stroke="#1f1204" stroke-width="1.2"/>
+
+      <!-- Cornice Metallica Targa -->
+      <polygon points="356,22 704,22 732,50 732,56 710,78 350,78 328,56 328,50" 
+               fill="url(#metalFrame25)" stroke="#1a140c" stroke-width="2" stroke-linejoin="round"/>
+      
+      <!-- Lastra Interna Bianco Perla -->
+      <polygon points="362,30 698,30 720,52 704,68 356,68 340,52" 
+               fill="url(#headerPearl25)" stroke="#475569" stroke-width="1.5" stroke-linejoin="round"/>
+      <polyline points="364,33 696,33 716,52" fill="none" stroke="#ffffff" stroke-width="2"/>
+
+      <!-- Rivetti d'oro interni alla targa -->
+      <circle cx="358" cy="50" r="7.5" fill="url(#goldStud25)" stroke="#1f1204" stroke-width="1.5"/>
+      <circle cx="702" cy="50" r="7.5" fill="url(#goldStud25)" stroke="#1f1204" stroke-width="1.5"/>
+
+      <!-- Gemma Centrale della Targa -->
+      <use href="#pointedGem25" x="530" y="50"/>
+    </g>
+
+    <!-- 4. GEMME LATERALI SINISTRA E DESTRA -->
+    <use href="#pointedGem25" x="34" y="178"/>
+    <use href="#pointedGem25" x="1026" y="178"/>
+  </g>
+</svg>

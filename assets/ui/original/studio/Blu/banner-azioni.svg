@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 390" width="100%" height="100%">
+  <defs>
+    <filter id="a6-shadow" x="-5%" y="-8%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#000614" flood-opacity="0.8" />
+    </filter>
+    <filter id="a6-elem-shadow" x="-15%" y="-18%" width="130%" height="136%">
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#00040f" flood-opacity="0.85" />
+    </filter>
+
+    <linearGradient id="a6-gold-frame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="15%" stop-color="#f7ebd9" />
+      <stop offset="52%" stop-color="#cfb08b" />
+      <stop offset="88%" stop-color="#946e42" />
+      <stop offset="100%" stop-color="#543818" />
+    </linearGradient>
+
+    <linearGradient id="a6-gem-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff6e5" />
+      <stop offset="35%" stop-color="#f2c06d" />
+      <stop offset="75%" stop-color="#b87624" />
+      <stop offset="100%" stop-color="#633606" />
+    </linearGradient>
+
+    <radialGradient id="a6-royal-bg" cx="50%" cy="45%" r="62%">
+      <stop offset="0%" stop-color="#083685" />
+      <stop offset="60%" stop-color="#052159" />
+      <stop offset="100%" stop-color="#021030" />
+    </radialGradient>
+
+    <linearGradient id="a6-blue-bevel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2979ff" />
+      <stop offset="50%" stop-color="#0d47a1" />
+      <stop offset="100%" stop-color="#1565c0" />
+    </linearGradient>
+
+    <linearGradient id="a6-header-plate" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="60%" stop-color="#eef2f7" />
+      <stop offset="100%" stop-color="#cdd5e0" />
+    </linearGradient>
+
+    <radialGradient id="a6-gold-stud" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#fff9db" />
+      <stop offset="40%" stop-color="#f7b733" />
+      <stop offset="85%" stop-color="#b56207" />
+      <stop offset="100%" stop-color="#592c00" />
+    </radialGradient>
+
+    <linearGradient id="a6-cyan-gem" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#aef4ff" />
+      <stop offset="45%" stop-color="#00b4fc" />
+      <stop offset="100%" stop-color="#004d80" />
+    </linearGradient>
+
+    <clipPath id="a6-inner-clip">
+      <polygon points="82,56 838,56 874,92 874,312 838,348 82,348 46,312 46,92" />
+    </clipPath>
+
+    <g id="a6-gem" filter="url(#a6-elem-shadow)">
+      <polygon points="0,-28 26,0 0,28 -26,0" fill="url(#a6-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+      <polygon points="0,-28 -26,0 -19,0 0,-21" fill="#ffffff" opacity="0.7" />
+      <polygon points="0,-18 16,0 0,18 -16,0" fill="#04152e" />
+      <polygon points="0,-16 14,0 0,16 -14,0" fill="url(#a6-cyan-gem)" />
+      <polygon points="0,-16 14,0 0,0" fill="#6ee2ff" opacity="0.75" />
+      <polygon points="0,-6 6,0 0,6 -6,0" fill="#e0faff" />
+    </g>
+
+    <!-- Componente Pulsante Azione Inferiore -->
+    <g id="a6-sub-button" filter="url(#a6-elem-shadow)">
+      <polygon points="34,0 296,0 328,34 296,68 34,68 2,34" fill="url(#a6-gold-frame)" stroke="#1c130a" stroke-width="2" stroke-linejoin="round" />
+      <polyline points="5,34 35,3 295,3 325,34" fill="none" stroke="#ffffff" stroke-width="1.8" opacity="0.85" />
+      <polygon points="38,7 292,7 318,34 292,61 38,61 12,34" fill="#020b1f" stroke="#36220e" stroke-width="1.3" />
+      <polygon points="42,12 288,12 310,34 288,56 42,56 20,34" fill="url(#a6-royal-bg)" stroke="url(#a6-blue-bevel)" stroke-width="2" stroke-linejoin="round" />
+      <!-- Gemme Laterali del Pulsante -->
+      <g transform="translate(18, 34) scale(0.65)">
+        <use href="#a6-gem" />
+      </g>
+      <g transform="translate(312, 34) scale(0.65)">
+        <use href="#a6-gem" />
+      </g>
+    </g>
+  </defs>
+
+  <g filter="url(#a6-shadow)">
+    <!-- 1. CORNICE ESTERNA PRINCIPALE -->
+    <polygon points="76,36 844,36 894,86 894,318 844,368 76,368 26,318 26,86" fill="url(#a6-gold-frame)" stroke="#1c130a" stroke-width="2.4" stroke-linejoin="round" />
+    <polyline points="29,86 77,39 843,39 891,86" fill="none" stroke="#ffffff" stroke-width="2.2" opacity="0.85" />
+
+    <!-- Scanalatura Blu Notte -->
+    <polygon points="80,48 840,48 882,90 882,314 840,356 80,356 38,314 38,90" fill="#020b1f" stroke="#36220e" stroke-width="1.6" stroke-linejoin="round" />
+
+    <!-- 2. PANNELLO INTERNO BLU REALE -->
+    <polygon points="84,56 836,56 874,94 874,310 836,348 84,348 46,310 46,94" fill="url(#a6-royal-bg)" stroke="url(#a6-blue-bevel)" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- Venature Magiche Blu Internamente (Clipped) -->
+    <g clip-path="url(#a6-inner-clip)">
+      <path d="M 40,150 C 115,115 135,60 210,55 C 140,105 115,200 190,265 C 235,305 290,335 335,348 L 40,348 Z" fill="#1e88e5" opacity="0.16" />
+      <path d="M 50,165 C 110,135 130,85 180,60 M 55,225 C 125,245 170,305 260,335" fill="none" stroke="#64b5f6" stroke-width="2.5" opacity="0.35" />
+      <path d="M 880,150 C 805,115 785,60 710,55 C 780,105 805,200 730,265 C 685,305 630,335 585,348 L 880,348 Z" fill="#1e88e5" opacity="0.16" />
+      <path d="M 870,165 C 810,135 790,85 740,60 M 865,225 C 795,245 750,305 660,335" fill="none" stroke="#64b5f6" stroke-width="2.5" opacity="0.35" />
+      <polygon points="90,64 830,64 864,98 864,306 830,340 90,340 56,306 56,98" fill="none" stroke="#2979ff" stroke-width="1.6" opacity="0.65" />
+    </g>
+
+    <!-- Rivetti Dorati negli Angoli Inferiori -->
+    <circle cx="60" cy="324" r="8.5" fill="url(#a6-gold-stud)" stroke="#2b1400" stroke-width="1.5" />
+    <circle cx="860" cy="324" r="8.5" fill="url(#a6-gold-stud)" stroke="#2b1400" stroke-width="1.5" />
+
+    <!-- Gemma sullo Smusso Superiore Sinistro e Gemma Laterale Destra -->
+    <use href="#a6-gem" x="55" y="96" transform="scale(0.72)" style="transform-origin: 55px 96px;" />
+    <use href="#a6-gem" x="886" y="212" />
+
+    <!-- 3. I DUE PULSANTI AZIONE INFERIORI INTEGRATI -->
+    <use href="#a6-sub-button" x="108" y="274" />
+    <use href="#a6-sub-button" x="478" y="274" />
+
+    <!-- 4. TARGHETTA SUPERIORE CENTRALE -->
+    <g filter="url(#a6-elem-shadow)">
+      <polygon points="248,38 262,28 278,28 278,48 262,48" fill="url(#a6-gold-frame)" stroke="#1c130a" stroke-width="1.8" stroke-linejoin="round" />
+      <circle cx="263" cy="38" r="4" fill="#a7f3d0" stroke="#36220e" stroke-width="1" />
+      <polygon points="672,38 658,28 642,28 642,48 658,48" fill="url(#a6-gold-frame)" stroke="#1c130a" stroke-width="1.8" stroke-linejoin="round" />
+      <circle cx="657" cy="38" r="4" fill="#6ee7cb" stroke="#36220e" stroke-width="1" />
+
+      <polygon points="292,10 628,10 652,38 628,68 292,68 268,38" fill="url(#a6-gold-frame)" stroke="#1c130a" stroke-width="2.2" stroke-linejoin="round" />
+      <polygon points="297,18 623,18 642,38 623,60 297,60 278,38" fill="url(#a6-header-plate)" stroke="#6e7e91" stroke-width="1.5" stroke-linejoin="round" />
+      <polyline points="281,38 298,21 622,21" fill="none" stroke="#ffffff" stroke-width="2" />
+
+      <circle cx="298" cy="39" r="6.5" fill="url(#a6-gold-stud)" stroke="#2b1400" stroke-width="1.2" />
+      <circle cx="622" cy="39" r="6.5" fill="url(#a6-gold-stud)" stroke="#2b1400" stroke-width="1.2" />
+
+      <g transform="translate(460, 39)">
+        <polygon points="0,-35 26,0 0,35 -26,0" fill="url(#a6-gem-gold)" stroke="#241406" stroke-width="1.8" stroke-linejoin="round" />
+        <polygon points="0,-22 16,0 0,22 -16,0" fill="#04152e" />
+        <polygon points="0,-20 14,0 0,20 -14,0" fill="url(#a6-cyan-gem)" />
+        <polygon points="0,-20 14,0 0,0" fill="#7be5ff" opacity="0.8" />
+        <polygon points="0,-8 5,0 0,8 -5,0" fill="#e8fbff" />
+      </g>
+    </g>
+
+    <!-- 5. PULSANTE CIRCOLARE CHIUDI (X) IN ALTO A DESTRA -->
+    <g transform="translate(856, 68)" filter="url(#a6-elem-shadow)">
+      <circle cx="0" cy="0" r="38" fill="url(#a6-gold-frame)" stroke="#1c130a" stroke-width="2.2" />
+      <circle cx="0" cy="0" r="30" fill="#020b1f" stroke="#8c6230" stroke-width="1.5" />
+      <circle cx="0" cy="0" r="27" fill="url(#a6-royal-bg)" stroke="#1e88e5" stroke-width="1.5" />
+      <path d="M -11,-15 L 0,-4 L 11,-15 L 15,-11 L 4,0 L 15,11 L 11,15 L 0,4 L -11,15 L -15,11 L -4,0 L -15,-11 Z" fill="url(#a6-header-plate)" stroke="#1c130a" stroke-width="1.5" stroke-linejoin="round" />
+    </g>
+  </g>
+</svg>

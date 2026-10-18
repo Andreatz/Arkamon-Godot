@@ -1,0 +1,241 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 680" width="100%" height="100%">
+  <defs>
+    <!-- Ombra Portata Medaglioni -->
+    <filter id="shadowStatus" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.7" />
+    </filter>
+    <!-- Bagliore Neon per le Icone Stato -->
+    <filter id="statusGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Bronzo / Oro Rosa Principale (da percorso.svg) -->
+    <linearGradient id="bronzeMain1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fff3e6" />
+      <stop offset="22%" stop-color="#e5bfa0" />
+      <stop offset="52%" stop-color="#8c5c3e" />
+      <stop offset="82%" stop-color="#c99673" />
+      <stop offset="100%" stop-color="#5e3a22" />
+    </linearGradient>
+
+    <linearGradient id="bronzeBezel1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff7ed" />
+      <stop offset="30%" stop-color="#dead82" />
+      <stop offset="70%" stop-color="#8c5c3e" />
+      <stop offset="100%" stop-color="#3b2112" />
+    </linearGradient>
+
+    <!-- Trincea Scura Incassata -->
+    <linearGradient id="trenchDark1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c110a" />
+      <stop offset="50%" stop-color="#2e1d13" />
+      <stop offset="100%" stop-color="#140c07" />
+    </linearGradient>
+
+    <!-- Sfera Interna Blu Ardesia Scuro (Stile percorso.svg) -->
+    <radialGradient id="slateOrb1" cx="48%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#22354f" />
+      <stop offset="60%" stop-color="#121c2b" />
+      <stop offset="90%" stop-color="#090e17" />
+      <stop offset="100%" stop-color="#16263b" />
+    </radialGradient>
+
+    <!-- 1. Gradiente Fulmine Paralisi -->
+    <linearGradient id="boltGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="45%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <!-- 2. Gradiente Spirale Confusione -->
+    <linearGradient id="spiralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fae8ff" />
+      <stop offset="45%" stop-color="#e879f9" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+
+    <!-- 3. Gradiente Luna Sonno -->
+    <linearGradient id="moonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="50%" stop-color="#7dd3fc" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- 4. Gradiente Goccia Veleno -->
+    <linearGradient id="poisonGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#bef264" />
+      <stop offset="35%" stop-color="#22c55e" />
+      <stop offset="70%" stop-color="#0d9488" />
+      <stop offset="100%" stop-color="#7e22ce" />
+    </linearGradient>
+
+    <!-- 5. Gradiente Sfera K.O. -->
+    <radialGradient id="koOrbGrad" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="60%" stop-color="#334155" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </radialGradient>
+
+    <clipPath id="orbClip1">
+      <circle cx="0" cy="0" r="108" />
+    </clipPath>
+
+    <!-- Gemma Cardinale a Diamante (Stile percorso.svg) -->
+    <g id="cardinalGem1">
+      <polygon points="0,-30 30,0 0,30 -30,0" fill="url(#bronzeBezel1)" stroke="#24130a" stroke-width="2" stroke-linejoin="round" />
+      <polygon points="0,-25 25,0 0,25 -25,0" fill="none" stroke="#fff3e6" stroke-width="1" opacity="0.75" />
+      <polygon points="0,-20 20,0 0,20 -20,0" fill="#07101e" stroke="#1e130c" stroke-width="1" />
+      <polygon points="0,-16 16,0 0,16 -16,0" fill="#0ea5e9" />
+      <polygon points="0,-16 16,0 0,0" fill="#7dd3fc" />
+      <polygon points="0,0 16,0 0,16" fill="#0284c7" />
+      <polygon points="0,-7.5 7.5,0 0,7.5 -7.5,0" fill="#e0f2fe" />
+    </g>
+
+    <!-- Struttura Base Medaglione Circolare in Bronzo -->
+    <g id="medallionBase1">
+      <!-- Anello Esterno in Bronzo con Intagli Laterali -->
+      <circle cx="0" cy="0" r="136" fill="url(#bronzeMain1)" stroke="#24130a" stroke-width="2.5" />
+      <!-- 8 Intagli Semicircolari sul Bordo Esterno -->
+      <g fill="#24130a">
+
+      </g>
+      <!-- Trincea Scura e Filetto Bronzo/Ciano -->
+      <circle cx="0" cy="0" r="118" fill="url(#trenchDark1)" stroke="#140c07" stroke-width="2" />
+      <circle cx="0" cy="0" r="112" fill="none" stroke="#c99673" stroke-width="3.5" />
+
+      <!-- Sfera Interna Blu Ardesia Scuro -->
+      <circle cx="0" cy="0" r="108" fill="url(#slateOrb1)" stroke="#0ea5e9" stroke-width="2" stroke-opacity="0.75" />
+
+      <!-- Riflessi Diagonali (Stile percorso.svg) e Punti Luce Vetro -->
+      <g clip-path="url(#orbClip1)">
+        <line x1="-75" y1="-108" x2="35" y2="108" stroke="#ffffff" stroke-width="1.4" opacity="0.06" />
+        <line x1="-40" y1="-108" x2="70" y2="108" stroke="#ffffff" stroke-width="1.4" opacity="0.06" />
+        <ellipse cx="-42" cy="-76" rx="14" ry="8" transform="rotate(-28 -42 -76)" fill="#ffffff" opacity="0.35" />
+        <ellipse cx="-68" cy="-54" rx="10" ry="6" transform="rotate(-38 -68 -54)" fill="#ffffff" opacity="0.25" />
+      </g>
+    </g>
+
+    <!-- Quattro Gemme Cardinali -->
+    <g id="fourGems1">
+      <use href="#cardinalGem1" x="0" y="-132" />
+      <use href="#cardinalGem1" x="132" y="0" />
+      <use href="#cardinalGem1" x="0" y="132" />
+      <use href="#cardinalGem1" x="-132" y="0" />
+    </g>
+  </defs>
+
+  <g filter="url(#shadowStatus)">
+    <!-- 1. PARALISI (ALTO-SINISTRA) -->
+    <g transform="translate(195, 190)">
+      <use href="#medallionBase1" />
+      <g filter="url(#statusGlow)">
+        <!-- Anello Elettrico Orizzontale alla Base -->
+        <ellipse cx="0" cy="52" rx="64" ry="14" fill="none" stroke="#f59e0b" stroke-width="7" />
+        <ellipse cx="0" cy="52" rx="64" ry="14" fill="none" stroke="#fef9c3" stroke-width="2.5" />
+        <!-- Grande Fulmine Centrale -->
+        <polygon points="32,-88 -42,-14 0,-8 -24,22 8,24 -12,64 42,8 12,6 32,-18 -4,-24" fill="url(#boltGrad)" stroke="#fbbf24" stroke-width="1.5" stroke-linejoin="round" />
+        <!-- Dardi Elettrici Laterali -->
+        <polygon points="-78,-14 -44,6 -54,14 -36,30 -68,14 -58,6" fill="url(#boltGrad)" />
+        <polygon points="72,-42 44,-8 58,-4 46,20 72,-6 58,-10" fill="url(#boltGrad)" />
+        <polygon points="78,12 56,28 72,28" fill="url(#boltGrad)" />
+      </g>
+      <use href="#fourGems1" />
+    </g>
+
+    <!-- 2. CONFUSIONE (ALTO-CENTRO) -->
+    <g transform="translate(540, 190)">
+      <use href="#medallionBase1" />
+      <g filter="url(#statusGlow)">
+        <!-- Spirale Viola-Rosa -->
+        <path d="M 0,6 C 0,0 8,0 10,6 C 14,16 0,26 -10,22 C -26,16 -28,-6 -14,-18 C 4,-34 32,-24 40,0 C 50,28 26,58 -6,62 C -46,66 -74,26 -66,-18 C -58,-58 -12,-78 30,-60" fill="none" stroke="url(#spiralGrad)" stroke-width="12" stroke-linecap="round" />
+        <path d="M 0,6 C 0,0 8,0 10,6 C 14,16 0,26 -10,22 C -26,16 -28,-6 -14,-18 C 4,-34 32,-24 40,0" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" opacity="0.85" />
+        <!-- Due Stelle a 5 Punte sulla Destra -->
+        <polygon points="44,-76 52,-54 74,-52 56,-36 62,-14 42,-26 22,-14 28,-36 12,-52 34,-54" fill="#f5d0fe" stroke="#d946ef" stroke-width="2.5" stroke-linejoin="round" />
+        <polygon points="64,14 70,28 86,30 74,40 78,56 64,48 50,56 54,40 42,30 58,28" fill="#f5d0fe" stroke="#d946ef" stroke-width="2" stroke-linejoin="round" />
+      </g>
+      <use href="#fourGems1" />
+    </g>
+
+    <!-- 3. SONNO (ALTO-DESTRA) -->
+    <g transform="translate(885, 190)">
+      <use href="#medallionBase1" />
+      <g filter="url(#statusGlow)">
+        <!-- Luna Crescente Azzurra -->
+        <path d="M 14,-56 C -36,-62 -74,-18 -64,32 C -54,78 0,96 42,66 C 50,60 56,52 60,44 C 24,60 -18,40 -22,-2 C -26,-32 -6,-52 14,-56 Z" fill="url(#moonGrad)" stroke="#e0f2fe" stroke-width="2" stroke-linejoin="round" />
+        <!-- Tre "Z" Luminose -->
+        <path d="M 42,-52 L 74,-58 L 48,-22 L 80,-28" fill="none" stroke="#0284c7" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 42,-52 L 74,-58 L 48,-22 L 80,-28" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+
+        <path d="M 8,-14 L 34,-18 L 14,12 L 40,8" fill="none" stroke="#0284c7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 8,-14 L 34,-18 L 14,12 L 40,8" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+
+        <path d="M 46,20 L 70,16 L 52,42 L 76,38" fill="none" stroke="#0284c7" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M 46,20 L 70,16 L 52,42 L 76,38" fill="none" stroke="#ffffff" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round" />
+
+        <!-- Stelline a 4 Punte -->
+        <polygon points="16,-58 19,-50 27,-47 19,-44 16,-36 13,-44 5,-47 13,-50" fill="#ffffff" />
+        <polygon points="-10,-2 -7,5 0,8 -7,11 -10,18 -13,11 -20,8 -13,5" fill="#ffffff" />
+        <polygon points="34,64 36,70 42,72 36,74 34,80 32,74 26,72 32,70" fill="#e0f2fe" />
+      </g>
+      <use href="#fourGems1" />
+    </g>
+
+    <!-- 4. VELENO (BASSO-SINISTRA) -->
+    <g transform="translate(365, 495)">
+      <use href="#medallionBase1" />
+      <!-- Fumi Viola Posteriori -->
+      <path d="M -52,48 C -76,28 -72,-6 -48,-22 C -34,-32 -38,-52 -48,-62" fill="none" stroke="#d946ef" stroke-width="18" stroke-linecap="round" opacity="0.65" filter="blur(3px)" />
+      <path d="M 48,18 C 68,-2 62,-32 42,-46 C 28,-56 34,-72 44,-80" fill="none" stroke="#c026d3" stroke-width="16" stroke-linecap="round" opacity="0.65" filter="blur(3px)" />
+
+      <!-- Goccia Tossica Verde-Viola -->
+      <path d="M 0,-84 C 14,-42 54,0 54,38 C 54,72 30,86 0,86 C -30,86 -54,72 -54,38 C -54,0 -14,-42 0,-84 Z" fill="url(#poisonGrad)" stroke="#ecfccb" stroke-width="3" stroke-linejoin="round" />
+      <path d="M -6,-56 C -16,-24 -42,8 -42,36 C -42,52 -32,64 -18,70" fill="none" stroke="#ffffff" stroke-width="3.5" stroke-linecap="round" opacity="0.75" />
+
+      <!-- Teschio Interno -->
+      <g transform="translate(0, 32)" fill="#d9f99d">
+        <path d="M -26,-6 C -26,-26 26,-26 26,-6 C 26,6 20,14 14,18 L 14,28 C 14,32 8,32 8,26 L 8,20 L 3,20 L 3,28 C 3,32 -3,32 -3,28 L -3,20 L -8,20 L -8,26 C -8,32 -14,32 -14,28 L -14,18 C -20,14 -26,6 -26,-6 Z" />
+        <circle cx="-10" cy="-2" r="6" fill="#064e3b" />
+        <circle cx="10" cy="-2" r="6" fill="#064e3b" />
+        <polygon points="0,6 -4,14 4,14" fill="#064e3b" />
+      </g>
+
+      <!-- Bolle Verdi Laterali -->
+      <circle cx="-56" cy="-38" r="12" fill="#84cc16" stroke="#ecfccb" stroke-width="2" />
+      <circle cx="76" cy="24" r="8" fill="#84cc16" stroke="#ecfccb" stroke-width="1.8" />
+      <circle cx="64" cy="62" r="6" fill="#84cc16" stroke="#ecfccb" stroke-width="1.5" />
+
+      <use href="#fourGems1" />
+    </g>
+
+    <!-- 5. K.O. / ESAUSTO (BASSO-DESTRA) -->
+    <g transform="translate(715, 495)">
+      <use href="#medallionBase1" />
+      <!-- Fumi Spettrali Grigi -->
+      <g fill="none" stroke="#94a3b8" stroke-linecap="round" opacity="0.45" filter="blur(2px)">
+        <path d="M -6,-36 C -24,-54 22,-68 6,-92" stroke-width="14" />
+        <path d="M -56,14 C -78,-4 -72,-32 -52,-46" stroke-width="10" />
+        <path d="M 56,14 C 78,-4 72,-32 52,-46" stroke-width="10" />
+        <path d="M -52,64 C -68,74 -58,86 -40,78" stroke-width="8" />
+        <path d="M 52,64 C 68,74 58,86 40,78" stroke-width="8" />
+      </g>
+
+      <!-- Sfera Grigio Ardesia K.O. -->
+      <ellipse cx="0" cy="22" rx="66" ry="54" fill="url(#koOrbGrad)" stroke="#94a3b8" stroke-width="2" />
+      <ellipse cx="-24" cy="-10" rx="18" ry="8" transform="rotate(-20 -24 -10)" fill="#ffffff" opacity="0.25" />
+
+      <!-- Occhi a "X" e Bocca a Zig-Zag -->
+      <g fill="#f5ebe0" stroke="#0f172a" stroke-width="2.5" stroke-linejoin="round">
+        <polygon points="-28,9 -17,-2 -10,5 -21,16 -10,27 -17,34 -28,23 -39,34 -46,27 -35,16 -46,5 -39,-2" />
+        <polygon points="28,9 39,-2 46,5 35,16 46,27 39,34 28,23 17,34 10,27 21,16 10,5 17,-2" />
+      </g>
+      <polyline points="-24,48 -12,40 0,48 12,40 24,48" fill="none" stroke="#0f172a" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" />
+      <polyline points="-24,48 -12,40 0,48 12,40 24,48" fill="none" stroke="#f5ebe0" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" />
+
+      <use href="#fourGems1" />
+    </g>
+  </g>
+</svg>
